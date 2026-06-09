@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فصل ۷: انتقال خون - هماتولوژی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .gradient-header {
+            background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .exam-tip {
+            background-color: #fef2f2;
+            border-right: 4px solid #ef4444;
+            color: #991b1b;
+        }
+        .diagnosis-box {
+            background-color: #eff6ff;
+            border-right: 4px solid #3b82f6;
+            color: #1e40af;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #111827;
+            font-weight: 800;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            width: 60%;
+            height: 4px;
+            background-color: #10b981;
+            border-radius: 2px;
+        }
+        .staging-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .staging-table th {
+            background-color: #10b981;
+            color: white;
+            padding: 12px;
+            text-align: right;
+            font-weight: 600;
+        }
+        .staging-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: right;
+        }
+        .staging-table tr:last-child td {
+            border-bottom: none;
+        }
+        .staging-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-right: 4px solid #f59e0b;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="pb-12">
+
+    <!-- Header -->
+    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold">فصل ۷: انتقال خون</h1>
+                <p class="text-white/80 text-sm mt-1">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
+            </div>
+            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
+                ویژه دانشجویان پزشکی
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+        <!-- Navigation -->
+        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+            <a href="#sec1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">گروه‌های خونی و تزریق فرآورده‌های خ...</a>
+            <a href="#sec2" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">عوارض و ملاحظات انتقال خون</a>
+            <a href="#sec3" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">واکنش‌های آلرژیک خفیف</a>
+            <a href="#sec4" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">واکنش‌های آنافیلاکتیک</a>
+            <a href="#sec5" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">کمبود IgA و واکنش‌های آنافیلاکتیک</a>
+            <a href="#sec6" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">اقدامات درمانی در واکنش‌های آلرژیک ...</a>
+            <a href="#sec7" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">پیوند مغز استخوان و GVHD</a>
+            <a href="#sec8" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">آسیب حاد ریه به علت انتقال خون (TRA...</a>
+            <a href="#sec9" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">پورپورای بعد از انتقال خون (Post tr...</a>
+            <a href="#sec10" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">پورپورای بعد از انتقال خون</a>
+            <a href="#sec11" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">مقاومت به تزریق پالکت</a>
+            <a href="#sec12" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">تجمع بیش از حد مایع (TACO)</a>
+            <a href="#sec13" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">واکنش‌های ناشی از ترانسفیوژن Massiv...</a>
+            <a href="#sec14" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">واکنش‌های هیپوتانسیو</a>
+            <a href="#sec15" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">عوارض عفونی</a>
+            <a href="#sec16" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">جلوگیری از واکنش‌های ترانسفیوژن</a>
+            <a href="#sec17" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">نکات مربوط به انتقال خون</a>
+            <a href="#sec18" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">تست‌های ژنتیک برای سندرم‌های ارثی س...</a>
+            <a href="#sec19" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">ریسک فاکتورهای سرطان</a>
+            <a href="#sec20" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">انتقال خون (نکات)</a>
+        </nav>
+
+        <!-- Section 1: گروه‌های خونی و تزریق فرآورده‌های خونی -->
+        <section id="sec1" class="card p-6">
+            <h2 class="section-title text-xl">1. گروه‌های خونی و تزریق فرآورده‌های خونی</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">در اورژانـس، <bdi dir="ltr">FFP</bdi> با گروه خونی A+ را می‌توان با <bdi dir="ltr">FFP</bdi> گروه‌های خونی O+، <bdi dir="ltr">AB</bdi>+ و B+ جایگزین کرد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">نکته‌ای بسـیار مهم: چون <bdi dir="ltr">FFP</bdi> فاقــد سـلول خونـی اسـت و در پالسما گروه خونـی A، آنتی‌بادی ضد B و در گروه خونـی B، آنتی‌بادی ضد A وجود دارد، <bdi dir="ltr">FFP</bdi> گروه خونی <bdi dir="ltr">AB</bdi> می‌تواند دهنده همگانی باشد. برعکـس، دهنده همگانی در <bdi dir="ltr">RBC (Packed cell</bdi>) خون کامل، گروه خونی O منفی است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">توجه: جهـت تزریــق پالســما (<bdi dir="ltr">FFP</bdi>) و <bdi dir="ltr">RBC</bdi>، ســازگاری <bdi dir="ltr">ABO</bdi> کفایت می‌کند و مثبت یا منفی بودن <bdi dir="ltr">Rh</bdi> مهم نیست.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">یادآوری: گروه خونـی <bdi dir="ltr">AB</bdi> مثبت، دهنده همگانی <bdi dir="ltr">FFP</bdi> است اگرچه <bdi dir="ltr">Rh</bdi> آنچنان مهم نیست.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: عوارض و ملاحظات انتقال خون -->
+        <section id="sec2" class="card p-6">
+            <h2 class="section-title text-xl">2. عوارض و ملاحظات انتقال خون</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="overflow-x-auto mb-4">
+                  <h4 class="font-bold text-md text-gray-700 mb-2">عوارض شایع انتقال خون</h4>
+                  <table class="staging-table">
+                    <thead>
+                      <tr>
+                        <th>تعداد سئواالت</th>
+                        <th>نوع عارضه</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><bdi dir="ltr">8</bdi></td>
+                        <td>واکنش‌های تب‌دار غیرهمولیتیک</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">7</bdi></td>
+                        <td>واکنش‌های همولیتیک حاد</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">7</bdi></td>
+                        <td>واکنش‌های آلرژیک</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">7</bdi></td>
+                        <td>واکنش‌های ناشی از ترانسفیوژن <bdi dir="ltr">Massive</bdi></td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">6</bdi></td>
+                        <td>واکنش‌های هیپوتانسیو</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">5</bdi></td>
+                        <td>آسیب حاد ریه به علت انتقال خون</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">4</bdi></td>
+                        <td>کرایوپرسیپیتات</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">4</bdi></td>
+                        <td>پورپورای بعد از انتقال خون</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">4</bdi></td>
+                        <td>عوارض عفونی</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">4</bdi></td>
+                        <td>واکنش‌های آنافیالکتیک</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">3</bdi></td>
+                        <td>بیماری پیوند علیه میزبان</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">3</bdi></td>
+                        <td>پالکت</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">3</bdi></td>
+                        <td>پالسما</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">3</bdi></td>
+                        <td>تجمع بیش از حد مایع</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">2</bdi></td>
+                        <td>مقاومت به تزریق پالکت</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">2</bdi></td>
+                        <td>گروه‌های خونی</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">2</bdi></td>
+                        <td>جلوگیری از واکنش‌های ترانسفیوژن</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">2</bdi></td>
+                        <td><bdi dir="ltr">RBC</bdi> کنسانتره</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">1</bdi></td>
+                        <td>خون کامل</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">1</bdi></td>
+                        <td>فرآورده ترکیبی (<bdi dir="ltr">RBC</bdi>، پالکت و پالسما)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: واکنش‌های آلرژیک خفیف -->
+        <section id="sec3" class="card p-6">
+            <h2 class="section-title text-xl">3. واکنش‌های آلرژیک خفیف</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">راش پوستی، خارش، کهیر و ادم واکنش‌های آلرژیک با پروتئین‌های پلاسما تظاهر یافته و به علت قطع موقت ایجاد می‌شوند. واکنش‌های خفیف با قطع انتقال خون و مصرف آنتی‌هیستامین درمان می‌شوند.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: واکنش‌های آنافیلاکتیک -->
+        <section id="sec4" class="card p-6">
+            <h2 class="section-title text-xl">4. واکنش‌های آنافیلاکتیک</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">واکنش آنافیلاکتیک ممکن است بعد از تزریق چند سی‌سی خون ایجاد شده و با برونکواسپاسم، دیسترس تنفسی، هیپوتانسیون، تهوع، استفراغ و شوک تظاهر می‌یابد. درمان شامل قطع انتقال خون، برقراری راه وریدی و تجویز آدرنالین است. تجویز آنتی‌هیستامین، گلوکوکورتیکوئیدها و برونکودیالتورها نیز ممکن است لازم باشد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">افرادی که واکنش‌های آنافیلاکتیک یا آلرژیک راجعه نسبت به فرآورده‌های خونی دارند، باید از نظر کمبود <bdi dir="ltr">IgA</bdi> مورد بررسی قرار گیرند.</p>
+            </div>
+        </section>
+
+        <!-- Section 5: کمبود IgA و واکنش‌های آنافیلاکتیک -->
+        <section id="sec5" class="card p-6">
+            <h2 class="section-title text-xl">5. کمبود <bdi dir="ltr">IgA</bdi> و واکنش‌های آنافیلاکتیک</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">بیمارانی که دچار کمبود <bdi dir="ltr">IgA</bdi> هستند، ممکن است نسبت به این نوع ایمنوگلوبین حساس شده و در ریسک واکنش‌های آنافیلاکتیک ناشی از ترانسفیوژن پلاسما قرار بگیرند. لذا مبتلایان به کمبود شدید <bdi dir="ltr">IgA</bdi>، در صورت امکان، باید از پلاسمای فاقد <bdi dir="ltr">IgA</bdi> و فرآورده‌های سلولی شسته شده دریافت کنند.</p>
+            </div>
+        </section>
+
+        <!-- Section 6: اقدامات درمانی در واکنش‌های آلرژیک و آنافیلاکتیک -->
+        <section id="sec6" class="card p-6">
+            <h2 class="section-title text-xl">6. اقدامات درمانی در واکنش‌های آلرژیک و آنافیلاکتیک</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">در فردی به دنبال تزریق خون <bdi dir="ltr">Packed cell</bdi> در فردی به دنبال تزریق خون شسته و سپس تزریق خون را انجام داد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">جهت پیشگیری از واکنش آنافیلاکتیک باید از فرآورده‌های شسته شده استفاده کرد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در صورت امکان باید <bdi dir="ltr">IgA</bdi> کمبود شدید مبتلایان به <bdi dir="ltr">IgA</bdi> کمبود شدید، پلاسمای فاقد <bdi dir="ltr">IgA</bdi> و فرآورده‌های سلولی شسته شده دریافت کنند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در صورت نبود فرآورده خونی فاقد <bdi dir="ltr">IgA</bdi> در بیمار <bdi dir="ltr">IgA deficient</bdi>، کدام فرآورده خونی می‌تواند جایگزین گردد؟ شسته شده.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">تمام موارد زیر در کنترل این عارضه مؤثر است، بجز اندازه گیری سرمی <bdi dir="ltr">IgA</bdi>.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در صورت ادامه رکتوراژی شدید پس از برطرف شدن علائم آنافیلاکسی با کورتیکواستروئید و آنتی‌هیستامین، تجویز واحدهای بعدی خون متراکم و ویتامین K و همچنین تجویز واحدهای بعدی خون متراکم و <bdi dir="ltr">FFP (IgA deficient</bdi>) مناسب است.</p>
+            </div>
+        </section>
+
+        <!-- Section 7: پیوند مغز استخوان و GVHD -->
+        <section id="sec7" class="card p-6">
+            <h2 class="section-title text-xl">7. پیوند مغز استخوان و <bdi dir="ltr">GVHD</bdi></h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">برای کاهش احتمال وقوع <bdi dir="ltr">GVHD</bdi> باید فرآورده‌های خونی تحت رادیاسیون (اشعه دادن) قرار گیرند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">سیتوپنی، روز بعد از انتقال خون، با تب، راش پوستی، اسهال و اختلال عملکرد کبد تظاهر می‌یابد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">بهترین روش برای کاهش احتمال وقوع <bdi dir="ltr">GVHD</bdi>، اشعه دادن به فرآورده‌های خونی قبل از تزریق است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">یافته‌های زیر به نفع عارضه <bdi dir="ltr">GVHD</bdi> است: تب، راش پوستی، پان‌سیتوپنی.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">رادیاسیون به فرآورده‌های خونی با دوز <bdi dir="ltr">2500</bdi> <bdi dir="ltr">cGy</bdi> قبل از تزریق به افراد در معرض خطر، از وقوع <bdi dir="ltr">GVHD</bdi> جلوگیری می‌کند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">برای جلوگیری از این عارضه می‌توان از تزریق خون اشعه‌دیده استفاده کرد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">اهدای مستقیم خون توسط اعضای خانواده توصیه نمی‌گردد. در صورت اجبار، باید فرآورده‌های خونی افراد خانواده را تحت رادیاسیون قرار داد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">یکی از مشخصه‌های <bdi dir="ltr">GVHD</bdi>، آپالزی مغز استخوان و پان‌سیتوپنی است.</p>
+            </div>
+        </section>
+
+        <!-- Section 8: آسیب حاد ریه به علت انتقال خون (TRALI) -->
+        <section id="sec8" class="card p-6">
+            <h2 class="section-title text-xl">8. آسیب حاد ریه به علت انتقال خون (<bdi dir="ltr">TRALI</bdi>)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">کدامیک از عوارض ترانسفیوژن، ناشی از انتقال پسیو آنتی‌بادی‌های علیه <bdi dir="ltr">HLA</bdi> گیرنده است؟ آسیب حاد ریوی.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">اتیولوژی <bdi dir="ltr">TRALI</bdi>: تیتر بالای آنتی‌بادی‌های ضد <bdi dir="ltr">HLA-II</bdi> در پلاسمای فرد دهنده رخ می‌دهد. آنتی‌بادی‌های ضد <bdi dir="ltr">HLA-I</bdi> و ضد آنتی‌ژن نوتروفیل انسانی (<bdi dir="ltr">HNA</bdi>) نیز ممکن است نقش داشته باشند. همچنین ممکن است به علت انتقال سیتوکین‌ها و کمو קיین‌ها ایجاد شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">فیزیوپاتولوژی <bdi dir="ltr">TRALI</bdi>: به علت تجمع لکوسیت‌ها در عروق ریوی ایجاد می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">ریسک فاکتورهای گیرنده برای <bdi dir="ltr">TRALI</bdi>: سیگار، مصرف مزمن الکل، شوک، جراحی کبد (پیوند کبد)، جراحی کانسر، ونتیلاسیون مکانیکی و تعادل مثبت مایع.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">اهمیت <bdi dir="ltr">TRALI</bdi>: یکی از شایع‌ترین علل مرگ‌ومیر ناشی از انتقال خون است. افتراق آن از سایر علل هیپوکسی مانند تجمع بیش از حد مایع دشوار است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">تظاهرات بالینی <bdi dir="ltr">TRALI</bdi>: هیپوکسی و ادم ریوی هیپوکسیک و انفیلتراسیون‌های بینابینی غیرکاردیوژنیک دوطرفه در <bdi dir="ltr">Chest X-ray</bdi> در طی <bdi dir="ltr">6</bdi> ساعت بعد از انتقال خون تظاهر می‌یابد؛ هرچند موارد تأخیری ممکن است <bdi dir="ltr">72</bdi> ساعت بعد از انتقال خون رخ دهد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">پیشگیری <bdi dir="ltr">TRALI</bdi>: ترانسفیوژن پلاسما و پالکت از زنان نولی‌پار یا مردان و زنانی که فاقد آنتی‌بادی‌های ضد <bdi dir="ltr">HLA</bdi> هستند، ریسک ایجاد <bdi dir="ltr">TRALI</bdi> را کاهش می‌دهد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">درمان <bdi dir="ltr">TRALI</bdi>: حمایتی است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">آسیب حاد ریه ناشی از انتقال خون (<bdi dir="ltr">TRALI</bdi>) به علت وجود مقادیر زیاد آنتی‌بادی ضد <bdi dir="ltr">HLA-II</bdi> در پلاسمای فرد دهنده (نه گیرنده) ایجاد می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">آسیب حاد ریه به علت انتقال خون، در مواردی بیشتر رخ می‌دهد که دهنده، یک زن مولتی‌پار باشد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">عامل خطر بروز این عارضه (<bdi dir="ltr">TRALI</bdi>) شامل: پیوند کبد، مصرف الکل، لوبکتومی، مصرف سیگار.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">درمان عارضه فوق (<bdi dir="ltr">TRALI</bdi>) حمایتی است.</p>
+            </div>
+        </section>
+
+        <!-- Section 9: پورپورای بعد از انتقال خون (Post transfusion purpura) -->
+        <section id="sec9" class="card p-6">
+            <h2 class="section-title text-xl">9. پورپورای بعد از انتقال خون (<bdi dir="ltr">Post transfusion purpura</bdi>)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">تشخیص <bdi dir="ltr">Post transfusion purpura</bdi> به کمک پیدا کردن آنتی‌بادی <bdi dir="ltr">HPA</bdi> در سرم انجام می‌گردد.</p>
+            </div>
+        </section>
+
+        <!-- Section 10: پورپورای بعد از انتقال خون -->
+        <section id="sec10" class="card p-6">
+            <h2 class="section-title text-xl">10. پورپورای بعد از انتقال خون</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">اختلال خونریزی‌دهنده ناشی از ترانسفیوژن یک عارضه نادر بوده و در زنان شایع‌تر است. این عارضه ترومبوسیتوپنی بوده که از <bdi dir="ltr">12</bdi> تا <bdi dir="ltr">5</bdi> روز بعد از ترانسفیوژن <bdi dir="ltr">RBC</bdi> (و به‌ندرت پالکت) رخ می‌دهد.</p>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">اپیـدمیولوژی</h4>
+                <p class="mb-3 leading-relaxed text-gray-700">این عارضه نادر بوده و در زنان شایع‌تر است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در سرم فرد گیرنده، عمدتاً آلوآنتی‌بادی‌های ضد پالکت علیه <bdi dir="ltr">HPA-<bdi dir="ltr">1</bdi>a</bdi> وجود دارد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">درمان این عارضه عمدتاً حمایتی بوده ولی ممکن است به تجویز ایمنوگلوبولین پُل‌والان، گلوکوکورتیکوئیدها یا تعویض پلاسما لازم باشد. تزریق بیشتر پالکت موجب تشدید ترومبوسیتوپنی یا افزایش بسیار اندک تعداد پالکت‌ها می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">با استفاده از فرآورده‌های خونی شسته شده یا دهنده‌های سازگار از نظر <bdi dir="ltr">HPA</bdi> می‌توان از عود این عارضه پیشگیری کرد.</p>
+            </div>
+        </section>
+
+        <!-- Section 11: مقاومت به تزریق پالکت -->
+        <section id="sec11" class="card p-6">
+            <h2 class="section-title text-xl">11. مقاومت به تزریق پالکت</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">هرگاه پس از تزریق پالکت، تنها افزایش اندکی در تعداد پالکت رخ دهد به آن مقاومت به تزریق پالکت گفته می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">آلوایمونیزاسیون علیه پالکت‌ها و لکوسیت‌ها موجب مقاومت به تزریق پالکت می‌شود. همچنین می‌تواند به علت آلوایمونیزاسیون علیه <bdi dir="ltr">HPA</bdi> رخ دهد، اما شیوع آن کمتر است.</p>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">ریسک فاکتورهای گیرنده</h4>
+                <p class="mb-3 leading-relaxed text-gray-700">عواملی که در گیرنده موجب مقاومت به تزریق پالکت می‌شوند، عبارتند از: تب، <bdi dir="ltr">DIC</bdi>، اسپلنومگالی، خونریزی، مصرف آمفوتریسین B.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">استفاده از فرآورده‌های سلولی با کمترین احتمال ایمونیزاسیون را کاهش می‌دهد.</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">پس از ایجاد آلوایمونیزاسیون، در صورت امکان باید از کنسانتره پالکت سازگار از نظر <bdi dir="ltr">HLA</bdi> (کراس‌مچ شده) استفاده کرد. در غیر این صورت، تکرار ترانسفیوژن کنسانتره پالکت در فواصل کوتاه‌تر توصیه می‌گردد.</li>
+                  <li class="leading-relaxed text-gray-700">کنسانتره پالکت نگهداری شده در دمای سرد (<bdi dir="ltr">Cold-stored and Cryopreserved</bdi>) با اینکه موجب افزایش کمتر تعداد پالکت می‌شود، اما عملکرد خونریزی حاد بهتر است هموستاتیک آنها در مبتلایان به.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 12: تجمع بیش از حد مایع (TACO) -->
+        <section id="sec12" class="card p-6">
+            <h2 class="section-title text-xl">12. تجمع بیش از حد مایع (<bdi dir="ltr">TACO</bdi>)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">TACO</bdi> یک عارضه شایع بوده که در <bdi dir="ltr">10</bdi> هزار انتقال خون رخ می‌دهد (در حال حاضر <bdi dir="ltr">100</bdi> مورد از).</p>
+                <div class="exam-tip p-4 rounded-lg mb-3"><strong>💡 نکته امتحانی:</strong> <bdi dir="ltr">TACO</bdi> در حال حاضر شایع‌ترین علت مرگ پس از انتقال خون است (<bdi dir="ltr">100%</bdi> امتحانی).</div>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">ریسک فاکتورها</h4>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">سن بالا</li>
+                  <li class="leading-relaxed text-gray-700">نارسایی کلیه</li>
+                  <li class="leading-relaxed text-gray-700">وجود مایع از قبل (<bdi dir="ltr">Overload</bdi>)</li>
+                  <li class="leading-relaxed text-gray-700">اختلال عملکرد قلبی</li>
+                  <li class="leading-relaxed text-gray-700">تزریق فرآورده‌های خونی با حجم زیاد</li>
+                  <li class="leading-relaxed text-gray-700">تزریق فرآورده‌های خونی با سرعت زیاد نسبت به وضعیت همودینامیک بیمار</li>
+                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">با <bdi dir="ltr">TACO</bdi> تنگی نفس، هیپوکسی، افزایش مکرر فشار خون سیستولیک، انفیلتراسیون‌های دوطرفه ریه و غالباً آلوئولی در <bdi dir="ltr">Chest X-ray</bdi> و افزایش <bdi dir="ltr">BNP</bdi> تظاهر می‌یابد. تب نیز ممکن است وجود داشته باشد.</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">شناسایی بیماران در معرض خطر و مانیتورینگ دقیق</li>
+                  <li class="leading-relaxed text-gray-700">کاهش سرعت ترانسفیوژن (مثلاً تزریق یک واحد کنسانتره <bdi dir="ltr">RBC</bdi> طی <bdi dir="ltr">3</bdi> تا <bdi dir="ltr">4</bdi> ساعت)</li>
+                  <li class="leading-relaxed text-gray-700">تجویز دیورتیک در بیماران با همودینامیک <bdi dir="ltr">Stable</bdi> که سابقه <bdi dir="ltr">TACO</bdi> دارند.</li>
+                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">شامل اکسیژن و قطع انتقال خون و تجویز دیورتیک است.</p>
+            </div>
+        </section>
+
+        <!-- Section 13: واکنش‌های ناشی از ترانسفیوژن Massive -->
+        <section id="sec13" class="card p-6">
+            <h2 class="section-title text-xl">13. واکنش‌های ناشی از ترانسفیوژن <bdi dir="ltr">Massive</bdi></h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">ترانسفیوژن <bdi dir="ltr">Massive</bdi> عبارت است از ترانسفیوژن <bdi dir="ltr">5</bdi> تا <bdi dir="ltr">10</bdi> واحد کنسانتره <bdi dir="ltr">RBC</bdi> (به همراه سایر فرآورده‌های خونی) طی <bdi dir="ltr">3</bdi> ساعت یا <bdi dir="ltr">50%</bdi> کل حجم خون بیمار طی بیشتر از.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">عوارض ناشی از ترانسفیوژن <bdi dir="ltr">Massive</bdi> عبارتند از:</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">مسمومیت با سیترات</li>
+                  <li class="leading-relaxed text-gray-700">هیپوترمی</li>
+                  <li class="leading-relaxed text-gray-700">هیپرکالمی</li>
+                  <li class="leading-relaxed text-gray-700">کوآگولوپاتی ترقیقی</li>
+                </ul>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">مسمومیت با سیترات</h4>
+                <p class="mb-3 leading-relaxed text-gray-700">برای جلوگیری از انعقاد خون به فرآورده‌های خونی سیترات اضافه می‌کنند؛ سیترات به کلسیم متصل شده و موجب هیپوکلسمی می‌شود. هیپوکلسمی ممکن است به دنبال ترانسفیوژن‌های مکرر و سریع رخ داده و موجب اختلال پارستزی اطراف دهان و عملکرد قلبی گردد. اگرچه سیترات به سرعت به بی‌کربنات متابولیزه می‌شود، اما ممکن است انفوزیون کلسیم از یک راه وریدی جدا گانه لازم باشد.</p>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">هیپوترمی</h4>
+                <p class="mb-3 leading-relaxed text-gray-700">اتیولوژی: (با تزریق سریع فرآورده‌های خونی دمای <bdi dir="ltr">4</bdi>°C می‌تواند موجب هیپوترمی و آریتمی قلبی شود).</p>
+                <p class="mb-3 leading-relaxed text-gray-700">با استفاده از یک گرم‌کن در مسیر تزریق می‌توان از این عارضه جلوگیری کرد.</p>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">هیپرکالمی</h4>
+                <p class="mb-3 leading-relaxed text-gray-700">اتیولوژی: نشت پتاسیم از <bdi dir="ltr">RBC</bdi> ها در زمان ذخیره‌سازی طولانی و رادیـاسیون میزان پتاسیم را در فرآورده خونی افزایش می‌دهد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">احتمال هیپرکالمـی و مسمومیت حاد قلبی در نوزادان و مبتالیان به نارسایی کلیه، هیپرگلیسمی و هیپوکلسمی بیشتر است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">درمان شامل تجویز انسولین به همراه گلوکز، گلوکونات کلسیم و فورسماید است.</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">استفاده از <bdi dir="ltr">RBC</bdi> شسته شده</li>
+                  <li class="leading-relaxed text-gray-700">استفاده از <bdi dir="ltr">RBC</bdi> با پلاسمای کم</li>
+                  <li class="leading-relaxed text-gray-700">استفاده از فرآورده‌هایی که مدت نگهداری آنها کمتر از <bdi dir="ltr">7</bdi> تا <bdi dir="ltr">10</bdi> روز است</li>
+                  <li class="leading-relaxed text-gray-700">اجتناب از نگهداری کنسـانتره <bdi dir="ltr">RBC</bdi> بیشتر به مدت <bdi dir="ltr">24</bdi> ساعت بعد از رادیـاسیون</li>
+                </ul>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">کوآ گولوپاتی ترقیقی</h4>
+                <p class="mb-3 leading-relaxed text-gray-700">نیز یکی از عوارض ناشی از ترانسفیوژن <bdi dir="ltr">Massive</bdi> است.</p>
+            </div>
+        </section>
+
+        <!-- Section 14: واکنش‌های هیپوتانسیو -->
+        <section id="sec14" class="card p-6">
+            <h2 class="section-title text-xl">14. واکنش‌های هیپوتانسیو</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">واکنش‌های هیپوتانسیو حاد ناشی از انتقال خون با افت ناگهانی فشار خون به میزان بیشتر از <bdi dir="ltr">30</bdi> <bdi dir="ltr">mmHg</bdi>، برطرف شدن خودبه‌خودی هیپوتانسـیون با قطع انتقال خون و فاصله کم بعد از آغاز انتقال خون مشخص می‌شود. علائم آلرژیک گوارشی یا تنفسی خفیف نیز ممکن است وجود داشته باشند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">این واکنش‌ها ممکن است به علت کینین‌هـای وازواکتیـو در فــرآورده خونــی باشند و در تولیــد مصرف <bdi dir="ltr">ACE</bdi> مهارکننده بیماران مبتال به هیپرتانسیون که می‌کنند، شایع‌تر است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">پس از رفــع هیپوتانســیون، بایــد از تزریق همــان فــرآورده خونی اجتنــاب شــود. در بیمارانــی که نیاز به ترانســفیوژن مکرر دارند، تغییر مهارکننده‌های <bdi dir="ltr">ACE</bdi> به سایر داروهای ضد فشار خون توصیه می‌شود.</p>
+            </div>
+        </section>
+
+        <!-- Section 15: عوارض عفونی -->
+        <section id="sec15" class="card p-6">
+            <h2 class="section-title text-xl">15. عوارض عفونی</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">شیوع عفونت‌های منتقل شونده ناشی از انتقال خون در حال کاهش است؛ اما عفونت‌های جدید مانند ویروس نیل غربی و بابزیوز ممکن است کشف شوند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">آزمایشاتی که برای شناسایی پاتوژن‌های عفونی بر روی خون دهنده انجام می‌شود، عمدتاً بر مبنای تکثیر نوکلئیک اسید (<bdi dir="ltr">NAAT</bdi>) هستند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">از آنجایی که اغلب باکتری‌ها در دمای اتاق تکثیر می‌یابند، عفونت‌های باکتریایی منتقل شونده با ترانسفیوژن به خصوص در کنسانتره پالکت که در دمای اتاق نگهداری می‌شود، شایع هستند. با این وجود، برخی از باکتری‌های گرم منفی مثل یرسینیا می‌توانند در دمای <bdi dir="ltr">4</bdi> درجه سانتی‌گراد نیز رشد کرده و موجب عفونت‌های ناشی از تزریق کنسانتره <bdi dir="ltr">RBC</bdi> شوند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در افرادی که فرآورده‌های خونی آلوده دریافت می‌کنند، ممکن است تب و لرز به سرعت ایجاد شده و با (یا حتی ترانسفیوژن یا تا چند ساعت بعد) پیشرفت عفونت، شوک سپتیک، <bdi dir="ltr">DIC</bdi> و مرگ رخ دهد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">بلافاصله بعد از نمونه‌گیری برای کشت باکتری، آنتی‌بیوتیک‌های وسیع‌الطیف باید آغاز شوند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">ریسـک انتقـال عفونـت باکتریـال متعاقــب تجویـز کدام فرآورده خونی باالتر است؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">عفونت‌هـای باکتریایــی در تزریق پالکت بیشـتر ریســک است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">اگر فرض کنیم علت تب، آلودگی فرآورده‌ها بوده، کدام فرآورده می‏تواند علت شایع‏تری برای آن باشد؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">یرســینیا می‌توانند برخـی از باکتری‌های گرم منفی مثل نیز رشد کرده و موجب عفونت‌های ناشی از <bdi dir="ltr">4</bdi> درجه سانتی‌گراد در دمای <bdi dir="ltr">RBC</bdi> کنسانتره تزریق شوند.</p>
+            </div>
+        </section>
+
+        <!-- Section 16: جلوگیری از واکنش‌های ترانسفیوژن -->
+        <section id="sec16" class="card p-6">
+            <h2 class="section-title text-xl">16. جلوگیری از واکنش‌های ترانسفیوژن</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">استفاده از فیلتر شده، <bdi dir="ltr">Packed Red Blood Cell</bdi> احتمال بروز تمام عوارض زیر را کاهش می‌دهند، بجز:</p>
+                <p class="mb-3 leading-relaxed text-gray-700">کاهــش لکوســیت‌ها (<bdi dir="ltr">Leukocyte reduction</bdi>): کاهش تعداد لکوسـیت‌ها موجب کاهش بروز واکنش‌های زیر می‌شود:</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">واکنش‌های تب‌دار غیرهمولیتیک ناشی از انتقال خون (<bdi dir="ltr">FNHTRs</bdi>)</li>
+                  <li class="leading-relaxed text-gray-700">عفونت با پاتوژن‌های داخل سلولی مثل سیتومگالوویروس (<bdi dir="ltr">CMV</bdi>)</li>
+                  <li class="leading-relaxed text-gray-700">آلوایمونیزاسیون</li>
+                  <li class="leading-relaxed text-gray-700">سرکوب سیستم ایمنی</li>
+                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">رادیاسـیون (پرتوتابـی) به فرآورده‌هـای خونی در مبتالیـان بـه نقص ایمنـی، از بروز بیماری پیوند علیه میزبان (<bdi dir="ltr">GVHD</bdi>) جلوگیری می‌کند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">کاهش تعداد پاتوژن‌ها: ریسک عفونت‌های ناشی از انتقال خون را کاهش می‌دهد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">کاهش حجـم پالسـما: در بیمارانـی کـه سـابقه واکنش‌هـای آلرژیـک شـدید بـه فرآورده‌های خونی را دارند، اندیکاسیون دارد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در جریــان انتقــال خــون بــرای پیشــگیری از آلوایمونیزاسـیون و واکنش‏هـای تـب‏زا در بیمــار مبتــ اا بــه لوســمی حــاد تحــت شــیمی‏درمانی، کــدام اقــدام را پیشــنهاد می‏کنید؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">برای کاهش خطر انتقال ویروس سیتومگال (<bdi dir="ltr">CMV</bdi>) در جریان ترانسفوزیون خون در یک بیمار مبتال به لنفوم تحت کموتراپی، کدام اقدام زیر مؤثرتر است؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">پورپـورای بعـد از انتقـال خون یک اختــ اال خونریزی<bdi dir="ltr">1</bdi> دهنده ناشی از ترومبوسـیتوپنی بــوده کــه <bdi dir="ltr">5</bdi> تا <bdi dir="ltr">12</bdi> روز بعـد از تزریـق پالکــت رخ می‌دهــد. آنتی‌بــادی ضـد <bdi dir="ltr">HPA-<bdi dir="ltr">1</bdi>a</bdi> عامل این عارضه اســت. با اســتفاده از فرآورده‌هـای خونــی شسته شــده یــا دهنده‌های سازگار از نظــر <bdi dir="ltr">HPA</bdi> می‌تــوان از عــود ایــن عارضــه پیشــگیری کرد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">آلوایمونیزاسـیون علیـه لکوسیت‌ها و پالکت‌هــا <bdi dir="ltr">2</bdi> موجــب مقاومــت بــه تزریــق پالکت می‌شــود. پس از ایجــاد آلوایمونیزاســیون باید از پالکت ســازگار از نظر <bdi dir="ltr">HLA</bdi> (کراس مچ شده) استفاده کرد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">ســرکوب ایمنــی ناشــی از انتقــال خــون اغلب توســط<bdi dir="ltr">3</bdi> لکوسـیت‌های دهنـده ایجــاد می‌شــود. اســتفاده از فرآورده‌های خونی با لکوســیت کم احتمال سـرکوب ایمنی را کاهش می‌دهد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">TACO</bdi> (تجمـع بیـش از حـد مایـع) شـایع‌ترین عارضه مــرگ پـس از تزریـق خـون اسـت. ایـن عارضه علـت تنگی‌نفــس، هیپوکســی، افزایــش مکرر فشــارخون سیســتولیک، انفیلتراســیون دوطرفــه ریــه (اغلـب آلوئولــی) در <bdi dir="ltr">CXR</bdi> و افزایــش <bdi dir="ltr">BNP</bdi> تظاهـر می‌یابــد. درمان این عارضه قطع انتقال خون و تجویز اکسیژن و دیورتیک است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">عوارض ناشی از <bdi dir="ltr">Massive</bdi> ترانسفیوژن عبارتند از:</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">مسمومیت با سیترات (هیپوکلسمی)</li>
+                  <li class="leading-relaxed text-gray-700">هیپوترمی</li>
+                  <li class="leading-relaxed text-gray-700">هیپرکالمی</li>
+                  <li class="leading-relaxed text-gray-700">کوآ کولوپاتی ترقیقی</li>
+                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">واکنش‌های هیپوتانسـیو حاد ناشـی از انتقال خون<bdi dir="ltr">6</bdi> بیشــتر از <bdi dir="ltr">30</bdi> <bdi dir="ltr">mmHg</bdi> با کاهـش ناگهانـی فشـارخون بـه میـزان کم بعـد از آغـاز انتقـال خون و رفـع سـریع آن بـا قطـع انتقـال خـون مشـخص می‌شـود. این عارضه در بیمارانی که تحت درمان با مهارکننده‌های <bdi dir="ltr">ACE</bdi> هستند، شایع‌تر است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">عفونت‌های باکتریایی ناشـی از انتقال خون به ویژه<bdi dir="ltr">7</bdi> با تزریق پالکت شـایع‌تر هسـتند، چرا کـه پالکت در دمای اتاق نگهداری می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">باکتری‌های گرم منفی مثل یرسینیا در دمای <bdi dir="ltr">4</bdi> درجه سانتی‌گراد نیز رشــد کرده و موجب عفونت‌های مرتبط با تزریق <bdi dir="ltr">RBC</bdi> کنسانتره می‌شوند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">کاهش لکوسـیت‌ها در فرآورده‌های خونی می‌توان با از ایجاد عوارض زیر جلوگیری کرد:</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">واکنش‌هــا ی تــب‌دار غیرهمولیتیــک ناشــی از انتقال خون (<bdi dir="ltr">FNHTR</bdi>)</li>
+                  <li class="leading-relaxed text-gray-700">عفونت با پاتوژن‌های داخل سلولی مثل <bdi dir="ltr">CMV</bdi></li>
+                  <li class="leading-relaxed text-gray-700">آلوایمونیزاسیون</li>
+                  <li class="leading-relaxed text-gray-700">سرکوب سیستم ایمنی</li>
+                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">رادیاسـیون (پرتوتابـی) به فرآورده‌هـای خونی در مبتالیـان به نقص ایمنی از بــروز <bdi dir="ltr">GVHD</bdi> جلوگیری می‌کند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">کاهــش حجــم پالســما در بیمارانــی کــه ســابقه واکنش‌هـای آلرژیـک شـدید بــه فرآورده‌هـای خونی دارند، اندیکاسیون دارد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">گــروه خونــی O معموالً موجــب افزایــش ریســک عفونــت بـا H.<bdi dir="ltr">Pylori</bdi> می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در بیمارانــی کــه گــروه خونی O دارند، شــدت مالاریا کمتــر دارد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">فرآورده‌های خونی معموالً در دمای غیرفیزیولوژیک (مانند <bdi dir="ltr">4</bdi> درجه سانتی‌گراد یا <bdi dir="ltr">22</bdi> درجه سانتی‌گراد) نگهداری می‌شوند.</p>
+            </div>
+        </section>
+
+        <!-- Section 17: نکات مربوط به انتقال خون -->
+        <section id="sec17" class="card p-6">
+            <h2 class="section-title text-xl">17. نکات مربوط به انتقال خون</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">در ترومبوسیتوپنی، خونریزی تا زمانی که تعداد پلاکت کمتر از <bdi dir="ltr">20000</bdi> نرسیده باشد، رخ نمی‌دهد؛ مگر اینکه اختلال عملکرد پلاکتی به علت سندرم میلودیسپالستیک، آسپیرین یا مصرف <bdi dir="ltr">NSAID</bdi> وجود داشته باشد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در ترومبا یا هنگام جراحی، پلاکت کمتر از <bdi dir="ltr">100000</bdi> میکرولیتر ممکن است مشکل‌ساز باشد.</p>
+            </div>
+        </section>
+
+        <!-- Section 18: تست‌های ژنتیک برای سندرم‌های ارثی سرطان -->
+        <section id="sec18" class="card p-6">
+            <h2 class="section-title text-xl">18. تست‌های ژنتیک برای سندرم‌های ارثی سرطان</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="overflow-x-auto mb-4">
+                  <h4 class="font-bold text-md text-gray-700 mb-2">کانسر و ژن‌های دخیل</h4>
+                  <table class="staging-table">
+                    <thead>
+                      <tr>
+                        <th>کانسر</th>
+                        <th>ژن‌های دخیل</th>
+                        <th>روش‌های پیشگیری</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>کانسر پستان</td>
+                        <td><bdi dir="ltr">BRCA-<bdi dir="ltr">1</bdi></bdi>, <bdi dir="ltr">BRCA-<bdi dir="ltr">2</bdi> PTEN</bdi>, <bdi dir="ltr">STK-<bdi dir="ltr">11</bdi></bdi>, <bdi dir="ltr">TP<bdi dir="ltr">53</bdi></bdi></td>
+                        <td>ماستکتومی پروفیالکتیک تعدیل‌کننده‌های انتخابی رسپتور استروژن تغییر در سبک زندگی غربالگری دقیق‌تر از جمله با <bdi dir="ltr">MRI</bdi> پستان</td>
+                      </tr>
+                      <tr>
+                        <td>کانسر لوبولار پستان و کانسر معده</td>
+                        <td><bdi dir="ltr">CDH-<bdi dir="ltr">1</bdi> (E-cadherin</bdi>)</td>
+                        <td>ماستکتومی پروفیالکتیک گاسترکتومی پروفیالکتیک غربالگری دقیق‌تر از جمله با <bdi dir="ltr">MRI</bdi> پستان تعدیل‌کننده‌های انتخابی رسپتور استروژن</td>
+                      </tr>
+                      <tr>
+                        <td>کانسر تخمدان</td>
+                        <td><bdi dir="ltr">BRCA-<bdi dir="ltr">1</bdi></bdi>, <bdi dir="ltr">BRCA-<bdi dir="ltr">2</bdi></bdi></td>
+                        <td>اووفورکتومی پروفیالکتیک داروهای ضدبارداری خوراکی (<bdi dir="ltr">OCP</bdi>)</td>
+                      </tr>
+                      <tr>
+                        <td>کانسر کولون</td>
+                        <td><bdi dir="ltr">FAP</bdi> (پولیپوز آدنوماتوز خانوادگی): <bdi dir="ltr">APC HNPCC</bdi> (کانسر کولون غیرپولیپوز ارثی): <bdi dir="ltr">MLH-<bdi dir="ltr">1</bdi></bdi>, <bdi dir="ltr">MSH-<bdi dir="ltr">2</bdi></bdi>, <bdi dir="ltr">MSH-<bdi dir="ltr">6</bdi></bdi>, <bdi dir="ltr">PMS-<bdi dir="ltr">2</bdi> MYH</bdi> پولیپوز مرتبط با <bdi dir="ltr">MYH</bdi></td>
+                        <td>کولکتومی پروفیالکتیک داروهای <bdi dir="ltr">NSAID</bdi> تغییر در سبک زندگی افزایش نظارت هیسترکتومی کامل شکمی (<bdi dir="ltr">TAH</bdi>) و اُووفورکتومی پروفیالکتیک</td>
+                      </tr>
+                      <tr>
+                        <td>کانسر رحم</td>
+                        <td><bdi dir="ltr">MSH-<bdi dir="ltr">2</bdi></bdi>, <bdi dir="ltr">MLH-<bdi dir="ltr">1</bdi></bdi>, <bdi dir="ltr">PTEN</bdi>, <bdi dir="ltr">PMS-<bdi dir="ltr">2</bdi></bdi>, <bdi dir="ltr">MSH-<bdi dir="ltr">6</bdi></bdi></td>
+                        <td>هیسترکتومی پروفیالکتیک افزایش نظارت</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 19: ریسک فاکتورهای سرطان -->
+        <section id="sec19" class="card p-6">
+            <h2 class="section-title text-xl">19. ریسک فاکتورهای سرطان</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="overflow-x-auto mb-4">
+                  <h4 class="font-bold text-md text-gray-700 mb-2">ریسک فاکتورهای مرتبط با سبک زندگی و تماس‌های محیطی</h4>
+                  <table class="staging-table">
+                    <thead>
+                      <tr>
+                        <th>ریسک فاکتور</th>
+                        <th>سرطان‌های مرتبط</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>مصرف سیگار</td>
+                        <td>ریه، برونش، مری، سر و گردن، معده، پانکراس، کلیه، مثانه، سرویکس</td>
+                      </tr>
+                      <tr>
+                        <td>مصرف زیاد الکل</td>
+                        <td>کبد، رکتوم، پستان، حفره دهان، حلق، حنجره، مری</td>
+                      </tr>
+                      <tr>
+                        <td>چاقی و رژیم پرکالری</td>
+                        <td>کولون، پستان، اندومتر، کلیه، پانکراس، مری، پروستات</td>
+                      </tr>
+                      <tr>
+                        <td>فیبر کم در رژیم غذایی</td>
+                        <td>کولون</td>
+                      </tr>
+                      <tr>
+                        <td>زندگی کم‌تحرک</td>
+                        <td>کولون، پستان</td>
+                      </tr>
+                      <tr>
+                        <td>تماس‌های محیطی</td>
+                        <td><bdi dir="ltr">18</bdi> و <bdi dir="ltr">16</bdi> نوع <bdi dir="ltr">HPV</bdi>: سرویکس هپاتیت C و B: کانسر هپاتوسلولار کبد آزبستوز: مزوتلیوم و سایر انواع کانسر ریه گاز رادون: ریه اشعه <bdi dir="ltr">UV</bdi>: <bdi dir="ltr">SCC</bdi> و <bdi dir="ltr">BCC</bdi>، ملانوما اشعه یونیزان: لوسمی، تیروئید، ریه، پستان</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 20: انتقال خون (نکات) -->
+        <section id="sec20" class="card p-6">
+            <h2 class="section-title text-xl">20. انتقال خون (نکات)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">خانم <bdi dir="ltr">24</bdi> سـاله با گروه خونی A مثبت و تشـخیص <bdi dir="ltr">ITP</bdi> تحت درمـان بـا پردنیزولــون قــرار می‏گیــرد. پــس از <bdi dir="ltr">3</bdi> مــاه ســطح پالکــت بــه حــد نرمال می‏رســد. پــس از <bdi dir="ltr">2</bdi> مــاه مجــدداً میزان پالکت بــه حــدود <bdi dir="ltr">60000</bdi> میکرولیتر کاهش می‏یابد ولــی عالمت خاصی نــدارد. کدام اقدام مناسب است؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">پیگیری بدون درمان</p>
+            </div>
+        </section>
+
+        <!-- Section 21: ارزیابی‌های قبل از تزریق خون -->
+        <section id="sec21" class="card p-6">
+            <h2 class="section-title text-xl">21. ارزیابی‌های قبل از تزریق خون</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">در بیماری که نیاز به تزریق خون دارد، تمام تست‌های زیر جزو بررسی اوّلیه قبل از تزریق خون است، بجز؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">تعیین گروه‏های خونی فرعی</p>
+                <p class="mb-3 leading-relaxed text-gray-700">ارزیابی‌های قبل از تزریق خون جهت جلوگیری از واکنش‌های همولیتیک باید انجام شود. این ارزیابی‌ها عبارتند از:</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">تعیین گروه خونی <bdi dir="ltr">ABO-Rh</bdi></li>
+                  <li class="leading-relaxed text-gray-700">غربالگری و شناسایی آلوآنتی‌بادی‌های علیه آنتی‌ژن‌های <bdi dir="ltr">RBC</bdi> به غیر از <bdi dir="ltr">ABO</bdi></li>
+                  <li class="leading-relaxed text-gray-700"><bdi dir="ltr">Cross match</bdi> بین پلاسما / سرم گیرنده و نمونه‌دهنده</li>
+                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">توجه: از گروه‌های خونی فرعی مثل آنتی‌ژن‌های <bdi dir="ltr">Kell</bdi>، <bdi dir="ltr">Duffy</bdi>، <bdi dir="ltr">Kidd</bdi>، <bdi dir="ltr">Ss</bdi> و K به ندرت و بر اساس وضعیت بالینی بیمار، مورد آزمایش قرار می‌گیرند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">این سؤال توسط وزارت بهداشت، درمان و آموزش پزشکی دو جوابه شد، در حالی که پاسخ "ج" صحیح‌تر است.</p>
+            </div>
+        </section>
+
+        <!-- Section 22: عوارض تزریق خون -->
+        <section id="sec22" class="card p-6">
+            <h2 class="section-title text-xl">22. عوارض تزریق خون</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">مهمترین اقدام برای کاهش عارضه تب‌دار غیرهمولیتیک در تزریق خون کدام است؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">تزریق خون کم لکوسیت</p>
+                <p class="mb-3 leading-relaxed text-gray-700">مرد <bdi dir="ltr">۷۳</bdi> ساله‌ای که به علت پنومونی در <bdi dir="ltr">ICU</bdi> بستری و در حال درمان است. با توجه به آزمایشات امروز بیمار، پزشک تصمیم به ترانسفیوژن یک واحد پک سل طی <bdi dir="ltr">۳</bdi> ساعت می‌گیرد. نیم ساعت بعد از تزریق، بیمار دچار تشدید تنگی نفس و هیپوکسی می‌شود. فشار خون سیستولیک <bdi dir="ltr">۲۰</bdi> <bdi dir="ltr">mmHg</bdi> افزایش می‌یابد. کدام مورد تشدید علائم بیمار را توجیه می‌کند؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">آسیب ریوی حاد به علت ترانسفیوژن (<bdi dir="ltr">TRALI</bdi>)</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-gray-500 text-sm pb-4">
+        <p>📚 تهیه شده از کتاب سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
+        <p class="text-xs mt-2">طراحی شده با <span class="text-red-500">❤️</span> برای دانشجویان پزشکی</p>
+    </footer>
+
+</body>
+</html>

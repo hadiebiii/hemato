@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فصل ۱۱: اختلالات گرانولوسیت و منوسیت - هماتولوژی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .gradient-header {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .exam-tip {
+            background-color: #fef2f2;
+            border-right: 4px solid #ef4444;
+            color: #991b1b;
+        }
+        .diagnosis-box {
+            background-color: #eff6ff;
+            border-right: 4px solid #3b82f6;
+            color: #1e40af;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #111827;
+            font-weight: 800;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            width: 60%;
+            height: 4px;
+            background-color: #3b82f6;
+            border-radius: 2px;
+        }
+        .staging-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .staging-table th {
+            background-color: #3b82f6;
+            color: white;
+            padding: 12px;
+            text-align: right;
+            font-weight: 600;
+        }
+        .staging-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: right;
+        }
+        .staging-table tr:last-child td {
+            border-bottom: none;
+        }
+        .staging-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-right: 4px solid #f59e0b;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .info-card {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-right: 4px solid #3b82f6;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body class="pb-12">
+
+    <!-- Header -->
+    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold">فصل ۱۱: اختلالات گرانولوسیت و منوسیت</h1>
+                <p class="text-white/80 text-sm mt-1">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
+            </div>
+            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
+                ویژه دانشجویان پزشکی
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+        
+        <!-- Navigation -->
+        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+            <a href="#sec1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">واکنش لوکموئید</a>
+            <a href="#sec2" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">اسمیر لکواریتروبالستیک</a>
+            <a href="#sec3" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">نوتروپنی</a>
+            <a href="#sec4" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">ائوزینوفیل و بازوفیل</a>
+            <a href="#sec5" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">خلاصه فصل</a>
+        </nav>
+
+        <!-- Section 1: واکنش لوکموئید -->
+        <section id="sec1" class="card p-6">
+            <h2 class="section-title text-xl">1. واکنش لوکموئید (Leukemoid Reaction)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="info-card">
+                    <h4 class="font-bold text-blue-900 mb-2">📌 تعریف</h4>
+                    <p class="text-blue-800">به افزایش بسیار زیاد تعداد لکوسیت‌ها به بیشتر از <bdi dir="ltr">50,000</bdi> به همراه آزاد شدن زودرس پیش‌سازهای میلوئید، واکنش لوکموئید گفته می‌شود.</p>
+                </div>
+
+                <h3 class="font-bold text-lg text-blue-700 mt-6 mb-3">ویژگی‌های تشخیصی</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>ویژگی</th>
+                                <th>توضیحات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><bdi dir="ltr">WBC Count</bdi></td>
+                                <td>افزایش تعداد لکوسیت‌ها به بیش از <bdi dir="ltr">50,000</bdi></td>
+                            </tr>
+                            <tr>
+                                <td>شیفت به چپ</td>
+                                <td>افزایش پیش‌سازهای میلوئید (میلوباست، پرومیلوسیت و میلوسیت)</td>
+                            </tr>
+                            <tr>
+                                <td>گرانولاسیون توکسیک</td>
+                                <td>گرانولاسیون‌های توکسیک سیتوپلاسمیک</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="font-bold text-lg text-blue-700 mt-6 mb-3">اتیولوژی</h3>
+                <p class="mb-3 leading-relaxed text-gray-700">افزایش لکوسیت‌ها در واکنش لوکموئید معمولاً به علت <strong>عفونت و التهاب</strong> است.</p>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته امتحانی:</strong> مهمترین تشخیص افتراقی واکنش لوکموئید، بیماری‌های میلوپرولیفراتیو (به ویژه <bdi dir="ltr">CML</bdi>) است.
+                </div>
+
+                <h3 class="font-bold text-lg text-blue-700 mt-6 mb-3">افتراق واکنش لوکموئید از <bdi dir="ltr">CML</bdi></h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>ویژگی</th>
+                                <th>واکنش لوکموئید</th>
+                                <th><bdi dir="ltr">CML</bdi></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><bdi dir="ltr">LAP Score</bdi></td>
+                                <td>بالا ↑</td>
+                                <td>پایین ↓</td>
+                            </tr>
+                            <tr>
+                                <td>گرانولاسیون توکسیک</td>
+                                <td>وجود دارد +</td>
+                                <td>وجود ندارد -</td>
+                            </tr>
+                            <tr>
+                                <td>بازوفیلی</td>
+                                <td>کم یا نرمال</td>
+                                <td>افزایش یافته</td>
+                            </tr>
+                            <tr>
+                                <td>اسپلنومگالی</td>
+                                <td>خفیف یا ندارد</td>
+                                <td>شدید</td>
+                            </tr>
+                            <tr>
+                                <td>کروموزوم <bdi dir="ltr">Philadelphia</bdi></td>
+                                <td>منفی</td>
+                                <td>مثبت (<bdi dir="ltr">95%</bdi>)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: اسمیر لکواریتروبالستیک -->
+        <section id="sec2" class="card p-6">
+            <h2 class="section-title text-xl">2. اسمیر لکواریتروبالستیک (Leukoerythroblastic Smear)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="info-card">
+                    <h4 class="font-bold text-blue-900 mb-2">📌 تعریف</h4>
+                    <p class="text-blue-800">الگوی لکواریتروبالستیک به علت <strong>انفیلتراسیون مغز استخوان</strong> توسط بافت فیبروز، گرانولوم یا نئوپلاسم ایجاد شده که به این پدیده <strong>میلوفتیزی</strong> گفته می‌شود.</p>
+                </div>
+
+                <h3 class="font-bold text-lg text-blue-700 mt-6 mb-3">یافته‌های تشخیصی در اسمیر خون محیطی</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-blue-50 p-4 rounded-lg border-r-4 border-blue-400">
+                        <h4 class="font-bold text-blue-800 mb-2">تغییرات <bdi dir="ltr">WBC</bdi></h4>
+                        <p class="text-gray-700">• گرانولوسیت‌های نابالغ</p>
+                    </div>
+                    
+                    <div class="bg-red-50 p-4 rounded-lg border-r-4 border-red-400">
+                        <h4 class="font-bold text-red-800 mb-2">تغییرات <bdi dir="ltr">RBC</bdi></h4>
+                        <p class="text-gray-700">• گلبول‌های قرمز قطره اشکی (<bdi dir="ltr">Teardrop cells</bdi>)</p>
+                        <p class="text-gray-700">• گلبول‌های قرمز هسته‌دار (<bdi dir="ltr">nRBC</bdi>)</p>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-4 rounded-lg border-r-4 border-purple-400">
+                        <h4 class="font-bold text-purple-800 mb-2">تغییرات پلاکت</h4>
+                        <p class="text-gray-700">• افزایش تعداد پلاکت‌ها</p>
+                    </div>
+                    
+                    <div class="bg-yellow-50 p-4 rounded-lg border-r-4 border-yellow-400">
+                        <h4 class="font-bold text-yellow-800 mb-2">نام دیگر</h4>
+                        <p class="text-gray-700">• میلوفتیزی (<bdi dir="ltr">Myelophthisis</bdi>)</p>
+                    </div>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته کلیدی:</strong> سلول‌های قطره اشکی (<bdi dir="ltr">Teardrop cells</bdi>) یافته کلاسیک میلوفیبروز و اسمیر لکواریتروبالستیک هستند.
+                </div>
+
+                <h3 class="font-bold text-lg text-blue-700 mt-6 mb-3">علل شایع اسمیر لکواریتروبالستیک</h3>
+                
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                    <li class="leading-relaxed text-gray-700"><strong>میلوفیبروز اولیه</strong> (<bdi dir="ltr">Primary Myelofibrosis</bdi>)</li>
+                    <li class="leading-relaxed text-gray-700"><strong>متاستاز سرطان</strong> به مغز استخوان (پستان، پروستات، ریه)</li>
+                    <li class="leading-relaxed text-gray-700"><strong>لنفوم</strong> با درگیری مغز استخوان</li>
+                    <li class="leading-relaxed text-gray-700"><strong>بیماری‌های گرانولوماتوز</strong> (سل، سارکوئیدوز)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 3: نوتروپنی -->
+        <section id="sec3" class="card p-6">
+            <h2 class="section-title text-xl">3. نوتروپنی (Neutropenia)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="info-card">
+                    <h4 class="font-bold text-blue-900 mb-2">📌 تعریف</h4>
+                    <p class="text-blue-800">نوتروپنی به کاهش تعداد نوتروفیل‌ها در خون محیطی گفته می‌شود. معمولاً نوتروفیل کمتر از <bdi dir="ltr">1500/μL</bdi> را نوتروپنی می‌نامند.</p>
+                </div>
+
+                <h3 class="font-bold text-lg text-blue-700 mt-6 mb-3">علل دارویی نوتروپنی</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <h4 class="font-bold text-md text-gray-700 mb-2">1. سرکوب مغز استخوان وابسته به دوز</h4>
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>دسته دارویی</th>
+                                <th>مثال‌ها</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>شیمی‌درمانی</td>
+                                <td>اکثر داروهای شیمی‌درمانی</td>
+                            </tr>
+                            <tr>
+                                <td>آنتی‌بیوتیک‌ها</td>
+                                <td><bdi dir="ltr">Cotrimoxazole</bdi> (کوتریموکسازول)</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><bdi dir="ltr">Chloramphenicol</bdi> (کلرامفنیکل)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="mb-3 leading-relaxed text-gray-700">یکی از عوارض شایع داروهای شیمی‌درمانی و آنتی‌بیوتیک‌ها (مانند کوتریموکسازول و کلرامفنیکل) سرکوب مغز استخوان (وابسته به دوز) است.</p>
+
+                <div class="overflow-x-auto mb-4">
+                    <h4 class="font-bold text-md text-gray-700 mb-2">2. واکنش ایدیوسنکراتیک (نادر)</h4>
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>دسته دارویی</th>
+                                <th>داروها</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>آنتی‌بیوتیک</td>
+                                <td><bdi dir="ltr">Chloramphenicol</bdi></td>
+                            </tr>
+                            <tr>
+                                <td>التهاب روده</td>
+                                <td><bdi dir="ltr">Sulfasalazine</bdi> (سولفاسالازین)</td>
+                            </tr>
+                            <tr>
+                                <td>روان‌پزشکی</td>
+                                <td><bdi dir="ltr">Clozapine</bdi> (کلوزاپین)</td>
+                            </tr>
+                            <tr>
+                                <td>ضدانعقاد</td>
+                                <td><bdi dir="ltr">Ticlopidine</bdi> (تیکلوپیدین)</td>
+                            </tr>
+                            <tr>
+                                <td>ضدتیروئید</td>
+                                <td>تیونامیدها (<bdi dir="ltr">PTU, Methimazole</bdi>)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته امتحانی مهم:</strong> کلرامفنیکل هم با سرکوب مغز استخوان وابسته به دوز و هم با ایجاد واکنش ایدیوسنکراتیک (آپلازی مغز استخوان) موجب نوتروپنی می‌شود.
+                </div>
+
+                <h3 class="font-bold text-lg text-blue-700 mt-6 mb-3">درمان نوتروپنی دارویی</h3>
+                
+                <div class="bg-green-50 p-4 rounded-lg border-r-4 border-green-500 mb-3">
+                    <h4 class="font-bold text-green-800 mb-2">✅ رویکرد درمانی</h4>
+                    <ol class="list-decimal mr-6 space-y-2">
+                        <li class="text-gray-700"><strong>قطع فوری داروی مشکوک</strong></li>
+                        <li class="text-gray-700">تجویز <bdi dir="ltr">G-CSF</bdi> (فاکتور محرک کلونی گرانولوسیت) برای تسریع بهبودی</li>
+                        <li class="text-gray-700">پوشش آنتی‌بیوتیکی در صورت عفونت یا تب</li>
+                    </ol>
+                </div>
+
+                <p class="mb-3 leading-relaxed text-gray-700">نوتروپنی دارویی سریعاً به قطع داروی نوتروپنیک پاسخ می‌دهد. تجویز <bdi dir="ltr">G-CSF</bdi> به تسریع بهبودی کمک می‌کند.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: ائوزینوفیل‌ها و بازوفیل‌ها -->
+        <section id="sec4" class="card p-6">
+            <h2 class="section-title text-xl">4. ائوزینوفیل‌ها و بازوفیل‌ها</h2>
+            
+            <div class="space-y-4 mt-4">
+                <h3 class="font-bold text-lg text-purple-700 mt-4 mb-3">ائوزینوفیلی (Eosinophilia)</h3>
+                
+                <div class="bg-purple-50 p-4 rounded-lg border-r-4 border-purple-400 mb-4">
+                    <h4 class="font-bold text-purple-800 mb-2">علل افزایش ائوزینوفیل</h4>
+                    <ul class="list-disc mr-6 space-y-2">
+                        <li class="text-gray-700"><strong>عفونت‌های انگلی و کرمی</strong></li>
+                        <li class="text-gray-700"><strong>واکنش‌های آلرژیک</strong> (آسم، درماتیت آتوپیک)</li>
+                        <li class="text-gray-700"><strong>بیماری‌های کالژن واسکولار</strong></li>
+                        <li class="text-gray-700"><strong>بدخیمی‌ها</strong> (لنفوم هوچکین، لوسمی‌ها)</li>
+                        <li class="text-gray-700"><strong>سندرم هایپرائوزینوفیلیک</strong></li>
+                    </ul>
+                </div>
+
+                <p class="mb-3 leading-relaxed text-gray-700">در عفونت‌های انگلی و کرمی، واکنش‌های آلرژیک و بیماری‌های کالژن واسکولار تعداد ائوزینوفیل‌ها افزایش می‌یابد.</p>
+
+                <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">بازوفیلی (Basophilia)</h3>
+                
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته امتحانی:</strong> تعداد بازوفیل‌ها در لوسمی میلوئید مزمن (<bdi dir="ltr">CML</bdi>) به میزان قابل توجهی بالا می‌رود.
+                </div>
+
+                <div class="bg-orange-50 p-4 rounded-lg border-r-4 border-orange-400 mb-4">
+                    <h4 class="font-bold text-orange-800 mb-2">علل افزایش بازوفیل</h4>
+                    <ul class="list-disc mr-6 space-y-2">
+                        <li class="text-gray-700"><strong><bdi dir="ltr">CML</bdi></strong> (شایع‌ترین علت)</li>
+                        <li class="text-gray-700"><strong>پلی‌سیتمی ورا</strong></li>
+                        <li class="text-gray-700"><strong>میلوفیبروز</strong></li>
+                        <li class="text-gray-700"><strong>هیپوتیروئیدیسم</strong></li>
+                        <li class="text-gray-700"><strong>واکنش‌های آلرژیک</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: خلاصه فصل -->
+        <section id="sec5" class="card p-6">
+            <h2 class="section-title text-xl">5. خلاصه فصل</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="highlight-box">
+                    <h3 class="font-bold text-lg mb-3">🎯 نکات کلیدی فصل 11</h3>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-blue-800">واکنش لوکموئید:</strong>
+                            <p class="text-sm mt-1"><bdi dir="ltr">WBC > 50,000</bdi> با شیفت به چپ، گرانولاسیون توکسیک، <bdi dir="ltr">LAP</bdi> بالا (افتراق از <bdi dir="ltr">CML</bdi>)</p>
+                        </div>
+                        
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-blue-800">اسمیر لکواریتروبالستیک:</strong>
+                            <p class="text-sm mt-1">سلول‌های قطره اشکی + <bdi dir="ltr">nRBC</bdi> + گرانولوسیت‌های نابالغ = میلوفتیزی (انفیلتراسیون مغز استخوان)</p>
+                        </div>
+                        
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-blue-800">نوتروپنی دارویی:</strong>
+                            <p class="text-sm mt-1">کلرامفنیکل: هم وابسته به دوز، هم ایدیوسنکراتیک / درمان: قطع دارو + <bdi dir="ltr">G-CSF</bdi></p>
+                        </div>
+                        
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-blue-800">ائوزینوفیلی:</strong>
+                            <p class="text-sm mt-1">انگل‌ها، آلرژی، کالژن واسکولار</p>
+                        </div>
+                        
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-blue-800">بازوفیلی:</strong>
+                            <p class="text-sm mt-1"><bdi dir="ltr">CML</bdi> شایع‌ترین علت</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-gray-500 text-sm pb-4">
+        <p>📚 تهیه شده از کتاب سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
+        <p class="text-xs mt-2">طراحی شده با <span class="text-red-500">❤️</span> برای دانشجویان پزشکی</p>
+    </footer>
+
+</body>
+</html>
