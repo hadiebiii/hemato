@@ -34,13 +34,17 @@
       min-height: 100vh;
     }
 
+    /* =====================
+      Sidebar Styles
+      =====================
+    */
     .sidebar {
       position: fixed;
       top: 0;
       right: 0;
       width: 290px;
       height: 100vh;
-      padding: 24px 20px;
+      padding: 80px 20px 24px; /* Padding top added to clear the toggle button */
       background: #0f172a;
       color: #e2e8f0;
       box-shadow: -10px 0 40px rgba(15, 23, 42, 0.18);
@@ -49,11 +53,28 @@
       z-index: 1000;
     }
 
-    .sidebar.mobile-open {
-      transform: translateX(0);
+    .sidebar::-webkit-scrollbar {
+      width: 6px;
     }
 
-   
+    .sidebar::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+
+    .sidebar::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 3px;
+    }
+
+    .sidebar::-webkit-scrollbar-thumb:hover {
+      background: #475569;
+    }
+
+    /* Desktop collapsed state */
+    .sidebar.collapsed {
+      transform: translateX(100%);
+    }
+
     .sidebar-header {
       margin-bottom: 18px;
     }
@@ -123,20 +144,21 @@
       border: 1px solid rgba(255, 255, 255, 0.12);
     }
 
-    .sidebar-footer {
-      margin-top: 28px;
-      padding-top: 18px;
-      border-top: 1px solid rgba(203, 213, 225, 0.18);
-      color: #94a3b8;
-      font-size: 0.88rem;
-      text-align: center;
-    }
-
+    /* =====================
+      Main Content Styles
+      =====================
+    */
     .main-content {
       flex: 1;
       margin-right: 290px;
       min-height: 100vh;
       padding: 0;
+      transition: margin-right 0.3s ease;
+    }
+
+    /* Desktop expanded state */
+    .main-content.expanded {
+      margin-right: 0;
     }
 
     .welcome-screen,
@@ -145,8 +167,8 @@
     }
 
     .welcome-screen {
-      background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.15), transparent 40%),
-        linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%);
+      background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.12), transparent 50%),
+        linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -159,23 +181,30 @@
       width: 100%;
       padding: 42px 32px;
       border-radius: 28px;
-      background: rgba(255, 255, 255, 0.94);
-      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
-      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.05);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+    }
+
+    .chapter-kicker {
+      color: #4f46e5; 
+      font-weight: 800; 
+      margin-bottom: 8px;
+      font-size: 0.9rem;
     }
 
     .welcome-title {
       font-size: clamp(2.4rem, 4vw, 3.6rem);
       margin: 0;
-      line-height: 1.05;
-      letter-spacing: 0.02em;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
       font-weight: 900;
       color: #0f172a;
     }
 
     .welcome-subtitle {
       margin: 18px 0 16px;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       line-height: 1.7;
       color: #334155;
     }
@@ -183,8 +212,8 @@
     .welcome-description {
       margin: 0 auto 30px;
       max-width: 720px;
-      color: #475569;
-      font-size: 1rem;
+      color: #64748b;
+      font-size: 1.05rem;
       line-height: 1.85;
     }
 
@@ -199,33 +228,40 @@
     .button-secondary {
       border: 0;
       border-radius: 14px;
-      padding: 14px 22px;
+      padding: 14px 26px;
       font-size: 1rem;
       font-weight: 700;
       cursor: pointer;
-      transition: transform 0.22s ease, box-shadow 0.22s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
       text-decoration: none;
     }
 
     .button-primary {
       background: #4f46e5;
       color: #ffffff;
-      box-shadow: 0 18px 30px rgba(79, 70, 229, 0.18);
+      box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
     }
 
     .button-secondary {
-      background: transparent;
+      background: #f1f5f9;
       color: #0f172a;
-      border: 1px solid rgba(15, 23, 42, 0.12);
+      border: 1px solid #e2e8f0;
     }
 
-    .button-primary:hover,
+    .button-primary:hover {
+      transform: translateY(-2px);
+      background: #4338ca;
+      box-shadow: 0 12px 24px rgba(79, 70, 229, 0.35);
+    }
+
     .button-secondary:hover {
-      transform: translateY(-1px);
+      background: #e2e8f0;
+      transform: translateY(-2px);
     }
 
     .reader-shell {
       padding: 24px;
+      padding-top: 80px; /* Space for the floating button */
       background: #f8fafc;
     }
 
@@ -237,8 +273,12 @@
       background: transparent;
     }
 
-    .mobile-menu-btn {
-      display: none;
+    /* =====================
+      Universal Toggle Button
+      =====================
+    */
+    .menu-toggle-btn {
+      display: inline-flex;
       position: fixed;
       top: 20px;
       right: 20px;
@@ -247,12 +287,18 @@
       height: 48px;
       border: 0;
       border-radius: 16px;
-      background: #0f172a;
+      background: #4f46e5;
       color: #ffffff;
       cursor: pointer;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 16px 32px rgba(15, 23, 42, 0.18);
+      box-shadow: 0 8px 24px rgba(79, 70, 229, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .menu-toggle-btn:hover {
+      background: #4338ca;
+      transform: scale(1.05);
     }
 
     .sidebar-backdrop {
@@ -261,15 +307,20 @@
       inset: 0;
       background: rgba(15, 23, 42, 0.42);
       z-index: 999;
+      backdrop-filter: blur(2px);
     }
 
     .hidden {
       display: none !important;
     }
 
+    /* =====================
+      Responsive Media Queries
+      =====================
+    */
     @media (max-width: 992px) {
       .main-content {
-        margin-right: 0;
+        margin-right: 0 !important;
       }
       .sidebar {
         width: 100%;
@@ -277,8 +328,8 @@
         right: 0;
         transform: translateX(100%);
       }
-      .mobile-menu-btn {
-        display: inline-flex;
+      .sidebar.mobile-open {
+        transform: translateX(0);
       }
       .sidebar-backdrop {
         display: none;
@@ -300,7 +351,8 @@
         font-size: 0.98rem;
       }
       .reader-shell {
-        padding: 18px;
+        padding: 12px;
+        padding-top: 80px; 
       }
       .chapter-frame {
         min-height: 80vh;
@@ -309,12 +361,14 @@
   </style>
 </head>
 <body>
-  <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="باز کردن فهرست فصل‌ها">
+  <!-- دکمه منو ثابت در دسکتاپ و موبایل -->
+  <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="باز و بسته کردن فهرست فصول">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </button>
 
+  <!-- سایدبار -->
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <h1 class="sidebar-title">خلاصه جامع هماتولوژی</h1>
@@ -322,22 +376,17 @@
     </div>
 
     <nav class="chapter-list" id="chaptersList" aria-label="فهرست فصول"></nav>
-
-    <div class="sidebar-footer">
-      <p>فهرست در اندازه‌ی موبایل قابل باز و بسته شدن است.</p>
-    </div>
   </aside>
 
+  <!-- محتوای اصلی -->
   <main class="main-content" id="mainContent">
     <section class="welcome-screen" id="welcomeScreen">
       <div class="welcome-card">
         <p class="chapter-kicker">محتوای آموزشی</p>
-        <h1 class="welcome-title">یک پلتفرم مطالعه‌ی هماتولوژی طراحی شده برای آزمون</h1>
-        <p class="welcome-subtitle">در هر فصل، ساختار مطالعهٔ خوانا و قاب‌های آموزشی با تجربه‌ی مطالعه‌ی سریع فراهم شده است.</p>
-        <p class="welcome-description">برای شروع، یک فصل را از فهرست انتخاب کنید. هر فصل در محیطی ایزوله از طریق قاب iframe بارگذاری می‌شود تا سبک‌ها و سرصفحه‌ها یکدیگر را تحت تأثیر قرار ندهند.</p>
+        <h1 class="welcome-title">پلتفرم مطالعه‌ی هماتولوژی</h1>
         <div class="welcome-actions">
           <button class="button-primary" type="button" id="startButton">شروع مطالعه</button>
-          <a class="button-secondary" href="#chaptersList">رفتن به فهرست فصول</a>
+          <a class="button-secondary" href="#chaptersList" onclick="openSidebarIfClosed(event)">مشاهده فهرست فصول</a>
         </div>
       </div>
     </section>
@@ -353,6 +402,7 @@
     </section>
   </main>
 
+  <!-- لایه‌ی تاریک برای نسخه موبایل -->
   <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
 
   <script>
@@ -395,7 +445,7 @@
               <span class="chapter-number">${chapter.number}</span>
               <span>${chapter.title}</span>
             </div>
-            ${disabled ? '<span>به زودی</span>' : ''}
+            ${disabled ? '<span style="font-size: 0.8em; opacity: 0.7;">به زودی</span>' : ''}
           </div>
         `;
       }).join('');
@@ -432,11 +482,16 @@
       showReader();
       setActiveChapter(chapter.number);
       if (updateHistory) {
-        window.location.hash = `chapter-${chapter.number}`;
+        window.history.replaceState(null, null, `#chapter-${chapter.number}`);
       }
+      
+      chapterFrame.style.height = '100vh'; // Reset height temporarily
       chapterFrame.src = `chapters/${chapter.file}`;
       window.scrollTo({ top: 0, behavior: 'smooth' });
-      closeMobileSidebar();
+      
+      if (window.innerWidth <= 992) {
+        closeMobileSidebar();
+      }
     }
 
     function showReader() {
@@ -444,14 +499,33 @@
       readerShell.classList.remove('hidden');
     }
 
-    function toggleMobileSidebar() {
-      const opened = sidebar.classList.toggle('mobile-open');
-      backdrop.classList.toggle('active', opened);
+    // Toggle for both Desktop and Mobile
+    function toggleSidebar() {
+      if (window.innerWidth <= 992) {
+        // Mobile Logic
+        const opened = sidebar.classList.toggle('mobile-open');
+        backdrop.classList.toggle('active', opened);
+      } else {
+        // Desktop Logic
+        sidebar.classList.toggle('collapsed');
+        mainContent.classList.toggle('expanded');
+      }
     }
 
     function closeMobileSidebar() {
-      sidebar.classList.remove('mobile-open');
-      backdrop.classList.remove('active');
+      if (window.innerWidth <= 992) {
+        sidebar.classList.remove('mobile-open');
+        backdrop.classList.remove('active');
+      }
+    }
+
+    function openSidebarIfClosed(event) {
+        event.preventDefault();
+        if (window.innerWidth <= 992 && !sidebar.classList.contains('mobile-open')) {
+            toggleSidebar();
+        } else if (window.innerWidth > 992 && sidebar.classList.contains('collapsed')) {
+            toggleSidebar();
+        }
     }
 
     function handleHash() {
@@ -473,15 +547,19 @@
     }
 
     function resizeChapterFrame() {
-      if (!chapterFrame || !chapterFrame.contentWindow || !chapterFrame.contentDocument) return;
-      const doc = chapterFrame.contentDocument;
-      const height = Math.max(
-        doc.body.scrollHeight,
-        doc.documentElement.scrollHeight,
-        doc.body.offsetHeight,
-        doc.documentElement.offsetHeight
-      );
-      chapterFrame.style.height = height + 40 + 'px';
+      if (!chapterFrame || !chapterFrame.contentWindow || !chapterFrame.contentDocument || readerShell.classList.contains('hidden')) return;
+      try {
+        const doc = chapterFrame.contentDocument;
+        const height = Math.max(
+          doc.body.scrollHeight,
+          doc.documentElement.scrollHeight,
+          doc.body.offsetHeight,
+          doc.documentElement.offsetHeight
+        );
+        chapterFrame.style.height = (height + 40) + 'px';
+      } catch (e) {
+        console.warn("Cannot resize iframe due to CORS or loading state.", e);
+      }
     }
 
     chapterFrame.addEventListener('load', () => {
@@ -494,7 +572,7 @@
     window.addEventListener('hashchange', handleHash);
 
     backdrop.addEventListener('click', closeMobileSidebar);
-    document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileSidebar);
+    document.getElementById('menuToggleBtn').addEventListener('click', toggleSidebar);
     startButton.addEventListener('click', () => {
       const firstIndex = chapters.findIndex(chapter => chapter.available);
       if (firstIndex >= 0) loadChapter(firstIndex);
