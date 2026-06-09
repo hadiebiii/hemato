@@ -4,130 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فصل ۹: لوسمی میلوئید مزمن (CML)</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .gradient-header {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .exam-tip {
-            background-color: #fef2f2;
-            border-right: 4px solid #ef4444;
-            color: #991b1b;
-        }
-        .diagnosis-box {
-            background-color: #eff6ff;
-            border-right: 4px solid #3b82f6;
-            color: #1e40af;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #111827;
-            font-weight: 800;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            right: 0;
-            width: 60%;
-            height: 4px;
-            background-color: #10b981;
-            border-radius: 2px;
-        }
-        .comparison-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .comparison-table th {
-            background-color: #10b981;
-            color: white;
-            padding: 12px;
-            text-align: center;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        .comparison-table td {
-            padding: 10px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: center;
-            font-size: 13px;
-        }
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-        .comparison-table tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
-            border-right: 4px solid #10b981;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .treatment-box {
-            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-            border-right: 4px solid #3b82f6;
-            padding: 1rem;
-            border-radius: 8px;
-        }
-        .phase-chronic {
-            background: #d1fae5;
-            color: #065f46;
-            font-weight: 600;
-        }
-        .phase-accelerated {
-            background: #fef3c7;
-            color: #92400e;
-            font-weight: 600;
-        }
-        .phase-blast {
-            background: #fee2e2;
-            color: #991b1b;
-            font-weight: 600;
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/hemato-chapter.css">
 </head>
-<body class="pb-12">
+<body>
 
     <!-- Header -->
-    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold">فصل ۹: لوسمی میلوئید مزمن (<bdi dir="ltr">CML</bdi>)</h1>
-                <p class="text-emerald-100 text-sm mt-1">خلاصه جامع هماتولوژی (صفحات ۱۶۵-۱۷۶)</p>
-            </div>
-            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
-                ویژه دانشجویان پزشکی
-            </div>
+    <header class="chapter-hero">
+        <div class="chapter-hero-content">
+          <p class="chapter-kicker">هماتولوژی</p>
+          <h1>فصل ۹: لوسمی میلوئید مزمن (<bdi dir="ltr">CML</bdi>)</h1>
+          <p class="chapter-subtitle">خلاصه جامع هماتولوژی (صفحات ۱۶۵-۱۷۶)</p>
         </div>
-    </header>
+      </header>
 
-    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+    <main class="chapter-page">
 
         <!-- Navigation -->
-        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+        <nav class="chapter-mini-nav" aria-label="فهرست داخلی فصل">
             <a href="#clinical" class="bg-white px-4 py-2 rounded-full shadow hover:bg-emerald-50 text-emerald-700 whitespace-nowrap">تظاهرات بالینی</a>
             <a href="#philadelphia" class="bg-white px-4 py-2 rounded-full shadow hover:bg-emerald-50 text-emerald-700 whitespace-nowrap">کروموزوم فیلادلفیا</a>
             <a href="#transformation" class="bg-white px-4 py-2 rounded-full shadow hover:bg-emerald-50 text-emerald-700 whitespace-nowrap">ترانسفورماسیون</a>
@@ -138,10 +32,10 @@
         </nav>
 
         <!-- Section 1: تظاهرات بالینی و آزمایشگاهی -->
-        <section id="clinical" class="card p-6">
-            <h2 class="section-title text-xl">۱. تظاهرات بالینی و آزمایشگاهی</h2>
+        <section id="clinical" class="study-section">
+            <h2 class="section-title">۱. تظاهرات بالینی و آزمایشگاهی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- اپیدمیولوژی -->
                 <div class="bg-emerald-50 p-4 rounded-lg">
                     <h3 class="font-bold text-emerald-800 mb-2">اپیدمیولوژی و پاتوژنز</h3>
@@ -245,9 +139,9 @@
 
         <!-- Section 2: کروموزوم فیلادلفیا -->
         <section id="philadelphia" class="card p-6 border-t-4 border-purple-500">
-            <h2 class="section-title text-xl text-purple-700">۲. کروموزوم فیلادلفیا</h2>
+            <h2 class="section-title text-xl text-purple-700">۲. کروموزوم فیلادلفیا</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="bg-purple-50 p-4 rounded-lg">
                     <h3 class="font-bold text-purple-800 mb-3">تشخیص <bdi dir="ltr">CML</bdi></h3>
                     <div class="space-y-2 text-sm">
@@ -301,9 +195,9 @@
 
         <!-- Section 3: ترانسفورماسیون -->
         <section id="transformation" class="card p-6 border-t-4 border-orange-500">
-            <h2 class="section-title text-xl text-orange-700">۳. ترانسفورماسیون <bdi dir="ltr">CML</bdi></h2>
+            <h2 class="section-title text-xl text-orange-700">۳. ترانسفورماسیون <bdi dir="ltr">CML</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="bg-orange-50 p-4 rounded-lg">
                     <h3 class="font-bold text-orange-800 mb-2">تعریف</h3>
                     <p class="text-sm text-orange-900">
@@ -412,9 +306,9 @@
 
         <!-- Section 4: درمان -->
         <section id="treatment" class="card p-6 border-t-4 border-blue-500">
-            <h2 class="section-title text-xl text-blue-700">۴. درمان <bdi dir="ltr">CML</bdi></h2>
+            <h2 class="section-title text-xl text-blue-700">۴. درمان <bdi dir="ltr">CML</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="exam-tip p-4 rounded-lg">
                     <h3 class="font-bold mb-2">
                         <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -491,7 +385,7 @@
                 </div>
 
                 <!-- هدف درمان -->
-                <div class="highlight-box">
+                <div class="study-box box-compare highlight-box">
                     <h3 class="font-bold mb-2">هدف از درمان</h3>
                     <div class="space-y-2 text-sm">
                         <p class="text-xs mb-2">
@@ -516,9 +410,9 @@
 
         <!-- Section 5: مانیتورینگ درمان -->
         <section id="monitoring" class="card p-6 border-t-4 border-indigo-500">
-            <h2 class="section-title text-xl text-indigo-700">۵. مانیتورینگ درمان</h2>
+            <h2 class="section-title text-xl text-indigo-700">۵. مانیتورینگ درمان</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="exam-tip p-4 rounded-lg">
                     <h3 class="font-bold mb-3">
                         <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -573,9 +467,9 @@
 
         <!-- Section 6: درمان CML در حاملگی -->
         <section id="pregnancy" class="card p-6 border-t-4 border-pink-500">
-            <h2 class="section-title text-xl text-pink-700">۶. درمان <bdi dir="ltr">CML</bdi> در حاملگی</h2>
+            <h2 class="section-title text-xl text-pink-700">۶. درمان <bdi dir="ltr">CML</bdi> در حاملگی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="exam-tip p-4 rounded-lg">
                     <h3 class="font-bold mb-2">
                         <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -642,9 +536,9 @@
 
         <!-- Section 7: اثرات کروموزومی TKI -->
         <section id="chromosomal" class="card p-6 border-t-4 border-teal-500">
-            <h2 class="section-title text-xl text-teal-700">۷. اثرات کروموزومی درمان با <bdi dir="ltr">TKI</bdi></h2>
+            <h2 class="section-title text-xl text-teal-700">۷. اثرات کروموزومی درمان با <bdi dir="ltr">TKI</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="bg-teal-50 p-4 rounded-lg">
                     <h3 class="font-bold text-teal-800 mb-3">تغییرات کروموزومی در سلول‌های فیالدلفیا منفی</h3>
                     <div class="space-y-2 text-sm">
@@ -683,7 +577,7 @@
 
         <!-- Section 8: Follow Up -->
         <section class="card p-6 bg-gray-800 text-white">
-            <h2 class="text-xl font-bold mb-4 text-yellow-400">نکات کلیدی <bdi dir="ltr">Follow Up</bdi></h2>
+            <h2 class="text-xl font-bold mb-4 text-yellow-400">نکات کلیدی <bdi dir="ltr">Follow Up</bdi></h2></header>
             
             <div class="space-y-3 text-sm">
                 <div class="bg-gray-700 p-3 rounded">

@@ -4,126 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فصل ۱: آنمی و پلی‌سیتمی - هماتولوژی</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .gradient-header {
-            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .exam-tip {
-            background-color: #fef2f2;
-            border-right: 4px solid #ef4444;
-            color: #991b1b;
-        }
-        .diagnosis-box {
-            background-color: #eff6ff;
-            border-right: 4px solid #3b82f6;
-            color: #1e40af;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #111827;
-            font-weight: 800;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            right: 0;
-            width: 60%;
-            height: 4px;
-            background-color: #3b82f6;
-            border-radius: 2px;
-        }
-        .staging-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .staging-table th {
-            background-color: #3b82f6;
-            color: white;
-            padding: 12px;
-            text-align: right;
-            font-weight: 600;
-        }
-        .staging-table td {
-            padding: 12px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: right;
-        }
-        .staging-table tr:last-child td {
-            border-bottom: none;
-        }
-        .staging-table tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            border-right: 4px solid #f59e0b;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/hemato-chapter.css">
 </head>
-<body class="pb-12">
+<body>
 
     <!-- Header -->
-    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold">فصل ۱: آنمی و پلی‌سیتمی</h1>
-                <p class="text-white/80 text-sm mt-1">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
-            </div>
-            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
-                ویژه دانشجویان پزشکی
-            </div>
+    <header class="chapter-hero">
+        <div class="chapter-hero-content">
+          <p class="chapter-kicker">هماتولوژی</p>
+          <h1>فصل ۱: آنمی و پلی‌سیتمی</h1>
+          <p class="chapter-subtitle">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
         </div>
-    </header>
+      </header>
 
-    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+    <main class="chapter-page">
         <!-- Navigation -->
-        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+        <nav class="chapter-mini-nav" aria-label="فهرست داخلی فصل">
             <a href="#sec1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">نحوه برخورد با آنمی</a>
             <a href="#sec2" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">ارزیابی‌های آزمایشگاهی</a>
             <a href="#sec3" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">طبقه بندی آنمی‌ها</a>
@@ -147,10 +44,10 @@
         </nav>
 
         <!-- Section 1: نحوه برخورد با آنمی -->
-        <section id="sec1" class="card p-6">
-            <h2 class="section-title text-xl">1. نحوه برخورد با آنمی</h2>
+        <section id="sec1" class="study-section">
+            <header class="section-header"><span class="section-number">1</span><h2 class="section-title">1. نحوه برخورد با آنمی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی حاد دو علت اصلی دارد که عبارتند از:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">اتلاف خون (<bdi dir="ltr">Blood loss</bdi>)</li>
@@ -169,10 +66,10 @@
         </section>
 
         <!-- Section 2: ارزیابی‌های آزمایشگاهی -->
-        <section id="sec2" class="card p-6">
-            <h2 class="section-title text-xl">2. ارزیابی‌های آزمایشگاهی</h2>
+        <section id="sec2" class="study-section">
+            <header class="section-header"><span class="section-number">2</span><h2 class="section-title">2. ارزیابی‌های آزمایشگاهی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">RDW (Red Cell Distribution Width</bdi>): تفاوت در اندازه گلبول‌های قرمز را مشخص نموده، آنیزوسیتوز را نشان می‌دهد. میزان <bdi dir="ltr">RDW</bdi> بر مبنای رابطه زیر به دست می‌آید: <bdi dir="ltr">RDW</bdi> = (انحراف استاندارد <bdi dir="ltr">MCV / MCV</bdi> میانگین) * <bdi dir="ltr">100</bdi> طبیعی <bdi dir="ltr">RDW</bdi> بین <bdi dir="ltr">10</bdi> تا <bdi dir="ltr">14%</bdi> است. در آنیزوسیتوز، <bdi dir="ltr">RDW</bdi> به <bdi dir="ltr">15</bdi> تا <bdi dir="ltr">18%</bdi> می‌رسد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">کاربرد <bdi dir="ltr">RDW</bdi>: مهمترین کاربرد آن افتراق بین آنمی فقر آهن و تالاسمی است که هر دو موجب آنمی میکروسیتیک می‌شوند. در آنمی فقر آهن، چون آنیزوسیتوز وجود دارد (تفاوت در اندازه <bdi dir="ltr">RBC</bdi>)، <bdi dir="ltr">RDW</bdi> افزایش می‌یابد؛ در حالی که در تالاسمی چون گلبول‌های قرمز شکل و سایز یکسانی دارند، <bdi dir="ltr">RDW</bdi> افزایش پیدا نمی‌کند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">پلی‌کرومازی: به تفاوت رنگ گلبول‌های قرمز گفته می‌شود. علت ایجاد پلی‌کرومازی، رتیکولوسیتوز است. پلی‌کرومازی در حقیقت نشان‌دهنده رتیکولوسیت‌هایی هستند که به صورت زودرس از مغز استخوان آزاد شده‌اند.</p>
@@ -183,10 +80,10 @@
         </section>
 
         <!-- Section 3: طبقه بندی آنمی‌ها -->
-        <section id="sec3" class="card p-6">
-            <h2 class="section-title text-xl">3. طبقه بندی آنمی‌ها</h2>
+        <section id="sec3" class="study-section">
+            <header class="section-header"><span class="section-number">3</span><h2 class="section-title">3. طبقه بندی آنمی‌ها</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اولین قدم جهت طبقه بندی آنمی‌ها، محاسبه اندکس تولید رتیکولوسیت است. اگر اندکس تولید رتیکولوسیت بیشتر از <bdi dir="ltr">2.5</bdi> باشد، به نفع همولیز است ولی اگر اندکس تولید رتیکولوسیت کمتر از <bdi dir="ltr">2</bdi> باشد، علت آنمی هیپوپرولیفراتیو یا یک اختلال تکاملی می‌باشد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">تعیین دقیق تعداد رتیکولوسیت‌ها کلید طبقه بندی آنمی‌ها می‌باشد. رتیکولوسیت‌ها، گلبول‌های قرمزی هستند که به تازگی از مغز استخوان به گردش خون وارد شده‌اند. تعداد رتیکولوسیت‌ها در شرایط طبیعی <bdi dir="ltr">1</bdi> تا <bdi dir="ltr">2%</bdi> است که جایگزین گلبول‌های قرمز در روز می‌شوند (<bdi dir="ltr">0.8</bdi>-<bdi dir="ltr">1%</bdi>).</p>
                 <p class="mb-3 leading-relaxed text-gray-700">طبقه بندی آنمی براساس اندکس تولید رتیکولوسیت: <bdi dir="ltr">1.</bdi> اگر اندکس تولید رتیکولوسیت کمتر از <bdi dir="ltr">2.5</bdi> باشد، مشکل اصلی اختلال در تولید گلبول قرمز در مغز استخوان است؛ مانند آنمی مگالوبالستیک و آنمی فقر آهن. <bdi dir="ltr">2.</bdi> اگر اندکس تولید رتیکولوسیت مساوی یا بیشتر از <bdi dir="ltr">2.5</bdi> باشد، حاکی از همولیز یا خونریزی می‌باشد؛ مانند آنمی‌های همولیتیک.</p>
@@ -201,10 +98,10 @@
         </section>
 
         <!-- Section 4: محاسبه اندکس تولید رتیکولوسیت -->
-        <section id="sec4" class="card p-6">
-            <h2 class="section-title text-xl">4. محاسبه اندکس تولید رتیکولوسیت</h2>
+        <section id="sec4" class="study-section">
+            <header class="section-header"><span class="section-number">4</span><h2 class="section-title">4. محاسبه اندکس تولید رتیکولوسیت</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">برای بررسی رتیکولوسیت‌ها، لازم است دو تصحیح صورت گیرد: <bdi dir="ltr">1.</bdi> تصحیح اوّل: با تصحیح اوّل، تعداد واقعی رتیکولوسیت‌ها به دست می‌آید. برای تصحیح اوّل از یکی از فرمول‌های زیر استفاده می‌کنیم: (تعداد رتیکولوسیت (%) * هموگلوبین) / <bdi dir="ltr">15</bdi> یا (تعداد رتیکولوسیت (%) * هماتوکریت) / <bdi dir="ltr">45</bdi> مثال: اگر تعداد رتیکولوسیت‌ها <bdi dir="ltr">9%</bdi>، هموگلوبین <bdi dir="ltr">7.5</bdi> <bdi dir="ltr">gr/dl</bdi> و هماتوکریت <bdi dir="ltr">23%</bdi> باشد، تعداد واقعی رتیکولوسیت چند درصد است؟ (<bdi dir="ltr">9%</bdi> * <bdi dir="ltr">7.5</bdi>) / <bdi dir="ltr">15</bdi> = <bdi dir="ltr">4.5%</bdi> یا (<bdi dir="ltr">9%</bdi> * <bdi dir="ltr">23</bdi>) / <bdi dir="ltr">45</bdi> = <bdi dir="ltr">4.5%</bdi> <bdi dir="ltr">2.</bdi> تصحیح دوّم: به کمک تصحیح دوّم، اندکس تولید رتیکولوسیت به دست می‌آید. برای این منظور عدد به دست آمده از تصحیح اوّل تقسیم بر دو می‌شود. <bdi dir="ltr">4.5%</bdi> / <bdi dir="ltr">2</bdi> = <bdi dir="ltr">2.25%</bdi></p>
                 <p class="mb-3 leading-relaxed text-gray-700">توضیح مورد سئوال: با تصحیح اوّل تعداد واقعی رتیکولوسیت‌ها به دست می‌آید: (<bdi dir="ltr">8%</bdi> * <bdi dir="ltr">7.5</bdi>) / <bdi dir="ltr">15</bdi> = <bdi dir="ltr">4%</bdi> یا (<bdi dir="ltr">8%</bdi> * <bdi dir="ltr">23</bdi>) / <bdi dir="ltr">45</bdi> = <bdi dir="ltr">4%</bdi> و با تصحیح دوّم، اندکس تولید رتیکولوسیت به دست می‌آید: <bdi dir="ltr">4%</bdi> / <bdi dir="ltr">2</bdi> = <bdi dir="ltr">2%</bdi></p>
                 <p class="mb-3 leading-relaxed text-gray-700">طبقه بندی آنمی براساس اندکس تولید رتیکولوسیت: -<bdi dir="ltr">1</bdi> اگر اندکس تولید رتیکولوسیت کمتر از <bdi dir="ltr">2.5</bdi> باشد، مشکل اصلی اختلال در تولید گلبول قرمز در مغز استخوان است. -<bdi dir="ltr">2</bdi> اگر اندکس تولید رتیکولوسیت مساوی یا بیشتر از <bdi dir="ltr">2.5</bdi> باشد، حاکی از همولیز یا خونریزی می‌باشد.</p>
@@ -213,10 +110,10 @@
         </section>
 
         <!-- Section 5: اندکس تولید رتیکولوسیت -->
-        <section id="sec5" class="card p-6">
-            <h2 class="section-title text-xl">5. اندکس تولید رتیکولوسیت</h2>
+        <section id="sec5" class="study-section">
+            <header class="section-header"><span class="section-number">5</span><h2 class="section-title">5. اندکس تولید رتیکولوسیت</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اگر اختلال در تولید گلبول قرمز در مغز استخوان (آنمی هیپوپرولیفراتیو) مطرح باشد، اندکس تولید رتیکولوسیت کمتر از <bdi dir="ltr">2</bdi>/<bdi dir="ltr">5</bdi> است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در خونریزی‌های حاد، علائم بیمار بیشتر ناشی از هیپوولمی می‌باشد و هموگلوبین و هماتوکریت، میزان خون از دست رفته را نشان نمی‌دهند. در خونریزی حاد، افزایش اندکس تولید رتیکولوسیت دیده نمی‌شود، چرا که افزایش اریتروپویتین به زمان نیاز دارد. در خونریزی تحت حاد ممکن است رتیکولوسیتوز متوسط وجود داشته باشد. آنمی ناشی از خونریزی مزمن، اکثراً به شکل کمبود آهن تظاهر می‌یابد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اختلالات غشاء <bdi dir="ltr">RBC</bdi>، تخریب ایمنی <bdi dir="ltr">RBC</bdi> و همولیز داخل عروقی به علت ایجاد آنمی همولیتیک موجب افزایش اندکس رتیکولوسیت به بیشتر از <bdi dir="ltr">2</bdi>/<bdi dir="ltr">5</bdi> می‌شوند.</p>
@@ -229,10 +126,10 @@
         </section>
 
         <!-- Section 6: آنمی میکروسیتیک و ماکروسیتیک -->
-        <section id="sec6" class="card p-6">
-            <h2 class="section-title text-xl">6. آنمی میکروسیتیک و ماکروسیتیک</h2>
+        <section id="sec6" class="study-section">
+            <header class="section-header"><span class="section-number">6</span><h2 class="section-title">6. آنمی میکروسیتیک و ماکروسیتیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در آنمی میکروسیتیک کمتر از <bdi dir="ltr">80</bdi> و در آنمی ماکروسیتیک بیشتر از <bdi dir="ltr">100</bdi> می‌باشد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">آنیزوسیتوز گفته، به تفاوت در اندازه گلبول‌های قرمز می‌شود. میزان آنیزوسیتوز را <bdi dir="ltr">RDW</bdi> مشخص می‌نماید. طبیعی بین <bdi dir="ltr">10</bdi> تا <bdi dir="ltr">14</bdi> درصد است. در آنیزوسیتوز <bdi dir="ltr">RDW</bdi> بین <bdi dir="ltr">15</bdi> تا <bdi dir="ltr">18</bdi> درصد می‌رسد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">مهمترین کاربرد <bdi dir="ltr">RDW</bdi> افتراق بین فقر آهن و تالاسمی می‌شود که هر دو موجب آنمی میکروسیتیک می‌شوند.</p>
@@ -251,10 +148,10 @@
         </section>
 
         <!-- Section 7: تشخیص پلی‌سیتمی -->
-        <section id="sec7" class="card p-6">
-            <h2 class="section-title text-xl">7. تشخیص پلی‌سیتمی</h2>
+        <section id="sec7" class="study-section">
+            <header class="section-header"><span class="section-number">7</span><h2 class="section-title">7. تشخیص پلی‌سیتمی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">پلی‌سیتمی اکثراً با کشف اتفاقی افزایش هموگلوبین یا هماتوکریت تشخیص داده می‌شود.</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">معیارهای تشخیصی پلی‌سیتمی</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -269,10 +166,10 @@
         </section>
 
         <!-- Section 8: نحوه برخورد با پلی‌سیتمی -->
-        <section id="sec8" class="card p-6">
-            <h2 class="section-title text-xl">8. نحوه برخورد با پلی‌سیتمی</h2>
+        <section id="sec8" class="study-section">
+            <header class="section-header"><span class="section-number">8</span><h2 class="section-title">8. نحوه برخورد با پلی‌سیتمی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اولین قدم در برخورد با پلی‌سیتمی، اثبات افزایش توده گلبول‌های قرمز به کمک رادیوایزوتوپ <bdi dir="ltr">51</bdi>Cr است.</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">تفسیر توده گلبول‌های قرمز</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -311,10 +208,10 @@
         </section>
 
         <!-- Section 9: اریتروسیتوز -->
-        <section id="sec9" class="card p-6">
-            <h2 class="section-title text-xl">9. اریتروسیتوز</h2>
+        <section id="sec9" class="study-section">
+            <header class="section-header"><span class="section-number">9</span><h2 class="section-title">9. اریتروسیتوز</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اگر در بیماران مبتال به پلی‌سیتمی، سطح اریتروپویتین باال باشد، اقدام بعدی سنجش <bdi dir="ltr">O<bdi dir="ltr">2</bdi> Saturation</bdi> است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اگر <bdi dir="ltr">O<bdi dir="ltr">2</bdi> Saturation</bdi> طبیعی باشد، قدم بعدی سنجش تمایل هموگلوبین به اکسیژن (<bdi dir="ltr">O<bdi dir="ltr">2</bdi> Affinity</bdi>) می‏باشد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اگر <bdi dir="ltr">O<bdi dir="ltr">2</bdi> Affinity</bdi> طبیعی باشد، احتمالاً یک تومور موجب افزایش تولید اریتروپویتین گردیده است. برای این تومورها اقدامات زیر باید انجام شود <bdi dir="ltr">Rule out</bdi>:</p>
@@ -341,10 +238,10 @@
         </section>
 
         <!-- Section 10: آنمی فقر آهن -->
-        <section id="sec10" class="card p-6">
-            <h2 class="section-title text-xl">10. آنمی فقر آهن</h2>
+        <section id="sec10" class="study-section">
+            <header class="section-header"><span class="section-number">10</span><h2 class="section-title">10. آنمی فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">هورمون اصلی تنظیم‌کننده آهن هپسیدین است. در آنمی فقر آهن، هپسیدین کاهش می‌یابد، در حالی که در آنمی بیماری‌های مزمن افزایش می‌یابد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">فروپورتیـن یک کانال خارج‌کننده آهن از سلول است. هپسیدین عملکرد فروپورتیـن را کاهش می‌دهد.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">یافته‌های آزمایشگاهی مهم در آنمی فقر آهن</h4>
@@ -362,10 +259,10 @@
         </section>
 
         <!-- Section 11: تشخیص افتراقی آنمی فقر آهن -->
-        <section id="sec11" class="card p-6">
-            <h2 class="section-title text-xl">11. تشخیص افتراقی آنمی فقر آهن</h2>
+        <section id="sec11" class="study-section">
+            <header class="section-header"><span class="section-number">11</span><h2 class="section-title">11. تشخیص افتراقی آنمی فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">علاوه بر آنمی فقر آهن، سه بیماری زیر نیز موجب آنمی هیپوکرومیک میکروسیتیک می‌شوند:</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">تالاسمی</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -407,10 +304,10 @@
         </section>
 
         <!-- Section 12: تشخیص‌های افتراقی آنمی‌های میکروسیتیک -->
-        <section id="sec12" class="card p-6">
-            <h2 class="section-title text-xl">12. تشخیص‌های افتراقی آنمی‌های میکروسیتیک</h2>
+        <section id="sec12" class="study-section">
+            <header class="section-header"><span class="section-number">12</span><h2 class="section-title">12. تشخیص‌های افتراقی آنمی‌های میکروسیتیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">تشخیص‌های افتراقی آنمی‌های میکروسیتیک</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">تشخیص‌های افتراقی آنمی‌های میکروسیتیک (<bdi dir="ltr">MCV</bdi> کمتر از <bdi dir="ltr">80</bdi> <bdi dir="ltr">fl</bdi>) عبارتند از:</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در آنمی ناشی از بیماری‌های مزمن، <bdi dir="ltr">TIBC</bdi> و <bdi dir="ltr">SI</bdi> کاهش می‌یابند.</p>
@@ -419,10 +316,10 @@
         </section>
 
         <!-- Section 13: پاسخ‌دهی به درمان با آهن -->
-        <section id="sec13" class="card p-6">
-            <h2 class="section-title text-xl">13. پاسخ‌دهی به درمان با آهن</h2>
+        <section id="sec13" class="study-section">
+            <header class="section-header"><span class="section-number">13</span><h2 class="section-title">13. پاسخ‌دهی به درمان با آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">پاسخ به درمان به تحریک اریتروپویتین و سرعت جذب بستگی دارد. رتیکولوسیت‌ها در طی <bdi dir="ltr">4</bdi> تا <bdi dir="ltr">7</bdi> روز از شروع درمان باید شروع به افزایش نموده و پس از <bdi dir="ltr">1.5</bdi> هفته به حداکثر برسد. فقدان پاسخ مناسب ممکن است به علل زیر باشد:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">جذب خفیف</li>
@@ -433,10 +330,10 @@
         </section>
 
         <!-- Section 14: تست تحمل آهن -->
-        <section id="sec14" class="card p-6">
-            <h2 class="section-title text-xl">14. تست تحمل آهن</h2>
+        <section id="sec14" class="study-section">
+            <header class="section-header"><span class="section-number">14</span><h2 class="section-title">14. تست تحمل آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">تست تحمل آهن به منظور بررسی توانایی جذب آهن توسط بیمار به کار می‌رود. برای انجام این تست، بیمار با معده خالی دو قرص آهن می‌خورد و آهن سرم او به صورت سریال تا <bdi dir="ltr">2</bdi> ساعت بعد اندازه‌گیری می‌شود. اگر جذب آهن طبیعی باشد، آهن سرم حداقل <bdi dir="ltr">100</bdi> μg/<bdi dir="ltr">dl</bdi> افزایش می‌یابد.</p>
                 <div class="exam-tip p-4 rounded-lg mb-3">
                   <strong>💡 نکته امتحانی:</strong> اگر فقر آهن علی‌رغم درمان کافی خوراکی ادامه یابد ممکن است نیاز به تغییر درمان با ترکیبات غیرخوراکی آهن وجود داشته باشد.
@@ -445,10 +342,10 @@
         </section>
 
         <!-- Section 15: محاسبه مقدار آهن مورد نیاز -->
-        <section id="sec15" class="card p-6">
-            <h2 class="section-title text-xl">15. محاسبه مقدار آهن مورد نیاز</h2>
+        <section id="sec15" class="study-section">
+            <header class="section-header"><span class="section-number">15</span><h2 class="section-title">15. محاسبه مقدار آهن مورد نیاز</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">مقدار آهن مورد نیاز برای هر فرد از رابطه زیر بدست می‌آید:</p>
                 <div class="bg-gray-50 p-4 rounded-lg border-r-4 border-purple-400 mb-4">
                   <div class="font-mono text-lg mb-2 bg-white p-3 rounded" dir="ltr"><bdi dir="ltr">2</bdi>/<bdi dir="ltr">3</bdi> × (وزن بدن <bdi dir="ltr">Kg</bdi>) × (<bdi dir="ltr">15</bdi> - هموگلوبین بیمار) + <bdi dir="ltr">500</bdi> یا <bdi dir="ltr">1000</bdi></div>
@@ -462,10 +359,10 @@
         </section>
 
         <!-- Section 16: اندیکاسیون‌های درمان با آهن وریدی -->
-        <section id="sec16" class="card p-6">
-            <h2 class="section-title text-xl">16. اندیکاسیون‌های درمان با آهن وریدی</h2>
+        <section id="sec16" class="study-section">
+            <header class="section-header"><span class="section-number">16</span><h2 class="section-title">16. اندیکاسیون‌های درمان با آهن وریدی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اندیکاسیون‌های درمان با آهن وریدی، عبارتند از:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">بیمارانی که قادر به تحمل آهن خوراکی نیستند.</li>
@@ -477,10 +374,10 @@
         </section>
 
         <!-- Section 17: عوارض جانبی آهن وریدی -->
-        <section id="sec17" class="card p-6">
-            <h2 class="section-title text-xl">17. عوارض جانبی آهن وریدی</h2>
+        <section id="sec17" class="study-section">
+            <header class="section-header"><span class="section-number">17</span><h2 class="section-title">17. عوارض جانبی آهن وریدی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">عوارض جانبی آهن دکستران با وزن مولکولی باال بیشتر از فرآورده‌های جدید آهن تزریقی است. هم‌اکنون از آهن دکستران با وزن مولکولی پائین و فرآورده‌های جدید آهن تزریقی استفاده می‌شود. فرآورده‌های جدید تزریقی آهن، عبارتند از:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">فروموکسیتول</li>
@@ -496,10 +393,10 @@
         </section>
 
         <!-- Section 18: آنمی ناشی از بیماری‌های کلیوی -->
-        <section id="sec18" class="card p-6">
-            <h2 class="section-title text-xl">18. آنمی ناشی از بیماری‌های کلیوی</h2>
+        <section id="sec18" class="study-section">
+            <header class="section-header"><span class="section-number">18</span><h2 class="section-title">18. آنمی ناشی از بیماری‌های کلیوی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی ناشی از بیماری‌های کلیوی که موجب آنمی هیپوپرولیفراتیو می‌شوند، عبارتند از:</p>
                 <p class="mb-3 leading-relaxed text-gray-700">میزان آنمی با مرحله نارسایی کلیه ارتباط دارد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی وی به علت کاهش تولید اریتروپویتین و کاهش عمر گلبول قرمز است.</p>
@@ -509,10 +406,10 @@
         </section>
 
         <!-- Section 19: آنمی ناشی از بیماری مزمن کلیه (CKD) -->
-        <section id="sec19" class="card p-6">
-            <h2 class="section-title text-xl">19. آنمی ناشی از بیماری مزمن کلیه (<bdi dir="ltr">CKD</bdi>)</h2>
+        <section id="sec19" class="study-section">
+            <header class="section-header"><span class="section-number">19</span><h2 class="section-title">19. آنمی ناشی از بیماری مزمن کلیه (<bdi dir="ltr">CKD</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی موجب (<bdi dir="ltr">CKD</bdi>) بیماری مزمن کلیه پیشرفته، آنمی هیپوپرولیفراتیو متوسط تا شدید می‌شود. سطح آنمی مرتبـط اسـت بـا <bdi dir="ltr">CKD</bdi> بیمـاری <bdi dir="ltr">Stage</bdi>. آنمی به صورت نرموسـیتیک _ نروموکرومیـک بوده و تعداد رتیکولوسـیت‏ها کم می‌شود. علت آنمی در این بیماران کاهش تولید اریتروپویتین و کاهش طول عمر <bdi dir="ltr">RBC</bdi> است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در این موارد ارتباط بین آنمی و عملکرد کلیوی ضعیف‏تر است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">با وجود مبتالیان به سندرم همولیتیک _ اورمیک در نارسایی کلیوی نیازمند دیالیز، میزان خونسازی در پاسخ به همولیز باال می‌رود.</p>
@@ -524,10 +421,10 @@
         </section>
 
         <!-- Section 20: درمان آنمی‌های هیپوپرولیفراتیو -->
-        <section id="sec20" class="card p-6">
-            <h2 class="section-title text-xl">20. درمان آنمی‌های هیپوپرولیفراتیو</h2>
+        <section id="sec20" class="study-section">
+            <header class="section-header"><span class="section-number">20</span><h2 class="section-title">20. درمان آنمی‌های هیپوپرولیفراتیو</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="highlight-box p-4 rounded-lg mb-3">
                   <strong>📋 خلاصه:</strong> انتقال خون و مصرف اریتروپویتین است.
                 </div>
@@ -553,10 +450,10 @@
         </section>
 
         <!-- Section 21: نکات تکمیلی در درمان آنمی‌های هیپوپرولیفراتیو -->
-        <section id="sec21" class="card p-6">
-            <h2 class="section-title text-xl">21. نکات تکمیلی در درمان آنمی‌های هیپوپرولیفراتیو</h2>
+        <section id="sec21" class="study-section">
+            <header class="section-header"><span class="section-number">21</span><h2 class="section-title">21. نکات تکمیلی در درمان آنمی‌های هیپوپرولیفراتیو</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">برای اثربخشـی اریتروپویتین بایـد ذخایـر آهـن مناسـب باشـند، لذا باید وضعیت آهن در هنـگام تزریق اریتروپویتین ارزیابی شـده و آهن از دسـت رفته جایگزیـن گردد. در <bdi dir="ltr">Case</bdi> مورد نظر سـئوال فریتیـن اوّ لیه <bdi dir="ltr">160</bdi> بوده اسـت که طبیعی و مناسب بوده است، لذا در ابتدا که اریتروپویتین تجویز شده است، هموگلوبین باال رفته است ولی به علت مصرف ذخایر آهـن، با تجویز مجدد اریتروپویتین حتی با دوز باالتر تغییری در هموگلوبین ایجاد نشـده اسـت که علت آن کمبود ذخایر آهن است. همچنین به پاسخ سئوال <bdi dir="ltr">66</bdi> مراجعه شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">سطح هموگلوبین را به میزان <bdi dir="ltr">1</bdi> <bdi dir="ltr">gr/dl</bdi> باال می‏برد.</p>
                 <div class="highlight-box p-4 rounded-lg mb-3">
@@ -569,10 +466,10 @@
         </section>
 
         <!-- Section 22: آنمی بیماری مزمن و سایر آنمی‌های هیپوپرولیفراتیو -->
-        <section id="sec22" class="card p-6">
-            <h2 class="section-title text-xl">22. آنمی بیماری مزمن و سایر آنمی‌های هیپوپرولیفراتیو</h2>
+        <section id="sec22" class="study-section">
+            <header class="section-header"><span class="section-number">22</span><h2 class="section-title">22. آنمی بیماری مزمن و سایر آنمی‌های هیپوپرولیفراتیو</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">وضعیت التهاب مزمن، بیماری کلیوی و یا هیپوتیروئیدی تولید اریتروپویتین را کاهش می‌دهد (هیپومتابولیک).</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">یافته‌های آزمایشگاهی آنمی بیماری مزمن</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -601,10 +498,10 @@
         </section>
 
         <!-- Section 23: اسفروسیتوز ارثی -->
-        <section id="sec23" class="card p-6">
-            <h2 class="section-title text-xl">23. اسفروسیتوز ارثی</h2>
+        <section id="sec23" class="study-section">
+            <header class="section-header"><span class="section-number">23</span><h2 class="section-title">23. اسفروسیتوز ارثی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در بیشتر موارد، تشخیص اسفروسیتوز ارثی به کمک بررسی لام خون محیطی جهت ارزیابی مورفولوژی گلبول‌های قرمز و مشاهده اسفروسیت و تست <bdi dir="ltr">Osmotic fragility</bdi> قطعیت می‌یابد. سایر آزمایشاتی که برای تشخیص اسفروسیتوز ارثی به کار می‌روند، عبارتند از:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">تست لیز اسید گلیسرول</li>
@@ -636,10 +533,10 @@
         </section>
 
         <!-- Section 24: درمان اسفروسیتوز ارثی -->
-        <section id="sec24" class="card p-6">
-            <h2 class="section-title text-xl">24. درمان اسفروسیتوز ارثی</h2>
+        <section id="sec24" class="study-section">
+            <header class="section-header"><span class="section-number">24</span><h2 class="section-title">24. درمان اسفروسیتوز ارثی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">هیچ درمانی برای عامل اتیولوژیک اسفروسیتوز ارثی وجود ندارد. با این وجود اسپلنکتومی اغلب کمک‌کننده است. موارد زیر باید هنگام انجام اسپلنکتومی رعایت شود (بسیار مهم):</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">در موارد خفیف، اسپلنکتومی انجام ندهید.</li>
@@ -655,10 +552,10 @@
         </section>
 
         <!-- Section 25: کمبود پیرووات کیناز (PK) -->
-        <section id="sec25" class="card p-6">
-            <h2 class="section-title text-xl">25. کمبود پیرووات کیناز (<bdi dir="ltr">PK</bdi>)</h2>
+        <section id="sec25" class="study-section">
+            <header class="section-header"><span class="section-number">25</span><h2 class="section-title">25. کمبود پیرووات کیناز (<bdi dir="ltr">PK</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">تعریف: کمبود پیرووات کیناز (<bdi dir="ltr">PK</bdi>) اختلال مسیر گلیکولیتیک بوده و شیوع آن <bdi dir="ltr">1</bdi> در <bdi dir="ltr">10000</bdi> است.</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">یافته‌های بالینی کمبود پیرووات کیناز را می‌توان به صورت زیر طبقه‌بندی نمود:</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -679,10 +576,10 @@
         </section>
 
         <!-- Section 26: کمبود G6PD -->
-        <section id="sec26" class="card p-6">
-            <h2 class="section-title text-xl">26. کمبود <bdi dir="ltr">G<bdi dir="ltr">6</bdi>PD</bdi></h2>
+        <section id="sec26" class="study-section">
+            <header class="section-header"><span class="section-number">26</span><h2 class="section-title">26. کمبود <bdi dir="ltr">G<bdi dir="ltr">6</bdi>PD</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در لام خون محیطی، <bdi dir="ltr">Bite cells</bdi> و آنیزوسیتوز دارد.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">تشخیص آزمایشگاهی <bdi dir="ltr">G<bdi dir="ltr">6</bdi>PD</bdi></h4>
                 <p class="mb-3 leading-relaxed text-gray-700">در صورت شک به <bdi dir="ltr">G<bdi dir="ltr">6</bdi>PD</bdi> می‌توان از غربالگری نیمه‌کمی به عنوان روش تشخیصی استفاده کرد که موجب تأیید تشخیص می‌شود؛ ولی در یک حمله همولیتیک حاد باید از یک تست کمی (<bdi dir="ltr">Quantitative test</bdi>) استفاده کرد.</p>
@@ -726,18 +623,18 @@
         </section>
 
         <!-- Section 27: همولیزهای داخل عروقی -->
-        <section id="sec27" class="card p-6">
-            <h2 class="section-title text-xl">27. همولیزهای داخل عروقی</h2>
+        <section id="sec27" class="study-section">
+            <header class="section-header"><span class="section-number">27</span><h2 class="section-title">27. همولیزهای داخل عروقی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در مورد انواع همولیزهای داخل عروقی، کدام مکانیسم پاتوفیزیولوژیک همولیز صحیح نمی‌باشد؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در همولیز ناشی از تزریق خون <bdi dir="ltr">ABO</bdi> ناسازگاری، علت آن معمولاً ناسازگاری <bdi dir="ltr">ABO</bdi> است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در همولیز ناشی از میکروآنژیوپاتی، علت همولیز <bdi dir="ltr">Fragmentation</bdi> گلبول‌های قرمز است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در <bdi dir="ltr">PNH</bdi>، علت همولیز، تخریب با واسطه کمپلمان است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در <bdi dir="ltr">PCH</bdi>، علت همولیز، تخریب با واسطه اگزوتوکسین میکروبی است.</p>
-                <div class="overflow-x-auto mb-4">
+                <div class="table-card"><div class="table-scroll">
                   <h4 class="font-bold text-md text-gray-700 mb-2">بیماری‌ها و وضعیت‌های بالینی که با همولیز داخل عروقی همراه هستند</h4>
-                  <table class="staging-table">
+                  <table class="medical-table">
                     <thead>
                       <tr>
                         <th>نوع همولیز</th>
@@ -799,15 +696,15 @@
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                </div></div>
             </div>
         </section>
 
         <!-- Section 28: هموگلوبین‌اوری حمله ای سرد (PCH) -->
-        <section id="sec28" class="card p-6">
-            <h2 class="section-title text-xl">28. هموگلوبین‌اوری حمله ای سرد (<bdi dir="ltr">PCH</bdi>)</h2>
+        <section id="sec28" class="study-section">
+            <header class="section-header"><span class="section-number">28</span><h2 class="section-title">28. هموگلوبین‌اوری حمله ای سرد (<bdi dir="ltr">PCH</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">به دنبال ابتلا به عفونت ویروسی، کودکی دچار تب و لرز و آنمی حاد و ایکتر خفیف و هموگلوبین‌اوری می‌شود. در آزمایشات <bdi dir="ltr">Hb</bdi> = <bdi dir="ltr">7</bdi> <bdi dir="ltr">gr/dl</bdi> و <bdi dir="ltr">LDH</bdi> = <bdi dir="ltr">1600</bdi> دارد. کدام جمله در مورد این بیمار صحیح نمی‌باشد؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">همولیز در این بیماری با واسطه کمپلمان رخ می‌دهد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در این بیماری آنتی‌بادی بر علیه آنتی‌ژن P ساخته می‌شود.</p>
@@ -826,10 +723,10 @@
         </section>
 
         <!-- Section 29: بیماری آگلوتینین سرد (CAD) -->
-        <section id="sec29" class="card p-6">
-            <h2 class="section-title text-xl">29. بیماری آگلوتینین سرد (<bdi dir="ltr">CAD</bdi>)</h2>
+        <section id="sec29" class="study-section">
+            <header class="section-header"><span class="section-number">29</span><h2 class="section-title">29. بیماری آگلوتینین سرد (<bdi dir="ltr">CAD</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">مردی بعد از مواجهه با سرما دچار ایکتر و ضعف و بی حالی گردیده و در آزمایشات، هیپرپیلی‌روبینمی غیرمستقیم و <bdi dir="ltr">Retic</bdi>=<bdi dir="ltr">8</bdi> و <bdi dir="ltr">Hb</bdi>=<bdi dir="ltr">9</bdi> مشخص شده است. در سایر آزمایشات انجام شده، <bdi dir="ltr">Coombs</bdi> مستقیم مثبت و آنتی‌بادی مسئول <bdi dir="ltr">IgM</bdi> می‌باشد. بیمار حال عمومی خوبی دارد. جهت کنترل همولیز کدامیک از موارد زیر بیشترین اثربخشی را دارد؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">پردنیزولون</p>
                 <p class="mb-3 leading-relaxed text-gray-700">آزاتیوپرین</p>
@@ -858,10 +755,10 @@
         </section>
 
         <!-- Section 30: بیماری آگلوتینین سرد (Cold Agglutinin Disease) -->
-        <section id="sec30" class="card p-6">
-            <h2 class="section-title text-xl">30. بیماری آگلوتینین سرد (<bdi dir="ltr">Cold Agglutinin Disease</bdi>)</h2>
+        <section id="sec30" class="study-section">
+            <header class="section-header"><span class="section-number">30</span><h2 class="section-title">30. بیماری آگلوتینین سرد (<bdi dir="ltr">Cold Agglutinin Disease</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">نکات مهم در بیماری آگلوتینین سرد</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">در مواجهه با سرما دچار همولیز شدیدی می‌شوند.</li>
@@ -874,10 +771,10 @@
         </section>
 
         <!-- Section 31: هموگلوبین‌اوری حمله‌ای شبانه (PNH) -->
-        <section id="sec31" class="card p-6">
-            <h2 class="section-title text-xl">31. هموگلوبین‌اوری حمله‌ای شبانه (<bdi dir="ltr">PNH</bdi>)</h2>
+        <section id="sec31" class="study-section">
+            <header class="section-header"><span class="section-number">31</span><h2 class="section-title">31. هموگلوبین‌اوری حمله‌ای شبانه (<bdi dir="ltr">PNH</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">درمان <bdi dir="ltr">PNH</bdi></h4>
                 <p class="mb-3 leading-relaxed text-gray-700">استفاده از آنتی‌بادی مونوکلونال انسانی به نام اکولیزوماب که بر علیه پروتئین کمپلمان <bdi dir="ltr">C<bdi dir="ltr">5</bdi></bdi> عمل می‌کند، پیشرفت بزرگی در درمان <bdi dir="ltr">PNH</bdi> بوده است. اکولیزوماب باید هر <bdi dir="ltr">14</bdi> روز به صورت وریدی تجویز شود.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">درمان‌های حمایتی</h4>
@@ -921,10 +818,10 @@
         </section>
 
         <!-- Section 32: آنمی ناشی از خونریزی حاد -->
-        <section id="sec32" class="card p-6">
-            <h2 class="section-title text-xl">32. آنمی ناشی از خونریزی حاد</h2>
+        <section id="sec32" class="study-section">
+            <header class="section-header"><span class="section-number">32</span><h2 class="section-title">32. آنمی ناشی از خونریزی حاد</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">رقیق شدن خون به داخل عروق شیفت می‌دهد و موجب آنمی تبدیل می‌شود. لذا هیپوولمی تدریجاً به آنمی تبدیل می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">شدت آنمی حاکی از میزان خون از دست رفته می‌باشد. اگر بعد از <bdi dir="ltr">7</bdi> روز هموگلوبین به <bdi dir="ltr">50%</bdi> حجم خون از دست رفته باشد، به این معناست که...</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اگر خونریزی ادامه پیدا نکند، پاسخ مغز استخوان موجب کاهش تدریجی آنمی خواهد شد. در این مرحله، تعداد رتیکولوسیت‌ها و میزان اریتروپویتین افزایش می‌یابند.</p>
@@ -941,10 +838,10 @@
         </section>
 
         <!-- Section 33: درمان بحران حاد دردناک -->
-        <section id="sec33" class="card p-6">
-            <h2 class="section-title text-xl">33. درمان بحران حاد دردناک</h2>
+        <section id="sec33" class="study-section">
+            <header class="section-header"><span class="section-number">33</span><h2 class="section-title">33. درمان بحران حاد دردناک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">تشخیص علت زمینه‌ای (مانند عفونت یا دهیدراتاسیون) و درمان آن باید انجام شود.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">مسکن‌های اپیوئیدی</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">تجویز مسکن اُپیوئیدی با دوز مناسب، اساس درمان حملات دردناک حاد است. زمانی که بیماران به اورژانس مراجعه می‌کنند، معمولاً <bdi dir="ltr">NSAID</bdi> و اُپیوئیدهای خوراکی مصرف کرده‌اند. لذا در اغلب بیماران، نیاز به تجویز اُپیوئیدهای وریدی مانند هیدومورفون وجود دارد. اغلب بیماران به مورفین یا هیدومورفون به علت مصرف قبلی اُپیوئید، تحمل بالایی داشته و نیاز به تجویز دوزهای بالاتر دارند. مسکن‌های اُپیوئیدی نباید به صورت <bdi dir="ltr">PRN</bdi> (در صورت نیاز) تجویز شوند؛ بلکه تنظیم دوز مسکن توسط بیمار یا تجویز دوزهای ثابت یا باید صورت بگیرد. بیماران باید تحت ارزیابی‌های مکرر قرار بگیرند تا از کنترل کامل درد بدون سدیشن اطمینان حاصل گردد.</p>
@@ -961,19 +858,19 @@
         </section>
 
         <!-- Section 34: درمان حملات دردناک در آنمی سیکل‌سل -->
-        <section id="sec34" class="card p-6">
-            <h2 class="section-title text-xl">34. درمان حملات دردناک در آنمی سیکل‌سل</h2>
+        <section id="sec34" class="study-section">
+            <header class="section-header"><span class="section-number">34</span><h2 class="section-title">34. درمان حملات دردناک در آنمی سیکل‌سل</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">کتـوروال ک بایــد در حمــ اات دردنــاک حــاد در از تجویــز آنــمی سیکل‌ســل اجتنــاب کــرد.</p>
             </div>
         </section>
 
         <!-- Section 35: سندرم حاد قفسه‌سینه (Acute chest syndrome) -->
-        <section id="sec35" class="card p-6">
-            <h2 class="section-title text-xl">35. سندرم حاد قفسه‌سینه (<bdi dir="ltr">Acute chest syndrome</bdi>)</h2>
+        <section id="sec35" class="study-section">
+            <header class="section-header"><span class="section-number">35</span><h2 class="section-title">35. سندرم حاد قفسه‌سینه (<bdi dir="ltr">Acute chest syndrome</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">اهمیت</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">سندرم حاد قفسه‌سینه دوّمین واقعه حاد در بیماری سیکل‌سل است. این سندرم در <bdi dir="ltr">50%</bdi> بیماران و اغلب بیشتر از یک نوبت رخ می‌دهد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">علائم این سندرم شبیه پنومونی خفیف است. شدت سندرم حاد قفسه‌سینه ممکن است شدید بوده و موجب هیپوکسی، نارسایی چند اُرگان و مرگ شود (به خصوص در عفونت‌های ویروسی در کودکان).</p>
@@ -990,10 +887,10 @@
         </section>
 
         <!-- Section 36: سندرم حاد قفسه‌سینه (ACS) -->
-        <section id="sec36" class="card p-6">
-            <h2 class="section-title text-xl">36. سندرم حاد قفسه‌سینه (<bdi dir="ltr">ACS</bdi>)</h2>
+        <section id="sec36" class="study-section">
+            <header class="section-header"><span class="section-number">36</span><h2 class="section-title">36. سندرم حاد قفسه‌سینه (<bdi dir="ltr">ACS</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">تجویز بیش از حد هیدراسیون و اپیوئید باید اجتناب شود، چرا که موجب تشدید تنگی‌نفس و هیپوکسی می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">لکوسیتوز و تب‌دار که دارای هیپوکسیک و بیماران هستند، باید <bdi dir="ltr">CXR</bdi> انفیلتراسیون ریوی متوسط تا زیاد در تزریق خون قرار گیرند. تزریق ساده در مواردی که تحت بیماری خیلی شدید نباشد، به تنهایی کافی است؛ اما در مبتالیان به بیماری شدیدتر تعویض خون ترجیح داده می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در موارد شدید، اگر سطح هموگلوبین و عالئم بیمار به گونه‌ای باشد که تزریق خون اندیکاسیون داشته باشد و زمان الزم برای آماده‌سازی فرآیند تعویض خون طولانی باشد، می‌توان تزریق خون را تکرار کرد تا شرایط برای تعویض خون مهیا شود.</p>
@@ -1001,10 +898,10 @@
         </section>
 
         <!-- Section 37: پیش‌آگهی سندرم حاد قفسه‌سینه -->
-        <section id="sec37" class="card p-6">
-            <h2 class="section-title text-xl">37. پیش‌آگهی سندرم حاد قفسه‌سینه</h2>
+        <section id="sec37" class="study-section">
+            <header class="section-header"><span class="section-number">37</span><h2 class="section-title">37. پیش‌آگهی سندرم حاد قفسه‌سینه</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اغلب مبتالیان به سندرم حاد قفسه‌سینه زنده می‌مانند، اما در موارد شدید آمبولی نکروتیک مغز استخوان می‌تواند علیرغم درمان سریعاً منجر به مرگ شود. عواملی که به نفع سندرم حاد قفسه‌سینه شدید و نارسایی چند اُرگان همراه <bdi dir="ltr">ARDS</bdi> بوده و با احتمال هستند، عبارتند از:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">ترومبوسیتوپنی</li>
@@ -1017,19 +914,19 @@
         </section>
 
         <!-- Section 38: درمان بیماری‌های سیکل‌سل و تالاسمی -->
-        <section id="sec38" class="card p-6">
-            <h2 class="section-title text-xl">38. درمان بیماری‌های سیکل‌سل و تالاسمی</h2>
+        <section id="sec38" class="study-section">
+            <header class="section-header"><span class="section-number">38</span><h2 class="section-title">38. درمان بیماری‌های سیکل‌سل و تالاسمی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">درمان استاندارد برای تمام مبتالیان به آنمی هیدروکسی اوره است <bdi dir="ltr">HbS</bdi>-β° سیکل‌سل و تالاسمی.</p>
             </div>
         </section>
 
         <!-- Section 39: بررسی‌های آزمایشگاهی در آنمی‌ها -->
-        <section id="sec39" class="card p-6">
-            <h2 class="section-title text-xl">39. بررسی‌های آزمایشگاهی در آنمی‌ها</h2>
+        <section id="sec39" class="study-section">
+            <header class="section-header"><span class="section-number">39</span><h2 class="section-title">39. بررسی‌های آزمایشگاهی در آنمی‌ها</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">Teardrop Cell</bdi> و <bdi dir="ltr">Target cell</bdi> در لام خون محیطی دیده می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">مهمترین کاربرد <bdi dir="ltr">RDW</bdi> افتراق بین آنمی فقر آهن و تالاسمی می‌باشد. در آنمی فقر آهن افزایش <bdi dir="ltr">RDW</bdi> می‌یابد ولی در تالاسمی افزایش نمی‌یابد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">طبیعی است که در محدوده <bdi dir="ltr">11.5</bdi>-<bdi dir="ltr">14.5</bdi> بین <bdi dir="ltr">Case</bdi> مورد نظر می‌باشد.</p>
@@ -1039,10 +936,10 @@
         </section>
 
         <!-- Section 40: مشخصات آنمی آپالستیک -->
-        <section id="sec40" class="card p-6">
-            <h2 class="section-title text-xl">40. مشخصات آنمی آپالستیک</h2>
+        <section id="sec40" class="study-section">
+            <header class="section-header"><span class="section-number">40</span><h2 class="section-title">40. مشخصات آنمی آپالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی آپالستیک با موارد زیر مشخص می‌شود:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">پان‌سیتوپنی</li>
@@ -1055,29 +952,29 @@
         </section>
 
         <!-- Section 41: ارتباطات آنمی آپالستیک -->
-        <section id="sec41" class="card p-6">
-            <h2 class="section-title text-xl">41. ارتباطات آنمی آپالستیک</h2>
+        <section id="sec41" class="study-section">
+            <header class="section-header"><span class="section-number">41</span><h2 class="section-title">41. ارتباطات آنمی آپالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">سندرم‌های آنمی آپالستیک با <bdi dir="ltr">PNH</bdi> (آنمی هموگلوبین‌اوری حمله‌ای شبانه) و <bdi dir="ltr">MDS</bdi> ارتباط دارد.</p>
             </div>
         </section>
 
         <!-- Section 42: عفونت‌های مرتبط با آنمی آپالستیک -->
-        <section id="sec42" class="card p-6">
-            <h2 class="section-title text-xl">42. عفونت‌های مرتبط با آنمی آپالستیک</h2>
+        <section id="sec42" class="study-section">
+            <header class="section-header"><span class="section-number">42</span><h2 class="section-title">42. عفونت‌های مرتبط با آنمی آپالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">هپاتیت شایع‌ترین عفونت ایجادکننده آنمی آپالستیک است. هپاتیت همواره سرونگاتیو است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">بحران‌های گذرای آپالستیک عامل <bdi dir="ltr">B<bdi dir="ltr">19</bdi></bdi> پاروویروس در آنمی‌های همولیتیک است.</p>
             </div>
         </section>
 
         <!-- Section 43: آنمی فانکونی -->
-        <section id="sec43" class="card p-6">
-            <h2 class="section-title text-xl">43. آنمی فانکونی</h2>
+        <section id="sec43" class="study-section">
+            <header class="section-header"><span class="section-number">43</span><h2 class="section-title">43. آنمی فانکونی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">پان‌سیتوپنی پیشرونده، قد کوتاه، آنمی فانکونی با لکه‌های <bdi dir="ltr">Cafe au lait</bdi>، آنومالی در انگشت شست، رادیوس و دستگاه ادراری_تناسلی تظاهر می‌یابد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">برای تشخیص آنمی فانکونی، بهترین روش تشخیص، تست شکنندگی کروموزومی است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">کوتاهی قد و لکه‌های <bdi dir="ltr">Cafe au lait</bdi> شکل غیرطبیعی ناخن و لکوپالکی مطرح‌کننده آنمی فانکونی و دیسکراتوز مادرزادی است.</p>
@@ -1085,19 +982,19 @@
         </section>
 
         <!-- Section 44: سندرم شواخمن_دیاموند -->
-        <section id="sec44" class="card p-6">
-            <h2 class="section-title text-xl">44. سندرم شواخمن_دیاموند</h2>
+        <section id="sec44" class="study-section">
+            <header class="section-header"><span class="section-number">44</span><h2 class="section-title">44. سندرم شواخمن_دیاموند</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">نارسایی پانکراس، سوءجذب، نوتروپنی و آنمی آپالستیک در سندرم شواخمن_دیاموند دیده می‌شود.</p>
             </div>
         </section>
 
         <!-- Section 45: مشخصات آنمی آپالستیک شدید -->
-        <section id="sec45" class="card p-6">
-            <h2 class="section-title text-xl">45. مشخصات آنمی آپالستیک شدید</h2>
+        <section id="sec45" class="study-section">
+            <header class="section-header"><span class="section-number">45</span><h2 class="section-title">45. مشخصات آنمی آپالستیک شدید</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">نوتروفیل کمتر از <bdi dir="ltr">500</bdi></li>
                   <li class="leading-relaxed text-gray-700">پلاکت کمتر از <bdi dir="ltr">20000</bdi></li>
@@ -1107,10 +1004,10 @@
         </section>
 
         <!-- Section 46: درمان آنمی آپالستیک -->
-        <section id="sec46" class="card p-6">
-            <h2 class="section-title text-xl">46. درمان آنمی آپالستیک</h2>
+        <section id="sec46" class="study-section">
+            <header class="section-header"><span class="section-number">46</span><h2 class="section-title">46. درمان آنمی آپالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">دو نوع درمان برای آنمی آپالستیک وجود دارد:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">پیوند مغز استخوان آلوژنیک سلول‌های بنیادی: در بیماران جوان انتخاب اول درمان است.</li>
@@ -1120,28 +1017,28 @@
         </section>
 
         <!-- Section 47: درمان‌های جدید در آنمی آپالستیک -->
-        <section id="sec47" class="card p-6">
-            <h2 class="section-title text-xl">47. درمان‌های جدید در آنمی آپالستیک</h2>
+        <section id="sec47" class="study-section">
+            <header class="section-header"><span class="section-number">47</span><h2 class="section-title">47. درمان‌های جدید در آنمی آپالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">الترومبوپگ برای آنمی آپالستیک مقاوم به درمان به کار برده می‌شود. با اضافه کردن الترومبوپگ به خط اول درمان آنمی آپالستیک، میزان پاسخ کامل به درمان به نحو چشمگیری افزایش می‌یابد.</p>
             </div>
         </section>
 
         <!-- Section 48: نکات درمانی -->
-        <section id="sec48" class="card p-6">
-            <h2 class="section-title text-xl">48. نکات درمانی</h2>
+        <section id="sec48" class="study-section">
+            <header class="section-header"><span class="section-number">48</span><h2 class="section-title">48. نکات درمانی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">گلوکوکورتیکوئید، اریتروپویتین و <bdi dir="ltr">G-CSF</bdi> در درمان آنمی آپالستیک مؤثر نبوده و توصیه نمی‌شوند.</p>
             </div>
         </section>
 
         <!-- Section 49: آنمی‌های میلوفتیزیک -->
-        <section id="sec49" class="card p-6">
-            <h2 class="section-title text-xl">49. آنمی‌های میلوفتیزیک</h2>
+        <section id="sec49" class="study-section">
+            <header class="section-header"><span class="section-number">49</span><h2 class="section-title">49. آنمی‌های میلوفتیزیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">تعریف: فیبروز مغز استخوان غالباً موجب ایجاد لکواریتروبالستوز در الم خون محیطی می‌شود. اگر فیبروز مغز استخوان به صورت اولیه رخ دهد، به آن میلوفیبروز اولیه یا متاپالزی میلوئید گفته می‌شود و اگر ثانویه باشد، به آن میلوفتیزی یا میلوفیبروز واکنشی اطلاق می‌گردد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اتیولوژی:</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">علل ایجاد کننده آنمی میلوفتیزیک:</h4>
@@ -1168,20 +1065,20 @@
         </section>
 
         <!-- Section 50: اسمیر خون محیطی در آنمی مگالوبالستیک -->
-        <section id="sec50" class="card p-6">
-            <h2 class="section-title text-xl">50. اسمیر خون محیطی در آنمی مگالوبالستیک</h2>
+        <section id="sec50" class="study-section">
+            <header class="section-header"><span class="section-number">50</span><h2 class="section-title">50. اسمیر خون محیطی در آنمی مگالوبالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">ماکرواولوسیت‌ها و نوتروفیل هیپرسگمانته مشاهده می‌شوند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">تست آنتی‌گلوبولین مستقیم با جواب مثبت می‌تواند موجب تشخیص اشتباه آنمی همولیتیک ضعیف اتوایمیون شود.</p>
             </div>
         </section>
 
         <!-- Section 51: تغییرات آزمایشگاهی در آنمی مگالوبالستیک -->
-        <section id="sec51" class="card p-6">
-            <h2 class="section-title text-xl">51. تغییرات آزمایشگاهی در آنمی مگالوبالستیک</h2>
+        <section id="sec51" class="study-section">
+            <header class="section-header"><span class="section-number">51</span><h2 class="section-title">51. تغییرات آزمایشگاهی در آنمی مگالوبالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">هموگلوبین پائین و <bdi dir="ltr">MCV</bdi> بیشتر از <bdi dir="ltr">100</bdi></li>
                   <li class="leading-relaxed text-gray-700">کاهش رتیکولوسیت‌ها</li>
@@ -1201,10 +1098,10 @@
         </section>
 
         <!-- Section 52: یافته‌های به نفع آنمی مگالوبالستیک -->
-        <section id="sec52" class="card p-6">
-            <h2 class="section-title text-xl">52. یافته‌های به نفع آنمی مگالوبالستیک</h2>
+        <section id="sec52" class="study-section">
+            <header class="section-header"><span class="section-number">52</span><h2 class="section-title">52. یافته‌های به نفع آنمی مگالوبالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">آنمی ماکروسیتیک (<bdi dir="ltr">MCV</bdi> بیشتر از <bdi dir="ltr">100</bdi>)</li>
                   <li class="leading-relaxed text-gray-700">کاهش لکوسیت‌ها و پلاکت‌ها (پان‌سیتوپنی)</li>
@@ -1215,19 +1112,19 @@
         </section>
 
         <!-- Section 53: یافته‌های نمونه لام خون محیطی در کمبود B12 -->
-        <section id="sec53" class="card p-6">
-            <h2 class="section-title text-xl">53. یافته‌های نمونه لام خون محیطی در کمبود <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi></h2>
+        <section id="sec53" class="study-section">
+            <header class="section-header"><span class="section-number">53</span><h2 class="section-title">53. یافته‌های نمونه لام خون محیطی در کمبود <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">نوتروفیل هیپرسگمانته نشانگر آنمی مگالوبالستیک می‌گردد و <bdi dir="ltr">MCV</bdi> بالا می‌رود. عوامل زیادی باعث افزایش <bdi dir="ltr">MCV</bdi> می‌شوند، لیکن تنها کمبود <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> و فوالت باعث هیپرسگمانته شدن نوتروفیل‌ها می‌شوند.</p>
             </div>
         </section>
 
         <!-- Section 54: نکات مربوط به هیپرسگمانتاسیون نوتروفیل‌ها -->
-        <section id="sec54" class="card p-6">
-            <h2 class="section-title text-xl">54. نکات مربوط به هیپرسگمانتاسیون نوتروفیل‌ها</h2>
+        <section id="sec54" class="study-section">
+            <header class="section-header"><span class="section-number">54</span><h2 class="section-title">54. نکات مربوط به هیپرسگمانتاسیون نوتروفیل‌ها</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اگرچه نوتروفیل هیپرسگمانته یک یافته مهم در آنمی مگالوبالستیک است ولی پاتوگونومونیک نبوده و در اختلالات زیر دیده می‌شود:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">عفونت مزمن</li>
@@ -1239,10 +1136,10 @@
         </section>
 
         <!-- Section 55: تشخیص آنمی مگالوبالستیک -->
-        <section id="sec55" class="card p-6">
-            <h2 class="section-title text-xl">55. تشخیص آنمی مگالوبالستیک</h2>
+        <section id="sec55" class="study-section">
+            <header class="section-header"><span class="section-number">55</span><h2 class="section-title">55. تشخیص آنمی مگالوبالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">بیشتر از <bdi dir="ltr">100</bdi> <bdi dir="ltr">MCV</bdi>، نوتروفیل هیپرسگمانته، افزایش <bdi dir="ltr">LDH</bdi>، افزایش بیلی‌روبین غیرکنژوگه، کاهش هاپتوگلوبولین، افزایش اوروبیلینوژن ادرار و هموسیدرین ادراری مثبت.</li>
                   <li class="leading-relaxed text-gray-700">کاهش تعداد رتیکولوسیت‌ها.</li>
@@ -1272,28 +1169,28 @@
         </section>
 
         <!-- Section 56: افتراق آنمی مگالوبالستیک ناشی از کمبود B12 و فوالت -->
-        <section id="sec56" class="card p-6">
-            <h2 class="section-title text-xl">56. افتراق آنمی مگالوبالستیک ناشی از کمبود <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> و فوالت</h2>
+        <section id="sec56" class="study-section">
+            <header class="section-header"><span class="section-number">56</span><h2 class="section-title">56. افتراق آنمی مگالوبالستیک ناشی از کمبود <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> و فوالت</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> علائم نورولوژیک هم وجود دارد ولی در کمبود فوالت بیمار علائم نورولوژیک ندارد.</p>
             </div>
         </section>
 
         <!-- Section 57: یافته‌های منطبق با تشخیص -->
-        <section id="sec57" class="card p-6">
-            <h2 class="section-title text-xl">57. یافته‌های منطبق با تشخیص</h2>
+        <section id="sec57" class="study-section">
+            <header class="section-header"><span class="section-number">57</span><h2 class="section-title">57. یافته‌های منطبق با تشخیص</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در آنمی مگالوبالستیک بیلی‌روبین غیرمستقیم افزایش می‌یابد، لذا ایکتر محتمل است.</p>
             </div>
         </section>
 
         <!-- Section 58: علل کمبود کوباالمین (B12) -->
-        <section id="sec58" class="card p-6">
-            <h2 class="section-title text-xl">58. علل کمبود کوباالمین (<bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>)</h2>
+        <section id="sec58" class="study-section">
+            <header class="section-header"><span class="section-number">58</span><h2 class="section-title">58. علل کمبود کوباالمین (<bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">کمبود کوباالمین در افراد گیاهخواری که گوشت قرمز، ماهی، تخم‌مرغ، پنیر و سایر فرآورده‌های حیوانی را از رژیم غذایی خود حذف نموده‌اند، ایجاد می‌گردد. البته از آنجایی که افراد گیاهخوار معمولاً رژیم غذایی عاری از کوباالمین ندارند و چرخه انتروهپاتیک آنها نیز سالم است، معمولاً به آنمی مگالوبالستیک دچار نمی‌شوند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">یافته‌هایی که به نفع کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> هستند:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -1306,10 +1203,10 @@
         </section>
 
         <!-- Section 59: علل کمبود کوباالمین که شدت کافی برای ایجاد آنمی مگالوبالستیک را دارند -->
-        <section id="sec59" class="card p-6">
-            <h2 class="section-title text-xl">59. علل کمبود کوباالمین که شدت کافی برای ایجاد آنمی مگالوبالستیک را دارند</h2>
+        <section id="sec59" class="study-section">
+            <header class="section-header"><span class="section-number">59</span><h2 class="section-title">59. علل کمبود کوباالمین که شدت کافی برای ایجاد آنمی مگالوبالستیک را دارند</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">تغذیه ای (گیاهخواران)</li>
                   <li class="leading-relaxed text-gray-700">سوءجذب (آنمی پرنیشیوز)</li>
@@ -1328,19 +1225,19 @@
         </section>
 
         <!-- Section 60: یافته‌های آزمایشگاهی مهم در آنمی مگالوبالستیک -->
-        <section id="sec60" class="card p-6">
-            <h2 class="section-title text-xl">60. یافته‌های آزمایشگاهی مهم در آنمی مگالوبالستیک</h2>
+        <section id="sec60" class="study-section">
+            <header class="section-header"><span class="section-number">60</span><h2 class="section-title">60. یافته‌های آزمایشگاهی مهم در آنمی مگالوبالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">MCV</bdi> بیشتر از <bdi dir="ltr">100</bdi> <bdi dir="ltr">fl</bdi>، آنمی، پان‌سیتوپنی (در موارد شدید)، افزایش <bdi dir="ltr">LDH</bdi>، کاهش رتیکولوسیت، کاهش هاپتوگلوبین و افزایش بیلی‌روبین غیرمستقیم.</p>
             </div>
         </section>
 
         <!-- Section 61: شرایطی که موجب سوءجذب کوباالمین می‏شوند ولی ممکن است به قدر کافی شدید یا طوالنی‌مدت نباشند که آنمی مگالوباستیک ایجاد نمایند -->
-        <section id="sec61" class="card p-6">
-            <h2 class="section-title text-xl">61. شرایطی که موجب سوءجذب کوباالمین می‏شوند ولی ممکن است به قدر کافی شدید یا طوالنی‌مدت نباشند که آنمی مگالوباستیک ایجاد نمایند</h2>
+        <section id="sec61" class="study-section">
+            <header class="section-header"><span class="section-number">61</span><h2 class="section-title">61. شرایطی که موجب سوءجذب کوباالمین می‏شوند ولی ممکن است به قدر کافی شدید یا طوالنی‌مدت نباشند که آنمی مگالوباستیک ایجاد نمایند</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">علل معدی</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">گاستریت آتروفیک ساده (سوءجذب کوباالمین موجود در غذا)</li>
@@ -1368,10 +1265,10 @@
         </section>
 
         <!-- Section 62: یافته‌های مورفولوژیک در آنمی مگالوبالستیک -->
-        <section id="sec62" class="card p-6">
-            <h2 class="section-title text-xl">62. یافته‌های مورفولوژیک در آنمی مگالوبالستیک</h2>
+        <section id="sec62" class="study-section">
+            <header class="section-header"><span class="section-number">62</span><h2 class="section-title">62. یافته‌های مورفولوژیک در آنمی مگالوبالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در لام خون محیطی، نوتروفیل هیپرسگمانته و ماکرواُولوسیت مشاهده می‏گردد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">نوتروفیل هیپرسگمانته یک یافته کاراکتریستیک آنمــی مگالوبالســتیک ناشــی از کمبــود ویتامیـن <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> و فـوالت بــوده، اگرچــه پاتوگنومونیــک آنمـی مگالوبالستیک نیست.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">مغز اســتخوان در آنمی مگالوبالســتیک هیپرسلوالر است.</p>
@@ -1379,19 +1276,19 @@
         </section>
 
         <!-- Section 63: علائم نورولوژیک در آنمی مگالوبالستیک ناشی از کمبود ویتامین B12 -->
-        <section id="sec63" class="card p-6">
-            <h2 class="section-title text-xl">63. علائم نورولوژیک در آنمی مگالوبالستیک ناشی از کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi></h2>
+        <section id="sec63" class="study-section">
+            <header class="section-header"><span class="section-number">63</span><h2 class="section-title">63. علائم نورولوژیک در آنمی مگالوبالستیک ناشی از کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">عالئـم نورولوژیـک می‏شــود. ایــن عالئـم موجــب نوروپاتـی محیطــی دوطرفــه، پارســتزی، ضعف عضالنـی، مشـکل در راه رفتــن (راه رفتـن آتاکسیک)، فقدان حس عمقی (<bdi dir="ltr">Proprioception</bdi>) و نشــانه‏های رومبرگ و لرمیت عبارتنــد از: حس ارتعاش (<bdi dir="ltr">Vibration</bdi>).</p>
             </div>
         </section>
 
         <!-- Section 64: علل مهم کمبود ویتامین B12 -->
-        <section id="sec64" class="card p-6">
-            <h2 class="section-title text-xl">64. علل مهم کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi></h2>
+        <section id="sec64" class="study-section">
+            <header class="section-header"><span class="section-number">64</span><h2 class="section-title">64. علل مهم کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">رژیـم گیاهخــواری</li>
                   <li class="leading-relaxed text-gray-700">آنمــی پرنیشــیوز</li>
@@ -1405,10 +1302,10 @@
         </section>
 
         <!-- Section 65: علل روده‏ای سوءجذب کوباالمین -->
-        <section id="sec65" class="card p-6">
-            <h2 class="section-title text-xl">65. علل روده‏ای سوءجذب کوباالمین</h2>
+        <section id="sec65" class="study-section">
+            <header class="section-header"><span class="section-number">65</span><h2 class="section-title">65. علل روده‏ای سوءجذب کوباالمین</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در بیماری‏هایـی کـه در آنها ارگانیسم مدفوعی کولونیزاسیون بخش فوقانی روده کوچک با وجود داشته باشد، سوءجذب کوباالمین رخ می‏دهد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">برداشـتن مسـاوی یـا بیشـتر از <bdi dir="ltr">1</bdi>/<bdi dir="ltr">2</bdi> ایلئــوم ترمینــال موجـب سـوءجذب کوباالمیـن می‏شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">ســوءجذب انتخابی کوباالمین همراه با پروتئین‌اوری. این بیمـاری اتوزومـال مغلـوب است. شـایع‏ترین علـت آنمـی مگالوبالسـتیک ناشـی از کمبـود کوباالمین در شـیرخواران در کشورهای غربی است. بیشتر بیمـاران دچـار <bdi dir="ltr">90%</bdi> از پروتئین‌اوری غیراختصاصی هسـتند ولـی سـایر اعمـال کلیـه طبیعـی بـوده و بیوپسـی کلیـه نیز ضایعه‌ای را نشان نمی‌دهد.</p>
@@ -1426,10 +1323,10 @@
         </section>
 
         <!-- Section 66: نکات تکمیلی -->
-        <section id="sec66" class="card p-6">
-            <h2 class="section-title text-xl">66. نکات تکمیلی</h2>
+        <section id="sec66" class="study-section">
+            <header class="section-header"><span class="section-number">66</span><h2 class="section-title">66. نکات تکمیلی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">نوتروفیـل هیپرسـگمانته، در آنمــی مگالوبالســتیک دیده می‏شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">کمبود <bdi dir="ltr">G<bdi dir="ltr">6</bdi>PD</bdi> در <bdi dir="ltr">Heinz</bdi> اجسام دیده می‏شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">Fragmented RBC</bdi> کاراکتریسـتیک آنمی‏هــای همولیتیک میکروآنژیوپاتیک می‏باشد.</p>
@@ -1438,10 +1335,10 @@
         </section>
 
         <!-- Section 67: علل کمبود فولات -->
-        <section id="sec67" class="card p-6">
-            <h2 class="section-title text-xl">67. علل کمبود فولات</h2>
+        <section id="sec67" class="study-section">
+            <header class="section-header"><span class="section-number">67</span><h2 class="section-title">67. علل کمبود فولات</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">علل مهم کمبود فوالت عبارتند از: الکلیسم، بیماری کرون، حاملگی، داروهای ضدصرع (فنی‌توئین، پری‌میدون، باربیتورات‌ها)، سولفاسالازین، نیتروفورانتوئین و تتراسایکلین، داروهای ضدسل، سولفامتوکسازول و- متوترکسات، تری‌متوپریم و پیریمتامین.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">استفاده از <bdi dir="ltr">0</bdi>/<bdi dir="ltr">4</bdi> میلی‌گرم اسید فولیک (با دوز <bdi dir="ltr">12</bdi> روز) در زمان لقاح تا هفته اول حاملگی، کاهش <bdi dir="ltr">70%</bdi> را در میزان نقایص لوله عصبی (<bdi dir="ltr">NTDs</bdi>) می‌دهد. اگر مادری سابقه تولد یک نوزاد با <bdi dir="ltr">NTD</bdi> داشته باشد، دوز اسید فولیک روزانه <bdi dir="ltr">5</bdi> <bdi dir="ltr">mg</bdi> خواهد بود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">سطح پائین فوالت سرم و هموسیستئینوری فرد را مستعد ابتلا به بیماری ایسکمیک قلب، بیماری عروقی مغز (<bdi dir="ltr">Stroke</bdi>) یا آمبولی ریه می‌نماید.</p>
@@ -1449,10 +1346,10 @@
         </section>
 
         <!-- Section 68: آنمی پرنیشیوز -->
-        <section id="sec68" class="card p-6">
-            <h2 class="section-title text-xl">68. آنمی پرنیشیوز</h2>
+        <section id="sec68" class="study-section">
+            <header class="section-header"><span class="section-number">68</span><h2 class="section-title">68. آنمی پرنیشیوز</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">کمبود شدید فاکتور داخلی آنمی پرنیشیوز به علت آتروفی معده (<bdi dir="ltr">IF</bdi>) ایجاد می‌شود. ویتلیگو، بیماری‌های تیروئید، هیپوپاراتیروئیدی و بیماری آدیسون در همراهی با این بیماری مشاهده می‌گردند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در آنمی پرنیشیوز سطح پپسینوژن I افزایش و سطح گاسترین سرم کم می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">درصد <bdi dir="ltr">90%</bdi> بیماران مبتلا به آنمی پرنیشیوز یافت می‌شود. در سرم آنتی‌بادی ضد سلول پاریتال.</p>
@@ -1461,10 +1358,10 @@
         </section>
 
         <!-- Section 69: تشخیص کمبود فوالت و کوبالامین -->
-        <section id="sec69" class="card p-6">
-            <h2 class="section-title text-xl">69. تشخیص کمبود فوالت و کوبالامین</h2>
+        <section id="sec69" class="study-section">
+            <header class="section-header"><span class="section-number">69</span><h2 class="section-title">69. تشخیص کمبود فوالت و کوبالامین</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اندازه‌گیری متیل مالونات (<bdi dir="ltr">MMA</bdi>) و هموسیستئین سرم: سطح سرمی متیل مالونیک اسید و هموسیستئین در مراحل اولیه کمبود کوبالامین، حتی در جهت تشخیص بیمارانی که اختلالات هماتولوژیک ندارند و یا سطح کوبالامین در آنها فقط اندکی از سطح نرمال پائین‌تر است، توصیه می‌شود. البته در مبتلایان به نارسایی کلیوی، سطح <bdi dir="ltr">MMA</bdi> نوسان دارد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">هموسیستئین سرم: در مراحل اولیه کمبود کوبالامین و فوالت، هموسیستئین سرم افزایش می‌یابد. سطح هموسیستئین سرم در برخی شرایط مانند بیماری کلیوی مزمن، الکلیسم، سیگار کشیدن، کمبود پیریدوکسین، هیپوتیروئیدی، درمان با استروئید، سیکلوسپورین و سایر داروها نیز افزایش می‌یابد. سطوح سرمی باالتر از پلاسما و در هموسیستئین همچنین در مردان باالتر از زنان پره‌منوپاز است و در زنانی که درمان جایگزین هورمونی (<bdi dir="ltr">HRT</bdi>) یا <bdi dir="ltr">OCP</bdi> دریافت می‌کنند و در بیماران مسن نیز باالتر است. بنابراین اندازه‌گیری سطح هموسیستئین، جهت تشخیص کمبود فوالت یا کوبالامین دقت لازم را ندارد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">متیل مالونیک اسید: در کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>، متیل مالونیک اسید افزایش می‌یابد ولی در کمبود اسید فولیک (فوالت)، سطح متیل مالونیک اسید طبیعی است؛ لذا به سنجش متیل مالونیک اسید می‌توان بین کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> و فوالت افتراق داد.</p>
@@ -1472,10 +1369,10 @@
         </section>
 
         <!-- Section 70: نتیجه‌گیری -->
-        <section id="sec70" class="card p-6">
-            <h2 class="section-title text-xl">70. نتیجه‌گیری</h2>
+        <section id="sec70" class="study-section">
+            <header class="section-header"><span class="section-number">70</span><h2 class="section-title">70. نتیجه‌گیری</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">در کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>، هم متیل مالونیک اسید و هم هموسیستئین باال می‌رود.</li>
                   <li class="leading-relaxed text-gray-700">در کمبود فوالت، هموسیستئین باال می‌رود ولی متیل مالونیک اسید طبیعی است.</li>
@@ -1485,10 +1382,10 @@
         </section>
 
         <!-- Section 71: تشخیص افتراقی آنمی مگالوبالستیک -->
-        <section id="sec71" class="card p-6">
-            <h2 class="section-title text-xl">71. تشخیص افتراقی آنمی مگالوبالستیک</h2>
+        <section id="sec71" class="study-section">
+            <header class="section-header"><span class="section-number">71</span><h2 class="section-title">71. تشخیص افتراقی آنمی مگالوبالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در مراحل اولیه آنمی مگالوبالستیک، ممکن است سطح ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> سرم طبیعی باشد. در این موارد اندازه‌گیری متیل مالونیک اسید کمک کننده است. چرا که در کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>، سطح آن افزایش می‌یابد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در آنمی پرنیشیوز، میزان متیل مالونیک اسید (<bdi dir="ltr">MMA</bdi>) افزایش یافته و به تشخیص کمک می‌کند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در آنمی پرنیشیوز، ممکن است کوبالامین سرم (ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>) طبیعی باشد. طبیعی بودن کوبالامین سرم تشخيص آنمی پرنیشیوز را <bdi dir="ltr">Rule out</bdi> نمی‌کند.</p>
@@ -1500,10 +1397,10 @@
         </section>
 
         <!-- Section 72: افتراق آنمی مگالوبالستیک از سایر علل ماکروسیتوز -->
-        <section id="sec72" class="card p-6">
-            <h2 class="section-title text-xl">72. افتراق آنمی مگالوبالستیک از سایر علل ماکروسیتوز</h2>
+        <section id="sec72" class="study-section">
+            <header class="section-header"><span class="section-number">72</span><h2 class="section-title">72. افتراق آنمی مگالوبالستیک از سایر علل ماکروسیتوز</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در بیماران با سطوح پایین یا <bdi dir="ltr">borderline</bdi> کوبالامین که دارای اختلالات نورولوژیک یا روانی هستند، حتماً باید کمبود کوبالامین با آزمایشات زیر مورد بررسی قرار گیرد:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">بررسی لام خون محیطی</li>
@@ -1521,10 +1418,10 @@
         </section>
 
         <!-- Section 73: درمان آنمی مگالوبالستیک -->
-        <section id="sec73" class="card p-6">
-            <h2 class="section-title text-xl">73. درمان آنمی مگالوبالستیک</h2>
+        <section id="sec73" class="study-section">
+            <header class="section-header"><span class="section-number">73</span><h2 class="section-title">73. درمان آنمی مگالوبالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">تجویز ویتامین: غالباً می‌توان اثبات کرد که کمبود کدامیک از دو ویتامین فولات یا کوبالامین موجب آنمی شده و می‌توان با تجویز همان ویتامین درمان را آغاز نمود. در بیماران بدحال بستری در بیمارستان ممکن است پس از نمونه‌برداری از خون یا مغز استخوان (در صورت لزوم)، درمان با دوز بالای هر دو ویتامین لازم باشد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">تزریق خون: غالباً لازم نبوده و توصیه نمی‌شود و اگر لازم شود باید تنها یک یا دو واحد به آهستگی تجویز گردد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">مکمل‌های پتاسیم: توصیه شده در این بیماران جهت پیشگیری از بروز هیپوکالمی، مکمل پتاسیم تجویز شود.</p>
@@ -1538,20 +1435,20 @@
         </section>
 
         <!-- Section 74: انواع فرآورده‌های خونی -->
-        <section id="sec74" class="card p-6">
-            <h2 class="section-title text-xl">74. انواع فرآورده‌های خونی</h2>
+        <section id="sec74" class="study-section">
+            <header class="section-header"><span class="section-number">74</span><h2 class="section-title">74. انواع فرآورده‌های خونی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">دهنده همگانی خون کامل و <bdi dir="ltr">Packed cell</bdi> گروه خونی O منفی می‌باشد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">دهنده همگانی <bdi dir="ltr">FFP</bdi> گروه خونی <bdi dir="ltr">AB</bdi> مثبت است.</p>
             </div>
         </section>
 
         <!-- Section 75: کنسانتره RBC -->
-        <section id="sec75" class="card p-6">
-            <h2 class="section-title text-xl">75. کنسانتره <bdi dir="ltr">RBC</bdi></h2>
+        <section id="sec75" class="study-section">
+            <header class="section-header"><span class="section-number">75</span><h2 class="section-title">75. کنسانتره <bdi dir="ltr">RBC</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اندیکاسیون‌های تزریق کنسانتره <bdi dir="ltr">RBC</bdi>:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">درمان یا پیشگیری از آنمی و یا ایسکمی بافتی</li>
@@ -1566,10 +1463,10 @@
         </section>
 
         <!-- Section 76: پالکت -->
-        <section id="sec76" class="card p-6">
-            <h2 class="section-title text-xl">76. پالکت</h2>
+        <section id="sec76" class="study-section">
+            <header class="section-header"><span class="section-number">76</span><h2 class="section-title">76. پالکت</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اندیکاسیون‌های تزریق پالکت:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">اختلالات خونریزی‌دهنده ناشی از ترومبوسیتوپنی:</li>
@@ -1594,10 +1491,10 @@
         </section>
 
         <!-- Section 77: FFP (پلاسما) -->
-        <section id="sec77" class="card p-6">
-            <h2 class="section-title text-xl">77. <bdi dir="ltr">FFP</bdi> (پلاسما)</h2>
+        <section id="sec77" class="study-section">
+            <header class="section-header"><span class="section-number">77</span><h2 class="section-title">77. <bdi dir="ltr">FFP</bdi> (پلاسما)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اندیکاسیون‌های تزریق پلاسما:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">اختلالات خونریزی‌دهنده ناشی از فاکتورهای انعقادی</li>
@@ -1608,29 +1505,29 @@
         </section>
 
         <!-- Section 78: خون کامل -->
-        <section id="sec78" class="card p-6">
-            <h2 class="section-title text-xl">78. خون کامل</h2>
+        <section id="sec78" class="study-section">
+            <header class="section-header"><span class="section-number">78</span><h2 class="section-title">78. خون کامل</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اندیکاسیون اصلی تزریق خون کامل در <bdi dir="ltr">Massive Transfusion Case</bdi> است و در بیمارانی که نیاز به ترانسفیوژن <bdi dir="ltr">Massive</bdi> دارند و با فشار <bdi dir="ltr">60</bdi>/P در شوک هستند باید خون کامل تزریق کرد.</p>
             </div>
         </section>
 
         <!-- Section 79: فرآورده ترکیبی (RBC، پالکت و پلاسما) -->
-        <section id="sec79" class="card p-6">
-            <h2 class="section-title text-xl">79. فرآورده ترکیبی (<bdi dir="ltr">RBC</bdi>، پالکت و پلاسما)</h2>
+        <section id="sec79" class="study-section">
+            <header class="section-header"><span class="section-number">79</span><h2 class="section-title">79. فرآورده ترکیبی (<bdi dir="ltr">RBC</bdi>، پالکت و پلاسما)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اندیکاسیون: کوآگولوپاتی هیپوولمیک حاد که نیاز به ترانسفیوژن <bdi dir="ltr">Massive</bdi> دارد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">هدف: نسبت صحیح تزریق فرآورده‌های ترکیبی (مشابه خون کامل) ارجح است: <bdi dir="ltr">1</bdi> <bdi dir="ltr">RBC</bdi> : <bdi dir="ltr">1</bdi> پلاسما : <bdi dir="ltr">0.25</bdi> پالکت.</p>
             </div>
         </section>
 
         <!-- Section 80: تزریق خون و فرآورده‌های آن -->
-        <section id="sec80" class="card p-6">
-            <h2 class="section-title text-xl">80. تزریق خون و فرآورده‌های آن</h2>
+        <section id="sec80" class="study-section">
+            <header class="section-header"><span class="section-number">80</span><h2 class="section-title">80. تزریق خون و فرآورده‌های آن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">گروه خونی O منفی دهنده همگانی <bdi dir="ltr">RBC</bdi> است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">گروه خونی <bdi dir="ltr">AB</bdi> دهنده همگانی پلاسما (<bdi dir="ltr">FFP</bdi>) است.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">اندیکاسیون تزریق کنسانتره گلبول قرمز (<bdi dir="ltr">RBC</bdi>)</h4>
@@ -1664,10 +1561,10 @@
         </section>
 
         <!-- Section 81: کرایوپرسیپیتات -->
-        <section id="sec81" class="card p-6">
-            <h2 class="section-title text-xl">81. کرایوپرسیپیتات</h2>
+        <section id="sec81" class="study-section">
+            <header class="section-header"><span class="section-number">81</span><h2 class="section-title">81. کرایوپرسیپیتات</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">محتویات کرایوپرسیپیتات</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">حاوی فیبرینوژن، فاکتور فون ویلبراند، فاکتور <bdi dir="ltr">VIII</bdi> و فاکتور <bdi dir="ltr">XIII</bdi> است.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">اندیکاسیون‌های تجویز کرایوپرسیپیتات</h4>
@@ -1683,10 +1580,10 @@
         </section>
 
         <!-- Section 82: واکنش‌های ناخواسته به انتقال خون -->
-        <section id="sec82" class="card p-6">
-            <h2 class="section-title text-xl">82. واکنش‌های ناخواسته به انتقال خون</h2>
+        <section id="sec82" class="study-section">
+            <header class="section-header"><span class="section-number">82</span><h2 class="section-title">82. واکنش‌های ناخواسته به انتقال خون</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">واکنش‌های همولیتیک حاد</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">پاتوژنز: همولیز حاد ایمونولوژیک هنگامی رخ می‌دهد که فرد گیرنده دارای آنتی‌بادی‌های از پیش‌ساخته بوده و <bdi dir="ltr">RBC</bdi> دهنده توسط این آنتی‌بادی‌ها لیز شوند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">زمان وقوع: همولیز حاد ایمونولوژیک ممکن است در <bdi dir="ltr">24</bdi> ساعت اول یا طی <bdi dir="ltr">24</bdi> ساعت بعد از انتقال خون رخ دهد.</p>
@@ -1710,10 +1607,10 @@
         </section>
 
         <!-- Section 83: تست آنتی‌گلوبولین -->
-        <section id="sec83" class="card p-6">
-            <h2 class="section-title text-xl">83. تست آنتی‌گلوبولین</h2>
+        <section id="sec83" class="study-section">
+            <header class="section-header"><span class="section-number">83</span><h2 class="section-title">83. تست آنتی‌گلوبولین</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">تست آنتی‌گلوبولین مستقیم (<bdi dir="ltr">DAT</bdi>)</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">مثبت است. این تست کومبس مستقیم در اغلب موارد کمپلمان (<bdi dir="ltr">C<bdi dir="ltr">3</bdi>d</bdi>) و مولکول‌های ایمنوگلوبولین را در سطح <bdi dir="ltr">RBC</bdi> شناسایی می‌کند.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">تست آنتی‌گلوبولین غیرمستقیم (<bdi dir="ltr">IAT</bdi>)</h4>
@@ -1722,10 +1619,10 @@
         </section>
 
         <!-- Section 84: واکنش‌های انتقال خون -->
-        <section id="sec84" class="card p-6">
-            <h2 class="section-title text-xl">84. واکنش‌های انتقال خون</h2>
+        <section id="sec84" class="study-section">
+            <header class="section-header"><span class="section-number">84</span><h2 class="section-title">84. واکنش‌های انتقال خون</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">واکنش همولیتیک حاد</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">عدم تجانس <bdi dir="ltr">ABO</bdi> علت واکنش همولیتیک حاد رخ می‌دهد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">زمان وقوع این واکنش، حین تزریقی خون یا بلافاصله پس از آن می‌باشد.</p>
@@ -1804,10 +1701,10 @@
         </section>
 
         <!-- Section 85: واکنش‌های آلرژیک -->
-        <section id="sec85" class="card p-6">
-            <h2 class="section-title text-xl">85. واکنش‌های آلرژیک</h2>
+        <section id="sec85" class="study-section">
+            <header class="section-header"><span class="section-number">85</span><h2 class="section-title">85. واکنش‌های آلرژیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">اتیولوژی واکنش‌های آلرژیک</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">واکنش‌های آلرژیک اغلب به علت پروتئین‌های پلاسمایی موجود در فرآورده‌های خونی ایجاد می‌شود.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">تظاهرات بالینی واکنش‌های آلرژیک</h4>
@@ -1820,10 +1717,10 @@
         </section>
 
         <!-- Section 86: درمان لنفوم فولیکولر -->
-        <section id="sec86" class="card p-6">
-            <h2 class="section-title text-xl">86. درمان لنفوم فولیکولر</h2>
+        <section id="sec86" class="study-section">
+            <header class="section-header"><span class="section-number">86</span><h2 class="section-title">86. درمان لنفوم فولیکولر</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">مراحل اولیه</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">در مراحل اولیه بیماری (مراحل I و برخی از موارد <bdi dir="ltr">II</bdi> غیرحجیم)، رادیوتراپی توصیه می‌شود که در نیمی از بیماران علاج‌بخش است.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">مراحل پیشرفته</h4>
@@ -1849,19 +1746,19 @@
         </section>
 
         <!-- Section 87: درمان عود DLBCL -->
-        <section id="sec87" class="card p-6">
-            <h2 class="section-title text-xl">87. درمان عود <bdi dir="ltr">DLBCL</bdi></h2>
+        <section id="sec87" class="study-section">
+            <header class="section-header"><span class="section-number">87</span><h2 class="section-title">87. درمان عود <bdi dir="ltr">DLBCL</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">درمان استاندارد در موارد عود <bdi dir="ltr">DLBCL</bdi>، شیمی‌درمانی با دوز بالا (شیمی‌درمانی نجات‌بخش) به همراه پیوند اتولوگ سلول‌های بنیادی است.</p>
             </div>
         </section>
 
         <!-- Section 88: MGUS (Monoclonal Gammopathy of Undetermined Significance) -->
-        <section id="sec88" class="card p-6">
-            <h2 class="section-title text-xl">88. <bdi dir="ltr">MGUS (Monoclonal Gammopathy of Undetermined Significance</bdi>)</h2>
+        <section id="sec88" class="study-section">
+            <header class="section-header"><span class="section-number">88</span><h2 class="section-title">88. <bdi dir="ltr">MGUS (Monoclonal Gammopathy of Undetermined Significance</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">MGUS</bdi> یک اختلال پیش‌بدخیم بوده و احتمال ایجاد میلوم مولتیپل یا سایر دیس‌کرازی‌های بدخیم پلاسماسل در مبتلایان به این بیماری <bdi dir="ltr">7</bdi> برابر شایع‌تر از جمعیت عمومی است. احتمال تبدیل به بدخیمی‌های پلاسماسل، حدود <bdi dir="ltr">1%</bdi> در سال است.</p>
                 <div class="exam-tip p-4 rounded-lg mb-3">
                   <strong>💡 نکته امتحانی:</strong> <bdi dir="ltr">1.</bdi> وجود پروتئین مونوکلونال از نوع <bdi dir="ltr">IgM</bdi> یا <bdi dir="ltr">IgA <bdi dir="ltr">2</bdi></bdi>. غلظت اولیه پروتئین M بیشتر از <bdi dir="ltr">1.5</bdi> <bdi dir="ltr">g/dL <bdi dir="ltr">3</bdi></bdi>. نسبت غیرطبیعی زنجیره سبک آزاد λ به κ
@@ -1871,10 +1768,10 @@
         </section>
 
         <!-- Section 89: میلوم بی‌علامت (Smoldering Myeloma) -->
-        <section id="sec89" class="card p-6">
-            <h2 class="section-title text-xl">89. میلوم بی‌علامت (<bdi dir="ltr">Smoldering Myeloma</bdi>)</h2>
+        <section id="sec89" class="study-section">
+            <header class="section-header"><span class="section-number">89</span><h2 class="section-title">89. میلوم بی‌علامت (<bdi dir="ltr">Smoldering Myeloma</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">میلوم بی‌علامت (<bdi dir="ltr">Smoldering Myeloma</bdi>) یا میلوم <bdi dir="ltr">Stage I</bdi>، میلوم بدون علامت است.</p>
                 <div class="exam-tip p-4 rounded-lg mb-3">
                   <strong>💡 نکته امتحانی:</strong> <bdi dir="ltr">1.</bdi> وجود پلاسماسل در مغز استخوان <bdi dir="ltr">5%</bdi> تا <bdi dir="ltr">10%</bdi> <bdi dir="ltr">2.</bdi> وجود پروتئین منوکلونال مساوی یا بیشتر از <bdi dir="ltr">3</bdi> <bdi dir="ltr">g/dL <bdi dir="ltr">3</bdi></bdi>. فقدان آسیب به ارگان‌ها <bdi dir="ltr">4.</bdi> فقدان شواهد درگیری استخوان در تصویربرداری‌های پیشرفته (<bdi dir="ltr">PET-CT</bdi> کل بدن یا <bdi dir="ltr">MRI) <bdi dir="ltr">5</bdi></bdi>. عدم افزایش زنجیره آزاد کلونال
@@ -1884,10 +1781,10 @@
         </section>
 
         <!-- Section 90: میلوم غیرترشحی (Nonsecretory Myeloma) -->
-        <section id="sec90" class="card p-6">
-            <h2 class="section-title text-xl">90. میلوم غیرترشحی (<bdi dir="ltr">Nonsecretory Myeloma</bdi>)</h2>
+        <section id="sec90" class="study-section">
+            <header class="section-header"><span class="section-number">90</span><h2 class="section-title">90. میلوم غیرترشحی (<bdi dir="ltr">Nonsecretory Myeloma</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">حدود <bdi dir="ltr">20%</bdi> مبتلایان به میلوم مولتیپل، از نوع غیرترشحی هستند. در این نوع، پروتئین M در الکتروفورز قابل تشخیص نبوده، اما زنجیره سبک آزاد در گردش خون وجود دارد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">زنجیره سبک آزاد ممکن است در ادرار وجود داشته باشد که به آن جونز پروتئین گفته می‌شود. با الکتروفورز پروتئین‌های ادرار <bdi dir="ltr">24</bdi> ساعته و سنجش زنجیره سبک آزاد در گردش خون (نیمه عمر <bdi dir="ltr">2</bdi> تا <bdi dir="ltr">6</bdi> ساعت) می‌توان آن را تشخیص داد و برای ارزیابی پاسخ به درمان استفاده کرد.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">توجه</h4>
@@ -1902,10 +1799,10 @@
         </section>
 
         <!-- Section 91: ماکروگلوبولینمی والدنشتروم (Waldenström's Macroglobulinemia - WM) -->
-        <section id="sec91" class="card p-6">
-            <h2 class="section-title text-xl">91. ماکروگلوبولینمی والدنشتروم (Waldenström'<bdi dir="ltr">s Macroglobulinemia - WM</bdi>)</h2>
+        <section id="sec91" class="study-section">
+            <header class="section-header"><span class="section-number">91</span><h2 class="section-title">91. ماکروگلوبولینمی والدنشتروم (Waldenström'<bdi dir="ltr">s Macroglobulinemia - WM</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">بدخیمی ماکروگلوبولینمی والدنشتروم یک لنفوم نان‌هوچکین مزمن بوده که افراد مسن را درگیر می‌کند و ویژگی‌های مشترکی با میلوم دارد. این بیماری ناشی از لنفوسیت‌های پلاسماسیتوئید است که مقادیر زیادی <bdi dir="ltr">IgM</bdi> تولید می‌کنند.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">پاتوژنز</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">در اغلب مبتلایان به ماکروگلوبولینمی والدنشتروم، موتاسیون‌های ژن <bdi dir="ltr">MYD<bdi dir="ltr">88</bdi></bdi> وجود داشته و ارزش تشخیصی و درمانی دارد.</p>
@@ -1928,10 +1825,10 @@
         </section>
 
         <!-- Section 92: علائم و نشانه‌های ماکروگلوبولینمی والدنشتروم -->
-        <section id="sec92" class="card p-6">
-            <h2 class="section-title text-xl">92. علائم و نشانه‌های ماکروگلوبولینمی والدنشتروم</h2>
+        <section id="sec92" class="study-section">
+            <header class="section-header"><span class="section-number">92</span><h2 class="section-title">92. علائم و نشانه‌های ماکروگلوبولینمی والدنشتروم</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">علائم ناشی از لنفوم</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">آنمی</li>
@@ -1953,10 +1850,10 @@
         </section>
 
         <!-- Section 93: آنمی ناشی از خونریزی‌های حاد -->
-        <section id="sec93" class="card p-6">
-            <h2 class="section-title text-xl">93. آنمی ناشی از خونریزی‌های حاد</h2>
+        <section id="sec93" class="study-section">
+            <header class="section-header"><span class="section-number">93</span><h2 class="section-title">93. آنمی ناشی از خونریزی‌های حاد</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">خونریزی جلدی-مخاطی پتشی و پورپورا با پلاکت کمتر از <bdi dir="ltr">10000</bdi>، تظاهر می‌یابد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در <bdi dir="ltr">ITP</bdi>، اسپلنومگالی و لنفادنوپاتی وجود ندارد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در <bdi dir="ltr">ITP</bdi>، معمولاً هموگلوبین و هماتوکریت و تعداد گلبول‌های سفید طبیعی هستند. همچنین به پاسخ،</p>
@@ -1964,10 +1861,10 @@
         </section>
 
         <!-- Section 94: نکات کلی -->
-        <section id="sec94" class="card p-6">
-            <h2 class="section-title text-xl">94. نکات کلی</h2>
+        <section id="sec94" class="study-section">
+            <header class="section-header"><span class="section-number">94</span><h2 class="section-title">94. نکات کلی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="exam-tip p-4 rounded-lg mb-3"><strong>💡 نکته امتحانی:</strong> منوراژی یک تظاهر شایع در بیماری فون ویلبراند-<bdi dir="ltr">1</bdi> است و در مواردی که خونریزی قاعدگی شدید باشد یا موجب آنمی شده باشد، باید همواره به فکر بیماری فون ویلبراند بود. (امتحانی%<bdi dir="ltr">100</bdi>)</div>
                 <p class="mb-3 leading-relaxed text-gray-700">منوراژی یک تظاهر شایع و بسیار مهم در بیماری فون ویلبراند است. طولانی شدن <bdi dir="ltr">BT</bdi> مهم‌ترین یافته آزمایشگاهی در این بیماران است. همچنین در بیماری فون ویلبراند ممکن است <bdi dir="ltr">PTT</bdi> طولانی شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">یافته‌هایی که در بیماری مورد نظر سئوال به نفع فون ویلبراند هستند، عبارتند از: <bdi dir="ltr">1.</bdi> کبودی‌های آسان و ضایعات اکیموتیک <bdi dir="ltr">2.</bdi> آنمی فقر آهن که ناشی از خونریزی‌های غیرطبیعی است. <bdi dir="ltr">3.</bdi> تست عملکردی تعداد پلاکت طبیعی به همراه پلاکت غیرطبیعی، چرا که در این بیماران تعداد پلاکت طبیعی بوده ولی پلاکت‌ها قادر به اتصال به عروق آسیب‌دیده نبوده و دچار اختلال عملکرد شده‌اند. <bdi dir="ltr">4.</bdi> کاهش فاکتور <bdi dir="ltr">VIII</bdi></p>
@@ -1997,10 +1894,10 @@
         </section>
 
         <!-- Section 95: بیماری فون ویلبراند نوع 2A -->
-        <section id="sec95" class="card p-6">
-            <h2 class="section-title text-xl">95. بیماری فون ویلبراند نوع <bdi dir="ltr">2</bdi>A</h2>
+        <section id="sec95" class="study-section">
+            <header class="section-header"><span class="section-number">95</span><h2 class="section-title">95. بیماری فون ویلبراند نوع <bdi dir="ltr">2</bdi>A</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">درمان نوع <bdi dir="ltr">2</bdi>N با <bdi dir="ltr">VWF</bdi> کنســانتره شــامل تزریق با یا بدون فاکتور <bdi dir="ltr">VIII</bdi> است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">مبتالیــان به فــون ویلبراند نوع <bdi dir="ltr">2</bdi>N با تابلویی شــبیه هموفیلی A تظاهر می‌یابند. (مانند همارتروز). این بیماری برخلاف هموفیلی اتوزومال بوده و در مردان و زنان به یک نسبت رخ می‌دهد؛ لذا در زنانی که با علائم هموفیلی مراجعه می‌کنند، حتماً باید بیماری فون ویلبراند نوع <bdi dir="ltr">2</bdi>N را در نظر داشت.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">سطح فاکتور <bdi dir="ltr">VIII</bdi> در این بیماری کاهش یافته است، اما به تزریق فاکتور پاسخ نمی‌دهد، چرا که طول عمر آن کاهش یافته است.</p>
@@ -2008,42 +1905,42 @@
         </section>
 
         <!-- Section 96: بیماری فون ویلبراند نوع 2B -->
-        <section id="sec96" class="card p-6">
-            <h2 class="section-title text-xl">96. بیماری فون ویلبراند نوع <bdi dir="ltr">2</bdi>B</h2>
+        <section id="sec96" class="study-section">
+            <header class="section-header"><span class="section-number">96</span><h2 class="section-title">96. بیماری فون ویلبراند نوع <bdi dir="ltr">2</bdi>B</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در کدامیک از انواع بیماری فون ویلبراند، <bdi dir="ltr">DDAVP</bdi> مناسب نبوده و برای درمان به کار برده نمی‌شود؟ پاسخ: نوع <bdi dir="ltr">2</bdi>B. در نوع <bdi dir="ltr">2</bdi>B، ترومبوسیتوپنی خفیفی وجود دارد و استفاده از <bdi dir="ltr">DDAVP</bdi> و تشدید ترومبوسیتوپنی موجب کنتراندیکه شدن و باید از کنسانتره <bdi dir="ltr">VWF</bdi> استفاده می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">درمان نوع <bdi dir="ltr">2</bdi>B با <bdi dir="ltr">VWF</bdi> کنســانتره است.</p>
             </div>
         </section>
 
         <!-- Section 97: بیماری فون ویلبراند نوع 2M -->
-        <section id="sec97" class="card p-6">
-            <h2 class="section-title text-xl">97. بیماری فون ویلبراند نوع <bdi dir="ltr">2</bdi>M</h2>
+        <section id="sec97" class="study-section">
+            <header class="section-header"><span class="section-number">97</span><h2 class="section-title">97. بیماری فون ویلبراند نوع <bdi dir="ltr">2</bdi>M</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در کدامیک از انواع بیماری فون ویلبراند، خونریزی گوارشی شایع‌تر است؟ پاسخ: نوع <bdi dir="ltr">2</bdi>M. خونریزی گوارشی در نوع <bdi dir="ltr">2</bdi>M شایع‌تر از سایر انواع بیماری فون ویلبراند است. تعداد پلاکت‌ها و مولتی‌مرهای <bdi dir="ltr">VWF</bdi> در این نوع طبیعی است. بعضی از بیماران به <bdi dir="ltr">DDAVP</bdi> پاسخ می‌دهند ولی اکثر آنها به کنسانتره <bdi dir="ltr">VWF</bdi> نیاز دارند.</p>
             </div>
         </section>
 
         <!-- Section 98: بیماری فون ویلبراند نوع 3 -->
-        <section id="sec98" class="card p-6">
-            <h2 class="section-title text-xl">98. بیماری فون ویلبراند نوع <bdi dir="ltr">3</bdi></h2>
+        <section id="sec98" class="study-section">
+            <header class="section-header"><span class="section-number">98</span><h2 class="section-title">98. بیماری فون ویلبراند نوع <bdi dir="ltr">3</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در کدامیک از انواع بیماری فون ویلبراند باید <bdi dir="ltr">Rule out</bdi> نمود؟ پاسخ: نوع <bdi dir="ltr">2</bdi>N. بیماری فون ویلبراند نوع <bdi dir="ltr">2</bdi>N با تابلویی شبیه هموفیلی A تظاهر می‌یابد. (مانند همارتروز). این بیماری برخلاف هموفیلی اتوزومال بوده و در مردان و زنان به یک نسبت رخ می‌دهد؛ لذا در زنانی که با علائم هموفیلی مراجعه می‌کنند، حتماً باید بیماری فون ویلبراند نوع <bdi dir="ltr">2</bdi>N را در نظر داشت.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در این بیماری کاهش یافتهVIII سطح فاکتور است، اما به تزریق فاکتور پاسخ نمی‌دهد، چرا که طول عمر آن کاهش یافته است.</p>
             </div>
         </section>
 
         <!-- Section 99: مقایسه انواع فون ویلبراند -->
-        <section id="sec99" class="card p-6">
-            <h2 class="section-title text-xl">99. مقایسه انواع فون ویلبراند</h2>
+        <section id="sec99" class="study-section">
+            <header class="section-header"><span class="section-number">99</span><h2 class="section-title">99. مقایسه انواع فون ویلبراند</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="overflow-x-auto mb-4">
+            <div class="frame-grid">
+                <div class="table-card"><div class="table-scroll">
                   <h4 class="font-bold text-md text-gray-700 mb-2">مقایسه انواع فون ویلبراند</h4>
-                  <table class="staging-table">
+                  <table class="medical-table">
                     <thead>
                       <tr>
                         <th><bdi dir="ltr">Type</bdi></th>
@@ -2091,60 +1988,60 @@
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                </div></div>
             </div>
         </section>
 
         <!-- Section 100: اتیولوژی -->
-        <section id="sec100" class="card p-6">
-            <h2 class="section-title text-xl">100. اتیولوژی</h2>
+        <section id="sec100" class="study-section">
+            <header class="section-header"><span class="section-number">100</span><h2 class="section-title">100. اتیولوژی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">توارث هر دو آلل غیرطبیعی <bdi dir="ltr">VWF</bdi> به علت (هتروزیگوت مرکب)، کمبود کامل فاکتور فون ویلبراند وجود دارد.</p>
             </div>
         </section>
 
         <!-- Section 101: علائم بالینی -->
-        <section id="sec101" class="card p-6">
-            <h2 class="section-title text-xl">101. علائم بالینی</h2>
+        <section id="sec101" class="study-section">
+            <header class="section-header"><span class="section-number">101</span><h2 class="section-title">101. علائم بالینی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">این بیماران خونریزی شدیدی دارند که می‌تواند هموفیلی را تقلید نماید، چرا که سطح فاکتور <bdi dir="ltr">VIII</bdi> به شدت کاهش یافته است.</p>
             </div>
         </section>
 
         <!-- Section 102: یافته‌های آزمایشگاهی -->
-        <section id="sec102" class="card p-6">
-            <h2 class="section-title text-xl">102. یافته‌های آزمایشگاهی</h2>
+        <section id="sec102" class="study-section">
+            <header class="section-header"><span class="section-number">102</span><h2 class="section-title">102. یافته‌های آزمایشگاهی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">سطح فاکتور <bdi dir="ltr">VIII</bdi> به شدت کاهش یافته و در حدود <bdi dir="ltr">3</bdi> تا <bdi dir="ltr">10</bdi> درصد میزان طبیعی است.</p>
             </div>
         </section>
 
         <!-- Section 103: درمان -->
-        <section id="sec103" class="card p-6">
-            <h2 class="section-title text-xl">103. درمان</h2>
+        <section id="sec103" class="study-section">
+            <header class="section-header"><span class="section-number">103</span><h2 class="section-title">103. درمان</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">کنسانتره فاکتور <bdi dir="ltr">VIII</bdi> و <bdi dir="ltr">VWF</bdi> فقط به کنسانتره پاسخ می‌دهند در حالی که به <bdi dir="ltr">DDAVP</bdi> پاسخ نمی‌دهند.</p>
             </div>
         </section>
 
         <!-- Section 104: پیشگیری -->
-        <section id="sec104" class="card p-6">
-            <h2 class="section-title text-xl">104. پیشگیری</h2>
+        <section id="sec104" class="study-section">
+            <header class="section-header"><span class="section-number">104</span><h2 class="section-title">104. پیشگیری</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">برای بسیاری از مبتلایان به نوع <bdi dir="ltr">III</bdi>، جهت جلوگیری از خونریزی خودبه‌خودی به تزریق کنسانتره <bdi dir="ltr">VWF</bdi> هر <bdi dir="ltr">2</bdi> تا <bdi dir="ltr">3</bdi> روز نیاز دارند.</p>
             </div>
         </section>
 
         <!-- Section 105: درمان هموفیلی در بیماران دارای مهارکننده -->
-        <section id="sec105" class="card p-6">
-            <h2 class="section-title text-xl">105. درمان هموفیلی در بیماران دارای مهارکننده</h2>
+        <section id="sec105" class="study-section">
+            <header class="section-header"><span class="section-number">105</span><h2 class="section-title">105. درمان هموفیلی در بیماران دارای مهارکننده</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در بیماران دارای مهارکننده می‌توان از موارد زیر برای درمان استفاده کرد:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">فاکتورهای کنسانتره پروترومبین فعال شده (<bdi dir="ltr">aPCC</bdi>) که حاوی فاکتورهای فعال شده <bdi dir="ltr">II</bdi>، <bdi dir="ltr">VII</bdi>، <bdi dir="ltr">IX</bdi> بوده و با دوز <bdi dir="ltr">50</bdi>-<bdi dir="ltr">100</bdi> <bdi dir="ltr">U/kg</bdi> هر <bdi dir="ltr">6</bdi> تا <bdi dir="ltr">12</bdi> ساعت تجویز می‌شود.</li>
@@ -2155,10 +2052,10 @@
         </section>
 
         <!-- Section 106: نحوه برخورد با مهارکننده فاکتورها -->
-        <section id="sec106" class="card p-6">
-            <h2 class="section-title text-xl">106. نحوه برخورد با مهارکننده فاکتورها</h2>
+        <section id="sec106" class="study-section">
+            <header class="section-header"><span class="section-number">106</span><h2 class="section-title">106. نحوه برخورد با مهارکننده فاکتورها</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">واحد <bdi dir="ltr">Bethesda (BU</bdi>) تیتـر مهارکننـده فاکتـور با اندازه‌گیری می‌شود. <bdi dir="ltr">Bethesda</bdi> واحد <bdi dir="ltr">1</bdi> معادل میزانی از مهارکننده است که فعالیت فاکتور را <bdi dir="ltr">50%</bdi> خنثی می‌کند.</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">در صورت وجود مهارکننده با تیتر بالا (بیشتر از <bdi dir="ltr">5</bdi> <bdi dir="ltr">BU</bdi>)، فاکتورهای کنسانتره تزریق شده را به طور کامل خنثی می‌کنند.</li>
@@ -2168,10 +2065,10 @@
         </section>
 
         <!-- Section 107: درمان در موارد خاص -->
-        <section id="sec107" class="card p-6">
-            <h2 class="section-title text-xl">107. درمان در موارد خاص</h2>
+        <section id="sec107" class="study-section">
+            <header class="section-header"><span class="section-number">107</span><h2 class="section-title">107. درمان در موارد خاص</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اگر تیتر مهارکننده کمتر از <bdi dir="ltr">5</bdi> <bdi dir="ltr">BU</bdi> باشد، می‌توان از دوزهای باالتر فاکتور استفاده کرد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در مواردی که تیتر مهارکننده بالاتر از <bdi dir="ltr">5</bdi> <bdi dir="ltr">BU</bdi> است، نمی‌توان از فاکتور با دوز بالا استفاده کرد. در این موارد درمان به کمک موارد زیر صورت می‌گیرد:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -2183,10 +2080,10 @@
         </section>
 
         <!-- Section 108: آنمی همولیتیک میکروآنژیوپاتیک -->
-        <section id="sec108" class="card p-6">
-            <h2 class="section-title text-xl">108. آنمی همولیتیک میکروآنژیوپاتیک</h2>
+        <section id="sec108" class="study-section">
+            <header class="section-header"><span class="section-number">108</span><h2 class="section-title">108. آنمی همولیتیک میکروآنژیوپاتیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی همولیتیک میکروآنژیوپاتیک، به همین دلیل اختلالات آزمایشگاهی زیر وجود دارد:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">هموگلوبین پائین</li>
@@ -2199,10 +2096,10 @@
         </section>
 
         <!-- Section 109: TTP (ترومبوتیک ترومبوسیتوپنیک پورپورا) -->
-        <section id="sec109" class="card p-6">
-            <h2 class="section-title text-xl">109. <bdi dir="ltr">TTP</bdi> (ترومبوتیک ترومبوسیتوپنیک پورپورا)</h2>
+        <section id="sec109" class="study-section">
+            <header class="section-header"><span class="section-number">109</span><h2 class="section-title">109. <bdi dir="ltr">TTP</bdi> (ترومبوتیک ترومبوسیتوپنیک پورپورا)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در بیمار مبتلا به <bdi dir="ltr">TTP</bdi> تمام یافته‌های آزمایشگاهی زیر قابل انتظار است، بجز:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">افزایش <bdi dir="ltr">LDH</bdi></li>
@@ -2235,19 +2132,19 @@
         </section>
 
         <!-- Section 110: DIC (دیس‌امینه اینترواسکولار کواگولاسیون) -->
-        <section id="sec110" class="card p-6">
-            <h2 class="section-title text-xl">110. <bdi dir="ltr">DIC</bdi> (دیس‌امینه اینترواسکولار کواگولاسیون)</h2>
+        <section id="sec110" class="study-section">
+            <header class="section-header"><span class="section-number">110</span><h2 class="section-title">110. <bdi dir="ltr">DIC</bdi> (دیس‌امینه اینترواسکولار کواگولاسیون)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">موجب <bdi dir="ltr">DIC</bdi> و (<bdi dir="ltr">HUS</bdi>)، سندرم همولیتیک اورمیک <bdi dir="ltr">TTP</bdi> و آنمی همولیتیک میکروآنژیوپاتیک می‌شوند. در لام خون محیطی این بیماران شیستوسیت یا <bdi dir="ltr">Fragmented RBC</bdi> دیده می‌شود.</p>
             </div>
         </section>
 
         <!-- Section 111: HUS (سندرم همولیتیک اورمیک) -->
-        <section id="sec111" class="card p-6">
-            <h2 class="section-title text-xl">111. <bdi dir="ltr">HUS</bdi> (سندرم همولیتیک اورمیک)</h2>
+        <section id="sec111" class="study-section">
+            <header class="section-header"><span class="section-number">111</span><h2 class="section-title">111. <bdi dir="ltr">HUS</bdi> (سندرم همولیتیک اورمیک)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">تفاوت با <bdi dir="ltr">TTP</bdi>:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">اغلب با آنمی همولیتیک و نارسایی کلیه در <bdi dir="ltr">HUS</bdi> همراهی ندارند اختلالات نورولوژیک.</li>
@@ -2264,19 +2161,19 @@
         </section>
 
         <!-- Section 112: میکروآنژیوپاتیک -->
-        <section id="sec112" class="card p-6">
-            <h2 class="section-title text-xl">112. میکروآنژیوپاتیک</h2>
+        <section id="sec112" class="study-section">
+            <header class="section-header"><span class="section-number">112</span><h2 class="section-title">112. میکروآنژیوپاتیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی تست کومبس منفی است. تست کومبس در میکروآنژیوپاتیک، آنمی همولیتیک از نوع <bdi dir="ltr">HUS</bdi> بوده و مثبت می‌شود. همچنین به جدول همولیتیک اتوایمیون مراجعه شود.</p>
             </div>
         </section>
 
         <!-- Section 113: نکات مهم در TTP -->
-        <section id="sec113" class="card p-6">
-            <h2 class="section-title text-xl">113. نکات مهم در <bdi dir="ltr">TTP</bdi></h2>
+        <section id="sec113" class="study-section">
+            <header class="section-header"><span class="section-number">113</span><h2 class="section-title">113. نکات مهم در <bdi dir="ltr">TTP</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">با تب، میکروآنژیوپاتیک همولیز، ترومبوسیتوپنی، عالئم نورولوژیک و نارسایی کلیه تظاهر می‌یابد.</li>
                   <li class="leading-relaxed text-gray-700">در آزمایشات <bdi dir="ltr">PTT</bdi> و <bdi dir="ltr">PT</bdi> هر دو طبیعی هستند.</li>
@@ -2289,10 +2186,10 @@
         </section>
 
         <!-- Section 114: نکات مهم در HUS (سندرم همولیتیک اورمیک) -->
-        <section id="sec114" class="card p-6">
-            <h2 class="section-title text-xl">114. نکات مهم در <bdi dir="ltr">HUS</bdi> (سندرم همولیتیک اورمیک)</h2>
+        <section id="sec114" class="study-section">
+            <header class="section-header"><span class="section-number">114</span><h2 class="section-title">114. نکات مهم در <bdi dir="ltr">HUS</bdi> (سندرم همولیتیک اورمیک)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">معمولاً با اسهال خونی ناشی از باکتری‌های شبه شیگا به ویژه E.<bdi dir="ltr">Coli O<bdi dir="ltr">157</bdi></bdi>:<bdi dir="ltr">H<bdi dir="ltr">7</bdi></bdi> تظاهر می‌یابد.</li>
                   <li class="leading-relaxed text-gray-700">موجب آنمی همولیتیک و نارسایی کلیه می‌شود.</li>
@@ -2304,10 +2201,10 @@
         </section>
 
         <!-- Section 115: نکات مربوط به درمان ترومبوآمبولی وریدی -->
-        <section id="sec115" class="card p-6">
-            <h2 class="section-title text-xl">115. نکات مربوط به درمان ترومبوآمبولی وریدی</h2>
+        <section id="sec115" class="study-section">
+            <header class="section-header"><span class="section-number">115</span><h2 class="section-title">115. نکات مربوط به درمان ترومبوآمبولی وریدی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">برای پیشگیری از ترومبوآمبولی وریدی در بدخیمی‌ها، <bdi dir="ltr">LMWH</bdi> (مانند دالتپارین) نسبت به وارفارین ارجح است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">ریواروکسابان داروی انتخابی جهت پروفیالکسی از ترومبوآمبولی وریدی در جراحی‌های ارتوپدی است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در بیماران بستری در بیمارستان می‌توان از انوکسپارین جهت پیشگیری از ترومبوآمبولی وریدی استفاده کرد.</p>
@@ -2316,10 +2213,10 @@
         </section>
 
         <!-- Section 116: داروهایی که سطح وارفارین را تحت تاثیر قرار می‌دهند -->
-        <section id="sec116" class="card p-6">
-            <h2 class="section-title text-xl">116. داروهایی که سطح وارفارین را تحت تاثیر قرار می‌دهند</h2>
+        <section id="sec116" class="study-section">
+            <header class="section-header"><span class="section-number">116</span><h2 class="section-title">116. داروهایی که سطح وارفارین را تحت تاثیر قرار می‌دهند</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">داروهایی که سطح وارفارین را افزایش می‌دهند (طولانی شدن <bdi dir="ltr">INR</bdi>)</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">کاهش کلیرانس وارفارین: دی‌سولفیرام، مترونیدازول و کوتریموکسازول</li>
@@ -2335,10 +2232,10 @@
         </section>
 
         <!-- Section 117: پلی‌سیتمی -->
-        <section id="sec117" class="card p-6">
-            <h2 class="section-title text-xl">117. پلی‌سیتمی</h2>
+        <section id="sec117" class="study-section">
+            <header class="section-header"><span class="section-number">117</span><h2 class="section-title">117. پلی‌سیتمی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">مرد <bdi dir="ltr">60</bdi> ساله‌ای به علت خستگی زودرس مراجعه کرده است. در معاینه، طحال <bdi dir="ltr">10</bdi> سانتی‌متر زیر لبه دنده لمس می‌شود. در فرمول شمارش خون محیطی: <bdi dir="ltr">WBC</bdi>=<bdi dir="ltr">160000,</bdi> <bdi dir="ltr">PMN</bdi>+<bdi dir="ltr">band</bdi>=<bdi dir="ltr">69%,</bdi> <bdi dir="ltr">Lymph</bdi>=<bdi dir="ltr">3%,</bdi> <bdi dir="ltr">Promyelocyte</bdi>=<bdi dir="ltr">5%,</bdi> <bdi dir="ltr">Myelocyte</bdi>=<bdi dir="ltr">8%,</bdi> <bdi dir="ltr">Metamyelocyte</bdi>=<bdi dir="ltr">5%,</bdi> <bdi dir="ltr">Eosinophil</bdi>=<bdi dir="ltr">5%,</bdi> <bdi dir="ltr">Basophil</bdi>=<bdi dir="ltr">5%,</bdi> <bdi dir="ltr">Hb</bdi>=<bdi dir="ltr">10</bdi> <bdi dir="ltr">gr/dl</bdi>, <bdi dir="ltr">Platelet</bdi> = <bdi dir="ltr">485000.</bdi> محتمل‌ترین تشخیص کدام است؟ <bdi dir="ltr">CML</bdi></p>
                 <p class="mb-3 leading-relaxed text-gray-700">مرد <bdi dir="ltr">60</bdi> ساله‌ای از سردرد شکایت دارد. در معاینه، طحال به راحتی قابل لمس است و فشارخون <bdi dir="ltr">170</bdi>/<bdi dir="ltr">100</bdi>mmHg دارد و روزی <bdi dir="ltr">2</bdi> پاکت سیگار می‌کشد. آزمایشات به شرح زیر است: <bdi dir="ltr">Hb</bdi>: <bdi dir="ltr">19</bdi> <bdi dir="ltr">g/dL</bdi>, <bdi dir="ltr">Hct</bdi>: <bdi dir="ltr">58%,</bdi> <bdi dir="ltr">MCV</bdi>: <bdi dir="ltr">93</bdi>fl, <bdi dir="ltr">WBC</bdi>: <bdi dir="ltr">7300,</bdi> <bdi dir="ltr">Platelet</bdi>: <bdi dir="ltr">550000,</bdi> <bdi dir="ltr">Creatinin</bdi>: <bdi dir="ltr">1.2</bdi>mg/<bdi dir="ltr">dL</bdi>, <bdi dir="ltr">Oxygen saturation</bdi>: <bdi dir="ltr">94%,</bdi> <bdi dir="ltr">Serum erythropoietin</bdi>: <bdi dir="ltr">2</bdi> <bdi dir="ltr">mu/ml (<bdi dir="ltr">2</bdi>-<bdi dir="ltr">20</bdi></bdi>). احتمال مثبت شدن کدامیک از موتاسیون‌های زیر بیشتر می‌باشد؟ <bdi dir="ltr">JAK-<bdi dir="ltr">2</bdi></bdi></p>
                 <p class="mb-3 leading-relaxed text-gray-700">مرد <bdi dir="ltr">50</bdi> ساله‌ای با احساس ضعف و خستگی‌پذیری به درمانگاه مراجعه کرده است. در آزمایش همراه بیمار: <bdi dir="ltr">Hb</bdi> = <bdi dir="ltr">10.7</bdi> <bdi dir="ltr">g/dl</bdi>, <bdi dir="ltr">MCV</bdi> = <bdi dir="ltr">67</bdi> <bdi dir="ltr">fL</bdi>, <bdi dir="ltr">RBC</bdi> = <bdi dir="ltr">5.8</bdi>×<bdi dir="ltr">106,</bdi> <bdi dir="ltr">RDW</bdi> = <bdi dir="ltr">12.</bdi> کدامیک از اقدامات زیر مناسب‌ترند؟ الکتروفورز هموگلوبین</p>
@@ -2349,10 +2246,10 @@
         </section>
 
         <!-- Section 118: آنمی همولیتیک -->
-        <section id="sec118" class="card p-6">
-            <h2 class="section-title text-xl">118. آنمی همولیتیک</h2>
+        <section id="sec118" class="study-section">
+            <header class="section-header"><span class="section-number">118</span><h2 class="section-title">118. آنمی همولیتیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">خانم <bdi dir="ltr">28</bdi> ساله به علت رنگ‏پریدگــی و تغییر رنگ ادرار از <bdi dir="ltr">2</bdi> روز پیــش مراجعــه کــرده اســت. در معاینــه، اسـکلرا ایکتریـک و لبــه طحــال قابــل لمــس اســت. الم خــون محیطــی پُلی‏کرومـازی واضــح نشــان می‏دهــد. آزمایش به شرح زیر است: <bdi dir="ltr">WBC</bdi>=<bdi dir="ltr">11000</bdi>/mm³ (<bdi dir="ltr">PMN</bdi>=<bdi dir="ltr">65%</bdi>) <bdi dir="ltr">Hb</bdi>= <bdi dir="ltr">5</bdi> <bdi dir="ltr">g/dL</bdi>, <bdi dir="ltr">PLT</bdi>=<bdi dir="ltr">320000,</bdi> <bdi dir="ltr">Retic</bdi>=<bdi dir="ltr">9%</bdi> ، اندیـس تولیـد <bdi dir="ltr">15</bdi>بــه فــرض هموگلوبیــن نرمــال رتیکولوسـیت ایــن بیمــار به کدام عدد نزدیک‏تر اســت؟</p>
                 <div class="bg-gray-50 p-4 rounded-lg border-r-4 border-purple-400 mb-4">
                   <h5 class="font-semibold text-gray-800 mb-2">محاسبه اندیس تولید رتیکولوسیت</h5>

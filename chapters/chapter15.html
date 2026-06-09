@@ -4,141 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فصل ۱۵: پورپورای ترومبوسیتوپنیک ایمنی (ITP) - هماتولوژی</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .gradient-header {
-            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .exam-tip {
-            background-color: #fef2f2;
-            border-right: 4px solid #ef4444;
-            color: #991b1b;
-        }
-        .diagnosis-box {
-            background-color: #eff6ff;
-            border-right: 4px solid #3b82f6;
-            color: #1e40af;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #111827;
-            font-weight: 800;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            right: 0;
-            width: 60%;
-            height: 4px;
-            background-color: #f97316;
-            border-radius: 2px;
-        }
-        .staging-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .staging-table th {
-            background-color: #f97316;
-            color: white;
-            padding: 12px;
-            text-align: right;
-            font-weight: 600;
-        }
-        .staging-table td {
-            padding: 12px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: right;
-        }
-        .staging-table tr:last-child td {
-            border-bottom: none;
-        }
-        .staging-table tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            border-right: 4px solid #f59e0b;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        .info-card {
-            background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%);
-            border-right: 4px solid #f97316;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .danger-box {
-            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
-            border-right: 4px solid #ef4444;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/hemato-chapter.css">
 </head>
-<body class="pb-12">
+<body>
 
     <!-- Header -->
-    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold">فصل ۱۵: پورپورای ترومبوسیتوپنیک ایمنی (ITP)</h1>
-                <p class="text-white/80 text-sm mt-1">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
-            </div>
-            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
-                ویژه دانشجویان پزشکی
-            </div>
+    <header class="chapter-hero">
+        <div class="chapter-hero-content">
+          <p class="chapter-kicker">هماتولوژی</p>
+          <h1>فصل ۱۵: پورپورای ترومبوسیتوپنیک ایمنی (ITP)</h1>
+          <p class="chapter-subtitle">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
         </div>
-    </header>
+      </header>
 
-    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+    <main class="chapter-page">
         
         <!-- Navigation -->
-        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+        <nav class="chapter-mini-nav" aria-label="فهرست داخلی فصل">
             <a href="#sec1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-orange-50 text-orange-700 whitespace-nowrap">تعریف و اتیولوژی</a>
             <a href="#sec2" class="bg-white px-4 py-2 rounded-full shadow hover:bg-orange-50 text-orange-700 whitespace-nowrap">تظاهرات بالینی</a>
             <a href="#sec3" class="bg-white px-4 py-2 rounded-full shadow hover:bg-orange-50 text-orange-700 whitespace-nowrap">تشخیص</a>
@@ -148,19 +31,19 @@
         </nav>
 
         <!-- Section 1: تعریف و اتیولوژی -->
-        <section id="sec1" class="card p-6">
-            <h2 class="section-title text-xl">1. تعریف و اتیولوژی ITP</h2>
+        <section id="sec1" class="study-section">
+            <header class="section-header"><span class="section-number">1</span><h2 class="section-title">1. تعریف و اتیولوژی ITP</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="info-card">
+            <div class="frame-grid">
+                <div class="study-box box-definition info-card">
                     <h4 class="font-bold text-orange-900 mb-2">📌 تعریف</h4>
                     <p class="text-orange-800"><bdi dir="ltr">ITP</bdi> (پورپورای ترومبوسیتوپنیک ایمنی) یک اختلال خونریزی‌دهنده است که در آن سیستم ایمنی بدن آنتی‌بادی‌هایی علیه پلاکت‌ها تولید می‌کند و باعث تخریب زودرس آن‌ها می‌شود.</p>
                 </div>
 
                 <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">طبقه‌بندی ITP</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>نوع</th>
@@ -186,7 +69,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">اتیولوژی</h3>
                 
@@ -218,10 +101,10 @@
         </section>
 
         <!-- Section 2: تظاهرات بالینی -->
-        <section id="sec2" class="card p-6">
-            <h2 class="section-title text-xl">2. تظاهرات بالینی ITP</h2>
+        <section id="sec2" class="study-section">
+            <header class="section-header"><span class="section-number">2</span><h2 class="section-title">2. تظاهرات بالینی ITP</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h3 class="font-bold text-lg text-orange-700 mb-3">علائم و نشانه‌ها</h3>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -245,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="danger-box">
+                <div class="study-box box-warning danger-box">
                     <h4 class="font-bold text-red-900 mb-2">⚠️ خونریزی خطرناک</h4>
                     <p class="text-red-800">خونریزی داخل مغزی (<bdi dir="ltr">Intracranial Hemorrhage</bdi>) نادر است (&lt; <bdi dir="ltr">1%</bdi>) اما می‌تواند کشنده باشد، خصوصاً زمانی که پلاکت &lt; <bdi dir="ltr">10,000</bdi> است.</p>
                 </div>
@@ -267,19 +150,19 @@
         </section>
 
         <!-- Section 3: تشخیص -->
-        <section id="sec3" class="card p-6">
-            <h2 class="section-title text-xl">3. تشخیص ITP</h2>
+        <section id="sec3" class="study-section">
+            <header class="section-header"><span class="section-number">3</span><h2 class="section-title">3. تشخیص ITP</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="info-card">
+            <div class="frame-grid">
+                <div class="study-box box-definition info-card">
                     <h4 class="font-bold text-orange-900 mb-2">📌 معیارهای تشخیصی</h4>
                     <p class="text-orange-800"><bdi dir="ltr">ITP</bdi> یک تشخیص اقصایی است - تشخیص با رد کردن سایر علل ترومبوسیتوپنی انجام می‌شود.</p>
                 </div>
 
                 <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">یافته‌های آزمایشگاهی</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>آزمایش</th>
@@ -320,7 +203,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <div class="bg-blue-50 p-4 rounded-lg border-r-4 border-blue-400 mb-3">
                     <h4 class="font-bold text-blue-800 mb-2">🔬 آزمایشات تکمیلی</h4>
@@ -345,14 +228,14 @@
         </section>
 
         <!-- Section 4: تشخیص افتراقی -->
-        <section id="sec4" class="card p-6">
-            <h2 class="section-title text-xl">4. تشخیص افتراقی ترومبوسیتوپنی</h2>
+        <section id="sec4" class="study-section">
+            <header class="section-header"><span class="section-number">4</span><h2 class="section-title">4. تشخیص افتراقی ترومبوسیتوپنی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h3 class="font-bold text-lg text-orange-700 mb-3">علل اصلی ترومبوسیتوپنی</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>بیماری</th>
@@ -398,7 +281,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <div class="exam-tip p-4 rounded-lg mb-3">
                     <strong>💡 یادآوری:</strong> اگر در سوال امتحان بیماری با ترومبوسیتوپنی + اسپلنومگالی طبیعی + <bdi dir="ltr">WBC/Hb</bdi> طبیعی داشتید → <bdi dir="ltr">ITP</bdi>
@@ -407,10 +290,10 @@
         </section>
 
         <!-- Section 5: درمان -->
-        <section id="sec5" class="card p-6">
-            <h2 class="section-title text-xl">5. درمان ITP</h2>
+        <section id="sec5" class="study-section">
+            <header class="section-header"><span class="section-number">5</span><h2 class="section-title">5. درمان ITP</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h3 class="font-bold text-lg text-orange-700 mb-3">اندیکاسیون‌های درمان</h3>
                 
                 <div class="bg-green-50 p-4 rounded-lg border-r-4 border-green-500 mb-4">
@@ -425,8 +308,8 @@
 
                 <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">خط اول درمان</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>درمان</th>
@@ -456,7 +339,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <div class="exam-tip p-4 rounded-lg mb-3">
                     <strong>💡 نکته امتحانی:</strong> <bdi dir="ltr">Anti-D</bdi> فقط در افراد <bdi dir="ltr">Rh</bdi> مثبت کار می‌کند و در افراد اسپلنکتومی شده یا <bdi dir="ltr">Rh</bdi> منفی استفاده نمی‌شود.
@@ -486,7 +369,7 @@
 
                 <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">درمان اورژانسی</h3>
                 
-                <div class="danger-box">
+                <div class="study-box box-warning danger-box">
                     <h4 class="font-bold text-red-900 mb-2">🚨 خونریزی تهدیدکننده حیات</h4>
                     <p class="text-red-800 mb-2">ترکیب همزمان:</p>
                     <ol class="list-decimal mr-6 space-y-1 text-sm">
@@ -500,19 +383,19 @@
         </section>
 
         <!-- Section 6: نوتروپنی -->
-        <section id="sec6" class="card p-6">
-            <h2 class="section-title text-xl">6. نوتروپنی و ریسک عفونت</h2>
+        <section id="sec6" class="study-section">
+            <header class="section-header"><span class="section-number">6</span><h2 class="section-title">6. نوتروپنی و ریسک عفونت</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="info-card">
+            <div class="frame-grid">
+                <div class="study-box box-definition info-card">
                     <h4 class="font-bold text-orange-900 mb-2">📌 تعریف</h4>
                     <p class="text-orange-800">نوتروپنی: کاهش تعداد نوتروفیل‌ها در خون محیطی که ریسک عفونت را افزایش می‌دهد.</p>
                 </div>
 
                 <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">طبقه‌بندی شدت نوتروپنی</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>درجه</th>
@@ -548,13 +431,13 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <div class="exam-tip p-4 rounded-lg mb-3">
                     <strong>💡 نکته مهم:</strong> در نوتروپنی شدید (&lt; <bdi dir="ltr">500</bdi>)، تب باید به عنوان اورژانس درمان شود - آنتی‌بیوتیک وسیع‌الطیف فوری شروع شود.
                 </div>
 
-                <div class="highlight-box">
+                <div class="study-box box-compare highlight-box">
                     <h3 class="font-bold text-lg mb-3">🎯 خلاصه نکات کلیدی فصل 15</h3>
                     
                     <div class="space-y-3">

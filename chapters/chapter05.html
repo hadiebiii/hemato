@@ -4,126 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فصل ۵: آنمی آپالستیک و میلودیسپالزی - هماتولوژی</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .gradient-header {
-            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .exam-tip {
-            background-color: #fef2f2;
-            border-right: 4px solid #ef4444;
-            color: #991b1b;
-        }
-        .diagnosis-box {
-            background-color: #eff6ff;
-            border-right: 4px solid #3b82f6;
-            color: #1e40af;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #111827;
-            font-weight: 800;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            right: 0;
-            width: 60%;
-            height: 4px;
-            background-color: #3b82f6;
-            border-radius: 2px;
-        }
-        .staging-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .staging-table th {
-            background-color: #3b82f6;
-            color: white;
-            padding: 12px;
-            text-align: right;
-            font-weight: 600;
-        }
-        .staging-table td {
-            padding: 12px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: right;
-        }
-        .staging-table tr:last-child td {
-            border-bottom: none;
-        }
-        .staging-table tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            border-right: 4px solid #f59e0b;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/hemato-chapter.css">
 </head>
-<body class="pb-12">
+<body>
 
     <!-- Header -->
-    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold">فصل ۵: آنمی آپالستیک و میلودیسپالزی</h1>
-                <p class="text-white/80 text-sm mt-1">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
-            </div>
-            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
-                ویژه دانشجویان پزشکی
-            </div>
+    <header class="chapter-hero">
+        <div class="chapter-hero-content">
+          <p class="chapter-kicker">هماتولوژی</p>
+          <h1>فصل ۵: آنمی آپالستیک و میلودیسپالزی</h1>
+          <p class="chapter-subtitle">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
         </div>
-    </header>
+      </header>
 
-    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+    <main class="chapter-page">
         <!-- Navigation -->
-        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+        <nav class="chapter-mini-nav" aria-label="فهرست داخلی فصل">
             <a href="#sec1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">آنمی آپالستیک</a>
             <a href="#sec2" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">آنمی‌های هیپوپرولیفراتیو</a>
             <a href="#sec3" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">تشخیص‌های افتراقی آنمی آپالستیک</a>
@@ -141,10 +38,10 @@
         </nav>
 
         <!-- Section 1: آنمی آپالستیک -->
-        <section id="sec1" class="card p-6">
-            <h2 class="section-title text-xl">1. آنمی آپالستیک</h2>
+        <section id="sec1" class="study-section">
+            <header class="section-header"><span class="section-number">1</span><h2 class="section-title">1. آنمی آپالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">تعریف و انواع</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">پان‌سیتوپنی همراه با مغز استخوان هیپوسلولر، آنمی آپالستیک گفته می‌شود. آنمی فانکونی یک آنمی آپالستیک ارثی است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">بیشتر موارد آنمی آپالستیک، ایدیوپاتیک هستند.</p>
@@ -300,10 +197,10 @@
         </section>
 
         <!-- Section 2: آنمی‌های هیپوپرولیفراتیو -->
-        <section id="sec2" class="card p-6">
-            <h2 class="section-title text-xl">2. آنمی‌های هیپوپرولیفراتیو</h2>
+        <section id="sec2" class="study-section">
+            <header class="section-header"><span class="section-number">2</span><h2 class="section-title">2. آنمی‌های هیپوپرولیفراتیو</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">در آنمی آپالستیک، اندکس رتیکولوسیت کاهش می‌یابد؛ چرا که مغز استخوان قادر به تولید نیست.</li>
                   <li class="leading-relaxed text-gray-700">در بیماری‌های همولیتیک از جمله آنمی <bdi dir="ltr">PNH</bdi>، آنمی همولیتیک اتوایمیون و اسفروسیتوز ارثی چون علت آنمی، همولیز است، مغز استخوان تولید رتیکولوسیت را جهت جبران همولیز، افزایش می‌دهد، لذا اندکس رتیکولوسیت افزایش می‌یابد.</li>
@@ -312,10 +209,10 @@
         </section>
 
         <!-- Section 3: تشخیص‌های افتراقی آنمی آپالستیک -->
-        <section id="sec3" class="card p-6">
-            <h2 class="section-title text-xl">3. تشخیص‌های افتراقی آنمی آپالستیک</h2>
+        <section id="sec3" class="study-section">
+            <header class="section-header"><span class="section-number">3</span><h2 class="section-title">3. تشخیص‌های افتراقی آنمی آپالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">هموگلوبین‌اوری حمله‌ای شبانه (<bdi dir="ltr">PNH</bdi>) با آنمی آپالستیک یک رابطه دوطرفه دارد. برای تشخیص <bdi dir="ltr">PNH</bdi> از فلوسیتومتری جهت بررسی <bdi dir="ltr">CD<bdi dir="ltr">55</bdi></bdi> و <bdi dir="ltr">CD<bdi dir="ltr">59</bdi></bdi> استفاده می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">جهت اثبات اتیولوژی عفونی، از تست‌های سرولوژیک استفاده می‌شود (مانند <bdi dir="ltr">HIV</bdi> و <bdi dir="ltr">EBV</bdi>).</p>
                 <p class="mb-3 leading-relaxed text-gray-700">تست‌های ژنتیک به تشخیص آنمی آپالستیک، <bdi dir="ltr">MDS</bdi> و <bdi dir="ltr">AML</bdi> کمک می‌کنند. موتاسیون‌های سوماتیک معمولاً در <bdi dir="ltr">MDS</bdi> رخ می‌دهند. بررسی‌های کروموزومی بر روی مغز استخوان معمولاً جهت تشخیص میلودیسپالزی انجام می‌شوند و در آنمی آپالستیک معمولی، منفی هستند.</p>
@@ -324,10 +221,10 @@
         </section>
 
         <!-- Section 4: آنمی فانکونی -->
-        <section id="sec4" class="card p-6">
-            <h2 class="section-title text-xl">4. آنمی فانکونی</h2>
+        <section id="sec4" class="study-section">
+            <header class="section-header"><span class="section-number">4</span><h2 class="section-title">4. آنمی فانکونی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">تعریف و توارث</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی فانکونی با توارث اتوزوم مغلوب به ارث رسیده و یکی از علل مادرزادی پان‌سیتوپنی پیشرونده، آپالستیک است. این بیماری با ناهنجاری‌های مادرزادی رشدی _ تکاملی و خطر بدخیمی تظاهر می‌یابد.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">تظاهرات بالینی آنمی فانکونی</h4>
@@ -343,10 +240,10 @@
         </section>
 
         <!-- Section 5: آنمی آپالستیک شدید -->
-        <section id="sec5" class="card p-6">
-            <h2 class="section-title text-xl">5. آنمی آپالستیک شدید</h2>
+        <section id="sec5" class="study-section">
+            <header class="section-header"><span class="section-number">5</span><h2 class="section-title">5. آنمی آپالستیک شدید</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">پیش‌آگهی</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی آپالستیک شدید، به سرعت موجب مرگ می‌شود. مهمترین عامل مؤثر در پیش‌آگهی، تعداد سلول‌های خونی است. در موارد زیر باید حداقل <bdi dir="ltr">3</bdi> مورد از موارد زیر وجود داشته باشند:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -359,10 +256,10 @@
         </section>
 
         <!-- Section 6: درمان آنمی آپالستیک -->
-        <section id="sec6" class="card p-6">
-            <h2 class="section-title text-xl">6. درمان آنمی آپالستیک</h2>
+        <section id="sec6" class="study-section">
+            <header class="section-header"><span class="section-number">6</span><h2 class="section-title">6. درمان آنمی آپالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">درمان بر اساس سن بیماران</h4>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">بیماران جوان (کمتر از <bdi dir="ltr">45</bdi> تا <bdi dir="ltr">50</bdi> سال)</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -385,10 +282,10 @@
         </section>
 
         <!-- Section 7: سندرم‌های میلودیسپالستیک (MDS) -->
-        <section id="sec7" class="card p-6">
-            <h2 class="section-title text-xl">7. سندرم‌های میلودیسپالستیک (<bdi dir="ltr">MDS</bdi>)</h2>
+        <section id="sec7" class="study-section">
+            <header class="section-header"><span class="section-number">7</span><h2 class="section-title">7. سندرم‌های میلودیسپالستیک (<bdi dir="ltr">MDS</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">تعریف</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">سندرم‌های میلودیسپالستیک با دو ویژگی زیر مشخص می‌شوند: <bdi dir="ltr">1.</bdi> سیتوپنی ناشی از نارسایی مغز استخوان <bdi dir="ltr">2.</bdi> ریسک بالای ایجاد لوسمی میلوئید حاد (<bdi dir="ltr">AML</bdi>)</p>
                 <p class="mb-3 leading-relaxed text-gray-700">افراد مسن ایدیوپاتیک بیشتر در سن <bdi dir="ltr">70</bdi> سالگی به بالا دیده می‌شود و سن متوسط آغاز بیماری در <bdi dir="ltr">MDS</bdi> ایدیوپاتیک می‌باشد. آقایان شایع‌تر است.</p>
@@ -472,10 +369,10 @@
         </section>
 
         <!-- Section 8: سندرم میلودیسپالستیک (MDS) -->
-        <section id="sec8" class="card p-6">
-            <h2 class="section-title text-xl">8. سندرم میلودیسپالستیک (<bdi dir="ltr">MDS</bdi>)</h2>
+        <section id="sec8" class="study-section">
+            <header class="section-header"><span class="section-number">8</span><h2 class="section-title">8. سندرم میلودیسپالستیک (<bdi dir="ltr">MDS</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">سیستم امتیازدهی بین‌المللی پیش‌آگهی بیماران <bdi dir="ltr">MDS (IPSS</bdi>)</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">عوامل مؤثر در <bdi dir="ltr">IPSS</bdi>:</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -504,10 +401,10 @@
         </section>
 
         <!-- Section 9: آنمی آپالستیک خالص گلبول‌های قرمز (PRCA) -->
-        <section id="sec9" class="card p-6">
-            <h2 class="section-title text-xl">9. آنمی آپالستیک خالص گلبول‌های قرمز (<bdi dir="ltr">PRCA</bdi>)</h2>
+        <section id="sec9" class="study-section">
+            <header class="section-header"><span class="section-number">9</span><h2 class="section-title">9. آنمی آپالستیک خالص گلبول‌های قرمز (<bdi dir="ltr">PRCA</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی، رتیکولوسیتوپنی و فقدان سلول‌های اجدادی اریتروئید یافته‌های اصلی در آپالزی خالص گلبول‌های قرمز (<bdi dir="ltr">PRCA</bdi>) هستند.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">علل مهم <bdi dir="ltr">PRCA</bdi></h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -522,19 +419,19 @@
         </section>
 
         <!-- Section 10: سندرم میلودیسپالزی (MDS) -->
-        <section id="sec10" class="card p-6">
-            <h2 class="section-title text-xl">10. سندرم میلودیسپالزی (<bdi dir="ltr">MDS</bdi>)</h2>
+        <section id="sec10" class="study-section">
+            <header class="section-header"><span class="section-number">10</span><h2 class="section-title">10. سندرم میلودیسپالزی (<bdi dir="ltr">MDS</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">MDS</bdi></p>
             </div>
         </section>
 
         <!-- Section 11: میلودیسپالزی -->
-        <section id="sec11" class="card p-6">
-            <h2 class="section-title text-xl">11. میلودیسپالزی</h2>
+        <section id="sec11" class="study-section">
+            <header class="section-header"><span class="section-number">11</span><h2 class="section-title">11. میلودیسپالزی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">مرد <bdi dir="ltr">30</bdi> ساله با تب و خستگی مراجعه می‌کند. در معاینه، رنگ پریده بوده، اکیموز متعدد به چشم می‌خورد و اُرگانومگالی ندارد. در آزمایشات نتایج زیر گزارش گردیده است: <bdi dir="ltr">WBC</bdi>: <bdi dir="ltr">20000,</bdi> <bdi dir="ltr">Hb</bdi> =<bdi dir="ltr">8.9</bdi> <bdi dir="ltr">gr/dL</bdi>, <bdi dir="ltr">PLT</bdi>=<bdi dir="ltr">41000.</bdi> در بررسی الم خون محیطی، سلول‌های بالست حاوی <bdi dir="ltr">Auer rods</bdi> و تعدادی نوتروفیل دیده می‌شود. محتمل‌ترین تشخیص کدام است؟ <bdi dir="ltr">Acute myeloid leukaemia</bdi></p>
                 <p class="mb-3 leading-relaxed text-gray-700">مهمترین عامل کاهش بقاء در بیماران با تشخیص <bdi dir="ltr">MDS</bdi> کدام مورد زیر است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">درصد بالای بالست مغز استخوان</p>
@@ -543,10 +440,10 @@
         </section>
 
         <!-- Section 12: درمان میلودیسپلازی (MDS) -->
-        <section id="sec12" class="card p-6">
-            <h2 class="section-title text-xl">12. درمان میلودیسپلازی (<bdi dir="ltr">MDS</bdi>)</h2>
+        <section id="sec12" class="study-section">
+            <header class="section-header"><span class="section-number">12</span><h2 class="section-title">12. درمان میلودیسپلازی (<bdi dir="ltr">MDS</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">خانم <bdi dir="ltr">70</bdi> ساله با سابقه شیمی‌درمانی به علت سرطان پستان <bdi dir="ltr">4</bdi> سال قبل با شکایت ضعف و بی‌حالی مراجعه کرده است. در معاینه طحال لمس نمی‌شود. در آسپیراسیون و بیوپسی مغز استخوان، سلولاریته <bdi dir="ltr">70%</bdi> و بلاست <bdi dir="ltr">15%</bdi> گزارش می‌شود. در کاریوتایپ منوزومی <bdi dir="ltr">7</bdi> کروموزوم دارد. سایر نتایج آزمایشات به قرار زیر است: <bdi dir="ltr">WBC</bdi> = <bdi dir="ltr">1500</bdi>/μL, <bdi dir="ltr">Hb</bdi> = <bdi dir="ltr">7</bdi> <bdi dir="ltr">g/dL</bdi>, <bdi dir="ltr">MCV</bdi> = <bdi dir="ltr">105</bdi> <bdi dir="ltr">fl</bdi>, <bdi dir="ltr">Platelet</bdi> = <bdi dir="ltr">45000,</bdi> <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> & <bdi dir="ltr">folate level</bdi> = <bdi dir="ltr">Normal</bdi> مناسب‌ترین اقدام درمانی کدام است؟</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">لِنالیدومید</li>
@@ -559,10 +456,10 @@
         </section>
 
         <!-- Section 13: درمان میلودیسپلازی (MDS) با بلاست بالا -->
-        <section id="sec13" class="card p-6">
-            <h2 class="section-title text-xl">13. درمان میلودیسپلازی (<bdi dir="ltr">MDS</bdi>) با بلاست بالا</h2>
+        <section id="sec13" class="study-section">
+            <header class="section-header"><span class="section-number">13</span><h2 class="section-title">13. درمان میلودیسپلازی (<bdi dir="ltr">MDS</bdi>) با بلاست بالا</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">مرد <bdi dir="ltr">42</bdi> ساله با ضعف و بی‌حالی مراجعه کرده است. در معاینه فقط پتشی منتشر دارد. نتایج آزمایشات به شرح زیر است: <bdi dir="ltr">WBC</bdi>:<bdi dir="ltr">900,</bdi> <bdi dir="ltr">Hb</bdi>:<bdi dir="ltr">7.5,</bdi> <bdi dir="ltr">PLT</bdi>:<bdi dir="ltr">7000</bdi> <bdi dir="ltr">15%</bdi> در بیوپسی مغز استخوان، بلاست دارد. بهترین درمان برای بیمار فوق کدام است؟</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">عوامل محرک گرانولوسیت و اریتروپوئزیس</li>
@@ -574,10 +471,10 @@
         </section>
 
         <!-- Section 14: آنمی آپالستیک (بررسی) -->
-        <section id="sec14" class="card p-6">
-            <h2 class="section-title text-xl">14. آنمی آپالستیک (بررسی)</h2>
+        <section id="sec14" class="study-section">
+            <header class="section-header"><span class="section-number">14</span><h2 class="section-title">14. آنمی آپالستیک (بررسی)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آقای <bdi dir="ltr">20</bdi> ساله با پان‏سـیتوپنی بـدون آدنوپاتـی و اُرگانومگالی مراجعه می‏کند. در بیوپســی مغز اســتخوان، نمای هیپوسلوالر با جایگزینی چربی گزارش شده است. بــرای بررســی پان‏سـیتوپنی، تمــام اقدامات زیــر ضروری است، بجز؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">تست شکنندگی کروموزوم</p>
             </div>

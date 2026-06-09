@@ -4,126 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فصل ۴: اختلالات هموگلوبین - هماتولوژی</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .gradient-header {
-            background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .exam-tip {
-            background-color: #fef2f2;
-            border-right: 4px solid #ef4444;
-            color: #991b1b;
-        }
-        .diagnosis-box {
-            background-color: #eff6ff;
-            border-right: 4px solid #3b82f6;
-            color: #1e40af;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #111827;
-            font-weight: 800;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            right: 0;
-            width: 60%;
-            height: 4px;
-            background-color: #ef4444;
-            border-radius: 2px;
-        }
-        .staging-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .staging-table th {
-            background-color: #ef4444;
-            color: white;
-            padding: 12px;
-            text-align: right;
-            font-weight: 600;
-        }
-        .staging-table td {
-            padding: 12px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: right;
-        }
-        .staging-table tr:last-child td {
-            border-bottom: none;
-        }
-        .staging-table tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            border-right: 4px solid #f59e0b;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/hemato-chapter.css">
 </head>
-<body class="pb-12">
+<body>
 
     <!-- Header -->
-    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold">فصل ۴: اختلالات هموگلوبین</h1>
-                <p class="text-white/80 text-sm mt-1">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
-            </div>
-            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
-                ویژه دانشجویان پزشکی
-            </div>
+    <header class="chapter-hero">
+        <div class="chapter-hero-content">
+          <p class="chapter-kicker">هماتولوژی</p>
+          <h1>فصل ۴: اختلالات هموگلوبین</h1>
+          <p class="chapter-subtitle">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
         </div>
-    </header>
+      </header>
 
-    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+    <main class="chapter-page">
         <!-- Navigation -->
-        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+        <nav class="chapter-mini-nav" aria-label="فهرست داخلی فصل">
             <a href="#sec1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">منحنی اتصال اکسیژن به هموگلوبین</a>
             <a href="#sec2" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">بیماری‌های سیکل‌سل</a>
             <a href="#sec3" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">صفت سیکل‌سل (Sickle cell trait)</a>
@@ -147,10 +44,10 @@
         </nav>
 
         <!-- Section 1: منحنی اتصال اکسیژن به هموگلوبین -->
-        <section id="sec1" class="card p-6">
-            <h2 class="section-title text-xl">1. منحنی اتصال اکسیژن به هموگلوبین</h2>
+        <section id="sec1" class="study-section">
+            <header class="section-header"><span class="section-number">1</span><h2 class="section-title">1. منحنی اتصال اکسیژن به هموگلوبین</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">منحنی اتصال اکسیژن به هموگلوبین</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">شکل منحنی اتصال اکسیژن به هموگلوبین به صورت سیگموئیدی (شکل S) است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">P<bdi dir="ltr">50</bdi></bdi> به فشاری از اکسیژن گفته می‌شود که در آن نقطه، نیمی از هموگلوبین از اکسیژن اشباع شده است. مقدار طبیعی <bdi dir="ltr">P<bdi dir="ltr">50</bdi></bdi> در حدود <bdi dir="ltr">26</bdi> <bdi dir="ltr">mmHg</bdi> است.</p>
@@ -166,10 +63,10 @@
         </section>
 
         <!-- Section 2: بیماری‌های سیکل‌سل -->
-        <section id="sec2" class="card p-6">
-            <h2 class="section-title text-xl">2. بیماری‌های سیکل‌سل</h2>
+        <section id="sec2" class="study-section">
+            <header class="section-header"><span class="section-number">2</span><h2 class="section-title">2. بیماری‌های سیکل‌سل</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">فیزیوپاتولوژی</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">در آنمی سیکل‌سل <bdi dir="ltr">Painful Crisis</bdi> شایع‌ترین علت...</p>
                 <p class="mb-3 leading-relaxed text-gray-700">انسداد عروقی علت ایجاد عائم در سندرم‌های سیکل‌سل می‌باشد.</p>
@@ -216,10 +113,10 @@
         </section>
 
         <!-- Section 3: صفت سیکل‌سل (Sickle cell trait) -->
-        <section id="sec3" class="card p-6">
-            <h2 class="section-title text-xl">3. صفت سیکل‌سل (<bdi dir="ltr">Sickle cell trait</bdi>)</h2>
+        <section id="sec3" class="study-section">
+            <header class="section-header"><span class="section-number">3</span><h2 class="section-title">3. صفت سیکل‌سل (<bdi dir="ltr">Sickle cell trait</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">اپیدمیولوژی</h4>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">۸</bdi> درصد سیاهپوستان دیده می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اکثر مبتالیان به صفت سیکل‌سل، هماچوری بی‌علامت هستند. گاهی این بیماران دچار علائم بالینی می‌شود. در برخی از شرایط مثل صعود به ارتفاعات، دهیدراتاسیون شدید و فعالیت شدید بیمار دچار علائم می‌شود. این علائم عبارتند از:</p>
@@ -233,10 +130,10 @@
         </section>
 
         <!-- Section 4: تشخیص -->
-        <section id="sec4" class="card p-6">
-            <h2 class="section-title text-xl">4. تشخیص</h2>
+        <section id="sec4" class="study-section">
+            <header class="section-header"><span class="section-number">4</span><h2 class="section-title">4. تشخیص</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">کروماتوگرافی مایع با عملکرد بالا (<bdi dir="ltr">HPLC</bdi>) و الکتروفورز مویرگی</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">برای تشخیص انواع هموگلوبین و هموگلوبینوپاتی (فنوتیپ هموگلوبین) از الکتروفورز مویرگی و <bdi dir="ltr">HPLC</bdi> استفاده می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">روش کروماتوگرافی مایع با عملکرد بالا (<bdi dir="ltr">HPLC</bdi>) برای تعیین فنوتیپ هموگلوبین به کار برده می‌شود و هم‌اکنون آزمایش اصلی برای تعیین نوع هموگلوبین است.</p>
@@ -256,23 +153,23 @@
         </section>
 
         <!-- Section 5: صفت سیکل‌سل (HbAS) -->
-        <section id="sec5" class="card p-6">
-            <h2 class="section-title text-xl">5. صفت سیکل‌سل (<bdi dir="ltr">HbAS</bdi>)</h2>
+        <section id="sec5" class="study-section">
+            <header class="section-header"><span class="section-number">5</span><h2 class="section-title">5. صفت سیکل‌سل (<bdi dir="ltr">HbAS</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اکثر مبتلایان به صفت سیکل‌سل بی‌علامت هستند. برخی از بیماران فقط دچار هماچوری بی‌علامت هستند (مورد نظر سؤال <bdi dir="ltr">Case</bdi>).</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در صفت سیکل‌سل، سطح هموگلوبین S برابر با <bdi dir="ltr">60</bdi> تا <bdi dir="ltr">70</bdi> درصد و سطح هموگلوبین A برابر با <bdi dir="ltr">30</bdi> تا <bdi dir="ltr">40</bdi> درصد می‌باشد.</p>
             </div>
         </section>
 
         <!-- Section 6: انواع شایع بیماری‌های سیکل‌سل -->
-        <section id="sec6" class="card p-6">
-            <h2 class="section-title text-xl">6. انواع شایع بیماری‌های سیکل‌سل</h2>
+        <section id="sec6" class="study-section">
+            <header class="section-header"><span class="section-number">6</span><h2 class="section-title">6. انواع شایع بیماری‌های سیکل‌سل</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="overflow-x-auto mb-4">
+            <div class="frame-grid">
+                <div class="table-card"><div class="table-scroll">
                   <h4 class="font-bold text-md text-gray-700 mb-2">انواع شایع بیماری‌های سیکل‌سل</h4>
-                  <table class="staging-table">
+                  <table class="medical-table">
                     <thead>
                       <tr>
                         <th>ژنوتیپ</th>
@@ -341,15 +238,15 @@
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                </div></div>
             </div>
         </section>
 
         <!-- Section 7: افتراق آنمی سیکل‌سل و β0 تالاسمی -->
-        <section id="sec7" class="card p-6">
-            <h2 class="section-title text-xl">7. افتراق آنمی سیکل‌سل و β<bdi dir="ltr">0</bdi> تالاسمی</h2>
+        <section id="sec7" class="study-section">
+            <header class="section-header"><span class="section-number">7</span><h2 class="section-title">7. افتراق آنمی سیکل‌سل و β<bdi dir="ltr">0</bdi> تالاسمی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">بحران‌های انسداد عروقی که موجب کمردرد می‌شوند، بیشتر به نفع دو اختلال زیر است: آنمی سیکل‌سل (<bdi dir="ltr">HbSS</bdi>) و β<bdi dir="ltr">0</bdi> تالاسمی S/β.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در آنمی سیکل‌سل و β<bdi dir="ltr">0</bdi> تالاسمی S/β، هموگلوبین S بیشتر از <bdi dir="ltr">75</bdi> درصد و هموگلوبین A صفر می‌باشد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">برای افتراق این دو وضعیت به <bdi dir="ltr">MCV</bdi> نگاه می‌کنیم: در آنمی سیکل‌سل <bdi dir="ltr">MCV</bdi> بین <bdi dir="ltr">80</bdi> تا <bdi dir="ltr">100</bdi> است. در β<bdi dir="ltr">0</bdi> تالاسمی S/β <bdi dir="ltr">MCV</bdi> بین <bdi dir="ltr">60</bdi> تا <bdi dir="ltr">85</bdi> است.</p>
@@ -358,20 +255,20 @@
         </section>
 
         <!-- Section 8: HbS-β+ تالاسمی -->
-        <section id="sec8" class="card p-6">
-            <h2 class="section-title text-xl">8. <bdi dir="ltr">HbS</bdi>-β+ تالاسمی</h2>
+        <section id="sec8" class="study-section">
+            <header class="section-header"><span class="section-number">8</span><h2 class="section-title">8. <bdi dir="ltr">HbS</bdi>-β+ تالاسمی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">درصد انواع هموگلوبین به قرار زیر است: <bdi dir="ltr">HbS</bdi>: <bdi dir="ltr">90</bdi> تا <bdi dir="ltr">60</bdi> <bdi dir="ltr">HbA</bdi>: <bdi dir="ltr">40</bdi> تا <bdi dir="ltr">5</bdi> <bdi dir="ltr">HbF</bdi>: <bdi dir="ltr">10</bdi> تا <bdi dir="ltr">1</bdi> <bdi dir="ltr">HbA<bdi dir="ltr">2</bdi></bdi>: <bdi dir="ltr">6</bdi> تا <bdi dir="ltr">5</bdi></p>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">MCV</bdi> در <bdi dir="ltr">HbS</bdi>-β+ تالاسمی بین <bdi dir="ltr">70</bdi> تا <bdi dir="ltr">80</bdi> است.</p>
             </div>
         </section>
 
         <!-- Section 9: غربالگری و بررسی اختلالات هموگلوبین -->
-        <section id="sec9" class="card p-6">
-            <h2 class="section-title text-xl">9. غربالگری و بررسی اختلالات هموگلوبین</h2>
+        <section id="sec9" class="study-section">
+            <header class="section-header"><span class="section-number">9</span><h2 class="section-title">9. غربالگری و بررسی اختلالات هموگلوبین</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در تمام زنانی که قصد حاملگی دارند، غربالگری اختلالات هموگلوبین با <bdi dir="ltr">CBC</bdi> و اندکس‌های اریتروسیت و <bdi dir="ltr">HPLC</bdi> کروماتوگرافی اندیکاسیون دارد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در مبتالیان به صفت سیکل‌سل (<bdi dir="ltr">HbS</bdi>) یا بتا تالاسمی، همسر بیمار باید از نظر اختلالات هموگلوبین بررسی شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">روش‌های تشخیصی قبل از تولد با استفاده از نمونه‌برداری از پرزه‌های کوریونی (<bdi dir="ltr">CVS</bdi>) نیز در دسترس است.</p>
@@ -379,10 +276,10 @@
         </section>
 
         <!-- Section 10: P50 و عوامل مؤثر بر آن -->
-        <section id="sec10" class="card p-6">
-            <h2 class="section-title text-xl">10. <bdi dir="ltr">P<bdi dir="ltr">50</bdi></bdi> و عوامل مؤثر بر آن</h2>
+        <section id="sec10" class="study-section">
+            <header class="section-header"><span class="section-number">10</span><h2 class="section-title">10. <bdi dir="ltr">P<bdi dir="ltr">50</bdi></bdi> و عوامل مؤثر بر آن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">P<bdi dir="ltr">50</bdi></bdi> به فشاری از اکسیژن که نیمی از هموگلوبین از اکسیژن اشباع شده است، گفته می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">کاهش <bdi dir="ltr">P<bdi dir="ltr">50</bdi></bdi> به معنی افزایش میل ترکیبی هموگلوبین به اکسیژن و کاهش آزاد شدن اکسیژن به بافت‌ها بوده که به‌صورت اریتروسیتوز ایزوله تظاهر می‌یابد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">افزایش <bdi dir="ltr">P<bdi dir="ltr">50</bdi></bdi> به معنی کاهش میل ترکیبی هموگلوبین به اکسیژن و افزایش آزاد شدن اکسیژن به بافت‌ها بوده که به‌صورت آنمی تظاهر سیانوز و در بافت‌ها بوده که به‌صورت دردناک ایسکمیک می‌شوند.</p>
@@ -397,10 +294,10 @@
         </section>
 
         <!-- Section 11: بیماری سیکل‌سل -->
-        <section id="sec11" class="card p-6">
-            <h2 class="section-title text-xl">11. بیماری سیکل‌سل</h2>
+        <section id="sec11" class="study-section">
+            <header class="section-header"><span class="section-number">11</span><h2 class="section-title">11. بیماری سیکل‌سل</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">بیمار سیکل‌سل به‌علت موتاسیون در ژن β-گلوبین ایجاد می‌شود. در این شرایط اسید آمینه والین به جای اسید گلوتامیک در هفتم از زنجیره گلوبین تغییر می‌کند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در بیماری سیکل‌سل، گلبول‌های قرمز داسی‌شکل موجب انسداد عروقی شده و با ایجاد دردناک ایسکمیک می‌شوند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در صفت سیکل‌سل، میزان هموگلوبین <bdi dir="ltr">HbS</bdi> بین <bdi dir="ltr">30</bdi> تا <bdi dir="ltr">40</bdi> درصد و میزان هموگلوبین A بین <bdi dir="ltr">60</bdi> تا <bdi dir="ltr">70</bdi> درصد است.</p>
@@ -479,10 +376,10 @@
         </section>
 
         <!-- Section 12: تالاسمی -->
-        <section id="sec12" class="card p-6">
-            <h2 class="section-title text-xl">12. تالاسمی</h2>
+        <section id="sec12" class="study-section">
+            <header class="section-header"><span class="section-number">12</span><h2 class="section-title">12. تالاسمی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">یافته‌های تشخیصی تالاسمی</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">خانمی <bdi dir="ltr">35</bdi> ساله با ضعف و خستگی چند ساله، مراجعه می‌کند. در معاینه، رنگ‌پریده است. آزمایشات وی به شرح زیر است: <bdi dir="ltr">Hb</bdi> = <bdi dir="ltr">10.6</bdi> <bdi dir="ltr">gr/dl</bdi>, <bdi dir="ltr">RBC</bdi> = <bdi dir="ltr">5,500,000,</bdi> <bdi dir="ltr">WBC</bdi> = <bdi dir="ltr">6800</bdi> (<bdi dir="ltr">Nl</bdi>. <bdi dir="ltr">Diff</bdi>.), <bdi dir="ltr">MCV</bdi> = <bdi dir="ltr">60,</bdi> <bdi dir="ltr">MCH</bdi> = <bdi dir="ltr">18,</bdi> <bdi dir="ltr">Ferritin</bdi> = <bdi dir="ltr">190</bdi> <bdi dir="ltr">mg/dl</bdi>. محتمل‌ترین تشخیص کدام است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در تالاسمی، یک یا بیشتر از زنجیره‌های گلوبین هموگلوبین کاهش می‌یابند، لذا میزان هموگلوبین کاهش یافته و آنمی میکروسیتیک رخ می‌دهد.</p>
@@ -534,9 +431,9 @@
                 <p class="mb-3 leading-relaxed text-gray-700">در تالاسمی <bdi dir="ltr">Target cells</bdi> (سلول‌های هدف) دیده می‌شوند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در بتا تالاسمی مینور، <bdi dir="ltr">HbA<bdi dir="ltr">2</bdi></bdi> افزایش یافته و بین <bdi dir="ltr">4</bdi> تا <bdi dir="ltr">6%</bdi> است. در حالی که در آلفا تالاسمی مینور، <bdi dir="ltr">HbA<bdi dir="ltr">2</bdi></bdi> طبیعی است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در بتا تالاسمی مینور، یافته‌های آزمایشگاهی به قرار زیر است:</p>
-                <div class="overflow-x-auto mb-4">
+                <div class="table-card"><div class="table-scroll">
                   <h4 class="font-bold text-md text-gray-700 mb-2">یافته‌های آزمایشگاهی در بتا تالاسمی مینور</h4>
-                  <table class="staging-table">
+                  <table class="medical-table">
                     <thead>
                       <tr>
                         <th>شاخص</th>
@@ -566,7 +463,7 @@
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                </div></div>
                 <p class="mb-3 leading-relaxed text-gray-700">در مورد سوال، یافته‌های زیر به نفع تالاسمی مینور هستند:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">آنمی میکروسیتیک: به هموگلوبین پایین و <bdi dir="ltr">MCV</bdi> بین <bdi dir="ltr">60</bdi> تا <bdi dir="ltr">80</bdi> توجه کنید.</li>
@@ -601,10 +498,10 @@
         </section>
 
         <!-- Section 13: بتا تالاسمی مینور -->
-        <section id="sec13" class="card p-6">
-            <h2 class="section-title text-xl">13. بتا تالاسمی مینور</h2>
+        <section id="sec13" class="study-section">
+            <header class="section-header"><span class="section-number">13</span><h2 class="section-title">13. بتا تالاسمی مینور</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">بتا تالاسمی مینور با نام‌های حامل تالاسمی مینور یا صفت بتا تالاسمی یا بتا تالاسمی هتروزیگوت نیز شناخته می‌شود.</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">بدون آنمی تظاهر آنمی خفیف یا تالاسمی مینور با بتا- ظاهر می‌شود.</li>
@@ -619,30 +516,30 @@
         </section>
 
         <!-- Section 14: افتراق آلفا تالاسمی مینور و بتا تالاسمی مینور -->
-        <section id="sec14" class="card p-6">
-            <h2 class="section-title text-xl">14. افتراق آلفا تالاسمی مینور و بتا تالاسمی مینور</h2>
+        <section id="sec14" class="study-section">
+            <header class="section-header"><span class="section-number">14</span><h2 class="section-title">14. افتراق آلفا تالاسمی مینور و بتا تالاسمی مینور</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در <bdi dir="ltr">HbA<bdi dir="ltr">2</bdi></bdi> در آلفا تالاسمی مینور میزان <bdi dir="ltr">HbF</bdi> و طبیعی هستند، الکتروفورز هموگلوبین.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در بتا تالاسمی مینور <bdi dir="ltr">HbA<bdi dir="ltr">2</bdi></bdi> افزایش یافته و بین <bdi dir="ltr">4</bdi> تا <bdi dir="ltr">6</bdi> درصد است. در بعضی از بیماران <bdi dir="ltr">HbF</bdi> طبیعی بوده ولی افزایش یافته است.</p>
             </div>
         </section>
 
         <!-- Section 15: مورد بالینی: مرد 28 ساله با یافته‌های آزمایشگاهی -->
-        <section id="sec15" class="card p-6">
-            <h2 class="section-title text-xl">15. مورد بالینی: مرد <bdi dir="ltr">28</bdi> ساله با یافته‌های آزمایشگاهی</h2>
+        <section id="sec15" class="study-section">
+            <header class="section-header"><span class="section-number">15</span><h2 class="section-title">15. مورد بالینی: مرد <bdi dir="ltr">28</bdi> ساله با یافته‌های آزمایشگاهی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در آزمایش‌های تکمیلی آهن سرم، <bdi dir="ltr">TIBC</bdi> و فریتین نرمال داشته است. برای او الکتروفورز هموگلوبین درخواست می‌شود که طبیعی گزارش می‌گردد؛ چه مشکلی برای این فرد مطرح می‌باشد؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">(صفت تالاسمی)، سطح <bdi dir="ltr">MCV</bdi> بین <bdi dir="ltr">65</bdi> تا <bdi dir="ltr">80</bdi> بوده و هموگلوبین بین <bdi dir="ltr">12</bdi> تا <bdi dir="ltr">15</bdi> می‌باشد. همچنین به جدول ارائه شده در نکته اصلی سؤال مراجعه شود.</p>
             </div>
         </section>
 
         <!-- Section 16: مورد بالینی: مرد 25 ساله با طحال لمس شده -->
-        <section id="sec16" class="card p-6">
-            <h2 class="section-title text-xl">16. مورد بالینی: مرد <bdi dir="ltr">25</bdi> ساله با طحال لمس شده</h2>
+        <section id="sec16" class="study-section">
+            <header class="section-header"><span class="section-number">16</span><h2 class="section-title">16. مورد بالینی: مرد <bdi dir="ltr">25</bdi> ساله با طحال لمس شده</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">سابقه ای از تزریق خون را نمی دهد. در صورتی که این فرد مبتلا به تالاسمی آلفا باشد، کدام گزینه در مورد ژنوتیپ این بیمار صحیح است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در بیماری هموگلوبین --/- α، سطح هموگلوبین بین <bdi dir="ltr">5</bdi> تا <bdi dir="ltr">12</bdi> و میزان <bdi dir="ltr">MCV</bdi> بین <bdi dir="ltr">60</bdi> تا <bdi dir="ltr">70</bdi> می‌باشد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">بیماری هموگلوبین H شبیه به بتا تالاسمی اینترمدیا بوده که نیازی به تزریق خون مزمن ندارد. همچنین به جدول ارائه شده در پاسخ به سؤال مراجعه شود.</p>
@@ -650,10 +547,10 @@
         </section>
 
         <!-- Section 17: مورد بالینی: زوج جوان برای مشاوره ازدواج -->
-        <section id="sec17" class="card p-6">
-            <h2 class="section-title text-xl">17. مورد بالینی: زوج جوان برای مشاوره ازدواج</h2>
+        <section id="sec17" class="study-section">
+            <header class="section-header"><span class="section-number">17</span><h2 class="section-title">17. مورد بالینی: زوج جوان برای مشاوره ازدواج</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">خانم دچار آلفا تالاسمی <bdi dir="ltr">1</bdi> - و آقا دچار آلفا تالاسمی <bdi dir="ltr">2</bdi> - می‌باشد. در صورت ازدواج احتمال بروز کدام هموگلوبینوپاتی زیر در فرزندانشان وجود دارد؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">به کروموزومی که یک ژن α حذف شده است، <bdi dir="ltr">2</bdi>- آلفا تالاسمی گفته می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">به کروموزومی که دو ژن α حذف شده است، <bdi dir="ltr">1</bdi>- آلفا تالاسمی گفته می‌شود.</p>
@@ -662,10 +559,10 @@
         </section>
 
         <!-- Section 18: مورد بالینی: آقای 29 ساله با سابقه اسپلنکتومی -->
-        <section id="sec18" class="card p-6">
-            <h2 class="section-title text-xl">18. مورد بالینی: آقای <bdi dir="ltr">29</bdi> ساله با سابقه اسپلنکتومی</h2>
+        <section id="sec18" class="study-section">
+            <header class="section-header"><span class="section-number">18</span><h2 class="section-title">18. مورد بالینی: آقای <bdi dir="ltr">29</bdi> ساله با سابقه اسپلنکتومی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">وی قصد دارد با خانمی که ناقل خاموش تالاسمی است ازدواج کند. در مورد وضعیت خونی فرزندان کدام پاسخ صحیح است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">با توجه به جدول تالاسمی‌های آلفا در پاسخ به سؤال، پدر دچار بیماری هموگلوبین H است. با توجه به هموگلوبین نرمال <bdi dir="ltr">A<bdi dir="ltr">2</bdi></bdi> کمتر از <bdi dir="ltr">3</bdi>/<bdi dir="ltr">5</bdi>( درصد و <bdi dir="ltr">MCV</bdi> بین <bdi dir="ltr">60</bdi> تا <bdi dir="ltr">70</bdi> می‌باشد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">فرمول بیماری هموگلوبین به صورت --/- α است.</p>
@@ -681,10 +578,10 @@
         </section>
 
         <!-- Section 19: مورد بالینی: ترکیب ژن هموگلوبین بیماری -->
-        <section id="sec19" class="card p-6">
-            <h2 class="section-title text-xl">19. مورد بالینی: ترکیب ژن هموگلوبین بیماری</h2>
+        <section id="sec19" class="study-section">
+            <header class="section-header"><span class="section-number">19</span><h2 class="section-title">19. مورد بالینی: ترکیب ژن هموگلوبین بیماری</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">ترکیب ژن هموگلوبین بیماری H به صورت αTα/αTα است. این بیمار دچار چه اختلالی است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">ترکیب ژنی هموگلوبین H به یکی از صورت زیر است:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -701,10 +598,10 @@
         </section>
 
         <!-- Section 20: مورد بالینی: بیماری تالاسمی آلفا با حذف 4 ژن -->
-        <section id="sec20" class="card p-6">
-            <h2 class="section-title text-xl">20. مورد بالینی: بیماری تالاسمی آلفا با حذف <bdi dir="ltr">4</bdi> ژن</h2>
+        <section id="sec20" class="study-section">
+            <header class="section-header"><span class="section-number">20</span><h2 class="section-title">20. مورد بالینی: بیماری تالاسمی آلفا با حذف <bdi dir="ltr">4</bdi> ژن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در بیماری تالاسمی آلفا با حذف <bdi dir="ltr">4</bdi> ژن، چه نوع هموگلوبین غیرطبیعی قابل اندازه‌گیری است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">هیدروپس فتالیس: حذف هر چهار لوکوس α زنجیره گلوبین موجب هموگلوبین بارت می‌شود. ترکیب ژنتیک یا هیدروپس فتالیس یا هموگلوبین بارت به صورت زیر است:</p>
                 <div class="bg-gray-50 p-4 rounded-lg border-r-4 border-purple-400 mb-4">
@@ -714,10 +611,10 @@
         </section>
 
         <!-- Section 21: مورد بالینی: ازدواج منجر به تولد فرزند با کم‌خونی شدید -->
-        <section id="sec21" class="card p-6">
-            <h2 class="section-title text-xl">21. مورد بالینی: ازدواج منجر به تولد فرزند با کم‌خونی شدید</h2>
+        <section id="sec21" class="study-section">
+            <header class="section-header"><span class="section-number">21</span><h2 class="section-title">21. مورد بالینی: ازدواج منجر به تولد فرزند با کم‌خونی شدید</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">کدامیک از ازدواج‌های زیر می‌تواند منجر به تولد فرزند با کم‌خونی شدید گردد؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">هموگلوبین <bdi dir="ltr">E (HbE</bdi>) و هموگلوبین <bdi dir="ltr">C (HbC</bdi>) واریانت‌های شایع هموگلوبین هستند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">افراد هتروزیگوت حامل این موتاسیون‌ها، از نظر بالینی سالم هستند.</p>
@@ -731,10 +628,10 @@
         </section>
 
         <!-- Section 22: پیگیری: صفت آلفا تالاسمی -->
-        <section id="sec22" class="card p-6">
-            <h2 class="section-title text-xl">22. پیگیری: صفت آلفا تالاسمی</h2>
+        <section id="sec22" class="study-section">
+            <header class="section-header"><span class="section-number">22</span><h2 class="section-title">22. پیگیری: صفت آلفا تالاسمی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در مبتالیان به صفت آلفا تالاسمی، یک یا دو ژن α گلوبین حذف شده است. یافته‌های تشخیصی صفت آلفا تالاسمی، عبارتند از:</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">یافته‌های تشخیصی صفت آلفا تالاسمی:</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -774,10 +671,10 @@
         </section>
 
         <!-- Section 23: نکات مهم -->
-        <section id="sec23" class="card p-6">
-            <h2 class="section-title text-xl">23. نکات مهم</h2>
+        <section id="sec23" class="study-section">
+            <header class="section-header"><span class="section-number">23</span><h2 class="section-title">23. نکات مهم</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">لوسمی/لنفوم سلول T بالغین با ویروس <bdi dir="ltr">HTLV<bdi dir="ltr">1</bdi></bdi> ارتباط دارد.</li>
                   <li class="leading-relaxed text-gray-700">لنفادنوپاتی سوپراکالویکوالر به شدت به نفع بدخیمی بوده و همواره باید تحت بیوپسی قرار گیرد.</li>
@@ -794,10 +691,10 @@
         </section>
 
         <!-- Section 24: شاخص پروگنوستیک بین‌المللی (IPI) -->
-        <section id="sec24" class="card p-6">
-            <h2 class="section-title text-xl">24. شاخص پروگنوستیک بین‌المللی (<bdi dir="ltr">IPI</bdi>)</h2>
+        <section id="sec24" class="study-section">
+            <header class="section-header"><span class="section-number">24</span><h2 class="section-title">24. شاخص پروگنوستیک بین‌المللی (<bdi dir="ltr">IPI</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">رایج‌ترین سیستم برای تشخیص پیش‌آگهی بیماران <bdi dir="ltr">DLBCL</bdi> (لنفوم منتشر سلول بزرگ) شامل موارد زیر است بجز سن، وضعیت عملکردی، تعداد غدد لنفاوی درگیر، هموگلوبین.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">عوامل کلی تعیین‌کننده پیش‌آگهی ضعیف در اغلب موارد لنفوم نان‌هوچکین هستند: مراحل پیشرفته بیماری (<bdi dir="ltr">Stage III/IV</bdi>) در زمان شروع علائم، درگیری مناطق متعدد خارج گرهی، <bdi dir="ltr">LDH</bdi> بالا، وجود علائم بالینی (شامل تب، تعریق شبانه و کاهش وزن)، وضعیت عملکردی ضعیف.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">این شاخص (<bdi dir="ltr">IPI</bdi>)، مبتلایان به لنفوم را بر اساس سن، وضعیت عملکردی، مرحله بیماری و تعداد مناطق درگیر به گروه‌های مختلفی تقسیم می‌کند.</p>
@@ -806,19 +703,19 @@
         </section>
 
         <!-- Section 25: هموفیلی B -->
-        <section id="sec25" class="card p-6">
-            <h2 class="section-title text-xl">25. هموفیلی B</h2>
+        <section id="sec25" class="study-section">
+            <header class="section-header"><span class="section-number">25</span><h2 class="section-title">25. هموفیلی B</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">هموفیلی B یک کمبود وابسته به کروموزوم X است (گزینه ب است، کمبود فاکتور <bdi dir="ltr">9</bdi>).</p>
             </div>
         </section>
 
         <!-- Section 26: شدت علائم در هموفیلی -->
-        <section id="sec26" class="card p-6">
-            <h2 class="section-title text-xl">26. شدت علائم در هموفیلی</h2>
+        <section id="sec26" class="study-section">
+            <header class="section-header"><span class="section-number">26</span><h2 class="section-title">26. شدت علائم در هموفیلی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">شدت علائم بالینی براساس شدت بیماری متفاوت است:</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">کمبود خفیف: سطح فاکتور بین <bdi dir="ltr">6</bdi> تا <bdi dir="ltr">40</bdi> درصد است. این بیماران معمولاً بعد از جراحی یا تروما دچار خونریزی می‌شوند.</li>
@@ -831,19 +728,19 @@
         </section>
 
         <!-- Section 27: نحوه توارث -->
-        <section id="sec27" class="card p-6">
-            <h2 class="section-title text-xl">27. نحوه توارث</h2>
+        <section id="sec27" class="study-section">
+            <header class="section-header"><span class="section-number">27</span><h2 class="section-title">27. نحوه توارث</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">هموفیلی یک بیماری وابسته به کروموزوم X است به همین دلیل در مردان شایع‌تر است (گزینه ج).</p>
             </div>
         </section>
 
         <!-- Section 28: دوز فاکتور لازم -->
-        <section id="sec28" class="card p-6">
-            <h2 class="section-title text-xl">28. دوز فاکتور لازم</h2>
+        <section id="sec28" class="study-section">
+            <header class="section-header"><span class="section-number">28</span><h2 class="section-title">28. دوز فاکتور لازم</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">دوز فاکتور لازم از روابط زیر به دست می‌آید:</p>
                 <div class="bg-gray-50 p-4 rounded-lg border-r-4 border-purple-400 mb-4">
                   <div class="font-mono text-lg mb-2 bg-white p-3 rounded" dir="ltr"><bdi dir="ltr">1</bdi> <bdi dir="ltr">U/kg</bdi> فاکتور <bdi dir="ltr">8</bdi>، فعالیت فاکتور <bdi dir="ltr">8</bdi> را <bdi dir="ltr">2%</bdi> پلاسمـا را افزایش می‌دهد، لذا در یک بیمار مبتال به هموفیلی شدید، <bdi dir="ltr">50</bdi> <bdi dir="ltr">U/kg</bdi> فاکتور <bdi dir="ltr">8</bdi>، فعالیت فاکتور را به <bdi dir="ltr">100%</bdi> می‌رساند.</div>
@@ -859,28 +756,28 @@
         </section>
 
         <!-- Section 29: فواصل تجویز -->
-        <section id="sec29" class="card p-6">
-            <h2 class="section-title text-xl">29. فواصل تجویز</h2>
+        <section id="sec29" class="study-section">
+            <header class="section-header"><span class="section-number">29</span><h2 class="section-title">29. فواصل تجویز</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">هر <bdi dir="ltr">8</bdi> تا <bdi dir="ltr">12</bdi> ساعت، هر <bdi dir="ltr">8</bdi> ساعت تجویز می‌شود، ولی چون فاکتور <bdi dir="ltr">9</bdi> نیمه عمر طولانی‌تری دارد، هر <bdi dir="ltr">18</bdi> تا <bdi dir="ltr">24</bdi> ساعت تزریق می‌گردد.</p>
             </div>
         </section>
 
         <!-- Section 30: هموگلوبینوپاتی‌ها -->
-        <section id="sec30" class="card p-6">
-            <h2 class="section-title text-xl">30. هموگلوبینوپاتی‌ها</h2>
+        <section id="sec30" class="study-section">
+            <header class="section-header"><span class="section-number">30</span><h2 class="section-title">30. هموگلوبینوپاتی‌ها</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">مرد <bdi dir="ltr">30</bdi> ساله به دنبال اکیموز در اندام‌ها به اورژانس مراجعه کرده است. در بررسی‌های انجام شده، پان‌سیتوپنی دارد. در الم خون محیطی پرومیلوسیت فراوان رؤیت شد. نوتروفیل بالـغ رؤیـت نشـد. کدام بررسی سیتوژنتیک درخواست می‌شود؟ <bdi dir="ltr">PML-RARA</bdi></p>
             </div>
         </section>
 
         <!-- Section 31: تشخیص افتراقی آنمی میکروسیتیک با طحال بزرگ -->
-        <section id="sec31" class="card p-6">
-            <h2 class="section-title text-xl">31. تشخیص افتراقی آنمی میکروسیتیک با طحال بزرگ</h2>
+        <section id="sec31" class="study-section">
+            <header class="section-header"><span class="section-number">31</span><h2 class="section-title">31. تشخیص افتراقی آنمی میکروسیتیک با طحال بزرگ</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آقای <bdi dir="ltr">25</bdi> ساله با آنمی میکروسیتیک، طحال <bdi dir="ltr">16</bdi> سانتی‌متر، آزمایش فریتین و الکتروفورز هموگلوبین نرمال مراجعه کرده است. محتمل‌ترین تشخیص کدام است؟</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">آنمی سیکل سل</li>
@@ -894,10 +791,10 @@
         </section>
 
         <!-- Section 32: درمان استاندارد آنمی سیکل سل -->
-        <section id="sec32" class="card p-6">
-            <h2 class="section-title text-xl">32. درمان استاندارد آنمی سیکل سل</h2>
+        <section id="sec32" class="study-section">
+            <header class="section-header"><span class="section-number">32</span><h2 class="section-title">32. درمان استاندارد آنمی سیکل سل</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">درمان استاندارد در آنمی سیکل سل کدام است؟</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">ترانسفوزیون</li>
@@ -910,10 +807,10 @@
         </section>
 
         <!-- Section 33: مدیریت درد در کریز سیکل سل -->
-        <section id="sec33" class="card p-6">
-            <h2 class="section-title text-xl">33. مدیریت درد در کریز سیکل سل</h2>
+        <section id="sec33" class="study-section">
+            <header class="section-header"><span class="section-number">33</span><h2 class="section-title">33. مدیریت درد در کریز سیکل سل</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آقای <bdi dir="ltr">21</bdi> ساله با سابقه سیکل سل به علت کریز دردناک شدید بستری می‌شود. از اُوپیوئید خوراکی به طور مرتب استفاده می‌کرده است. تمام موارد زیر مجاز است، بجز:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700"><bdi dir="ltr">Intravenous Opioids</bdi></li>

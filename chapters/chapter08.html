@@ -4,130 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فصل ۸: لوسمی میلوئید حاد (AML)</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .gradient-header {
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .exam-tip {
-            background-color: #fef2f2;
-            border-right: 4px solid #ef4444;
-            color: #991b1b;
-        }
-        .diagnosis-box {
-            background-color: #eff6ff;
-            border-right: 4px solid #3b82f6;
-            color: #1e40af;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #111827;
-            font-weight: 800;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            right: 0;
-            width: 60%;
-            height: 4px;
-            background-color: #f59e0b;
-            border-radius: 2px;
-        }
-        .comparison-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .comparison-table th {
-            background-color: #f59e0b;
-            color: white;
-            padding: 12px;
-            text-align: center;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        .comparison-table td {
-            padding: 10px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: center;
-            font-size: 13px;
-        }
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-        .comparison-table tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            border-right: 4px solid #f59e0b;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .treatment-box {
-            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
-            border-right: 4px solid #10b981;
-            padding: 1rem;
-            border-radius: 8px;
-        }
-        .risk-good {
-            background: #d1fae5;
-            color: #065f46;
-            font-weight: 600;
-        }
-        .risk-intermediate {
-            background: #fef3c7;
-            color: #92400e;
-            font-weight: 600;
-        }
-        .risk-poor {
-            background: #fee2e2;
-            color: #991b1b;
-            font-weight: 600;
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/hemato-chapter.css">
 </head>
-<body class="pb-12">
+<body>
 
     <!-- Header -->
-    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold">فصل ۸: لوسمی میلوئید حاد (<bdi dir="ltr">AML</bdi>)</h1>
-                <p class="text-amber-100 text-sm mt-1">خلاصه جامع هماتولوژی (صفحات ۱۴۷-۱۶۹)</p>
-            </div>
-            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
-                ویژه دانشجویان پزشکی
-            </div>
+    <header class="chapter-hero">
+        <div class="chapter-hero-content">
+          <p class="chapter-kicker">هماتولوژی</p>
+          <h1>فصل ۸: لوسمی میلوئید حاد (<bdi dir="ltr">AML</bdi>)</h1>
+          <p class="chapter-subtitle">خلاصه جامع هماتولوژی (صفحات ۱۴۷-۱۶۹)</p>
         </div>
-    </header>
+      </header>
 
-    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+    <main class="chapter-page">
 
         <!-- Navigation -->
-        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+        <nav class="chapter-mini-nav" aria-label="فهرست داخلی فصل">
             <a href="#etiology" class="bg-white px-4 py-2 rounded-full shadow hover:bg-amber-50 text-amber-700 whitespace-nowrap">اتیولوژی</a>
             <a href="#clinical" class="bg-white px-4 py-2 rounded-full shadow hover:bg-amber-50 text-amber-700 whitespace-nowrap">تظاهرات بالینی</a>
             <a href="#who" class="bg-white px-4 py-2 rounded-full shadow hover:bg-amber-50 text-amber-700 whitespace-nowrap">طبقه‌بندی WHO</a>
@@ -141,10 +35,10 @@
         </nav>
 
         <!-- Section 1: اتیولوژی -->
-        <section id="etiology" class="card p-6">
-            <h2 class="section-title text-xl">۱. اتیولوژی <bdi dir="ltr">AML</bdi></h2>
+        <section id="etiology" class="study-section">
+            <h2 class="section-title">۱. اتیولوژی <bdi dir="ltr">AML</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="exam-tip p-4 rounded-lg">
                     <h3 class="font-bold mb-2">
                         <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -218,9 +112,9 @@
 
         <!-- Section 2: تظاهرات بالینی -->
         <section id="clinical" class="card p-6 border-t-4 border-indigo-500">
-            <h2 class="section-title text-xl text-indigo-700">۲. تظاهرات بالینی و آزمایشگاهی</h2>
+            <h2 class="section-title text-xl text-indigo-700">۲. تظاهرات بالینی و آزمایشگاهی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- تظاهرات بالینی -->
                 <div class="bg-indigo-50 p-4 rounded-lg">
                     <h3 class="font-bold text-indigo-800 mb-3">تظاهرات بالینی</h3>
@@ -306,9 +200,9 @@
 
         <!-- Section 3: طبقه‌بندی WHO -->
         <section id="who" class="card p-6 border-t-4 border-teal-500">
-            <h2 class="section-title text-xl text-teal-700">۳. طبقه‌بندی <bdi dir="ltr">WHO</bdi> برای <bdi dir="ltr">AML</bdi></h2>
+            <h2 class="section-title text-xl text-teal-700">۳. طبقه‌بندی <bdi dir="ltr">WHO</bdi> برای <bdi dir="ltr">AML</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="bg-teal-50 p-4 rounded-lg border border-teal-100">
                     <p class="text-sm text-teal-900 mb-3">
                         طبقه‌بندی <bdi dir="ltr">WHO</bdi> بر اساس یافته‌های سیتوژنتیک، مولکولی و مورفولوژیک انجام می‌شود
@@ -341,9 +235,9 @@
 
         <!-- Section 4: لوسمی پرومیلوسیتیک حاد -->
         <section id="apl" class="card p-6 border-t-4 border-rose-500">
-            <h2 class="section-title text-xl text-rose-700">۴. لوسمی پرومیلوسیتیک حاد (<bdi dir="ltr">APL</bdi>)</h2>
+            <h2 class="section-title text-xl text-rose-700">۴. لوسمی پرومیلوسیتیک حاد (<bdi dir="ltr">APL</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- پاتوژنز -->
                 <div class="bg-rose-50 p-4 rounded-lg border border-rose-100">
                     <h3 class="font-bold text-rose-800 mb-3">پاتوژنز</h3>
@@ -383,7 +277,7 @@
                             </div>
                         </div>
 
-                        <div class="highlight-box">
+                        <div class="study-box box-compare highlight-box">
                             <strong>یادآوری:</strong> وجود <bdi dir="ltr">DIC</bdi> در بیمار مبتلا به لوسمی، همواره به نفع لوسمی پرومیلوسیتیک حاد (<bdi dir="ltr">APL</bdi>) است
                         </div>
                     </div>
@@ -411,9 +305,9 @@
 
         <!-- Section 5: سارکوم میلوئید -->
         <section id="sarcoma" class="card p-6 border-t-4 border-cyan-500">
-            <h2 class="section-title text-xl text-cyan-700">۵. سارکوم میلوئید</h2>
+            <h2 class="section-title text-xl text-cyan-700">۵. سارکوم میلوئید</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="bg-cyan-50 p-4 rounded-lg">
                     <h3 class="font-bold text-cyan-800 mb-2">تعریف</h3>
                     <p class="text-sm text-cyan-900">
@@ -438,10 +332,10 @@
 
         <!-- Section 6: عوامل پیش‌آگهی -->
         <section id="prognosis" class="card p-6 border-t-4 border-purple-500">
-            <h2 class="section-title text-xl text-purple-700">۶. عوامل مؤثر در پیش‌آگهی <bdi dir="ltr">AML</bdi></h2>
+            <h2 class="section-title text-xl text-purple-700">۶. عوامل مؤثر در پیش‌آگهی <bdi dir="ltr">AML</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="highlight-box">
+            <div class="frame-grid">
+                <div class="study-box box-compare highlight-box">
                     <h3 class="font-bold mb-2">مهم‌ترین عامل</h3>
                     <p class="text-sm">مهمترین عامل در تعیین پیش‌آگهی <bdi dir="ltr">AML</bdi>، عوامل کروموزومی و مولکولی هستند</p>
                 </div>
@@ -539,9 +433,9 @@
 
         <!-- Section 7: بهبودی کامل -->
         <section id="cr" class="card p-6 border-t-4 border-emerald-500">
-            <h2 class="section-title text-xl text-emerald-700">۷. بهبودی کامل (<bdi dir="ltr">Complete Remission - CR</bdi>)</h2>
+            <h2 class="section-title text-xl text-emerald-700">۷. بهبودی کامل (<bdi dir="ltr">Complete Remission - CR</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="exam-tip p-4 rounded-lg">
                     <h3 class="font-bold mb-3">معیارهای بهبودی کامل (۱۰۰٪ امتحانی)</h3>
                     <p class="text-sm mb-3">بهبودی کامل براساس مطالعات خون و مغز استخوان می‌باشد. برای اطلاق بهبودی کامل باید شرایط زیر وجود داشته باشند:</p>
@@ -569,7 +463,7 @@
                     </div>
                 </div>
 
-                <div class="highlight-box">
+                <div class="study-box box-compare highlight-box">
                     <h3 class="font-bold mb-2">
                         <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1 a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
                         نکته بسیار مهم
@@ -583,9 +477,9 @@
 
         <!-- Section 8: ارزیابی قبل از درمان -->
         <section id="evaluation" class="card p-6 border-t-4 border-pink-500">
-            <h2 class="section-title text-xl text-pink-700">۸. ارزیابی قبل از درمان</h2>
+            <h2 class="section-title text-xl text-pink-700">۸. ارزیابی قبل از درمان</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="bg-pink-50 p-4 rounded-lg">
                     <h3 class="font-bold text-pink-800 mb-3">اقدامات ضروری قبل از شروع شیمی‌درمانی</h3>
                     <div class="space-y-2 text-sm">
@@ -608,9 +502,9 @@
 
         <!-- Section 9: درمان AML -->
         <section id="treatment" class="card p-6 border-t-4 border-blue-500">
-            <h2 class="section-title text-xl text-blue-700">۹. درمان <bdi dir="ltr">AML</bdi></h2>
+            <h2 class="section-title text-xl text-blue-700">۹. درمان <bdi dir="ltr">AML</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- درمان القایی -->
                 <div class="treatment-box">
                     <h3 class="font-bold text-green-800 mb-3">مرحله اول: درمان القایی (<bdi dir="ltr">Induction Therapy</bdi>)</h3>
@@ -671,10 +565,10 @@
 
         <!-- Section 10: درمان‌های حمایتی -->
         <section id="supportive" class="card p-6 border-t-4 border-gray-500">
-            <h2 class="section-title text-xl text-gray-700">۱۰. درمان‌های حمایتی در <bdi dir="ltr">AML</bdi></h2>
+            <h2 class="section-title text-xl text-gray-700">۱۰. درمان‌های حمایتی در <bdi dir="ltr">AML</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="highlight-box">
+            <div class="frame-grid">
+                <div class="study-box box-compare highlight-box">
                     <h3 class="font-bold mb-2">اهمیت</h3>
                     <p class="text-sm">عوارض عفونی عامل اصلی مرگ‌ومیر بیماران در طی درمان القایی و شیمی‌درمانی <bdi dir="ltr">Postremission</bdi> می‌باشد</p>
                 </div>
@@ -762,7 +656,7 @@
 
         <!-- Section 11: Follow Up -->
         <section class="card p-6 bg-gray-800 text-white">
-            <h2 class="text-xl font-bold mb-4 text-yellow-400">نکات کلیدی <bdi dir="ltr">Follow Up</bdi></h2>
+            <h2 class="text-xl font-bold mb-4 text-yellow-400">نکات کلیدی <bdi dir="ltr">Follow Up</bdi></h2></header>
             
             <div class="space-y-3 text-sm">
                 <div class="bg-gray-700 p-3 rounded">

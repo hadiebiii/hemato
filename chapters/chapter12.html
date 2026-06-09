@@ -4,125 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فصل ۱۲: بیماری‌های هموستاتیک و خونریزی‌دهنده</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .gradient-header {
-            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .exam-tip {
-            background-color: #fef2f2;
-            border-right: 4px solid #ef4444;
-            color: #991b1b;
-        }
-        .diagnosis-box {
-            background-color: #eff6ff;
-            border-right: 4px solid #3b82f6;
-            color: #1e40af;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #111827;
-            font-weight: 800;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            right: 0;
-            width: 60%;
-            height: 4px;
-            background-color: #dc2626;
-            border-radius: 2px;
-        }
-        .comparison-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .comparison-table th {
-            background-color: #dc2626;
-            color: white;
-            padding: 12px;
-            text-align: center;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        .comparison-table td {
-            padding: 10px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: center;
-            font-size: 13px;
-        }
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-        .comparison-table tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1; 
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1; 
-            border-radius: 4px;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            border-right: 4px solid #f59e0b;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .treatment-box {
-            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
-            border-right: 4px solid #10b981;
-            padding: 1rem;
-            border-radius: 8px;
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/hemato-chapter.css">
 </head>
-<body class="pb-12">
+<body>
 
     <!-- Header -->
-    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold">فصل ۱۲: بیماری‌های هموستاتیک و خونریزی‌دهنده</h1>
-                <p class="text-red-100 text-sm mt-1">خلاصه جامع هماتولوژی (صفحات ۲۰۳-۲۲۸)</p>
-            </div>
-            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
-                ویژه دانشجویان پزشکی
-            </div>
+    <header class="chapter-hero">
+        <div class="chapter-hero-content">
+          <p class="chapter-kicker">هماتولوژی</p>
+          <h1>فصل ۱۲: بیماری‌های هموستاتیک و خونریزی‌دهنده</h1>
+          <p class="chapter-subtitle">خلاصه جامع هماتولوژی (صفحات ۲۰۳-۲۲۸)</p>
         </div>
-    </header>
+      </header>
 
-    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+    <main class="chapter-page">
 
         <!-- Navigation -->
-        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+        <nav class="chapter-mini-nav" aria-label="فهرست داخلی فصل">
             <a href="#thrombocytopenia" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">ترومبوسیتوپنی</a>
             <a href="#itp" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">ITP</a>
             <a href="#ttp" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">TTP</a>
@@ -137,10 +36,10 @@
         </nav>
 
         <!-- Section 1: خونریزی ناشی از ترومبوسیتوپنی -->
-        <section id="thrombocytopenia" class="card p-6">
-            <h2 class="section-title text-xl">۱. خونریزی ناشی از ترومبوسیتوپنی</h2>
+        <section id="thrombocytopenia" class="study-section">
+            <h2 class="section-title">۱. خونریزی ناشی از ترومبوسیتوپنی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="bg-red-50 p-4 rounded-lg border border-red-100">
                     <h3 class="font-bold text-red-800 mb-3">نکات کلیدی</h3>
                     <div class="space-y-2 text-sm text-red-900">
@@ -155,7 +54,7 @@
                     </div>
                 </div>
 
-                <div class="highlight-box">
+                <div class="study-box box-compare highlight-box">
                     <h3 class="font-bold text-gray-800 mb-2">
                         <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
                         نکته بسیار مهم
@@ -169,9 +68,9 @@
 
         <!-- Section 2: ITP -->
         <section id="itp" class="card p-6 border-t-4 border-indigo-500">
-            <h2 class="section-title text-xl text-indigo-700">۲. پورپورای ترومبوسیتوپنیک ایمنی (<bdi dir="ltr">ITP</bdi>)</h2>
+            <h2 class="section-title text-xl text-indigo-700">۲. پورپورای ترومبوسیتوپنیک ایمنی (<bdi dir="ltr">ITP</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- اتیولوژی -->
                 <div class="bg-indigo-50 p-4 rounded-lg">
                     <h3 class="font-bold text-indigo-800 mb-2">اتیولوژی</h3>
@@ -310,9 +209,9 @@
 
         <!-- Section 3: TTP -->
         <section id="ttp" class="card p-6 border-t-4 border-purple-500">
-            <h2 class="section-title text-xl text-purple-700">۳. پورپورای ترومبوسیتوپنیک ترومبوتیک (<bdi dir="ltr">TTP</bdi>)</h2>
+            <h2 class="section-title text-xl text-purple-700">۳. پورپورای ترومبوسیتوپنیک ترومبوتیک (<bdi dir="ltr">TTP</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- تعریف -->
                 <div class="bg-purple-50 p-4 rounded-lg">
                     <h3 class="font-bold text-purple-800 mb-2">تعریف و پاتوفیزیولوژی</h3>
@@ -322,7 +221,7 @@
                 </div>
 
                 <!-- پنتاد کلاسیک -->
-                <div class="highlight-box">
+                <div class="study-box box-compare highlight-box">
                     <h3 class="font-bold mb-2">پنتاد کلاسیک <bdi dir="ltr">TTP</bdi></h3>
                     <div class="grid md:grid-cols-2 gap-3 text-sm">
                         <div class="bg-white p-3 rounded">
@@ -385,9 +284,9 @@
 
         <!-- Section 4: DIC -->
         <section id="dic" class="card p-6 border-t-4 border-orange-500">
-            <h2 class="section-title text-xl text-orange-700">۴. کواگولوپاتی مصرفی منتشر (<bdi dir="ltr">DIC</bdi>)</h2>
+            <h2 class="section-title text-xl text-orange-700">۴. کواگولوپاتی مصرفی منتشر (<bdi dir="ltr">DIC</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- تعریف -->
                 <div class="bg-orange-50 p-4 rounded-lg">
                     <h3 class="font-bold text-orange-800 mb-2">تعریف</h3>
@@ -489,9 +388,9 @@
 
         <!-- Section 5: ترومبوسیتوپنی در حاملگی -->
         <section id="pregnancy" class="card p-6 border-t-4 border-pink-500">
-            <h2 class="section-title text-xl text-pink-700">۵. ترومبوسیتوپنی در حاملگی</h2>
+            <h2 class="section-title text-xl text-pink-700">۵. ترومبوسیتوپنی در حاملگی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- ترومبوسیتوپنی فیزیولوژیک -->
                 <div class="bg-pink-50 p-4 rounded-lg">
                     <h3 class="font-bold text-pink-800 mb-2">ترومبوسیتوپنی فیزیولوژیک حاملگی</h3>
@@ -542,9 +441,9 @@
 
         <!-- Section 6: داروهای ضدپالکتی -->
         <section id="antiplatelet" class="card p-6 border-t-4 border-blue-500">
-            <h2 class="section-title text-xl text-blue-700">۶. آسپیرین و داروهای ضدپالکتی</h2>
+            <h2 class="section-title text-xl text-blue-700">۶. آسپیرین و داروهای ضدپالکتی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="grid md:grid-cols-2 gap-4">
                     <!-- آسپیرین -->
                     <div class="bg-blue-50 p-4 rounded-lg">
@@ -601,9 +500,9 @@
 
         <!-- Section 7: اختلال عملکرد پالکت -->
         <section id="platelet-dysfunction" class="card p-6 border-t-4 border-teal-500">
-            <h2 class="section-title text-xl text-teal-700">۷. اختلالات عملکرد پالکت</h2>
+            <h2 class="section-title text-xl text-teal-700">۷. اختلالات عملکرد پالکت</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- اختلال عملکرد پالکت در اورمی -->
                 <div class="bg-teal-50 p-4 rounded-lg">
                     <h3 class="font-bold text-teal-800 mb-3">اختلال عملکرد پالکت در اورمی</h3>
@@ -700,9 +599,9 @@
 
         <!-- Section 8: بیماری فون ویلبراند -->
         <section id="vwd" class="card p-6 border-t-4 border-rose-500">
-            <h2 class="section-title text-xl text-rose-700">۸. بیماری فون ویلبراند</h2>
+            <h2 class="section-title text-xl text-rose-700">۸. بیماری فون ویلبراند</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- مقدمه -->
                 <div class="bg-rose-50 p-4 rounded-lg">
                     <h3 class="font-bold text-rose-800 mb-2">مقدمه</h3>
@@ -913,9 +812,9 @@
 
         <!-- Section 9: هموفیلی -->
         <section id="hemophilia" class="card p-6 border-t-4 border-cyan-500">
-            <h2 class="section-title text-xl text-cyan-700">۹. هموفیلی <bdi dir="ltr">A</bdi> و <bdi dir="ltr">B</bdi></h2>
+            <h2 class="section-title text-xl text-cyan-700">۹. هموفیلی <bdi dir="ltr">A</bdi> و <bdi dir="ltr">B</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- تعریف -->
                 <div class="bg-cyan-50 p-4 rounded-lg">
                     <h3 class="font-bold text-cyan-800 mb-2">تعریف</h3>
@@ -1045,9 +944,9 @@
 
         <!-- Section 10: کمبود فاکتورهای انعقادی -->
         <section id="factor-deficiency" class="card p-6 border-t-4 border-amber-500">
-            <h2 class="section-title text-xl text-amber-700">۱۰. کمبود فاکتورهای انعقادی</h2>
+            <h2 class="section-title text-xl text-amber-700">۱۰. کمبود فاکتورهای انعقادی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- جدول اثر کمبود فاکتورها -->
                 <div class="overflow-x-auto">
                     <h3 class="font-bold text-lg mb-3">نتایج غربالگری آزمایشگاهی در اختلالات فاکتورهای انعقادی</h3>
@@ -1170,7 +1069,7 @@
                 </div>
 
                 <!-- Mixing Test -->
-                <div class="highlight-box">
+                <div class="study-box box-compare highlight-box">
                     <h3 class="font-bold mb-2">
                         <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
                         <bdi dir="ltr">Mixing Test</bdi> (۱۰۰٪ امتحانی)
@@ -1194,9 +1093,9 @@
 
         <!-- Section 11: فون ویلبراند اکتسابی -->
         <section id="acquired-vwd" class="card p-6 border-t-4 border-emerald-500">
-            <h2 class="section-title text-xl text-emerald-700">۱۱. فون ویلبراند اکتسابی</h2>
+            <h2 class="section-title text-xl text-emerald-700">۱۱. فون ویلبراند اکتسابی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="bg-emerald-50 p-4 rounded-lg">
                     <h3 class="font-bold text-emerald-800 mb-2">تعریف</h3>
                     <p class="text-sm text-emerald-900">
@@ -1261,7 +1160,7 @@
 
         <!-- Section 12: Follow Up -->
         <section class="card p-6 bg-gray-800 text-white">
-            <h2 class="text-xl font-bold mb-4 text-yellow-400">نکات کلیدی <bdi dir="ltr">Follow Up</bdi></h2>
+            <h2 class="text-xl font-bold mb-4 text-yellow-400">نکات کلیدی <bdi dir="ltr">Follow Up</bdi></h2></header>
             
             <div class="space-y-3 text-sm">
                 <div class="bg-gray-700 p-3 rounded">

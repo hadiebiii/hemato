@@ -4,134 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فصل ۱۱: اختلالات گرانولوسیت و منوسیت - هماتولوژی</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .gradient-header {
-            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .exam-tip {
-            background-color: #fef2f2;
-            border-right: 4px solid #ef4444;
-            color: #991b1b;
-        }
-        .diagnosis-box {
-            background-color: #eff6ff;
-            border-right: 4px solid #3b82f6;
-            color: #1e40af;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #111827;
-            font-weight: 800;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            right: 0;
-            width: 60%;
-            height: 4px;
-            background-color: #3b82f6;
-            border-radius: 2px;
-        }
-        .staging-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .staging-table th {
-            background-color: #3b82f6;
-            color: white;
-            padding: 12px;
-            text-align: right;
-            font-weight: 600;
-        }
-        .staging-table td {
-            padding: 12px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: right;
-        }
-        .staging-table tr:last-child td {
-            border-bottom: none;
-        }
-        .staging-table tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            border-right: 4px solid #f59e0b;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        .info-card {
-            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-            border-right: 4px solid #3b82f6;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/hemato-chapter.css">
 </head>
-<body class="pb-12">
+<body>
 
     <!-- Header -->
-    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold">فصل ۱۱: اختلالات گرانولوسیت و منوسیت</h1>
-                <p class="text-white/80 text-sm mt-1">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
-            </div>
-            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
-                ویژه دانشجویان پزشکی
-            </div>
+    <header class="chapter-hero">
+        <div class="chapter-hero-content">
+          <p class="chapter-kicker">هماتولوژی</p>
+          <h1>فصل ۱۱: اختلالات گرانولوسیت و منوسیت</h1>
+          <p class="chapter-subtitle">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
         </div>
-    </header>
+      </header>
 
-    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+    <main class="chapter-page">
         
         <!-- Navigation -->
-        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+        <nav class="chapter-mini-nav" aria-label="فهرست داخلی فصل">
             <a href="#sec1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">واکنش لوکموئید</a>
             <a href="#sec2" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">اسمیر لکواریتروبالستیک</a>
             <a href="#sec3" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">نوتروپنی</a>
@@ -140,19 +30,19 @@
         </nav>
 
         <!-- Section 1: واکنش لوکموئید -->
-        <section id="sec1" class="card p-6">
-            <h2 class="section-title text-xl">1. واکنش لوکموئید (Leukemoid Reaction)</h2>
+        <section id="sec1" class="study-section">
+            <header class="section-header"><span class="section-number">1</span><h2 class="section-title">1. واکنش لوکموئید (Leukemoid Reaction)</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="info-card">
+            <div class="frame-grid">
+                <div class="study-box box-definition info-card">
                     <h4 class="font-bold text-blue-900 mb-2">📌 تعریف</h4>
                     <p class="text-blue-800">به افزایش بسیار زیاد تعداد لکوسیت‌ها به بیشتر از <bdi dir="ltr">50,000</bdi> به همراه آزاد شدن زودرس پیش‌سازهای میلوئید، واکنش لوکموئید گفته می‌شود.</p>
                 </div>
 
                 <h3 class="font-bold text-lg text-blue-700 mt-6 mb-3">ویژگی‌های تشخیصی</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>ویژگی</th>
@@ -174,7 +64,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <h3 class="font-bold text-lg text-blue-700 mt-6 mb-3">اتیولوژی</h3>
                 <p class="mb-3 leading-relaxed text-gray-700">افزایش لکوسیت‌ها در واکنش لوکموئید معمولاً به علت <strong>عفونت و التهاب</strong> است.</p>
@@ -185,8 +75,8 @@
 
                 <h3 class="font-bold text-lg text-blue-700 mt-6 mb-3">افتراق واکنش لوکموئید از <bdi dir="ltr">CML</bdi></h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>ویژگی</th>
@@ -222,16 +112,16 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
             </div>
         </section>
 
         <!-- Section 2: اسمیر لکواریتروبالستیک -->
-        <section id="sec2" class="card p-6">
-            <h2 class="section-title text-xl">2. اسمیر لکواریتروبالستیک (Leukoerythroblastic Smear)</h2>
+        <section id="sec2" class="study-section">
+            <header class="section-header"><span class="section-number">2</span><h2 class="section-title">2. اسمیر لکواریتروبالستیک (Leukoerythroblastic Smear)</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="info-card">
+            <div class="frame-grid">
+                <div class="study-box box-definition info-card">
                     <h4 class="font-bold text-blue-900 mb-2">📌 تعریف</h4>
                     <p class="text-blue-800">الگوی لکواریتروبالستیک به علت <strong>انفیلتراسیون مغز استخوان</strong> توسط بافت فیبروز، گرانولوم یا نئوپلاسم ایجاد شده که به این پدیده <strong>میلوفتیزی</strong> گفته می‌شود.</p>
                 </div>
@@ -277,20 +167,20 @@
         </section>
 
         <!-- Section 3: نوتروپنی -->
-        <section id="sec3" class="card p-6">
-            <h2 class="section-title text-xl">3. نوتروپنی (Neutropenia)</h2>
+        <section id="sec3" class="study-section">
+            <header class="section-header"><span class="section-number">3</span><h2 class="section-title">3. نوتروپنی (Neutropenia)</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="info-card">
+            <div class="frame-grid">
+                <div class="study-box box-definition info-card">
                     <h4 class="font-bold text-blue-900 mb-2">📌 تعریف</h4>
                     <p class="text-blue-800">نوتروپنی به کاهش تعداد نوتروفیل‌ها در خون محیطی گفته می‌شود. معمولاً نوتروفیل کمتر از <bdi dir="ltr">1500/μL</bdi> را نوتروپنی می‌نامند.</p>
                 </div>
 
                 <h3 class="font-bold text-lg text-blue-700 mt-6 mb-3">علل دارویی نوتروپنی</h3>
                 
-                <div class="overflow-x-auto mb-4">
+                <div class="table-card"><div class="table-scroll">
                     <h4 class="font-bold text-md text-gray-700 mb-2">1. سرکوب مغز استخوان وابسته به دوز</h4>
-                    <table class="staging-table">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>دسته دارویی</th>
@@ -312,13 +202,13 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <p class="mb-3 leading-relaxed text-gray-700">یکی از عوارض شایع داروهای شیمی‌درمانی و آنتی‌بیوتیک‌ها (مانند کوتریموکسازول و کلرامفنیکل) سرکوب مغز استخوان (وابسته به دوز) است.</p>
 
-                <div class="overflow-x-auto mb-4">
+                <div class="table-card"><div class="table-scroll">
                     <h4 class="font-bold text-md text-gray-700 mb-2">2. واکنش ایدیوسنکراتیک (نادر)</h4>
-                    <table class="staging-table">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>دسته دارویی</th>
@@ -348,7 +238,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <div class="exam-tip p-4 rounded-lg mb-3">
                     <strong>💡 نکته امتحانی مهم:</strong> کلرامفنیکل هم با سرکوب مغز استخوان وابسته به دوز و هم با ایجاد واکنش ایدیوسنکراتیک (آپلازی مغز استخوان) موجب نوتروپنی می‌شود.
@@ -370,10 +260,10 @@
         </section>
 
         <!-- Section 4: ائوزینوفیل‌ها و بازوفیل‌ها -->
-        <section id="sec4" class="card p-6">
-            <h2 class="section-title text-xl">4. ائوزینوفیل‌ها و بازوفیل‌ها</h2>
+        <section id="sec4" class="study-section">
+            <header class="section-header"><span class="section-number">4</span><h2 class="section-title">4. ائوزینوفیل‌ها و بازوفیل‌ها</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h3 class="font-bold text-lg text-purple-700 mt-4 mb-3">ائوزینوفیلی (Eosinophilia)</h3>
                 
                 <div class="bg-purple-50 p-4 rounded-lg border-r-4 border-purple-400 mb-4">
@@ -409,11 +299,11 @@
         </section>
 
         <!-- Section 5: خلاصه فصل -->
-        <section id="sec5" class="card p-6">
-            <h2 class="section-title text-xl">5. خلاصه فصل</h2>
+        <section id="sec5" class="study-section">
+            <header class="section-header"><span class="section-number">5</span><h2 class="section-title">5. خلاصه فصل</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="highlight-box">
+            <div class="frame-grid">
+                <div class="study-box box-compare highlight-box">
                     <h3 class="font-bold text-lg mb-3">🎯 نکات کلیدی فصل 11</h3>
                     
                     <div class="space-y-3">

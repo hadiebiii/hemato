@@ -4,126 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فصل ۲: آنمی فقر آهن و سایر آنمی‌های هیپوپرولیفراتیو - هماتولوژی</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .gradient-header {
-            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .exam-tip {
-            background-color: #fef2f2;
-            border-right: 4px solid #ef4444;
-            color: #991b1b;
-        }
-        .diagnosis-box {
-            background-color: #eff6ff;
-            border-right: 4px solid #3b82f6;
-            color: #1e40af;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #111827;
-            font-weight: 800;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            right: 0;
-            width: 60%;
-            height: 4px;
-            background-color: #3b82f6;
-            border-radius: 2px;
-        }
-        .staging-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .staging-table th {
-            background-color: #3b82f6;
-            color: white;
-            padding: 12px;
-            text-align: right;
-            font-weight: 600;
-        }
-        .staging-table td {
-            padding: 12px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: right;
-        }
-        .staging-table tr:last-child td {
-            border-bottom: none;
-        }
-        .staging-table tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            border-right: 4px solid #f59e0b;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/hemato-chapter.css">
 </head>
-<body class="pb-12">
+<body>
 
     <!-- Header -->
-    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold">فصل ۲: آنمی فقر آهن و سایر آنمی‌های هیپوپرولیفراتیو</h1>
-                <p class="text-white/80 text-sm mt-1">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
-            </div>
-            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
-                ویژه دانشجویان پزشکی
-            </div>
+    <header class="chapter-hero">
+        <div class="chapter-hero-content">
+          <p class="chapter-kicker">هماتولوژی</p>
+          <h1>فصل ۲: آنمی فقر آهن و سایر آنمی‌های هیپوپرولیفراتیو</h1>
+          <p class="chapter-subtitle">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
         </div>
-    </header>
+      </header>
 
-    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+    <main class="chapter-page">
         <!-- Navigation -->
-        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+        <nav class="chapter-mini-nav" aria-label="فهرست داخلی فصل">
             <a href="#sec1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">آنمی‌های هیپوپرولیفراتیو</a>
             <a href="#sec2" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">متابولیسم آهن</a>
             <a href="#sec3" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">علل فقر آهن</a>
@@ -147,10 +44,10 @@
         </nav>
 
         <!-- Section 1: آنمی‌های هیپوپرولیفراتیو -->
-        <section id="sec1" class="card p-6">
-            <h2 class="section-title text-xl">1. آنمی‌های هیپوپرولیفراتیو</h2>
+        <section id="sec1" class="study-section">
+            <header class="section-header"><span class="section-number">1</span><h2 class="section-title">1. آنمی‌های هیپوپرولیفراتیو</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">تعریف: کاهش تولید به آنمی‏های ناشی از هیپوپرولیفراتیو گفته شده که شایع‏ترین آنمی‏ها هستند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اتیولوژی: آنمی فقر آهن، شایع‏ترین آنمی هیپوپرولیفراتیو است. انـواع آنمی‏هـای هیپوپرولیفراتیـو عبارتند از:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -165,10 +62,10 @@
         </section>
 
         <!-- Section 2: متابولیسم آهن -->
-        <section id="sec2" class="card p-6">
-            <h2 class="section-title text-xl">2. متابولیسم آهن</h2>
+        <section id="sec2" class="study-section">
+            <header class="section-header"><span class="section-number">2</span><h2 class="section-title">2. متابولیسم آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">هپسـیدین هورمــون اصلی تنظیم‏کننده آهن اســت. هپســیدین موجب مهار جذب آهن و مهار آزادســازی آهن از ذخایر آن می‏شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">هپســیدین در آنمی فقر آهن کاهش می‏یابد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">هپســیدین در آنمی بیماری‏های مزمن افزایش می‏یابد.</p>
@@ -177,10 +74,10 @@
         </section>
 
         <!-- Section 3: علل فقر آهن -->
-        <section id="sec3" class="card p-6">
-            <h2 class="section-title text-xl">3. علل فقر آهن</h2>
+        <section id="sec3" class="study-section">
+            <header class="section-header"><span class="section-number">3</span><h2 class="section-title">3. علل فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">حاملگی (به ویژه در ســه ماهه دوّ م و ســوّ م) از علل مهم آنمی فقر آهن است.</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">اتیولوژی کمبود آهن</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -192,10 +89,10 @@
         </section>
 
         <!-- Section 4: مراحل فقر آهن -->
-        <section id="sec4" class="card p-6">
-            <h2 class="section-title text-xl">4. مراحل فقر آهن</h2>
+        <section id="sec4" class="study-section">
+            <header class="section-header"><span class="section-number">4</span><h2 class="section-title">4. مراحل فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">مفهوم "<bdi dir="ltr">Negative Iron Balance</bdi>" به معنای کاهش درصد سیدروبالست مغز استخوان است.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">تعادل منفی آهن</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">در این مرحله، نیاز آهن بدن از توانایی بدن در جذب آهن از رژیم غذایی بالاتر می‌رود.</p>
@@ -221,12 +118,12 @@
         </section>
 
         <!-- Section 5: جدول مراحل آزمایشگاهی ایجاد فقر آهن -->
-        <section id="sec5" class="card p-6">
-            <h2 class="section-title text-xl">5. جدول مراحل آزمایشگاهی ایجاد فقر آهن</h2>
+        <section id="sec5" class="study-section">
+            <header class="section-header"><span class="section-number">5</span><h2 class="section-title">5. جدول مراحل آزمایشگاهی ایجاد فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="overflow-x-auto mb-4">
-                  <table class="staging-table">
+            <div class="frame-grid">
+                <div class="table-card"><div class="table-scroll">
+                  <table class="medical-table">
                     <thead>
                       <tr>
                         <th>مراحل آزمایشگاهی ایجاد فقر آهن</th>
@@ -295,15 +192,15 @@
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                </div></div>
             </div>
         </section>
 
         <!-- Section 6: یافته‌های آزمایشگاهی فقر آهن -->
-        <section id="sec6" class="card p-6">
-            <h2 class="section-title text-xl">6. یافته‌های آزمایشگاهی فقر آهن</h2>
+        <section id="sec6" class="study-section">
+            <header class="section-header"><span class="section-number">6</span><h2 class="section-title">6. یافته‌های آزمایشگاهی فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">فریتین سرم کمتر از <bdi dir="ltr">15</bdi> µg/<bdi dir="ltr">dl</bdi> در آنمی فقر آهن می‌باشد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">RDW</bdi>، در آنمی فقر آهن افزایش می‌یابد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">تعداد پالکت‌ها افزایش می‌یابد.</p>
@@ -319,10 +216,10 @@
         </section>
 
         <!-- Section 7: علائم بالینی و نکات -->
-        <section id="sec7" class="card p-6">
-            <h2 class="section-title text-xl">7. علائم بالینی و نکات</h2>
+        <section id="sec7" class="study-section">
+            <header class="section-header"><span class="section-number">7</span><h2 class="section-title">7. علائم بالینی و نکات</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">علائم بالینی</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">به غیر از علائم معمول آنمی شامل خستگی، کاهش ظرفیت فعالیت‌های بدنی، رنگ‌پریدگی، سایر علائم آنمی فقر آهن به شدت و طول مدت آنمی بستگی دارد. ترک‌خوردگی گوشه دهان (<bdi dir="ltr">Cheilosis</bdi>) و قاشقی شدن ناخن‌ها (<bdi dir="ltr">Koilonychia</bdi>) از نشانه‌های فقر آهن پیشرفته می‌باشند.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">نکته‌ای بسیار مهم</h4>
@@ -337,10 +234,10 @@
         </section>
 
         <!-- Section 8: یافته‌های تشخیصی آنمی فقر آهن -->
-        <section id="sec8" class="card p-6">
-            <h2 class="section-title text-xl">8. یافته‌های تشخیصی آنمی فقر آهن</h2>
+        <section id="sec8" class="study-section">
+            <header class="section-header"><span class="section-number">8</span><h2 class="section-title">8. یافته‌های تشخیصی آنمی فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی میکروسیتیک _ هیپوکرومیک (کاهش یافته <bdi dir="ltr">MCH</bdi> و <bdi dir="ltr">MCV</bdi>)</p>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">RDW</bdi> افزایش</p>
                 <p class="mb-3 leading-relaxed text-gray-700">افزایش تعداد پالکت‌ها (یکی از نکات برجسته در شرح‌حال)</p>
@@ -358,10 +255,10 @@
         </section>
 
         <!-- Section 9: تغییرات در اریتروپویز ناشی از فقر آهن -->
-        <section id="sec9" class="card p-6">
-            <h2 class="section-title text-xl">9. تغییرات در اریتروپویز ناشی از فقر آهن</h2>
+        <section id="sec9" class="study-section">
+            <header class="section-header"><span class="section-number">9</span><h2 class="section-title">9. تغییرات در اریتروپویز ناشی از فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در اریتروپویز ناشی از فقر آهن تمام تغییرات زیر رخ می‌دهد، بجز:</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">تغییرات رخ دهنده:</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -374,10 +271,10 @@
         </section>
 
         <!-- Section 10: یافته‌های غیر معمول در آنمی فقر آهن -->
-        <section id="sec10" class="card p-6">
-            <h2 class="section-title text-xl">10. یافته‌های غیر معمول در آنمی فقر آهن</h2>
+        <section id="sec10" class="study-section">
+            <header class="section-header"><span class="section-number">10</span><h2 class="section-title">10. یافته‌های غیر معمول در آنمی فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">کدامیک از یافته‌های زیر در بیمار مبتلا به آنمی فقر آهن دیده نمی‌شود؟</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">یافته‌های معمول:</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -390,10 +287,10 @@
         </section>
 
         <!-- Section 11: یافته‌های آزمایشگاهی در خانم 28 ساله با هیپرمنوراژی -->
-        <section id="sec11" class="card p-6">
-            <h2 class="section-title text-xl">11. یافته‌های آزمایشگاهی در خانم <bdi dir="ltr">28</bdi> ساله با هیپرمنوراژی</h2>
+        <section id="sec11" class="study-section">
+            <header class="section-header"><span class="section-number">11</span><h2 class="section-title">11. یافته‌های آزمایشگاهی در خانم <bdi dir="ltr">28</bdi> ساله با هیپرمنوراژی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">خانم <bdi dir="ltr">28</bdi> ساله با هیپرمنوراژی و ضعف و بی حالی که در معاینه، مخاطات رنگ پریده است. ناخن‌ها قاشقی (<bdi dir="ltr">Koilonychia</bdi>) و زخم گوشه لب دارد؛ کدامیک از یافته‌های آزمایشگاهی زیر محتمل است؟</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">یافته‌های محتمل:</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -405,10 +302,10 @@
         </section>
 
         <!-- Section 12: افتراق آنمی فقر آهن از سایر اختلالات -->
-        <section id="sec12" class="card p-6">
-            <h2 class="section-title text-xl">12. افتراق آنمی فقر آهن از سایر اختلالات</h2>
+        <section id="sec12" class="study-section">
+            <header class="section-header"><span class="section-number">12</span><h2 class="section-title">12. افتراق آنمی فقر آهن از سایر اختلالات</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">خانم <bdi dir="ltr">28</bdi> ساله به علت آنمی تحت بررسی است. در آزمایش‌ها: <bdi dir="ltr">Hb</bdi> = <bdi dir="ltr">10</bdi>gr/<bdi dir="ltr">dl</bdi>, <bdi dir="ltr">HbA<bdi dir="ltr">2</bdi></bdi> = <bdi dir="ltr">2.8%,</bdi> <bdi dir="ltr">HbF</bdi> = <bdi dir="ltr">2.4%,</bdi> <bdi dir="ltr">HbA</bdi> = <bdi dir="ltr">94.8%,</bdi> <bdi dir="ltr">MCV</bdi> = <bdi dir="ltr">68,</bdi> <bdi dir="ltr">MCH</bdi> = <bdi dir="ltr">22,</bdi> <bdi dir="ltr">MCHC</bdi> = <bdi dir="ltr">30,</bdi> <bdi dir="ltr">RDW</bdi> = <bdi dir="ltr">20.</bdi> کدام اختلال زیر می‌تواند در همراهی آنمی زمینه‌ای بیمار فوق، وجود داشته باشد؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">هموگلوبینوپاتی</p>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">RDW</bdi> افزایش، یکی از ویژگی‌های مهم در فقر آهن است. آنمی فقر آهن شایع‌ترین آنمی میکروسیتیک است که در آن <bdi dir="ltr">RDW</bdi> افزایش می‌یابد. <bdi dir="ltr">RDW</bdi> طبیعی بین <bdi dir="ltr">10</bdi> تا <bdi dir="ltr">14%</bdi> می‌باشد. در آنمی میکروسیتیک <bdi dir="ltr">MCV</bdi> کمتر از <bdi dir="ltr">80</bdi> می‌باشد.</p>
@@ -416,20 +313,20 @@
         </section>
 
         <!-- Section 13: مناسب‌ترین تست آزمایشگاهی جهت ارزیابی ذخایر آهن بدن -->
-        <section id="sec13" class="card p-6">
-            <h2 class="section-title text-xl">13. مناسب‌ترین تست آزمایشگاهی جهت ارزیابی ذخایر آهن بدن</h2>
+        <section id="sec13" class="study-section">
+            <header class="section-header"><span class="section-number">13</span><h2 class="section-title">13. مناسب‌ترین تست آزمایشگاهی جهت ارزیابی ذخایر آهن بدن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اندازه‌گیری کدامیک از موارد زیر مناسب‌ترین تست آزمایشگاهی جهت ارزیابی ذخایر آهن بدن است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">فریتین سرم در شرایط طبیعی مقادیر سرمی فریتین با ذخایر کلی آهن بدن مطابقت دارند، لذا فریتین سرم مناسب‌ترین و بهترین روش آزمایشگاهی جهت بررسی ذخایر آهن است.</p>
             </div>
         </section>
 
         <!-- Section 14: اقدامات تشخیصی در آنمی هیپوکروم و میکروسیتیک در خانم باردار -->
-        <section id="sec14" class="card p-6">
-            <h2 class="section-title text-xl">14. اقدامات تشخیصی در آنمی هیپوکروم و میکروسیتیک در خانم باردار</h2>
+        <section id="sec14" class="study-section">
+            <header class="section-header"><span class="section-number">14</span><h2 class="section-title">14. اقدامات تشخیصی در آنمی هیپوکروم و میکروسیتیک در خانم باردار</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">خانم <bdi dir="ltr">25</bdi> ساله باردار با ضعف و بی‌حالی مراجعه کرده است. در <bdi dir="ltr">CBC</bdi> بیمار، آنمی هیپوکروم و میکروسیتیک دارد. <bdi dir="ltr">MCH</bdi> = <bdi dir="ltr">25,</bdi> <bdi dir="ltr">MCV</bdi> = <bdi dir="ltr">66</bdi> <bdi dir="ltr">ft</bdi>, <bdi dir="ltr">HGB</bdi> = <bdi dir="ltr">9.1</bdi> <bdi dir="ltr">gr/dl</bdi>, <bdi dir="ltr">RDW</bdi> = <bdi dir="ltr">18%.</bdi> جهت تائید تشخیص علت آنمی کدام اقدام تشخیصی در ابتدا ضرورت ندارد؟</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">اقدامات تشخیصی لازم:</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -444,10 +341,10 @@
         </section>
 
         <!-- Section 15: محاسبه درصد اشباع ترانسفرین -->
-        <section id="sec15" class="card p-6">
-            <h2 class="section-title text-xl">15. محاسبه درصد اشباع ترانسفرین</h2>
+        <section id="sec15" class="study-section">
+            <header class="section-header"><span class="section-number">15</span><h2 class="section-title">15. محاسبه درصد اشباع ترانسفرین</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">خانم <bdi dir="ltr">20</bdi> ساله‌ای با رنگ‌پریدگی و خستگی زودرس مراجعه کرده است. در آزمایشات انجام شده: <bdi dir="ltr">Serum Iron</bdi> = <bdi dir="ltr">20</bdi> µg/<bdi dir="ltr">dl</bdi>, <bdi dir="ltr">Ferritin</bdi> = <bdi dir="ltr">10</bdi> µg/<bdi dir="ltr">dl</bdi>, <bdi dir="ltr">TIBC</bdi> = <bdi dir="ltr">400</bdi> µg/<bdi dir="ltr">dl</bdi>. درصد اشباع ترانسفرین (<bdi dir="ltr">TS</bdi>) بیمار فوق چقدر است؟</p>
                 <div class="bg-gray-50 p-4 rounded-lg border-r-4 border-purple-400 mb-4">
                   <h5 class="font-semibold text-gray-800 mb-2">فرمول اشباع ترانسفرین</h5>
@@ -459,20 +356,20 @@
         </section>
 
         <!-- Section 16: مارکرهای آزمایشگاهی در افتراق فقر آهن از آنمی ناشی از التهاب -->
-        <section id="sec16" class="card p-6">
-            <h2 class="section-title text-xl">16. مارکرهای آزمایشگاهی در افتراق فقر آهن از آنمی ناشی از التهاب</h2>
+        <section id="sec16" class="study-section">
+            <header class="section-header"><span class="section-number">16</span><h2 class="section-title">16. مارکرهای آزمایشگاهی در افتراق فقر آهن از آنمی ناشی از التهاب</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">کدامیک از مارکرهای آزمایشگاهی زیر در افتراق فقر آهن از آنمی ناشی از التهاب مفیدتر است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">پروتئین گیرنده ترانسفرین (<bdi dir="ltr">TRP</bdi>): مقادیر سرمی <bdi dir="ltr">TRP</bdi> در فقر آهن افزایش می‌یابد. اندازه‌گیری آهن، به همراه <bdi dir="ltr">TRP</bdi> و فریتین سرم جهت افتراق بین آنمی ناشی از کمبود آهن و التهاب مزمن به کار می‌رود.</p>
             </div>
         </section>
 
         <!-- Section 17: بررسی‌های تکمیلی در مرد 20 ساله با آنمی -->
-        <section id="sec17" class="card p-6">
-            <h2 class="section-title text-xl">17. بررسی‌های تکمیلی در مرد <bdi dir="ltr">20</bdi> ساله با آنمی</h2>
+        <section id="sec17" class="study-section">
+            <header class="section-header"><span class="section-number">17</span><h2 class="section-title">17. بررسی‌های تکمیلی در مرد <bdi dir="ltr">20</bdi> ساله با آنمی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">مرد <bdi dir="ltr">20</bdi> ساله‌ای با رنگ‌پریدگی و خستگی مراجعه کرده و آزمایش‌های زیر برای وی انجام شده است: <bdi dir="ltr">WBC</bdi> = <bdi dir="ltr">6800</bdi> (<bdi dir="ltr">diff</bdi>:<bdi dir="ltr">Nl</bdi>), <bdi dir="ltr">Hb</bdi> = <bdi dir="ltr">9.5</bdi>g/<bdi dir="ltr">dL</bdi>, <bdi dir="ltr">PLT</bdi> = <bdi dir="ltr">490000,</bdi> <bdi dir="ltr">RBC</bdi> = <bdi dir="ltr">2.8,</bdi> <bdi dir="ltr">MCV</bdi> = <bdi dir="ltr">72.</bdi> در این مرحله انجام کدامیک از بررسی‌های زیر کمک‌کننده‌تر است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی هیپوکرومیک _ میکروسیتیک در این بیمار به نفع آنمی فقر آهن است. <bdi dir="ltr">MCV</bdi> کمتر از <bdi dir="ltr">80</bdi> به نفع میکروسیتیک است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">تعداد پالکت‌ها افزایش پیدا می‌کند (یکی از نکات برجسته سئوال) در آنمی فقر آهن.</p>
@@ -482,10 +379,10 @@
         </section>
 
         <!-- Section 18: یافته‌های CBC سازگار با آنمی فقر آهن -->
-        <section id="sec18" class="card p-6">
-            <h2 class="section-title text-xl">18. یافته‌های <bdi dir="ltr">CBC</bdi> سازگار با آنمی فقر آهن</h2>
+        <section id="sec18" class="study-section">
+            <header class="section-header"><span class="section-number">18</span><h2 class="section-title">18. یافته‌های <bdi dir="ltr">CBC</bdi> سازگار با آنمی فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">کدامیک از یافته‌های <bdi dir="ltr">CBC</bdi> زیر با تشخیص آنمی فقر آهن سازگار می‌باشد؟</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">یافته‌های <bdi dir="ltr">CBC</bdi> در آنمی فقر آهن:</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -500,10 +397,10 @@
         </section>
 
         <!-- Section 19: بررسی‌های لازم در آقای 50 ساله با آنمی فقر آهن -->
-        <section id="sec19" class="card p-6">
-            <h2 class="section-title text-xl">19. بررسی‌های لازم در آقای <bdi dir="ltr">50</bdi> ساله با آنمی فقر آهن</h2>
+        <section id="sec19" class="study-section">
+            <header class="section-header"><span class="section-number">19</span><h2 class="section-title">19. بررسی‌های لازم در آقای <bdi dir="ltr">50</bdi> ساله با آنمی فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آقای <bdi dir="ltr">50</bdi> ساله‌ای به علت آنمی فقر آهن مراجعه نموده است. در آزمایشات <bdi dir="ltr">Hb</bdi>= <bdi dir="ltr">10</bdi>gr/<bdi dir="ltr">dL</bdi> و <bdi dir="ltr">MCV</bdi>=<bdi dir="ltr">72</bdi> می‌باشد. <bdi dir="ltr">Ferritin</bdi>= <bdi dir="ltr">9</bdi>ng/<bdi dir="ltr">dL</bdi>. کدامیک از بررسی‌های زیر لازم نیست؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">فقر آهن در یک فرد بالغ مذکر به معنی خونریزی گوارشی است تا خلاف آن ثابت گردد. لذا در مورد سئوال باید جهت بررسی خونریزی گوارشی اقدامات زیر صورت پذیرد:</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">اقدامات بررسی خونریزی گوارشی:</h4>
@@ -520,10 +417,10 @@
         </section>
 
         <!-- Section 20: اقدامات اولیه در مرد 50 ساله با آنمی -->
-        <section id="sec20" class="card p-6">
-            <h2 class="section-title text-xl">20. اقدامات اولیه در مرد <bdi dir="ltr">50</bdi> ساله با آنمی</h2>
+        <section id="sec20" class="study-section">
+            <header class="section-header"><span class="section-number">20</span><h2 class="section-title">20. اقدامات اولیه در مرد <bdi dir="ltr">50</bdi> ساله با آنمی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">مرد <bdi dir="ltr">50</bdi> ساله‌ای با ضعف و بی‌حالی مراجعه نموده است. بجز رنگ پریدگی پوست و مخاط، هیچ نکته مثبت دیگری در شرح‌حال و معاینه فیزیکی ندارد. در آزمایشات همراه <bdi dir="ltr">Hb</bdi>= <bdi dir="ltr">9</bdi>g/<bdi dir="ltr">dl</bdi>, <bdi dir="ltr">MCV</bdi>= <bdi dir="ltr">75</bdi>fl و <bdi dir="ltr">RDW</bdi>%<bdi dir="ltr">19</bdi> و میزان اشباع ترانسفرین گزارش شده است؛ کدامیک از اقدامات زیر را ابتدا توصیه می‌کنید؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در هر بیمار میانسال به بالا (به ویژه آقایان) در صورت وجود آنمی فقر آهن باید کولونوسکوپی انجام شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در آنمی فقر آهن <bdi dir="ltr">RDW</bdi> افزایش می‌یابد.</p>
@@ -534,10 +431,10 @@
         </section>
 
         <!-- Section 21: تشخیص و افتراق آنمی فقر آهن و آنمی بیماری مزمن -->
-        <section id="sec21" class="card p-6">
-            <h2 class="section-title text-xl">21. تشخیص و افتراق آنمی فقر آهن و آنمی بیماری مزمن</h2>
+        <section id="sec21" class="study-section">
+            <header class="section-header"><span class="section-number">21</span><h2 class="section-title">21. تشخیص و افتراق آنمی فقر آهن و آنمی بیماری مزمن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">افتراق آنمی بیماری مزمن از فقر آهن</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">در آنمی بیماری‌های مزمن (آنمی ناشی از التهاب)، فریتین سرم طبیعی یا بالاست. در مورد سوال <bdi dir="ltr">Case</bdi>، فریتین طبیعی است که حاکی از وجود فقر آهن و آنمی بیماری مزمن به صورت همزمان است، چرا که در فقر آهن فریتین کمتر از <bdi dir="ltr">15</bdi> بوده ولی در آنمی بیماری مزمن افزایش می‌یابد. لذا در صورت وجود همزمان این دو، فریتین در محدوده طبیعی قرار می‌گیرد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">فریتین سرم مشخص‌کننده‌ترین ویژگی افتراق‌دهنده بین فقر آهن خفیف و خون‌سازی متعاقب التهاب است. در شرایط التهابی (آنمی کمبود آهن در برابر سطح پایه بیماری مزمن)، مقدار فریتین سرم تا <bdi dir="ltr">3</bdi> برابر افزایش پیدا می‌کند.</p>
@@ -547,10 +444,10 @@
         </section>
 
         <!-- Section 22: درمان آنمی فقر آهن -->
-        <section id="sec22" class="card p-6">
-            <h2 class="section-title text-xl">22. درمان آنمی فقر آهن</h2>
+        <section id="sec22" class="study-section">
+            <header class="section-header"><span class="section-number">22</span><h2 class="section-title">22. درمان آنمی فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">نحوه درمان آنمی فقر آهن</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">شدت و علت آنمی فقر آهن تعیین‌کننده نحوه درمان خواهند بود. به عنوان مثال، بیماران علامت‌دار مسن مبتلا به آنمی فقر آهن شدید و ناپایداری قلبی-عروقی معمولاً به ترانسفوزیون خون (گلبول قرمز فشرده) احتیاج دارند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">برای اغلب بیماران مبتلا به فقر آهن مانند زنان حامله، کودکان و نوجوانان در مرحله رشد، خونریزی متناوب و اشخاصی که دریافت ناکافی آهن از رژیم غذایی دارند، درمان خوراکی با آهن کفایت می‌کند.</p>
@@ -583,10 +480,10 @@
         </section>
 
         <!-- Section 23: درمان فقر آهن -->
-        <section id="sec23" class="card p-6">
-            <h2 class="section-title text-xl">23. درمان فقر آهن</h2>
+        <section id="sec23" class="study-section">
+            <header class="section-header"><span class="section-number">23</span><h2 class="section-title">23. درمان فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">علائم آلرژیک، چند روز بعد از تزریق یک دوز بالای آهن ایجاد می‌شوند و ممکن است شامل <bdi dir="ltr">Low-grade</bdi> آرترالژی، راش پوستی و تب باشند. این علائم ممکن است وابسته به دوز باشند، لیکن کنتراندیکاسیونی جهت استفاده‌های بعدی بیمار از آهن غیرخوراکی نیستند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">خون در آنمی فقر آهن در موارد زیر اندیکاسیون تزریق دارد: الف) ناپایداری قلبی _ عروقی ب) خونریزی مداوم و بیش از اندازه از هر منشأ ج) بیماران دارای شکایت مربوط به آنمی د) کسانی که نیاز به اقدامات درمانی سریع دارند</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در مبتلایان به بیماری‌های معده یا دارای سابقه جراحی قبلی معده، جهت درمان آنمی فقر آهن، از محلول‌های آهن (<bdi dir="ltr">Elixir</bdi>) استفاده می‌شود.</p>
@@ -612,10 +509,10 @@
         </section>
 
         <!-- Section 24: سایر آنمی‌های هیپوپرولیفراتیو -->
-        <section id="sec24" class="card p-6">
-            <h2 class="section-title text-xl">24. سایر آنمی‌های هیپوپرولیفراتیو</h2>
+        <section id="sec24" class="study-section">
+            <header class="section-header"><span class="section-number">24</span><h2 class="section-title">24. سایر آنمی‌های هیپوپرولیفراتیو</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی بیماری‌های مزمن می‌تواند به علت آسیب مغز استخوان، فقر آهن یا تولید ناکافی اریتروپویتین باشد. تمام علل زیر موجب تولید ناکافی اریتروپویتین می‌شود، بجز:</p>
                 <p class="mb-3 leading-relaxed text-gray-700">نقش اریتروپویتین: التهاب مزمن، بیماری در وضعیت هیپومتابولیک (هیپوتیروئیدی) و یا تولید اریتروپویتین آندوژن در مواجهه با آنمی، ناکافی می‌باشد؛ در حالی که در کلیوی و یا فقر آهن و یا آسیب مغز استخوان افزایش سطح اریتروپویتین آندوژن به طور روتین مشاهده می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">نقش سیتوکین‌ها: تمام تغییرات ایجاد شده در آنمی مزمن به علت اثرات سیتوکین‌های التهابی و هپسیدین در سطوح مختلف خونسازی است. این سیتوکین‌ها، عبارتند از: <bdi dir="ltr">1</bdi> - اینترلوکین -<bdi dir="ltr">1</bdi> (<bdi dir="ltr">IL-<bdi dir="ltr">1</bdi></bdi>): تولید اریتروپویتین را مستقیما کاهش می‌دهد و همچنین از طریق آزادسازی <bdi dir="ltr">LNF</bdi>-γ پاسخ مغز استخوان اریتروئید به اریتروپویتین را سرکوب می‌کند. <bdi dir="ltr">2</bdi> - فاکتور نکروز تومور (<bdi dir="ltr">TNF</bdi>): از طریق آزادسازی <bdi dir="ltr">INF</bdi>-β پاسخ به اریتروپویتین را مهار می‌کند. <bdi dir="ltr">3</bdi> - هپسیدین: در کبد تولید می‌شود و مقدار آن در زمان التهاب به علت اثر <bdi dir="ltr">IL-<bdi dir="ltr">6</bdi></bdi> بالا می‌رود. هپسیدین موجب مهار جذب آهن و مهار آزادسازی آهن از ذخایر آن می‌شود.</p>
@@ -626,10 +523,10 @@
         </section>
 
         <!-- Section 25: آنمی ناشی از التهاب حاد و مزمن (آنمی ناشی از التهاب و عفونت‌ها) -->
-        <section id="sec25" class="card p-6">
-            <h2 class="section-title text-xl">25. آنمی ناشی از التهاب حاد و مزمن (آنمی ناشی از التهاب و عفونت‌ها)</h2>
+        <section id="sec25" class="study-section">
+            <header class="section-header"><span class="section-number">25</span><h2 class="section-title">25. آنمی ناشی از التهاب حاد و مزمن (آنمی ناشی از التهاب و عفونت‌ها)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">تعریف: آنمی بیماری‌های مزمن یکی از شایع‌ترین انواع آنمی بوده و مهمترین تشخیص افتراقی آنمی فقرآهن است. آنمی ناشی از بیماری‌های مزمن در مواردی چون التهاب، عفونت، آسیب بافتی و بدخیمی دیده می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اتیولوژی: تحویل ناکافی آهن به مغز استخوان است با وجود اینکه ذخایر آهن طبیعی یا افزایش یافته است.</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">یافته‌های آزمایشگاهی: آنمی بیماری‌های مزمن با نشانه‌های آزمایشگاهی زیر مشخص می‌گردد:</h4>
@@ -645,10 +542,10 @@
         </section>
 
         <!-- Section 26: افتراق آنمی فقر آهن از آنمی ناشی از التهاب -->
-        <section id="sec26" class="card p-6">
-            <h2 class="section-title text-xl">26. افتراق آنمی فقر آهن از آنمی ناشی از التهاب</h2>
+        <section id="sec26" class="study-section">
+            <header class="section-header"><span class="section-number">26</span><h2 class="section-title">26. افتراق آنمی فقر آهن از آنمی ناشی از التهاب</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">فریتین سرم مشخص‌کننده‌ترین ویژگی افتراق بین آنمی فقر آهن حقیقی و خونسازی متعاقب کمبود آهن در التهاب می‌باشد. در شرایط التهاب مقدار فریتین سرم تا <bdi dir="ltr">3</bdi> برابر از سطح پایه افزایش پیدا می‌کند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در آنمی ناشی از التهاب، <bdi dir="ltr">SI</bdi> کمتر از <bdi dir="ltr">50</bdi> است. درحالی‌که در فقر آهن، <bdi dir="ltr">SI</bdi> کمتر از <bdi dir="ltr">30</bdi>، <bdi dir="ltr">Ferritin</bdi> کمتر از <bdi dir="ltr">300</bdi> و <bdi dir="ltr">TIBC</bdi> بیشتر از <bdi dir="ltr">360</bdi> است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">سیتوکین‌های التهابی تولید اریتروپویتین را مستقیماً کاهش می‌دهند یا پاسخ به اریتروپویتین را مهار می‌کنند. این سیتوکین‌های التهابی عبارتند از: الف) اینترلوکین <bdi dir="ltr">1</bdi>، ب) <bdi dir="ltr">TNF</bdi> فاکتور، ج) هپسیدین.</p>
@@ -665,10 +562,10 @@
         </section>
 
         <!-- Section 27: آنمی‌های همولیتیک -->
-        <section id="sec27" class="card p-6">
-            <h2 class="section-title text-xl">27. آنمی‌های همولیتیک</h2>
+        <section id="sec27" class="study-section">
+            <header class="section-header"><span class="section-number">27</span><h2 class="section-title">27. آنمی‌های همولیتیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">خصوصیات کلی بالینی و آزمایشگاهی</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">بیماری به علت آنمی بررسی شده است. در معاینه رنگ‌پریده می‌باشد. در آزمایش‌ها: <bdi dir="ltr">Hb</bdi> = <bdi dir="ltr">7.5</bdi>g/<bdi dir="ltr">dl</bdi>, <bdi dir="ltr">MCV</bdi> = <bdi dir="ltr">95,</bdi> <bdi dir="ltr">Retic Index</bdi> = <bdi dir="ltr">3.5,</bdi> <bdi dir="ltr">LDH</bdi> = <bdi dir="ltr">1700</bdi> (<bdi dir="ltr">Normal</bdi> < <bdi dir="ltr">400</bdi>)</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">علائم و نشانه‌های آنمی‌های همولیتیک</h4>
@@ -715,10 +612,10 @@
         </section>
 
         <!-- Section 28: آنمی همولیتیک اتوایمیون (AIHA) با آنتی‌بادی گرم -->
-        <section id="sec28" class="card p-6">
-            <h2 class="section-title text-xl">28. آنمی همولیتیک اتوایمیون (<bdi dir="ltr">AIHA</bdi>) با آنتی‌بادی گرم</h2>
+        <section id="sec28" class="study-section">
+            <header class="section-header"><span class="section-number">28</span><h2 class="section-title">28. آنمی همولیتیک اتوایمیون (<bdi dir="ltr">AIHA</bdi>) با آنتی‌بادی گرم</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">فیزیوپاتولوژی <bdi dir="ltr">AIHA</bdi></h4>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">AIHA</bdi> به علت تولید اتوآنتی‌بادی بر علیه آنتی‌ژن گلبول قرمز ایجاد می‌شود. محل اصلی تخریب <bdi dir="ltr">RBC</bdi> ها طحال است. چون قسمت اصلی تخریب <bdi dir="ltr">RBC</bdi> ها به وسیله فاگوسیتوز در طحال و کبد رخ می‌دهد، همولیز خارج عروقی است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اسمیر خون محیطی در آنمی همولیتیک اتوایمیون به میکرواسفروسیت‌ها و پُلی‌کرومازی توجه کنید.</p>
@@ -744,10 +641,10 @@
         </section>
 
         <!-- Section 29: یافته‌های بالینی PNH -->
-        <section id="sec29" class="card p-6">
-            <h2 class="section-title text-xl">29. یافته‌های بالینی <bdi dir="ltr">PNH</bdi></h2>
+        <section id="sec29" class="study-section">
+            <header class="section-header"><span class="section-number">29</span><h2 class="section-title">29. یافته‌های بالینی <bdi dir="ltr">PNH</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">PNH</bdi> یک آنمی همولیتیک اکتسابی مزمن است. تریاد کلاسیک هموگلوبین‌اوری حمله‌ای شبانه (<bdi dir="ltr">PNH</bdi>) عبارت است از:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">همولیز داخل عروقی پایدار با تشدیدهای مکرر</li>
@@ -767,10 +664,10 @@
         </section>
 
         <!-- Section 30: یافته‌های آزمایشگاهی PNH -->
-        <section id="sec30" class="card p-6">
-            <h2 class="section-title text-xl">30. یافته‌های آزمایشگاهی <bdi dir="ltr">PNH</bdi></h2>
+        <section id="sec30" class="study-section">
+            <header class="section-header"><span class="section-number">30</span><h2 class="section-title">30. یافته‌های آزمایشگاهی <bdi dir="ltr">PNH</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">ثابت‌ترین یافته آزمایشگاهی آنمی است. آنمی معمولاً نورموسیتیک است. اگر بیمار به علت از دست دادن مزمن خون از طریق هموگلوبین‌اوری دچار کمبود آهن شود، ممکن است آنمی میکروسیتیک ایجاد شود.</li>
                   <li class="leading-relaxed text-gray-700"><bdi dir="ltr">RBC</bdi> های مورفولوژی طبیعی دارند (<bdi dir="ltr">Unremarkable red cell morphology</bdi>).</li>
@@ -782,10 +679,10 @@
         </section>
 
         <!-- Section 31: تشخیص PNH -->
-        <section id="sec31" class="card p-6">
-            <h2 class="section-title text-xl">31. تشخیص <bdi dir="ltr">PNH</bdi></h2>
+        <section id="sec31" class="study-section">
+            <header class="section-header"><span class="section-number">31</span><h2 class="section-title">31. تشخیص <bdi dir="ltr">PNH</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="exam-tip p-4 rounded-lg mb-3">
                   <strong>💡 نکته امتحانی:</strong> بهترین روش تشخیص <bdi dir="ltr">PNH</bdi>، فلوسیتومتری است (<bdi dir="ltr">100%</bdi> امتحانی). در فلوسیتومتری سطح <bdi dir="ltr">CD<bdi dir="ltr">55</bdi></bdi> و <bdi dir="ltr">CD<bdi dir="ltr">59</bdi></bdi> مشاهده می‌شود. به عبارت دیگر در فلوسیتومتری سطح <bdi dir="ltr">CD<bdi dir="ltr">55</bdi></bdi> و <bdi dir="ltr">CD<bdi dir="ltr">59</bdi></bdi> کاهش یافته است.
                 </div>
@@ -796,19 +693,19 @@
         </section>
 
         <!-- Section 32: ارتباط با آنمی آپالستیک -->
-        <section id="sec32" class="card p-6">
-            <h2 class="section-title text-xl">32. ارتباط با آنمی آپالستیک</h2>
+        <section id="sec32" class="study-section">
+            <header class="section-header"><span class="section-number">32</span><h2 class="section-title">32. ارتباط با آنمی آپالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">یک رابطه دوطرفه وجود دارد، یعنی <bdi dir="ltr">PNH</bdi> ممکن است به آنمی آپالستیک تبدیل شود. همچنین آنمی آپالستیک ممکن است در افرادی که قبلاً <bdi dir="ltr">PNH</bdi> داشته‌اند، رخ دهد.</p>
             </div>
         </section>
 
         <!-- Section 33: یافته‌های بالینی و آزمایشگاهی در موارد PNH -->
-        <section id="sec33" class="card p-6">
-            <h2 class="section-title text-xl">33. یافته‌های بالینی و آزمایشگاهی در موارد <bdi dir="ltr">PNH</bdi></h2>
+        <section id="sec33" class="study-section">
+            <header class="section-header"><span class="section-number">33</span><h2 class="section-title">33. یافته‌های بالینی و آزمایشگاهی در موارد <bdi dir="ltr">PNH</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">فلوسیتومتری در افراد طبیعی و <bdi dir="ltr">PNH</bdi>: در <bdi dir="ltr">PNH</bdi> فقدان <bdi dir="ltr">CD<bdi dir="ltr">55</bdi></bdi> و <bdi dir="ltr">CD<bdi dir="ltr">59</bdi></bdi> در فلوسیتومتری دیده می‌شود.</li>
                   <li class="leading-relaxed text-gray-700">نمونه‌های ادرار بیمار مبتلا به <bdi dir="ltr">PNH</bdi> بسیار تیره است. در نمونه صبحگاهی دیده می‌شود که به تدریج در طول روز روشن می‌شود. تفاوت در شدت هموگلوبین‌اوری در ساعت‌های مختلف یک یافته منحصر به فرد در <bdi dir="ltr">PNH</bdi> است.</li>
@@ -817,10 +714,10 @@
         </section>
 
         <!-- Section 34: یافته‌های بالینی به نفع PNH -->
-        <section id="sec34" class="card p-6">
-            <h2 class="section-title text-xl">34. یافته‌های بالینی به نفع <bdi dir="ltr">PNH</bdi></h2>
+        <section id="sec34" class="study-section">
+            <header class="section-header"><span class="section-number">34</span><h2 class="section-title">34. یافته‌های بالینی به نفع <bdi dir="ltr">PNH</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">ادرار تیره صبحگاهی (<bdi dir="ltr">Dark morning urine</bdi>)</li>
                   <li class="leading-relaxed text-gray-700">پان‌سیتوپنی و آنمی فقر آهن</li>
@@ -834,10 +731,10 @@
         </section>
 
         <!-- Section 35: یافته‌های بالینی به نفع PNH در یک مورد خاص -->
-        <section id="sec35" class="card p-6">
-            <h2 class="section-title text-xl">35. یافته‌های بالینی به نفع <bdi dir="ltr">PNH</bdi> در یک مورد خاص</h2>
+        <section id="sec35" class="study-section">
+            <header class="section-header"><span class="section-number">35</span><h2 class="section-title">35. یافته‌های بالینی به نفع <bdi dir="ltr">PNH</bdi> در یک مورد خاص</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">آنمی آپالستیک، چرا که ممکن است در افرادی که قبلاً آنمی آپالستیک داشته‌اند، رخ دهد.</li>
                   <li class="leading-relaxed text-gray-700">درد شکم</li>
@@ -848,19 +745,19 @@
         </section>
 
         <!-- Section 36: بهترین روش تشخیص PNH -->
-        <section id="sec36" class="card p-6">
-            <h2 class="section-title text-xl">36. بهترین روش تشخیص <bdi dir="ltr">PNH</bdi></h2>
+        <section id="sec36" class="study-section">
+            <header class="section-header"><span class="section-number">36</span><h2 class="section-title">36. بهترین روش تشخیص <bdi dir="ltr">PNH</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">بهترین روش تشخیص هموگلوبین‌اوری حمله‌ای شبانه، فلوسیتومتری جهت بررسی <bdi dir="ltr">CD<bdi dir="ltr">55</bdi></bdi> و <bdi dir="ltr">CD<bdi dir="ltr">59</bdi></bdi> است.</p>
             </div>
         </section>
 
         <!-- Section 37: یافته‌های بالینی به نفع PNH در یک مورد خاص (ادامه) -->
-        <section id="sec37" class="card p-6">
-            <h2 class="section-title text-xl">37. یافته‌های بالینی به نفع <bdi dir="ltr">PNH</bdi> در یک مورد خاص (ادامه)</h2>
+        <section id="sec37" class="study-section">
+            <header class="section-header"><span class="section-number">37</span><h2 class="section-title">37. یافته‌های بالینی به نفع <bdi dir="ltr">PNH</bdi> در یک مورد خاص (ادامه)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">پان‌سیتوپنی</li>
                   <li class="leading-relaxed text-gray-700">درد شکم</li>
@@ -877,19 +774,19 @@
         </section>
 
         <!-- Section 38: ارتباط PNH با آنمی فقر آهن -->
-        <section id="sec38" class="card p-6">
-            <h2 class="section-title text-xl">38. ارتباط <bdi dir="ltr">PNH</bdi> با آنمی فقر آهن</h2>
+        <section id="sec38" class="study-section">
+            <header class="section-header"><span class="section-number">38</span><h2 class="section-title">38. ارتباط <bdi dir="ltr">PNH</bdi> با آنمی فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی فقر آهن از تظاهرات اصلی پان‌سیتوپنی و <bdi dir="ltr">PNH</bdi> (هموگلوبین‌اوری حمله‌ای شبانه) هستند.</p>
             </div>
         </section>
 
         <!-- Section 39: آنمی ناشی از خونریزی حاد (APHA) -->
-        <section id="sec39" class="card p-6">
-            <h2 class="section-title text-xl">39. آنمی ناشی از خونریزی حاد (<bdi dir="ltr">APHA</bdi>)</h2>
+        <section id="sec39" class="study-section">
+            <header class="section-header"><span class="section-number">39</span><h2 class="section-title">39. آنمی ناشی از خونریزی حاد (<bdi dir="ltr">APHA</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">یافته‌های بالینی و فیزیوپاتولوژی</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">بعد از خونریزی شدید و ناگهانی سه مرحله بالینی و فیزیوپاتولوژیک زیر مشاهده می‌شوند:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -901,10 +798,10 @@
         </section>
 
         <!-- Section 40: درمان بیماری‌های سیکل‌سل -->
-        <section id="sec40" class="card p-6">
-            <h2 class="section-title text-xl">40. درمان بیماری‌های سیکل‌سل</h2>
+        <section id="sec40" class="study-section">
+            <header class="section-header"><span class="section-number">40</span><h2 class="section-title">40. درمان بیماری‌های سیکل‌سل</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">هیدروکسی‌اوره</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">درمان استاندارد برای تمام مبتالیان به آنمی سیکل‌سل و مبتالیان به <bdi dir="ltr">HbS</bdi>-β<bdi dir="ltr">0</bdi> تالاسمی هیدروکسی‌اوره است. این دارو در تمام سنین قابل تجویز بوده و تجویز آن باید از سال اوّل زندگی آغاز شود.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">مکانیسم عمل</h4>
@@ -925,10 +822,10 @@
         </section>
 
         <!-- Section 41: اندیکاسیون‌های تزریق خون -->
-        <section id="sec41" class="card p-6">
-            <h2 class="section-title text-xl">41. اندیکاسیون‌های تزریق خون</h2>
+        <section id="sec41" class="study-section">
+            <header class="section-header"><span class="section-number">41</span><h2 class="section-title">41. اندیکاسیون‌های تزریق خون</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">آنمی شدید و عالمت‌دار</li>
                   <li class="leading-relaxed text-gray-700">درمان و پیشگیری از <bdi dir="ltr">Stroke</bdi></li>
@@ -941,10 +838,10 @@
         </section>
 
         <!-- Section 42: اندیکاسیون‌های تعویض خون -->
-        <section id="sec42" class="card p-6">
-            <h2 class="section-title text-xl">42. اندیکاسیون‌های تعویض خون</h2>
+        <section id="sec42" class="study-section">
+            <header class="section-header"><span class="section-number">42</span><h2 class="section-title">42. اندیکاسیون‌های تعویض خون</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در موارد زیر، تعویض خون نسبت به تزریق خون ارجح است:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">حاد <bdi dir="ltr">Stroke</bdi></li>
@@ -956,10 +853,10 @@
         </section>
 
         <!-- Section 43: پیشگیری و غربالگری بیماری‌های سیکل‌سل -->
-        <section id="sec43" class="card p-6">
-            <h2 class="section-title text-xl">43. پیشگیری و غربالگری بیماری‌های سیکل‌سل</h2>
+        <section id="sec43" class="study-section">
+            <header class="section-header"><span class="section-number">43</span><h2 class="section-title">43. پیشگیری و غربالگری بیماری‌های سیکل‌سل</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">غربالگری</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">غربالگری خون بند ناف از نظر بیماری سیکل‌سل در بسیاری از کشورها انجام می‌شود.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">پیشگیری</h4>
@@ -974,10 +871,10 @@
         </section>
 
         <!-- Section 44: آنمی فقر آهن -->
-        <section id="sec44" class="card p-6">
-            <h2 class="section-title text-xl">44. آنمی فقر آهن</h2>
+        <section id="sec44" class="study-section">
+            <header class="section-header"><span class="section-number">44</span><h2 class="section-title">44. آنمی فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در صورت مشاهده یافته‌های زیر، ابتدا باید آنمی فقر آهن <bdi dir="ltr">Rule out</bdi> شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">آنمی میکروسیتیک هیپوکرومیک به نفع وجود تالاسمی یا فقر آهن است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در مورد سوال، فریتین کمتر از <bdi dir="ltr">15</bdi> نشان‌دهنده فقر آهن است.</p>
@@ -999,14 +896,14 @@
         </section>
 
         <!-- Section 45: مورد بالینی آنمی فقر آهن -->
-        <section id="sec45" class="card p-6">
-            <h2 class="section-title text-xl">45. مورد بالینی آنمی فقر آهن</h2>
+        <section id="sec45" class="study-section">
+            <header class="section-header"><span class="section-number">45</span><h2 class="section-title">45. مورد بالینی آنمی فقر آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">خانم <bdi dir="ltr">38</bdi> ساله با ضعف و بی‌حالی مراجعه نموده است. در معاینه، رنگ‌پریده است و ناخن‌ها، قاشقی شکل هستند. بر اساس آزمایشات اولیه درمان با آهن خوراکی برای ایشان شروع می‌شود. علی‌رغم درمان منظم، بعد از <bdi dir="ltr">3</bdi> ماه از درمان، آنمی ادامه دارد. آزمایشات قبل و بعد درمان در زیر آورده شده است.</p>
-                <div class="overflow-x-auto mb-4">
+                <div class="table-card"><div class="table-scroll">
                   <h4 class="font-bold text-md text-gray-700 mb-2">آزمایشات بیمار</h4>
-                  <table class="staging-table">
+                  <table class="medical-table">
                     <thead>
                       <tr>
                         <th>زمان تشخیص</th>
@@ -1032,16 +929,16 @@
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                </div></div>
                 <p class="mb-3 leading-relaxed text-gray-700">فریتین بیمار کمتر از <bdi dir="ltr">15</bdi> است، لذا بیمار آنمی فقر آهن است.</p>
             </div>
         </section>
 
         <!-- Section 46: مشخصات بتا تالاسمی مینور -->
-        <section id="sec46" class="card p-6">
-            <h2 class="section-title text-xl">46. مشخصات بتا تالاسمی مینور</h2>
+        <section id="sec46" class="study-section">
+            <header class="section-header"><span class="section-number">46</span><h2 class="section-title">46. مشخصات بتا تالاسمی مینور</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">آنمی خفیف میکروسیتیک هیپوکرومیک</li>
                   <li class="leading-relaxed text-gray-700"><bdi dir="ltr">HbA</bdi>: <bdi dir="ltr">94%</bdi></li>
@@ -1053,10 +950,10 @@
         </section>
 
         <!-- Section 47: مشخصات بتا تالاسمی غیروابسته به تزریق خون (تالاسمی اینترمدیا) -->
-        <section id="sec47" class="card p-6">
-            <h2 class="section-title text-xl">47. مشخصات بتا تالاسمی غیروابسته به تزریق خون (تالاسمی اینترمدیا)</h2>
+        <section id="sec47" class="study-section">
+            <header class="section-header"><span class="section-number">47</span><h2 class="section-title">47. مشخصات بتا تالاسمی غیروابسته به تزریق خون (تالاسمی اینترمدیا)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">هموگلوبین: <bdi dir="ltr">7</bdi> تا <bdi dir="ltr">12</bdi></li>
                   <li class="leading-relaxed text-gray-700"><bdi dir="ltr">MCV</bdi>: <bdi dir="ltr">65</bdi> تا <bdi dir="ltr">70</bdi></li>
@@ -1068,10 +965,10 @@
         </section>
 
         <!-- Section 48: مشخصات بتا تالاسمی وابسته به تزریق خون (تالاسمی ماژور) -->
-        <section id="sec48" class="card p-6">
-            <h2 class="section-title text-xl">48. مشخصات بتا تالاسمی وابسته به تزریق خون (تالاسمی ماژور)</h2>
+        <section id="sec48" class="study-section">
+            <header class="section-header"><span class="section-number">48</span><h2 class="section-title">48. مشخصات بتا تالاسمی وابسته به تزریق خون (تالاسمی ماژور)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">هموگلوبین: <bdi dir="ltr">2</bdi> تا <bdi dir="ltr">4</bdi></li>
                   <li class="leading-relaxed text-gray-700"><bdi dir="ltr">MCV</bdi>: <bdi dir="ltr">50</bdi> تا <bdi dir="ltr">80</bdi></li>
@@ -1083,10 +980,10 @@
         </section>
 
         <!-- Section 49: عوارض بتا تالاسمی -->
-        <section id="sec49" class="card p-6">
-            <h2 class="section-title text-xl">49. عوارض بتا تالاسمی</h2>
+        <section id="sec49" class="study-section">
+            <header class="section-header"><span class="section-number">49</span><h2 class="section-title">49. عوارض بتا تالاسمی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">عقب‌ماندگی رشد</li>
                   <li class="leading-relaxed text-gray-700">بلوغ دیررس و آمنوره ثانویه</li>
@@ -1104,10 +1001,10 @@
         </section>
 
         <!-- Section 50: عوارض بتا تالاسمی (جزئیات) -->
-        <section id="sec50" class="card p-6">
-            <h2 class="section-title text-xl">50. عوارض بتا تالاسمی (جزئیات)</h2>
+        <section id="sec50" class="study-section">
+            <header class="section-header"><span class="section-number">50</span><h2 class="section-title">50. عوارض بتا تالاسمی (جزئیات)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">عقب‌ماندگی رشد</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">اغلب به علت ناکافی بودن یا تأخیر در تزریق خون رخ می‌دهد، اما ممکن است در کودکانی که تزریق خون کافی داشته‌اند نیز رخ دهد.</li>
@@ -1166,10 +1063,10 @@
         </section>
 
         <!-- Section 51: تعریف و یافته‌های تشخیصی PRCA -->
-        <section id="sec51" class="card p-6">
-            <h2 class="section-title text-xl">51. تعریف و یافته‌های تشخیصی <bdi dir="ltr">PRCA</bdi></h2>
+        <section id="sec51" class="study-section">
+            <header class="section-header"><span class="section-number">51</span><h2 class="section-title">51. تعریف و یافته‌های تشخیصی <bdi dir="ltr">PRCA</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">PRCA</bdi> (آپالزی خالص گلبول‌های قرمز) یک نوع غیرشایع آپالازی است که فقط پیش‌سازهای تولید گلبول‌های قرمز را سرکوب می‌کند (سرکوب کولونی‌های اریتروئید).</p>
                 <p class="mb-3 leading-relaxed text-gray-700">یافته‌های تشخیصی: آنمی، رتیکولوسیتوپنی و فقدان سلول‌های اجدادی اریتروئید، کاراکتریستیک <bdi dir="ltr">PRCA</bdi> می‌باشد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">توجه: نوع مادرزادی این اختلال، سندرم دیاموند_بلک فان نامیده می‌شود.</p>
@@ -1177,10 +1074,10 @@
         </section>
 
         <!-- Section 52: اتیولوژی PRCA -->
-        <section id="sec52" class="card p-6">
-            <h2 class="section-title text-xl">52. اتیولوژی <bdi dir="ltr">PRCA</bdi></h2>
+        <section id="sec52" class="study-section">
+            <header class="section-header"><span class="section-number">52</span><h2 class="section-title">52. اتیولوژی <bdi dir="ltr">PRCA</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">علل مادرزادی</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">سندرم دیاموند_بلک فان</li>
@@ -1201,10 +1098,10 @@
         </section>
 
         <!-- Section 53: نکات مهم در PRCA -->
-        <section id="sec53" class="card p-6">
-            <h2 class="section-title text-xl">53. نکات مهم در <bdi dir="ltr">PRCA</bdi></h2>
+        <section id="sec53" class="study-section">
+            <header class="section-header"><span class="section-number">53</span><h2 class="section-title">53. نکات مهم در <bdi dir="ltr">PRCA</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">نکته‌ای بسیار مهم: در مغز استخوان، وجود <bdi dir="ltr">Giant</bdi> پرونورموبلاست‌های اریتروئید، کاراکتریستیک عفونت با پاروویروس <bdi dir="ltr">B<bdi dir="ltr">19</bdi></bdi> است.</p>
                 <div class="exam-tip p-4 rounded-lg mb-3"><strong>💡 نکته امتحانی:</strong> نکته‌ای <bdi dir="ltr">100%</bdi> امتحانی: هرگاه در یک بیمار مبتلا به همولیز زمینه‌ای به ناگهان نیاز به گلبول قرمز افزایش یابد و یا توده <bdi dir="ltr">RBC</bdi> ها و رتیکولوسیت کاهش یابند باید به فکر عفونت با پاروویروس <bdi dir="ltr">B<bdi dir="ltr">19</bdi></bdi> بود.</div>
                 <p class="mb-3 leading-relaxed text-gray-700">توجه: اریتروپویتین یکی از علل ایجاد <bdi dir="ltr">PRCA</bdi> است، لذا نه تنها در درمان به کار برده نمی‌شود، بلکه باید قطع شود.</p>
@@ -1213,10 +1110,10 @@
         </section>
 
         <!-- Section 54: درمان PRCA -->
-        <section id="sec54" class="card p-6">
-            <h2 class="section-title text-xl">54. درمان <bdi dir="ltr">PRCA</bdi></h2>
+        <section id="sec54" class="study-section">
+            <header class="section-header"><span class="section-number">54</span><h2 class="section-title">54. درمان <bdi dir="ltr">PRCA</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">درمان‌های دارویی و تیموم: ابتدا باید به کمک شرح‌حال، وجود بیماری زمینه‌ای و یا معاینه و آزمایشات روتین، وجود هرگونه تماس با داروی مشکوک در فرد <bdi dir="ltr">Rule out</bdi> شود. همچنین باید بیمار را از نظر وجود تیموم بررسی رادیولوژیک قرار داد. برداشتن تومور الزامی بوده ولی حتما سبب بهبود آنمی نمی‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">پاروویروس <bdi dir="ltr">B<bdi dir="ltr">19</bdi></bdi>: با شناسایی <bdi dir="ltr">DNA</bdi> ویروس در خون تشخیص داده می‌شود. اغلب مبتلایان به عفونت پایدار پاروویروس <bdi dir="ltr">B<bdi dir="ltr">19</bdi></bdi> (غالباً وجود ندارند <bdi dir="ltr">IgM</bdi> و <bdi dir="ltr">IgG</bdi>) به تزریق <bdi dir="ltr">IVIG</bdi> پاسخ می‌دهند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">درمان‌های حمایتی: بیماران مبتلا به <bdi dir="ltr">PRCA</bdi> می‌توانند با استفاده از تزریق گلبول قرمز و درمان‌های حمایتی نظیر درمان شالتور آهن بقاء طولانی‌مدت داشته باشند.</p>
@@ -1225,40 +1122,40 @@
         </section>
 
         <!-- Section 55: درمان MALT لنفوم -->
-        <section id="sec55" class="card p-6">
-            <h2 class="section-title text-xl">55. درمان <bdi dir="ltr">MALT</bdi> لنفوم</h2>
+        <section id="sec55" class="study-section">
+            <header class="section-header"><span class="section-number">55</span><h2 class="section-title">55. درمان <bdi dir="ltr">MALT</bdi> لنفوم</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">MALT</bdi> لنفوم ناحیه مارژینال و لنفوم‌های <bdi dir="ltr">Low grade</bdi> نیز لنفوم‌های <bdi dir="ltr">MALT</bdi> لنفوم ناحیه مارژینال و ... هستند. درمان اغلب با روش‌های موضعی (رادیوتراپی و جراحی) و بدون نیاز به درمان سیستمیک انجام می‌شود. در صورت نیاز به درمان سیستمیک، می‌توان ریتوکسیماب استفاده کرد. این لنفوم‌ها سیر طولانی و پیش‌آگهی عالی دارند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">توجه: H.<bdi dir="ltr">Pylori</bdi> معده ارتباط زیادی با <bdi dir="ltr">MALT</bdi> لنفوم داشته و با ریشه‌کنی عفونت، رمیشن ایجاد می‌شود، لذا خط اول درمان در لنفوم <bdi dir="ltr">MALT</bdi> آنتی‌بیوتیک‌تراپی بر علیه H.<bdi dir="ltr">Pylori</bdi> است.</p>
             </div>
         </section>
 
         <!-- Section 56: اپیدمیولوژی و درگیری دستگاه گوارش -->
-        <section id="sec56" class="card p-6">
-            <h2 class="section-title text-xl">56. اپیدمیولوژی و درگیری دستگاه گوارش</h2>
+        <section id="sec56" class="study-section">
+            <header class="section-header"><span class="section-number">56</span><h2 class="section-title">56. اپیدمیولوژی و درگیری دستگاه گوارش</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">حدود <bdi dir="ltr">3</bdi> تا <bdi dir="ltr">10</bdi> درصد موارد لنفوم در بالغین را تشکیل می‌دهد و در مردان مسن سفیدپوست شایع‌تر است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">دستگاه گوارش در اغلب موارد درگیر بوده و به شکل پولیپ (پولیپوز لنفوماتوئید) تظاهر می‌یابد. لذا بررسی دستگاه گوارش با آندوسکوپی و کولونوسکوپی در این بیماران توصیه می‌گردد.</p>
             </div>
         </section>
 
         <!-- Section 57: پاتولوژی و ایمونوفنوتیپ -->
-        <section id="sec57" class="card p-6">
-            <h2 class="section-title text-xl">57. پاتولوژی و ایمونوفنوتیپ</h2>
+        <section id="sec57" class="study-section">
+            <header class="section-header"><span class="section-number">57</span><h2 class="section-title">57. پاتولوژی و ایمونوفنوتیپ</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">نئوپالسم سلول بالغ بوده که از ناحیه منتل فولیکول‌های لنفاوی منشأ می‌گیرد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">یک ایمونوفنوتیپ بسیار کاراکترستیک دارد و علاوه بر مارکرهای سطحی سلول B، <bdi dir="ltr">CD<bdi dir="ltr">5</bdi></bdi> مثبت بوده؛ اما برخلاف <bdi dir="ltr">CLL</bdi> فاقد <bdi dir="ltr">CD<bdi dir="ltr">23</bdi></bdi> است.</p>
             </div>
         </section>
 
         <!-- Section 58: پاتوژنز -->
-        <section id="sec58" class="card p-6">
-            <h2 class="section-title text-xl">58. پاتوژنز</h2>
+        <section id="sec58" class="study-section">
+            <header class="section-header"><span class="section-number">58</span><h2 class="section-title">58. پاتوژنز</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">ترانس‌لوکاسیون پاتوژنومونیک <bdi dir="ltr">t(<bdi dir="ltr">11</bdi></bdi>;<bdi dir="ltr">14</bdi>) است که با افزایش بیان سیکلین <bdi dir="ltr">D<bdi dir="ltr">1</bdi></bdi> همراه است.</p>
                 <div class="exam-tip p-4 rounded-lg mb-3">
                   <strong>💡 نکته امتحانی:</strong> مشاهده ترانسوکاسیون <bdi dir="ltr">t(<bdi dir="ltr">11</bdi></bdi>;<bdi dir="ltr">14</bdi>) یا بیان پروتئین سیکلین <bdi dir="ltr">D<bdi dir="ltr">1</bdi></bdi> در بررسی‌های کروموزومی یا ایمونوهیستوشیمی، تشخیص لنفوم سلول منتل را قطعی می‌کند (<bdi dir="ltr">100%</bdi>).
@@ -1267,39 +1164,39 @@
         </section>
 
         <!-- Section 59: درمان -->
-        <section id="sec59" class="card p-6">
-            <h2 class="section-title text-xl">59. درمان</h2>
+        <section id="sec59" class="study-section">
+            <header class="section-header"><span class="section-number">59</span><h2 class="section-title">59. درمان</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">معمولاً با شیمی‌درمانی سیستمیک به همراه ریتوکسیماب درمان می‌شود؛ اما دستیابی به ریمیشن پایدار دشوار است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اصلاح بیماری زمینه‌ای + <bdi dir="ltr">IVIG</bdi></p>
             </div>
         </section>
 
         <!-- Section 60: توجه -->
-        <section id="sec60" class="card p-6">
-            <h2 class="section-title text-xl">60. توجه</h2>
+        <section id="sec60" class="study-section">
+            <header class="section-header"><span class="section-number">60</span><h2 class="section-title">60. توجه</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در بیماران جوان، پس از القای اولین ریمیشن درمانی با شیمی‌درمانی با دوز بالا به همراه پیوند اتولوگ سلول‌های بنیادی اندیکاسیون دارد و موجب طولانی‌تر شدن ریمیشن می‌شود.</p>
             </div>
         </section>
 
         <!-- Section 61: تعریف و درمان -->
-        <section id="sec61" class="card p-6">
-            <h2 class="section-title text-xl">61. تعریف و درمان</h2>
+        <section id="sec61" class="study-section">
+            <header class="section-header"><span class="section-number">61</span><h2 class="section-title">61. تعریف و درمان</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">تعریف: تومور منفرد متشکل از پلاسم سل‌های کلونال در استخوان یا بافت نرم بدون درگیری مغز استخوان و بدون آسیب به ارگان‌های دیگر، پلاسماسیتوم منفرد گفته می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">درمان: در مبتلایان به پلاسماسیتوم منفرد استخوان (سر و گردن یا خارج از مغز استخوان، به‌خصوص در)، رادیوتراپی موضعی درمان انتخابی بوده و می‌تواند موجب ریمیشن طولانی‌مدت شود.</p>
             </div>
         </section>
 
         <!-- Section 62: آمیلوئیدوز اولیه (AL Amyloidosis) -->
-        <section id="sec62" class="card p-6">
-            <h2 class="section-title text-xl">62. آمیلوئیدوز اولیه (<bdi dir="ltr">AL Amyloidosis</bdi>)</h2>
+        <section id="sec62" class="study-section">
+            <header class="section-header"><span class="section-number">62</span><h2 class="section-title">62. آمیلوئیدوز اولیه (<bdi dir="ltr">AL Amyloidosis</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آمیلوئیدوز اولیه <bdi dir="ltr">AL</bdi> یک بیماری سیستمیک بوده که با تجمع زنجیره‌های سبک ایمنوگلوبولین در بافت‌ها و اختلال عملکرد ارگان‌ها مشخص می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">نارسایی احتقانی قلبی، تمایل به خونریزی، سندرم نفروتیک و نوروپاتی محیطی از عوارض شایع آمیلوئیدوز هستند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در آمیلوئیدوز اولیه <bdi dir="ltr">AL</bdi>، پروتئین زنجیره سبک آزاد لامبدا (λ) افزایش یافته است.</p>
@@ -1313,10 +1210,10 @@
         </section>
 
         <!-- Section 63: سندرم POEMS -->
-        <section id="sec63" class="card p-6">
-            <h2 class="section-title text-xl">63. سندرم <bdi dir="ltr">POEMS</bdi></h2>
+        <section id="sec63" class="study-section">
+            <header class="section-header"><span class="section-number">63</span><h2 class="section-title">63. سندرم <bdi dir="ltr">POEMS</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">سندرم <bdi dir="ltr">POEMS</bdi> یک اختلال نادری بوده که با پلی‌نوروپاتی (P)، ارگانومگالی (O)، اندوکرینوپاتی (E)، گاموپاتی منوکلونال (M) و ضایعات پوستی (S) تظاهر می‌یابد. همچنین ضایعات اسکلروتیک استخوانی (S) نیز دیده می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">علت این سندرم نامشخص است. معمولاً به صورت زنجیره سبک لامبدا (λ) منوکلونال در سندرم <bdi dir="ltr">POEMS</bdi> افزایش می‌یابد. همچنین در این بیماری، تجمع مایع در فضای سوم و افزایش <bdi dir="ltr">VEGF</bdi> دیده می‌شود.</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -1327,28 +1224,28 @@
         </section>
 
         <!-- Section 64: گاموپاتی منوکلونال با اهمیت نامشخص (MGUS) -->
-        <section id="sec64" class="card p-6">
-            <h2 class="section-title text-xl">64. گاموپاتی منوکلونال با اهمیت نامشخص (<bdi dir="ltr">MGUS</bdi>)</h2>
+        <section id="sec64" class="study-section">
+            <header class="section-header"><span class="section-number">64</span><h2 class="section-title">64. گاموپاتی منوکلونال با اهمیت نامشخص (<bdi dir="ltr">MGUS</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">شایع‌ترین دیسکرازی پلاسماسل بوده و شیوع آن با بالا رفتن سن افزایش می‌یابد. معیارهای تشخیص آن عبارتند از:</p>
             </div>
         </section>
 
         <!-- Section 65: تعریف -->
-        <section id="sec65" class="card p-6">
-            <h2 class="section-title text-xl">65. تعریف</h2>
+        <section id="sec65" class="study-section">
+            <header class="section-header"><span class="section-number">65</span><h2 class="section-title">65. تعریف</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">نوع <bdi dir="ltr">2</bdi>A اکتسابی فون ویلبراند شبیه به نوع اکتسابی <bdi dir="ltr">VWF</bdi> بوده ولی مولتی‌مرهای بزرگ را ندارد.</p>
             </div>
         </section>
 
         <!-- Section 66: اتیولوژی -->
-        <section id="sec66" class="card p-6">
-            <h2 class="section-title text-xl">66. اتیولوژی</h2>
+        <section id="sec66" class="study-section">
+            <header class="section-header"><span class="section-number">66</span><h2 class="section-title">66. اتیولوژی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">بیماری‌هایی که موجب فون ویلبراند اکتسابی می‌شوند، عبارتند از:</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">ترومبوسیتمی اساسی</li>
@@ -1364,29 +1261,29 @@
         </section>
 
         <!-- Section 67: تظاهرات بالینی -->
-        <section id="sec67" class="card p-6">
-            <h2 class="section-title text-xl">67. تظاهرات بالینی</h2>
+        <section id="sec67" class="study-section">
+            <header class="section-header"><span class="section-number">67</span><h2 class="section-title">67. تظاهرات بالینی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">این بیماران سابقه‌ای از خونریزی ندارند؛ ولی بعد از ابتل به بیماری‌های فوق‌الذکر دچار فون ویلبراند اکتسابی شبیه به نوع <bdi dir="ltr">2</bdi>A می‌شوند.</p>
             </div>
         </section>
 
         <!-- Section 68: کمبود ویتامین K -->
-        <section id="sec68" class="card p-6">
-            <h2 class="section-title text-xl">68. کمبود ویتامین K</h2>
+        <section id="sec68" class="study-section">
+            <header class="section-header"><span class="section-number">68</span><h2 class="section-title">68. کمبود ویتامین K</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">فاکتورهای وابسته به ویتامین K عبارتند از: <bdi dir="ltr">II</bdi>، <bdi dir="ltr">VII</bdi>، <bdi dir="ltr">IX</bdi>، X. طولانی شدن <bdi dir="ltr">PT</bdi> باعث کاهش حاد فاکتور وارفارین نیز باعث می‌شود؛ <bdi dir="ltr">PT</bdi> افزایش می‌یابد که سبب <bdi dir="ltr">VII</bdi>.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">کمبود فاکتور <bdi dir="ltr">VIII</bdi> موجب طولانی شدن زمان <bdi dir="ltr">PTT</bdi> می‌شود.</p>
             </div>
         </section>
 
         <!-- Section 69: علل طولانی شدن BT -->
-        <section id="sec69" class="card p-6">
-            <h2 class="section-title text-xl">69. علل طولانی شدن <bdi dir="ltr">BT</bdi></h2>
+        <section id="sec69" class="study-section">
+            <header class="section-header"><span class="section-number">69</span><h2 class="section-title">69. علل طولانی شدن <bdi dir="ltr">BT</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">وارفارین باعث کاهش حاد فاکتور <bdi dir="ltr">VII</bdi> می‌شود و بر روی <bdi dir="ltr">PT</bdi> افزایش اثر دارد ولی بر روی <bdi dir="ltr">BT</bdi> اثری ندارد.</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">بیماری‌ها و اختالالتی که موجب طولانی شدن <bdi dir="ltr">BT</bdi> می‌گردند، عبارتند از:</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -1402,10 +1299,10 @@
         </section>
 
         <!-- Section 70: خونریزی در بیماران کبدی -->
-        <section id="sec70" class="card p-6">
-            <h2 class="section-title text-xl">70. خونریزی در بیماران کبدی</h2>
+        <section id="sec70" class="study-section">
+            <header class="section-header"><span class="section-number">70</span><h2 class="section-title">70. خونریزی در بیماران کبدی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">برعکس کمبود ویتامین K یا بیمارانی که وارفارین مصرف می‌کنند، در بیماران مبتلا به بیماری کبدی، سطوح تمام فاکتورهای انعقادی و نه فقط فاکتورهای وابسته به ویتامین K، پائین است. تنها استثناء فاکتور <bdi dir="ltr">VIII</bdi> می‌باشد. سطح فاکتور <bdi dir="ltr">VIII</bdi> در این بیماران معموالً طبیعی است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اگر در مبتالیان به بیماری کبدی، فاکتور <bdi dir="ltr">VIII</bdi> پایین باشد، ممکن است <bdi dir="ltr">DIC</bdi> به بیماری کبدی اضافه شده باشد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در مبتالیان به هموفیلی A در پیوند کبد، سطح فاکتور <bdi dir="ltr">VIII</bdi> طبیعی می‌شود، چرا که سلول‌های آندوتلیال کبد پیوندی این فاکتور را تولید می‌کند.</p>
@@ -1413,10 +1310,10 @@
         </section>
 
         <!-- Section 71: ارزیابی زمان PT -->
-        <section id="sec71" class="card p-6">
-            <h2 class="section-title text-xl">71. ارزیابی زمان <bdi dir="ltr">PT</bdi></h2>
+        <section id="sec71" class="study-section">
+            <header class="section-header"><span class="section-number">71</span><h2 class="section-title">71. ارزیابی زمان <bdi dir="ltr">PT</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در زمان بررسی علت افزایش <bdi dir="ltr">PT</bdi>، باید یک فاکتور غیروابسته به ویتامین K مثل فاکتور <bdi dir="ltr">VII</bdi> و یک فاکتور وابسته به ویتامین K مثل فاکتور X اندازه‌گیری شوند. در کمبود ویتامین K فاکتور <bdi dir="ltr">VII</bdi> کاهش یافته و فاکتور V طبیعی می‌باشد ولی در بیماری ژنرالیزه کبدی مقدار هر دو کم می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">PT</bdi> یک روش حساس جهت بررسی تعیین فعالیت کبد بوده که حتی در اختالل کبدی خفیف، زمان <bdi dir="ltr">PT</bdi> طولانی می‌شود. این افزایش، همزمان با تغییرات ترانس آمینازها و قبل از کاهش شدید آلبومین یا پره آلبومین روی می‌دهد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در بیماران کبدی برای جایگزینی فاکتورهای انعقادی از پلاسما استفاده می‌شود؛ این روش یک درمان موقتی است. برای درمان قطعی باید پیوند کبد صورت گیرد.</p>
@@ -1424,20 +1321,20 @@
         </section>
 
         <!-- Section 72: افتراق اختلال انعقادی ناشی از بیماری کبدی از کمبود ویتامین K -->
-        <section id="sec72" class="card p-6">
-            <h2 class="section-title text-xl">72. افتراق اختلال انعقادی ناشی از بیماری کبدی از کمبود ویتامین K</h2>
+        <section id="sec72" class="study-section">
+            <header class="section-header"><span class="section-number">72</span><h2 class="section-title">72. افتراق اختلال انعقادی ناشی از بیماری کبدی از کمبود ویتامین K</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">جهت افتراق اختالل انعقادی ناشی از بیماری کبدی از کمبود ویتامین K، باید سطح فاکتور V مورد سنجش قرار گیرد. در بیماری کبدی سطح فاکتور V کاهش می‌یابد ولی در کمبود ویتامین K سطح فاکتور V طبیعی است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">خفیف در مبتالیان به بیماری کبدی، <bdi dir="ltr">PTT</bdi> نرمال باقی می‌ماند. در بیماری کبدی شدید <bdi dir="ltr">PT</bdi> طولانی‌تر شده و <bdi dir="ltr">PTT</bdi> نیز غیرطبیعی می‌گردد. <bdi dir="ltr">PT</bdi> تا متوسط، طولانی می‌شود اما</p>
             </div>
         </section>
 
         <!-- Section 73: کاهش فیبرینوژن -->
-        <section id="sec73" class="card p-6">
-            <h2 class="section-title text-xl">73. کاهش فیبرینوژن</h2>
+        <section id="sec73" class="study-section">
+            <header class="section-header"><span class="section-number">73</span><h2 class="section-title">73. کاهش فیبرینوژن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">کمبود فیبرینوژن می‌تواند هم خونریزی سطحی و هم موجب خونریزی عمقی شود.</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">اختالالت مادرزادی فیبرینوژن شامل موارد زیر است:</h4>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
@@ -1460,10 +1357,10 @@
         </section>
 
         <!-- Section 74: محاسبه حداقل دوز آهن تزریقی -->
-        <section id="sec74" class="card p-6">
-            <h2 class="section-title text-xl">74. محاسبه حداقل دوز آهن تزریقی</h2>
+        <section id="sec74" class="study-section">
+            <header class="section-header"><span class="section-number">74</span><h2 class="section-title">74. محاسبه حداقل دوز آهن تزریقی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">خانمی <bdi dir="ltr">37</bdi> ساله با آنمی فقر آهن و هموگلوبین <bdi dir="ltr">5</bdi>gr/<bdi dir="ltr">dl</bdi> و وزن <bdi dir="ltr">60</bdi> کیلوگرم کاندید دریافت آهن تزریقی است. حداقل دوز آهن تزریقی برای رسیدن به هموگلوبین <bdi dir="ltr">15</bdi>gr/<bdi dir="ltr">dl</bdi> بیمار کدام است؟</p>
                 <div class="bg-gray-50 p-4 rounded-lg border-r-4 border-purple-400 mb-4">
                   <h5 class="font-semibold text-gray-800 mb-2">مقدار آهن مورد نیاز</h5>
@@ -1480,10 +1377,10 @@
         </section>
 
         <!-- Section 75: شاخص‌های آزمایشگاهی در تعادل منفی آهن -->
-        <section id="sec75" class="card p-6">
-            <h2 class="section-title text-xl">75. شاخص‌های آزمایشگاهی در تعادل منفی آهن</h2>
+        <section id="sec75" class="study-section">
+            <header class="section-header"><span class="section-number">75</span><h2 class="section-title">75. شاخص‌های آزمایشگاهی در تعادل منفی آهن</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در فرد مبتلا به تعادل منفی آهن (<bdi dir="ltr">Iron balance negative</bdi>)، کدامیک از شاخص‌های آزمایشگاهی زیر مشاهده می‌شود؟</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">کاهش آهن سرم (<bdi dir="ltr">SI</bdi>)</li>
@@ -1496,10 +1393,10 @@
         </section>
 
         <!-- Section 76: ظهور هیپوکرومی و میکروسیتوز -->
-        <section id="sec76" class="card p-6">
-            <h2 class="section-title text-xl">76. ظهور هیپوکرومی و میکروسیتوز</h2>
+        <section id="sec76" class="study-section">
+            <header class="section-header"><span class="section-number">76</span><h2 class="section-title">76. ظهور هیپوکرومی و میکروسیتوز</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">از چه مرحله‌ای در سیر کمبود آهن، هیپوکرومی و میکروسیتوز در خون محیطی ظاهر می‌شود؟</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">اریتروپوئز فقر آهن</li>
@@ -1511,10 +1408,10 @@
         </section>
 
         <!-- Section 77: آنمی فقر آهن (توضیح) -->
-        <section id="sec77" class="card p-6">
-            <h2 class="section-title text-xl">77. آنمی فقر آهن (توضیح)</h2>
+        <section id="sec77" class="study-section">
+            <header class="section-header"><span class="section-number">77</span><h2 class="section-title">77. آنمی فقر آهن (توضیح)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">با توجه به فریتین و هموگلوبین پائین، باید فقط :توضیح .مکمل آهن داد به بیمار</p>
             </div>
         </section>

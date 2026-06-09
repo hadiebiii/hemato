@@ -4,120 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فصل ۱۰: اختلالات لنفوسیت‌ها - هماتولوژی</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .gradient-header {
-            background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .exam-tip {
-            background-color: #fef2f2;
-            border-right: 4px solid #ef4444;
-            color: #991b1b;
-        }
-        .diagnosis-box {
-            background-color: #eff6ff;
-            border-right: 4px solid #3b82f6;
-            color: #1e40af;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #111827;
-            font-weight: 800;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            right: 0;
-            width: 60%;
-            height: 4px;
-            background-color: #7c3aed;
-            border-radius: 2px;
-        }
-        .staging-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .staging-table th {
-            background-color: #7c3aed;
-            color: white;
-            padding: 12px;
-            text-align: right;
-            font-weight: 600;
-        }
-        .staging-table td {
-            padding: 12px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: right;
-        }
-        .staging-table tr:last-child td {
-            border-bottom: none;
-        }
-        .staging-table tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1; 
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1; 
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8; 
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            border-right: 4px solid #f59e0b;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/hemato-chapter.css">
 </head>
-<body class="pb-12">
+<body>
 
     <!-- Header -->
-    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold">فصل ۱۰: اختلالات لنفوسیت‌ها</h1>
-                <p class="text-purple-100 text-sm mt-1">خلاصه جامع هماتولوژی (صفحات ۱۷۶-۱۹۹)</p>
-            </div>
-            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
-                ویژه دانشجویان پزشکی
-            </div>
+    <header class="chapter-hero">
+        <div class="chapter-hero-content">
+          <p class="chapter-kicker">هماتولوژی</p>
+          <h1>فصل ۱۰: اختلالات لنفوسیت‌ها</h1>
+          <p class="chapter-subtitle">خلاصه جامع هماتولوژی (صفحات ۱۷۶-۱۹۹)</p>
         </div>
-    </header>
+      </header>
 
-    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+    <main class="chapter-page">
 
         <!-- Navigation -->
-        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+        <nav class="chapter-mini-nav" aria-label="فهرست داخلی فصل">
             <a href="#nhl" class="bg-white px-4 py-2 rounded-full shadow hover:bg-purple-50 text-purple-700 whitespace-nowrap">لنفوم نان‌هوچکین</a>
             <a href="#lymphadenopathy" class="bg-white px-4 py-2 rounded-full shadow hover:bg-purple-50 text-purple-700 whitespace-nowrap">علل لنفادنوپاتی</a>
             <a href="#follicular" class="bg-white px-4 py-2 rounded-full shadow hover:bg-purple-50 text-purple-700 whitespace-nowrap">لنفوم فولیکولر</a>
@@ -132,10 +36,10 @@
         </nav>
 
         <!-- Section 1: لنفوم نان‌هوچکین - اتیولوژی -->
-        <section id="nhl" class="card p-6">
-            <h2 class="section-title text-xl">۱. لنفوم نان‌هوچکین: اتیولوژی</h2>
+        <section id="nhl" class="study-section">
+            <h2 class="section-title">۱. لنفوم نان‌هوچکین: اتیولوژی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h3 class="font-bold text-lg text-purple-700">ویروس‌های اُنکوژنیک</h3>
                 <p class="text-sm text-gray-600">ویروس‌های اُنکوژنیک نقش مهمی در ایجاد برخی از انواع کمتر شایع لنفوم نان‌هوچکین ایفا می‌کنند.</p>
 
@@ -179,7 +83,7 @@
                 </div>
 
                 <!-- نکته مهم EBV -->
-                <div class="highlight-box">
+                <div class="study-box box-compare highlight-box">
                     <p class="text-sm font-semibold text-gray-800">
                         <strong>یادآوری مهم:</strong> در تمامی انواع لنفوم‌های زیر <bdi dir="ltr">EBV</bdi> در پاتوژنز لنفوم نقش دارد، <strong>به جز:</strong>
                     </p>
@@ -194,8 +98,8 @@
         </section>
 
         <!-- Section 2: علل لنفادنوپاتی -->
-        <section id="lymphadenopathy" class="card p-6">
-            <h2 class="section-title text-xl">۲. علل لنفادنوپاتی</h2>
+        <section id="lymphadenopathy" class="study-section">
+            <h2 class="section-title">۲. علل لنفادنوپاتی</h2></header>
             
             <div class="grid md:grid-cols-2 gap-6 mt-4">
                 <!-- عفونت‌ها -->
@@ -278,8 +182,8 @@
         </section>
 
         <!-- Section 3: Staging لنفوم -->
-        <section id="staging" class="card p-6">
-            <h2 class="section-title text-xl">۳. <bdi dir="ltr">Staging</bdi> لنفوم</h2>
+        <section id="staging" class="study-section">
+            <h2 class="section-title">۳. <bdi dir="ltr">Staging</bdi> لنفوم</h2></header>
             
             <h3 class="font-bold text-lg text-purple-700 mt-4 mb-3">اقدامات تشخیصی برای <bdi dir="ltr">Staging</bdi> لنفوم</h3>
             
@@ -328,7 +232,7 @@
             <div class="mt-6">
                 <h4 class="font-bold text-lg mb-3"><bdi dir="ltr">Staging</bdi> لنفوم‌های هوچکین و نان‌هوچکین</h4>
                 <div class="overflow-x-auto">
-                    <table class="staging-table">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th><bdi dir="ltr">Stage</bdi></th>
@@ -381,9 +285,9 @@
 
         <!-- Section 4: لنفوم فولیکولر -->
         <section id="follicular" class="card p-6 border-t-4 border-indigo-500">
-            <h2 class="section-title text-xl text-indigo-700">۴. لنفوم فولیکولر (<bdi dir="ltr">Follicular Lymphoma</bdi>)</h2>
+            <h2 class="section-title text-xl text-indigo-700">۴. لنفوم فولیکولر (<bdi dir="ltr">Follicular Lymphoma</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- اپیدمیولوژی -->
                 <div class="bg-indigo-50 p-4 rounded-lg">
                     <h3 class="font-bold text-indigo-800 mb-2">اپیدمیولوژی</h3>
@@ -488,9 +392,9 @@
 
         <!-- Section 5: MALT لنفوم -->
         <section id="malt" class="card p-6 border-t-4 border-teal-500">
-            <h2 class="section-title text-xl text-teal-700">۵. لنفوم <bdi dir="ltr">MALT</bdi> (لنفوم ناحیه مارژینال)</h2>
+            <h2 class="section-title text-xl text-teal-700">۵. لنفوم <bdi dir="ltr">MALT</bdi> (لنفوم ناحیه مارژینال)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="bg-teal-50 p-4 rounded-lg border border-teal-100">
                     <h3 class="font-bold text-teal-800 mb-2">تعریف و ویژگی‌ها</h3>
                     <p class="text-sm text-teal-900">
@@ -498,7 +402,7 @@
                     </p>
                 </div>
 
-                <div class="highlight-box">
+                <div class="study-box box-compare highlight-box">
                     <h3 class="font-bold text-gray-800 mb-2">
                         <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
                         نکته بسیار مهم و امتحانی
@@ -533,9 +437,9 @@
 
         <!-- Section 6: DLBCL -->
         <section id="dlbcl" class="card p-6 border-t-4 border-red-500">
-            <h2 class="section-title text-xl text-red-700">۶. لنفوم سلول <bdi dir="ltr">B</bdi> بزرگ منتشر (<bdi dir="ltr">DLBCL</bdi>)</h2>
+            <h2 class="section-title text-xl text-red-700">۶. لنفوم سلول <bdi dir="ltr">B</bdi> بزرگ منتشر (<bdi dir="ltr">DLBCL</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- اپیدمیولوژی -->
                 <div class="bg-red-50 p-4 rounded-lg">
                     <h3 class="font-bold text-red-800 mb-2">اپیدمیولوژی</h3>
@@ -600,7 +504,7 @@
                             </p>
                         </div>
 
-                        <div class="highlight-box">
+                        <div class="study-box box-compare highlight-box">
                             <h4 class="font-semibold mb-2">لنفوم‌های <bdi dir="ltr">Double-Expressor</bdi></h4>
                             <p class="text-sm">
                                 در برخی از موارد، در <bdi dir="ltr">DLBCL</bdi> بیان بیش از حد پروتئین‌های <bdi dir="ltr">MYC</bdi> و <bdi dir="ltr">BCL-2</bdi> وجود دارد ولی ترانسلوکاسیون‌های ژنتیکی مذکور دیده نمی‌شود که به این نوع از لنفوم‌ها <bdi dir="ltr">Double-Expressor</bdi> گفته می‌شود. این لنفوم‌ها نیز دارای پیش‌آگهی بدتری بوده، لیکن از رژیم‌های <bdi dir="ltr">R-CHOP</bdi> می‌توان استفاده کرد.
@@ -613,9 +517,9 @@
 
         <!-- Section 7: Mantle Cell Lymphoma -->
         <section id="mantle" class="card p-6 border-t-4 border-pink-500">
-            <h2 class="section-title text-xl text-pink-700">۷. لنفوم سلول <bdi dir="ltr">Mantle</bdi></h2>
+            <h2 class="section-title text-xl text-pink-700">۷. لنفوم سلول <bdi dir="ltr">Mantle</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- ایمنوفنوتیپ -->
                 <div class="bg-pink-50 p-4 rounded-lg">
                     <h3 class="font-bold text-pink-800 mb-2">ایمنوفنوتیپ</h3>
@@ -659,9 +563,9 @@
 
         <!-- Section 8: لنفوم بورکیت -->
         <section id="burkitt" class="card p-6 border-t-4 border-emerald-500">
-            <h2 class="section-title text-xl text-emerald-700">۸. لنفوم بورکیت (<bdi dir="ltr">Burkitt Lymphoma</bdi>)</h2>
+            <h2 class="section-title text-xl text-emerald-700">۸. لنفوم بورکیت (<bdi dir="ltr">Burkitt Lymphoma</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- تعریف -->
                 <div class="bg-emerald-50 p-4 rounded-lg">
                     <h3 class="font-bold text-emerald-800 mb-2">تعریف</h3>
@@ -715,7 +619,7 @@
                 </div>
 
                 <!-- یادآوری -->
-                <div class="highlight-box">
+                <div class="study-box box-compare highlight-box">
                     <h3 class="font-bold mb-2">یادآوری امتحانی</h3>
                     <p class="text-sm">
                         لنفوم بورکیت و لنفوم لنفوبلاستیک، نوع ۲ لنفومی هستند که در آنها پروفیلاکسی و بررسی <bdi dir="ltr">CNS</bdi> اهمیت دارد.
@@ -726,9 +630,9 @@
 
         <!-- Section 9: لنفوم هوچکین -->
         <section id="hodgkin" class="card p-6 border-t-4 border-rose-500">
-            <h2 class="section-title text-xl text-rose-700">۹. لنفوم هوچکین (<bdi dir="ltr">Hodgkin Lymphoma</bdi>)</h2>
+            <h2 class="section-title text-xl text-rose-700">۹. لنفوم هوچکین (<bdi dir="ltr">Hodgkin Lymphoma</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- تعریف -->
                 <div class="bg-rose-50 p-4 rounded-lg">
                     <h3 class="font-bold text-rose-800 mb-2">تعریف</h3>
@@ -831,9 +735,9 @@
 
         <!-- Section 10: CLL -->
         <section id="cll" class="card p-6 border-t-4 border-cyan-500">
-            <h2 class="section-title text-xl text-cyan-700">۱۰. لوسمی لنفوسیتیک مزمن (<bdi dir="ltr">CLL</bdi>)</h2>
+            <h2 class="section-title text-xl text-cyan-700">۱۰. لوسمی لنفوسیتیک مزمن (<bdi dir="ltr">CLL</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- تعریف -->
                 <div class="bg-cyan-50 p-4 rounded-lg">
                     <h3 class="font-bold text-cyan-800 mb-2">تعریف و ویژگی‌ها</h3>
@@ -894,7 +798,7 @@
                     <h3 class="font-bold text-lg text-cyan-700 mb-3">درمان</h3>
                     
                     <div class="space-y-3">
-                        <div class="highlight-box">
+                        <div class="study-box box-compare highlight-box">
                             <h4 class="font-semibold mb-2">درمان <bdi dir="ltr">CLL</bdi> بی‌عالمت</h4>
                             <p class="text-sm">
                                 از آنجایی که مرحله بی‌عالمت <bdi dir="ltr">CLL</bdi> طولانی بوده و درمان اثر کورات در طول مرحله بی‌عالمت ندارد، در بیماران بدون عالمت درمان شروع نمی‌شود و فقط پیگیری انجام می‌گیرد (<bdi dir="ltr">Watch and wait</bdi>).
@@ -968,9 +872,9 @@
 
         <!-- Section 11: MGUS -->
         <section id="mgus" class="card p-6 border-t-4 border-amber-500">
-            <h2 class="section-title text-xl text-amber-700">۱۱. گاموپاتی منوکلونال با اهمیت نامشخص (<bdi dir="ltr">MGUS</bdi>)</h2>
+            <h2 class="section-title text-xl text-amber-700">۱۱. گاموپاتی منوکلونال با اهمیت نامشخص (<bdi dir="ltr">MGUS</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- تعریف -->
                 <div class="bg-amber-50 p-4 rounded-lg">
                     <h3 class="font-bold text-amber-800 mb-2">تعریف</h3>
@@ -1028,10 +932,10 @@
         </section>
 
         <!-- Section 12: میلوم بدون عالمت -->
-        <section id="smoldering" class="card p-6">
-            <h2 class="section-title text-xl">۱۲. میلوم بدون عالمت (<bdi dir="ltr">Smoldering Myeloma</bdi>)</h2>
+        <section id="smoldering" class="study-section">
+            <h2 class="section-title">۱۲. میلوم بدون عالمت (<bdi dir="ltr">Smoldering Myeloma</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- تعریف -->
                 <div class="bg-purple-50 p-4 rounded-lg">
                     <h3 class="font-bold text-purple-800 mb-2">تعریف</h3>
@@ -1078,10 +982,10 @@
         </section>
 
         <!-- Section 13: پالسماسیتوم منفرد -->
-        <section id="plasmacytoma" class="card p-6">
-            <h2 class="section-title text-xl">۱۳. پالسماسیتوم منفرد (<bdi dir="ltr">Solitary Plasmacytoma</bdi>)</h2>
+        <section id="plasmacytoma" class="study-section">
+            <h2 class="section-title">۱۳. پالسماسیتوم منفرد (<bdi dir="ltr">Solitary Plasmacytoma</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- تعریف -->
                 <div class="bg-indigo-50 p-4 rounded-lg">
                     <h3 class="font-bold text-indigo-800 mb-2">تعریف</h3>
@@ -1119,9 +1023,9 @@
 
         <!-- Section 14: میلوم مولتیپل -->
         <section id="myeloma" class="card p-6 border-t-4 border-red-600">
-            <h2 class="section-title text-xl text-red-700">۱۴. میلوم مولتیپل (<bdi dir="ltr">Multiple Myeloma</bdi>)</h2>
+            <h2 class="section-title text-xl text-red-700">۱۴. میلوم مولتیپل (<bdi dir="ltr">Multiple Myeloma</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <!-- تعریف -->
                 <div class="bg-red-50 p-4 rounded-lg">
                     <h3 class="font-bold text-red-800 mb-2">تعریف</h3>

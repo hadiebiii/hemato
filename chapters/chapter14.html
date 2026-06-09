@@ -4,126 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فصل ۱۴: اُنکولوژی و سندرم‌های پارانئوپالستیک - هماتولوژی</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .gradient-header {
-            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .exam-tip {
-            background-color: #fef2f2;
-            border-right: 4px solid #ef4444;
-            color: #991b1b;
-        }
-        .diagnosis-box {
-            background-color: #eff6ff;
-            border-right: 4px solid #3b82f6;
-            color: #1e40af;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #111827;
-            font-weight: 800;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            right: 0;
-            width: 60%;
-            height: 4px;
-            background-color: #3b82f6;
-            border-radius: 2px;
-        }
-        .staging-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .staging-table th {
-            background-color: #3b82f6;
-            color: white;
-            padding: 12px;
-            text-align: right;
-            font-weight: 600;
-        }
-        .staging-table td {
-            padding: 12px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: right;
-        }
-        .staging-table tr:last-child td {
-            border-bottom: none;
-        }
-        .staging-table tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            border-right: 4px solid #f59e0b;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/hemato-chapter.css">
 </head>
-<body class="pb-12">
+<body>
 
     <!-- Header -->
-    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold">فصل ۱۴: اُنکولوژی و سندرم‌های پارانئوپالستیک</h1>
-                <p class="text-white/80 text-sm mt-1">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
-            </div>
-            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
-                ویژه دانشجویان پزشکی
-            </div>
+    <header class="chapter-hero">
+        <div class="chapter-hero-content">
+          <p class="chapter-kicker">هماتولوژی</p>
+          <h1>فصل ۱۴: اُنکولوژی و سندرم‌های پارانئوپالستیک</h1>
+          <p class="chapter-subtitle">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
         </div>
-    </header>
+      </header>
 
-    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+    <main class="chapter-page">
         <!-- Navigation -->
-        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+        <nav class="chapter-mini-nav" aria-label="فهرست داخلی فصل">
             <a href="#sec1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">پیش‌آگهی لنفوم فولیکولر</a>
             <a href="#sec2" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">لنفوم هوچکین</a>
             <a href="#sec3" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">علائم B در لنفوم هوچکین</a>
@@ -147,10 +44,10 @@
         </nav>
 
         <!-- Section 1: پیش‌آگهی لنفوم فولیکولر -->
-        <section id="sec1" class="card p-6">
-            <h2 class="section-title text-xl">1. پیش‌آگهی لنفوم فولیکولر</h2>
+        <section id="sec1" class="study-section">
+            <header class="section-header"><span class="section-number">1</span><h2 class="section-title">1. پیش‌آگهی لنفوم فولیکولر</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">عوامل تعیین‌کننده پیش‌آگهی در لنفوم فولیکولر: عوامل زیر با کاهش بقا در لنفوم فولیکولر همراه هستند:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">سن بالاتر</li>
@@ -163,10 +60,10 @@
         </section>
 
         <!-- Section 2: لنفوم هوچکین -->
-        <section id="sec2" class="card p-6">
-            <h2 class="section-title text-xl">2. لنفوم هوچکین</h2>
+        <section id="sec2" class="study-section">
+            <header class="section-header"><span class="section-number">2</span><h2 class="section-title">2. لنفوم هوچکین</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">لنفوم هوچکین یک بدخیمی لنفاوی با منشأ غدد لنفاوی بوده که با سلول‌های اشـتنبرگ-رید (<bdi dir="ltr">RS</bdi>) مشخص می‌شود. این سلول‌ها در یک زمینه التهابی قرار دارند.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">اشتنبرگ- سلول رید کلاسیک</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">سلول بزرگ و دارای دو هسته (که هر کدام به صورت برجسته دارند) مشخص می‌شود که نمای شبیه هستک دارد (<bdi dir="ltr">Owel eyes</bdi>).</p>
@@ -180,10 +77,10 @@
         </section>
 
         <!-- Section 3: علائم B در لنفوم هوچکین -->
-        <section id="sec3" class="card p-6">
-            <h2 class="section-title text-xl">3. علائم B در لنفوم هوچکین</h2>
+        <section id="sec3" class="study-section">
+            <header class="section-header"><span class="section-number">3</span><h2 class="section-title">3. علائم B در لنفوم هوچکین</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">تب</li>
                   <li class="leading-relaxed text-gray-700">تعریق شبانه</li>
@@ -193,10 +90,10 @@
         </section>
 
         <!-- Section 4: درمان لنفوم هوچکین -->
-        <section id="sec4" class="card p-6">
-            <h2 class="section-title text-xl">4. درمان لنفوم هوچکین</h2>
+        <section id="sec4" class="study-section">
+            <header class="section-header"><span class="section-number">4</span><h2 class="section-title">4. درمان لنفوم هوچکین</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">لنفوم هوچکین پاسخ خوبی به درمان می‌دهد و احتمال علاج بیماری با درمان‌های فعلی <bdi dir="ltr">80%</bdi> است.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">مراحل اولیه بیماری (<bdi dir="ltr">Stage I/II</bdi>)</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">اغلب مبتالیان به مراحل اولیه بیماری با رژیم شیمی‌درمانی <bdi dir="ltr">ABVD</bdi> درمان می‌شوند که شامل دوکسوروبیسین (آدریامایسین)، بلئومایسین، وین‌بالستین و داکاربازین است. می‌توان بعد از آن رادیوتراپی با دوز پائین (کمتر از <bdi dir="ltr">30</bdi> گری) در محل غدد لنفاوی درگیر انجام داد. این نوع رادیوتراپی موجب افزایش ریسک تومورهای توپر ثانویه نمی‌شود. همچنین می‌توان از دوره کوتاه شیمی‌درمانی بدون رادیوتراپی نیز استفاده کرد.</p>
@@ -211,10 +108,10 @@
         </section>
 
         <!-- Section 5: پیش‌آگهی در لنفوم هوچکین -->
-        <section id="sec5" class="card p-6">
-            <h2 class="section-title text-xl">5. پیش‌آگهی در لنفوم هوچکین</h2>
+        <section id="sec5" class="study-section">
+            <header class="section-header"><span class="section-number">5</span><h2 class="section-title">5. پیش‌آگهی در لنفوم هوچکین</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اغلب مبتالیان به لنفوم هوچکین، بهبود می‌یابند. عواملی که موجب افزایش احتمال عود و کاهش بقای بیماران می‌شوند، عبارتند از:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">انواع با سلوالریتی <bdi dir="ltr">Mixed</bdi> و تهی از لنفوسیت</li>
@@ -229,10 +126,10 @@
         </section>
 
         <!-- Section 6: لوسمی لنفوسیتیک مزمن و لنفوم لنفوسیتیک کوچک (CLL/SLL) -->
-        <section id="sec6" class="card p-6">
-            <h2 class="section-title text-xl">6. لوسمی لنفوسیتیک مزمن و لنفوم لنفوسیتیک کوچک (<bdi dir="ltr">CLL/SLL</bdi>)</h2>
+        <section id="sec6" class="study-section">
+            <header class="section-header"><span class="section-number">6</span><h2 class="section-title">6. لوسمی لنفوسیتیک مزمن و لنفوم لنفوسیتیک کوچک (<bdi dir="ltr">CLL/SLL</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">لوسمی لنفوسیتیک مزمن (<bdi dir="ltr">CLL</bdi>)</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">تعریف: با تجمع لنفوسیت‌های کوچک با منشأ سلول‌های B مشخص می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اپیدمیولوژی: شایع‌ترین نوع لوسمی بوده و شیوع آن در مردان برابر زنان است. بروز <bdi dir="ltr">CLL</bdi> با افزایش سن بالا می‌رود و بیشتر موارد در سن باالی <bdi dir="ltr">50</bdi> سال تشخیص داده می‌شوند و بیشتر از <bdi dir="ltr">90%</bdi> موارد در سن باالی <bdi dir="ltr">50</bdi> سال رخ می‌دهد.</p>
@@ -243,19 +140,19 @@
         </section>
 
         <!-- Section 7: اُنکولوژی و سندرم‌های پارانئوپالستیک -->
-        <section id="sec7" class="card p-6">
-            <h2 class="section-title text-xl">7. اُنکولوژی و سندرم‌های پارانئوپالستیک</h2>
+        <section id="sec7" class="study-section">
+            <header class="section-header"><span class="section-number">7</span><h2 class="section-title">7. اُنکولوژی و سندرم‌های پارانئوپالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اُنکولوژی و سندرم‌های پارانئوپالستیک</p>
             </div>
         </section>
 
         <!-- Section 8: درمان ضدانعقادی در بیماران بدخیم -->
-        <section id="sec8" class="card p-6">
-            <h2 class="section-title text-xl">8. درمان ضدانعقادی در بیماران بدخیم</h2>
+        <section id="sec8" class="study-section">
+            <header class="section-header"><span class="section-number">8</span><h2 class="section-title">8. درمان ضدانعقادی در بیماران بدخیم</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در بیماران مبتلا به بدخیمی، درمان ضدانعقادی باید طولانی‌مدت ادامه یابد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">در موارد <bdi dir="ltr">DVT</bdi> بدون ریسک فاکتور (<bdi dir="ltr">Unprovoked</bdi>)، بعد از <bdi dir="ltr">3</bdi> تا <bdi dir="ltr">6</bdi> ماه درمان پروفیلاکتیـک، باید <bdi dir="ltr">D-dimer</bdi> سنجیده شود؛ اگر <bdi dir="ltr">D-dimer</bdi> کمتر از <bdi dir="ltr">3</bdi> بود می‌توان درمان را قطع نمود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">درمان طولانی‌مدت باید بر اساس وجود سایر بیماری‌ها، ریسک خونریزی، وجود ریسک فاکتورهای موقت و سهولت پذیرش درمان توسط بیمار تنظیم شود.</p>
@@ -264,10 +161,10 @@
         </section>
 
         <!-- Section 9: غربالگری سرطان -->
-        <section id="sec9" class="card p-6">
-            <h2 class="section-title text-xl">9. غربالگری سرطان</h2>
+        <section id="sec9" class="study-section">
+            <header class="section-header"><span class="section-number">9</span><h2 class="section-title">9. غربالگری سرطان</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <div class="exam-tip p-4 rounded-lg mb-3"><strong>💡 نکته امتحانی:</strong> سرطان‌های قابل غربالگری و روش‌های غربالگری آن‌ها در زیر آورده شده‌اند (امتحانی %<bdi dir="ltr">100</bdi>):</div>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700">کانسر پستان: معاینه بالینی و ماموگرافی</li>
@@ -280,10 +177,10 @@
         </section>
 
         <!-- Section 10: Follow up -->
-        <section id="sec10" class="card p-6">
-            <h2 class="section-title text-xl">10. <bdi dir="ltr">Follow up</bdi></h2>
+        <section id="sec10" class="study-section">
+            <header class="section-header"><span class="section-number">10</span><h2 class="section-title">10. <bdi dir="ltr">Follow up</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">مهمترین ریسک فاکتورهای سبک زندگی مرتبط با سرطان شامل سیگار، الکل، رژیم غذایی و فقدان فعالیت بدنی است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">مهمترین عامل منفرد در بروز و مرگ‌ومیر ناشی از سرطان، سیگار است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">لنفوم بورکیت با <bdi dir="ltr">EBV</bdi> ارتباط دارد.</p>
@@ -299,19 +196,19 @@
         </section>
 
         <!-- Section 11: تشخیص سرطان‌ها -->
-        <section id="sec11" class="card p-6">
-            <h2 class="section-title text-xl">11. تشخیص سرطان‌ها</h2>
+        <section id="sec11" class="study-section">
+            <header class="section-header"><span class="section-number">11</span><h2 class="section-title">11. تشخیص سرطان‌ها</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در اکثر موارد برای تشخیص سرطان، بیوپسی لازم است. یک استثناء برای عدم انجام بیوپسی، کارسینوم هپاتوسلولار کبد در مبتلایان به سیروز بوده که به کمک تصویربرداری و افزایش αFP تشخیص داده می‌شود و نیازی به انجام بیوپسی نیست.</p>
             </div>
         </section>
 
         <!-- Section 12: انواع شیمی‌درمانی -->
-        <section id="sec12" class="card p-6">
-            <h2 class="section-title text-xl">12. انواع شیمی‌درمانی</h2>
+        <section id="sec12" class="study-section">
+            <header class="section-header"><span class="section-number">12</span><h2 class="section-title">12. انواع شیمی‌درمانی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">شیمی‌درمانی ادجوان: بعد از به خارج کردن تومور، شیمی‌درمانی ادجوان گفته می‌شود. شیمی‌درمانی ادجوان، میکرومتاستازهای سیستمیک را در بیمارانی که از نظر عود <bdi dir="ltr">High risk</bdi> هستند، از بین می‌برد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">شیمی‌درمانی نئوادجوان: قبل از جراحی که گاهی در همراهی با رادیوتراپی است، شیمی‌درمانی نئوادجوان گفته می‌شود. شیمی‌درمانی نئوادجوان، سایز تومور را قبل از جراحی کاهش می‌دهد.</p>
                 <div class="highlight-box p-4 rounded-lg mb-3">
@@ -322,14 +219,14 @@
         </section>
 
         <!-- Section 13: داروها و روش‌های درمانی -->
-        <section id="sec13" class="card p-6">
-            <h2 class="section-title text-xl">13. داروها و روش‌های درمانی</h2>
+        <section id="sec13" class="study-section">
+            <header class="section-header"><span class="section-number">13</span><h2 class="section-title">13. داروها و روش‌های درمانی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">سورافنیب و سانیتنیب دو داروی جدید مهارکننده تیروزین کیناز هستند. از این دو دارو در سرطان‌های کبد و کلیه استفاده می‌شود.</p>
-                <div class="overflow-x-auto mb-4">
+                <div class="table-card"><div class="table-scroll">
                   <h4 class="font-bold text-md text-gray-700 mb-2">تأثیر شیمی‌درمانی در سرطان‌های مختلف</h4>
-                  <table class="staging-table">
+                  <table class="medical-table">
                     <thead>
                       <tr>
                         <th>شیمی‌درمانی علاج‌بخش حتی در مراحل پیشرفته</th>
@@ -345,7 +242,7 @@
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                </div></div>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">CAR-T Cell</bdi> تراپی روش جدیدی است که در درمان لنفوم و لوسمی به کار برده می‌شود. <bdi dir="ltr">CAR-T Cell</bdi> تراپی با هدف قرار دادن <bdi dir="ltr">CD<bdi dir="ltr">19</bdi></bdi> در درمان <bdi dir="ltr">ALL</bdi> و <bdi dir="ltr">DLBCL</bdi> استفاده می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">برای درمان لنفوم به کار می‌رود <bdi dir="ltr">CHOP</bdi> رژیم.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">برای سرطان کولورکتال استفاده می‌شود <bdi dir="ltr">FOLFOX</bdi> رژیم و شامل <bdi dir="ltr">5</bdi>-فلورواوراسیل، لکوورین و اُکسی‌پلاتین است.</p>
@@ -363,10 +260,10 @@
         </section>
 
         <!-- Section 14: ریسک فاکتورهای سرطان ریه -->
-        <section id="sec14" class="card p-6">
-            <h2 class="section-title text-xl">14. ریسک فاکتورهای سرطان ریه</h2>
+        <section id="sec14" class="study-section">
+            <header class="section-header"><span class="section-number">14</span><h2 class="section-title">14. ریسک فاکتورهای سرطان ریه</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">مهم‌ترین ریسک فاکتور کانسر ریه، سیگار است. خطر کانسر ریه با تعداد بسته (<bdi dir="ltr">Pack-Years</bdi>: تعداد سیگار مصرفی در یک روز × سال‌های مصرف) رابطه دارد. کارسینوم <bdi dir="ltr">Small cell</bdi> ریه ارتباط زیادی با سیگار دارد، به طوری که با کاهش مصرف سیگار، شیوع آن در حال کاهش است. با این وجود، تا <bdi dir="ltr">15%</bdi> موارد کارسینوم <bdi dir="ltr">Non-Small cell</bdi> ریه در افراد غیر سیگاری رخ می‌دهد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">پیش‌آگهی، ژنتیک کانسر ریه در سیگاری‌ها از نظر و پاسخ به ایمونوتراپی با کانسر ریه در غیرسیگاری‌ها فرق دارد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">کسانی که در گذشته سیگاری بوده نیز در خطر ابتلا به کانسر ریه هستند.</p>
@@ -380,10 +277,10 @@
         </section>
 
         <!-- Section 15: Non-Small Cell کارسینوم ریه -->
-        <section id="sec15" class="card p-6">
-            <h2 class="section-title text-xl">15. <bdi dir="ltr">Non-Small Cell</bdi> کارسینوم ریه</h2>
+        <section id="sec15" class="study-section">
+            <header class="section-header"><span class="section-number">15</span><h2 class="section-title">15. <bdi dir="ltr">Non-Small Cell</bdi> کارسینوم ریه</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">آدنوکارسینوم ریه</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">شایع‌ترین سرطان ریه بوده به طوری <bdi dir="ltr">40%</bdi> موارد را تشکیل می‌دهد. به طور شایع در افراد غیرسیگاری تشخیص داده می‌شود.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">محل ایجاد</h4>
@@ -401,10 +298,10 @@
         </section>
 
         <!-- Section 16: SCC (اسکواموس سل کارسینوما) -->
-        <section id="sec16" class="card p-6">
-            <h2 class="section-title text-xl">16. <bdi dir="ltr">SCC</bdi> (اسکواموس سل کارسینوما)</h2>
+        <section id="sec16" class="study-section">
+            <header class="section-header"><span class="section-number">16</span><h2 class="section-title">16. <bdi dir="ltr">SCC</bdi> (اسکواموس سل کارسینوما)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">منشاء</h4>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">SCC</bdi> از لایه اپیتلیال دیواره برنش‌ها منشاء می‌یابد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">توجه: موتاسیون از بین رفتن عملکرد ژن <bdi dir="ltr">HLA-A</bdi> در مبتلایان به <bdi dir="ltr">SCC</bdi> یافت شده است.</p>
@@ -435,10 +332,10 @@
         </section>
 
         <!-- Section 17: درمان کانسرهای Non-Small Cell -->
-        <section id="sec17" class="card p-6">
-            <h2 class="section-title text-xl">17. درمان کانسرهای <bdi dir="ltr">Non-Small Cell</bdi></h2>
+        <section id="sec17" class="study-section">
+            <header class="section-header"><span class="section-number">17</span><h2 class="section-title">17. درمان کانسرهای <bdi dir="ltr">Non-Small Cell</bdi></h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">مراحل اولیه (<bdi dir="ltr">Stage I</bdi>, <bdi dir="ltr">II</bdi>)</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">جراحی در مراحل اولیه، <bdi dir="ltr">Stage I</bdi>, <bdi dir="ltr">II</bdi> بوده و برای درمان عالج‌بخش (<bdi dir="ltr">Curative</bdi>) اندیکاسیون دارد. روش جراحی در مرحله <bdi dir="ltr">N<bdi dir="ltr">1</bdi></bdi>، لوبکتومی یا پنومونکتومی (آناتومیک) به همراه رزکسیون غدد لنفاوی تخلیه‌کننده است.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">بیماری پیشرفته موضعی (<bdi dir="ltr">Stage IIIA</bdi>,<bdi dir="ltr">IIIB</bdi>)</h4>
@@ -466,19 +363,19 @@
         </section>
 
         <!-- Section 18: Small Cell کارسینوم ریه -->
-        <section id="sec18" class="card p-6">
-            <h2 class="section-title text-xl">18. <bdi dir="ltr">Small Cell</bdi> کارسینوم ریه</h2>
+        <section id="sec18" class="study-section">
+            <header class="section-header"><span class="section-number">18</span><h2 class="section-title">18. <bdi dir="ltr">Small Cell</bdi> کارسینوم ریه</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">کدامیک از بدخیمی‌های ریوی بیشترین میزان تظاهرات پارانئوپالستیک عصبی را دارد؟</p>
             </div>
         </section>
 
         <!-- Section 19: کارسینوم سلول کوچک ریه (Small Cell Lung Cancer) -->
-        <section id="sec19" class="card p-6">
-            <h2 class="section-title text-xl">19. کارسینوم سلول کوچک ریه (<bdi dir="ltr">Small Cell Lung Cancer</bdi>)</h2>
+        <section id="sec19" class="study-section">
+            <header class="section-header"><span class="section-number">19</span><h2 class="section-title">19. کارسینوم سلول کوچک ریه (<bdi dir="ltr">Small Cell Lung Cancer</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">سلول‌های ریه از <bdi dir="ltr">Small Cell</bdi> کارسینوم منشأ یافته و غالباً با سندرم‌های نوروآندوکرین پارانئوپالستیک همراه می‌باشد.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">محل تومور</h4>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">Small Cell</bdi> کارسینوم به طور مشخص در ناحیه پری‌هیالر قرار گرفته است. منشأ گرفتن تومور از برونش اصلی غیرشایع نیست و اغلب با آدنوپاتی بدخیم همراه است.</p>
@@ -487,13 +384,13 @@
         </section>
 
         <!-- Section 20: سندرم‌های پارانئوپالستیک مرتبط با کارسینوم‌های برونکوژنیک -->
-        <section id="sec20" class="card p-6">
-            <h2 class="section-title text-xl">20. سندرم‌های پارانئوپالستیک مرتبط با کارسینوم‌های برونکوژنیک</h2>
+        <section id="sec20" class="study-section">
+            <header class="section-header"><span class="section-number">20</span><h2 class="section-title">20. سندرم‌های پارانئوپالستیک مرتبط با کارسینوم‌های برونکوژنیک</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="overflow-x-auto mb-4">
+            <div class="frame-grid">
+                <div class="table-card"><div class="table-scroll">
                   <h4 class="font-bold text-md text-gray-700 mb-2">سندرم‌های پارانئوپالستیک مرتبط با کارسینوم‌های برونکوژنیک</h4>
-                  <table class="staging-table">
+                  <table class="medical-table">
                     <thead>
                       <tr>
                         <th>سندرم</th>
@@ -531,15 +428,15 @@
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                </div></div>
             </div>
         </section>
 
         <!-- Section 21: نکات بالینی و تشخیصی -->
-        <section id="sec21" class="card p-6">
-            <h2 class="section-title text-xl">21. نکات بالینی و تشخیصی</h2>
+        <section id="sec21" class="study-section">
+            <header class="section-header"><span class="section-number">21</span><h2 class="section-title">21. نکات بالینی و تشخیصی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">Small cell</bdi> تومور ریه شایع‌ترین علت <bdi dir="ltr">SIADH</bdi> است. هیپوناترمی به علت وجود <bdi dir="ltr">SIADH</bdi> تشخیص داده می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">Small cell</bdi> کانسـر شـایع‌ترین علت ترشـح اکتوپیک <bdi dir="ltr">ACTH</bdi> و سندرم کوشینگ می‌باشد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">سندرم کوشینگ با هیپرتانسـیون، هیپوکالمـی، آلکالـوز متابولیـک، عدم تحمل گلوکز (هیپرگلیسـمی)، افزایش وزن مرکزی، احتباس مایعات و گاهی سایکوز ناشی از استروئید، تظاهر می‌یابد.</p>
@@ -552,10 +449,10 @@
         </section>
 
         <!-- Section 22: درمان کارسینوم سلول کوچک ریه -->
-        <section id="sec22" class="card p-6">
-            <h2 class="section-title text-xl">22. درمان کارسینوم سلول کوچک ریه</h2>
+        <section id="sec22" class="study-section">
+            <header class="section-header"><span class="section-number">22</span><h2 class="section-title">22. درمان کارسینوم سلول کوچک ریه</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">درمان کارسینوم <bdi dir="ltr">Small Cell</bdi> ریه</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">اگر شواهدی از متاستاز وجود نداشته باشد، می‌توان گاهی کارسینوم را با جراحی رزکت نمود ولی در اکثر موارد به دلیل درگیری سیستمیک، شیمی‌درمانی روش انتخابی درمان است.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">درمان مرحله <bdi dir="ltr">Limited</bdi></h4>
@@ -575,10 +472,10 @@
         </section>
 
         <!-- Section 23: تظاهرات بالینی کانسرهای ریه -->
-        <section id="sec23" class="card p-6">
-            <h2 class="section-title text-xl">23. تظاهرات بالینی کانسرهای ریه</h2>
+        <section id="sec23" class="study-section">
+            <header class="section-header"><span class="section-number">23</span><h2 class="section-title">23. تظاهرات بالینی کانسرهای ریه</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">تظاهرات بالینی کانسرهای ریه</h4>
                 <h5 class="font-semibold text-md text-gray-700 mt-3 mb-2">علائم اولیه</h5>
                 <p class="mb-3 leading-relaxed text-gray-700">بیماران ممکن است با عالئم غیراختصاصی نظیر سـرفه، تنگی نفس، افزایـش تولید خلط، درد قفسه سینه (<bdi dir="ltr">Chest Pain</bdi>) و کاهـش وزن تظاهـر پیدا کنند. معموالً در ابتدا تصور می‏شـود که بیمار دچار برونشیت یا پنومونی است.</p>
@@ -590,10 +487,10 @@
         </section>
 
         <!-- Section 24: تومور پان‌کوست ریه -->
-        <section id="sec24" class="card p-6">
-            <h2 class="section-title text-xl">24. تومور پان‌کوست ریه</h2>
+        <section id="sec24" class="study-section">
+            <header class="section-header"><span class="section-number">24</span><h2 class="section-title">24. تومور پان‌کوست ریه</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">تهاجم مستقیم پلورال افیوژن ممکن است ناشی از تومور به پلور یا انسداد جریان لنفاوی در غدد لنفاوی مدیاستن باشد.</p>
                 <div class="highlight-box p-4 rounded-lg mb-3">
                   <strong>📋 خلاصه:</strong> پلورال افیوژن بدخیم، در صورت وجود رزکسیون تومور نباید انجام شود.
@@ -622,19 +519,19 @@
         </section>
 
         <!-- Section 25: پیشگیری و غربالگری کانسر ریه -->
-        <section id="sec25" class="card p-6">
-            <h2 class="section-title text-xl">25. پیشگیری و غربالگری کانسر ریه</h2>
+        <section id="sec25" class="study-section">
+            <header class="section-header"><span class="section-number">25</span><h2 class="section-title">25. پیشگیری و غربالگری کانسر ریه</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">مؤثرترین پیشگیری و غربالگری کانسر ریه، قطع سیگار است. سرویس پیشگیری از کانسر ریه آمریکا انجام غربالگری سالانه با <bdi dir="ltr">Low-dose CT-Scan</bdi> را در سیگاری‌ها یا افرادی که در <bdi dir="ltr">15</bdi> سال گذشته سیگار را ترک کرده‌اند و سابقه مصرف یک سال (یا معادل <bdi dir="ltr">30</bdi> پاکت سیگار در روز برای <bdi dir="ltr">30</bdi> <bdi dir="ltr">Pack-year</bdi> سال) داشته‌اند، توصیه می‌کند.</p>
             </div>
         </section>
 
         <!-- Section 26: سندرم‌های پارانئوپالستیک در تومور -->
-        <section id="sec26" class="card p-6">
-            <h2 class="section-title text-xl">26. سندرم‌های پارانئوپالستیک در تومور</h2>
+        <section id="sec26" class="study-section">
+            <header class="section-header"><span class="section-number">26</span><h2 class="section-title">26. سندرم‌های پارانئوپالستیک در تومور</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <ul class="list-disc mr-6 space-y-2 mb-4">
                   <li class="leading-relaxed text-gray-700"><bdi dir="ltr">Small cell lung cancer</bdi>: سندرم‌های پارانئوپالستیک در تومور اغلب <bdi dir="ltr">Small cell lung cancer</bdi> ایجاد می‌شوند.</li>
                   <li class="leading-relaxed text-gray-700"><bdi dir="ltr">Small cell lung cancer</bdi>: متاستاز ریه تمایل شدیدی به <bdi dir="ltr">Small cell lung cancer</bdi> داشته، به طوری که اکثر بیماران در هنگام تشخیص، متاستاز داده‌اند.</li>
@@ -649,10 +546,10 @@
         </section>
 
         <!-- Section 27: ویژگی‌های رادیوگرافیک ندول منفرد ریوی -->
-        <section id="sec27" class="card p-6">
-            <h2 class="section-title text-xl">27. ویژگی‌های رادیوگرافیک ندول منفرد ریوی</h2>
+        <section id="sec27" class="study-section">
+            <header class="section-header"><span class="section-number">27</span><h2 class="section-title">27. ویژگی‌های رادیوگرافیک ندول منفرد ریوی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">ویژگی‌های رادیوگرافیک می‌توانند در پیش‌بینی اینکه یک ندول منفرد ریوی، خوش‌خیم یا بدخیم است کمک‌کننده باشند.</p>
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">سایز ندول</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">اندازه ندول مهم است زیرا احتمال بدخیمی ضایعات بزرگتر بیشتر است. احتمال بدخیمی در ضایعات بین <bdi dir="ltr">4</bdi> تا <bdi dir="ltr">7</bdi> میلی‌متر در افراد بدون سابقه کانسر <bdi dir="ltr">0</bdi>/<bdi dir="ltr">9%</bdi> ذکر شده است، در حالی که این احتمال برای ضایعات <bdi dir="ltr">8</bdi> میلی‌متر تا <bdi dir="ltr">2</bdi> سانتی‌متر <bdi dir="ltr">18%</bdi>، و برای ضایعات بزرگتر از <bdi dir="ltr">2</bdi> سانتی‌متر <bdi dir="ltr">50%</bdi> است.</p>
@@ -680,10 +577,10 @@
         </section>
 
         <!-- Section 28: ندول منفرد ریوی -->
-        <section id="sec28" class="card p-6">
-            <h2 class="section-title text-xl">28. ندول منفرد ریوی</h2>
+        <section id="sec28" class="study-section">
+            <header class="section-header"><span class="section-number">28</span><h2 class="section-title">28. ندول منفرد ریوی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">کلسیفیکاسیون با الگوی پاپ کورن به نفع هامارتوم خوش‌خیمی می‌باشد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">از آنجایی که سایز ندول در <bdi dir="ltr">Case</bdi> مورد نظر سئوال طی <bdi dir="ltr">6</bdi> ماه گذشته افزایش یافته است، ریسک بدخیمی وجود داشته، لذا باید بیوپسی تحت گاید <bdi dir="ltr">CT-Scan</bdi> انجام شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">یافته‌های تصویربرداری باید با یافته‌های قبلی مقایسه شوند، زیرا عدم تغییر در اندازه صورت وجود، احتمال بدخیمی را به طور چشمگیری کاهش می‌دهد و به احتمال زیاد توده مزبور بدخیم نمی‌باشد. همچنین به پاسخ سئوال <bdi dir="ltr">23</bdi> مراجعه شود.</p>
@@ -706,10 +603,10 @@
         </section>
 
         <!-- Section 29: سندرم‌های پارانئوپالستیک آندوکرینولوژیک _ هماتولوژیک -->
-        <section id="sec29" class="card p-6">
-            <h2 class="section-title text-xl">29. سندرم‌های پارانئوپالستیک آندوکرینولوژیک _ هماتولوژیک</h2>
+        <section id="sec29" class="study-section">
+            <header class="section-header"><span class="section-number">29</span><h2 class="section-title">29. سندرم‌های پارانئوپالستیک آندوکرینولوژیک _ هماتولوژیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">هیپرکلسمی</h4>
                 <p class="mb-3 leading-relaxed text-gray-700">هیپرکلسمی ناشی از ترشح <bdi dir="ltr">PTHrP</bdi></p>
                 <p class="mb-3 leading-relaxed text-gray-700">هیپرکلسمی هومورال بدخیم (<bdi dir="ltr">HHM</bdi>): اپیدمیولوژی: <bdi dir="ltr">20%</bdi> از کانسرها رخ می‌دهد. هیپرکلسیمی هومورال بدخیمی در کانسر ریه، سروگردن، پوست، مری، بدخیمی پستان، دستگاه ادراری _ تناسلی، میلوم مولتیپل، لنفوم و متاستازها شایع‌تر است.</p>
@@ -734,10 +631,10 @@
         </section>
 
         <!-- Section 30: هیپرکلسیمی -->
-        <section id="sec30" class="card p-6">
-            <h2 class="section-title text-xl">30. هیپرکلسیمی</h2>
+        <section id="sec30" class="study-section">
+            <header class="section-header"><span class="section-number">30</span><h2 class="section-title">30. هیپرکلسیمی</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">درمان هیپرکلسیمی شامل مایع‌درمانی با سالین و سپس تجویز فورسـماید (تنها مایع دیورتیک) فقط بعد از هیپرکلسیمی‌های شدید و تهدیدکننده حیات به کار برده می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">تجویز فسفر خوراکی (مثل <bdi dir="ltr">Neutra-phos</bdi> با دوز <bdi dir="ltr">250</bdi> <bdi dir="ltr">mg</bdi> سه تا چهار بار در روز) تا زمانی که فسفر سرم به بیش از <bdi dir="ltr">3</bdi> <bdi dir="ltr">mg/dl</bdi> برسد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">بیس‌فسفونات‌ها، کلسیم سرم را در طی انفوزیون <bdi dir="ltr">1</bdi> تا <bdi dir="ltr">2</bdi> روز کم کرده و تا چند هفته آزاد شدن کلسیم را مهار می‌کند. انواع بیس‌فسفونات‌ها که به کار می‌روند عبارتند از:</p>
@@ -766,10 +663,10 @@
         </section>
 
         <!-- Section 31: SIADH (سندرم ترشح نابجای هورمون ضدادرار) -->
-        <section id="sec31" class="card p-6">
-            <h2 class="section-title text-xl">31. <bdi dir="ltr">SIADH</bdi> (سندرم ترشح نابجای هورمون ضدادرار)</h2>
+        <section id="sec31" class="study-section">
+            <header class="section-header"><span class="section-number">31</span><h2 class="section-title">31. <bdi dir="ltr">SIADH</bdi> (سندرم ترشح نابجای هورمون ضدادرار)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">SIADH</bdi> ناشی از تومور در کدام یک از بدخیمی‌های زیر به عنوان عارضه پارانئوپالستیک شایع‌تر دیده می‌شود؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اتیولوژی: وازوپرسین اکتوپیک؛ شایع‌ترین علت <bdi dir="ltr">SIADH</bdi> تومور <bdi dir="ltr">Small cell</bdi> ریه و تومور کارسینوئید است به طوری که <bdi dir="ltr">50%</bdi> مبتالیان به <bdi dir="ltr">Small Cell</bdi> سرطان ریه دچار <bdi dir="ltr">SIADH</bdi> می‌شوند. تومورهای سروگردن، دستگاه گوارش، ادراری_تناسلی و تخمدان از سایر علل <bdi dir="ltr">SIADH</bdi> هستند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">تظاهرات بالینی: بیشتر مبتالیان به <bdi dir="ltr">SIADH</bdi> بی علامت هستند و به علت وجود هیپوناترمی در آزمایشات روتین تشخیص داده می‌شوند. هیپوناترمی موجب ضعف، لتارژی، تهوع، کنفوزیون، کاهش هوشیاری و تشنج می‌شود.</p>
@@ -794,10 +691,10 @@
         </section>
 
         <!-- Section 32: سندرم کوشینگ -->
-        <section id="sec32" class="card p-6">
-            <h2 class="section-title text-xl">32. سندرم کوشینگ</h2>
+        <section id="sec32" class="study-section">
+            <header class="section-header"><span class="section-number">32</span><h2 class="section-title">32. سندرم کوشینگ</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">کدام سرطان مطرح نمی‌باشد؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اتیولوژی: تومورهایی که موجب تولید اکتوپیک <bdi dir="ltr">ACTH</bdi> و لذا سندرم کوشینگ می‌شوند، عبارتند از:</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">تومورهای تولید کننده <bdi dir="ltr">ACTH</bdi> اکتوپیک</h4>
@@ -826,10 +723,10 @@
         </section>
 
         <!-- Section 33: اریتروسیتوز -->
-        <section id="sec33" class="card p-6">
-            <h2 class="section-title text-xl">33. اریتروسیتوز</h2>
+        <section id="sec33" class="study-section">
+            <header class="section-header"><span class="section-number">33</span><h2 class="section-title">33. اریتروسیتوز</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">فیزیوپاتولوژی: تولید اکتوپیک اریتروپویتین توسط سلول‌های سرطانی موجب اریتروسیتوز پارانئوپالستیک می‌شود. اریتروپویتین با تحریک تولید <bdi dir="ltr">RBC</bdi> در مغز استخوان موجب افزایش هماتوکریت می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">تعریف: اریتروسیتوز با هماتوکریت بیشـتر از <bdi dir="ltr">52%</bdi> در مردان و <bdi dir="ltr">48%</bdi> در زنان مشخص می‌شود.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اتیولوژی: کانسـر کلیه (<bdi dir="ltr">3%</bdi>)، هپاتومـا (<bdi dir="ltr">10%</bdi>) و همانژیوبالسـتوم مخچـه‏ای (<bdi dir="ltr">15%</bdi>) موجب اریتروسیتوز پارانئوپالستیک می‌گردند (نکته اصلی سئوال می‏گردد).</p>
@@ -840,19 +737,19 @@
         </section>
 
         <!-- Section 34: ترومبوسیتوز -->
-        <section id="sec34" class="card p-6">
-            <h2 class="section-title text-xl">34. ترومبوسیتوز</h2>
+        <section id="sec34" class="study-section">
+            <header class="section-header"><span class="section-number">34</span><h2 class="section-title">34. ترومبوسیتوز</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">در افزایش پالکت وی کدام عامل دخیل است؟</p>
             </div>
         </section>
 
         <!-- Section 35: ترومبوسیتوز پارانئوپالستیک -->
-        <section id="sec35" class="card p-6">
-            <h2 class="section-title text-xl">35. ترومبوسیتوز پارانئوپالستیک</h2>
+        <section id="sec35" class="study-section">
+            <header class="section-header"><span class="section-number">35</span><h2 class="section-title">35. ترومبوسیتوز پارانئوپالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">اگر تعداد پلاکت‌ها بیشتر از <bdi dir="ltr">400000</bdi>/μl باشد به آن ترومبوسیتوز گفته می‌شود. ترومبوسیتوز یک کانسر زمینه‌ای دارد.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اینترلوکین <bdi dir="ltr">6</bdi> (<bdi dir="ltr">IL-<bdi dir="ltr">6</bdi></bdi>) عامل ایجاد ترومبوسیتوز پارانئوپالستیک است.</p>
                 <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">ترومبوسیتوز در کانسر‌های زیر مشاهده می‌شود:</h4>
@@ -868,10 +765,10 @@
         </section>
 
         <!-- Section 36: ائوزینوفیلی پارانئوپالستیک -->
-        <section id="sec36" class="card p-6">
-            <h2 class="section-title text-xl">36. ائوزینوفیلی پارانئوپالستیک</h2>
+        <section id="sec36" class="study-section">
+            <header class="section-header"><span class="section-number">36</span><h2 class="section-title">36. ائوزینوفیلی پارانئوپالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">1%</bdi> از مبتلایان به کانسر، دچار ائوزینوفیلی می‌شوند.</p>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">IL-<bdi dir="ltr">5</bdi></bdi> عامل ایجاد ائوزینوفیلی است.</p>
                 <p class="mb-3 leading-relaxed text-gray-700">اغلب بی‌علامت هستند ولی اگر ائوزینوفیلی شدید باشد (بیشتر از <bdi dir="ltr">5000</bdi>/μl) ممکن است تنگی نفس و ویز ایجاد شود و در <bdi dir="ltr">Chest X Ray</bdi> انفیلتراسیون منتشر ائوزینوفیل‌ها دیده شود.</p>
@@ -880,10 +777,10 @@
         </section>
 
         <!-- Section 37: ترومبوفلبیت و ترومبوز وریدی عمقی (DVT) -->
-        <section id="sec37" class="card p-6">
-            <h2 class="section-title text-xl">37. ترومبوفلبیت و ترومبوز وریدی عمقی (<bdi dir="ltr">DVT</bdi>)</h2>
+        <section id="sec37" class="study-section">
+            <header class="section-header"><span class="section-number">37</span><h2 class="section-title">37. ترومبوفلبیت و ترومبوز وریدی عمقی (<bdi dir="ltr">DVT</bdi>)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">ترومبوز وریدهای عمقی (<bdi dir="ltr">DVT</bdi>) و آمبولی ریه شایع‌ترین اختلالات ترومبوتیک در مبتلایان به کانسر هستند. راجعه ممکن است تظاهر ترومبوفلبیت مهاجر یا اوّلیه کانسر باشد.</p>
                 <div class="bg-blue-50 border-r-4 border-blue-400 p-4 rounded-lg mb-3">
                   <strong>📌 توجه:</strong> <bdi dir="ltr">15%</bdi> از مبتلایان به کانسر ریه، مبتلا به <bdi dir="ltr">DVT</bdi> یا آمبولی هستند (به یک نوع).
@@ -911,10 +808,10 @@
         </section>
 
         <!-- Section 38: درمان DVT در بیماران مبتلا به کانسر -->
-        <section id="sec38" class="card p-6">
-            <h2 class="section-title text-xl">38. درمان <bdi dir="ltr">DVT</bdi> در بیماران مبتلا به کانسر</h2>
+        <section id="sec38" class="study-section">
+            <header class="section-header"><span class="section-number">38</span><h2 class="section-title">38. درمان <bdi dir="ltr">DVT</bdi> در بیماران مبتلا به کانسر</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">بیماران مبتلا به کانسر که دچار <bdi dir="ltr">DVT</bdi> یا آمبولی ریه می‌شوند باید در ابتدا با هپارین یا هپارین با وزن مولکولی پائیـن (<bdi dir="ltr">LMWH</bdi>) به صورت وریدی و برای حداقل <bdi dir="ltr">5</bdi> روز درمان شوند و طی <bdi dir="ltr">1</bdi> تا <bdi dir="ltr">2</bdi> روز وارفارین آغاز شود. دوز وارفارین باید به گونه‌ای تنظیم شود که <bdi dir="ltr">INR</bdi> بین <bdi dir="ltr">2</bdi> تا <bdi dir="ltr">3</bdi> باشد. وارفارین باید به مدت <bdi dir="ltr">3</bdi> تا <bdi dir="ltr">6</bdi> ماه ادامه یابد. روش جایگزین تجویز هپارین، تجویز <bdi dir="ltr">LMWH</bdi> به مدت <bdi dir="ltr">6</bdi> ماه است.</p>
                 <div class="bg-blue-50 border-r-4 border-blue-400 p-4 rounded-lg mb-3">
                   <strong>📌 توجه:</strong> از آپیکسابان خوراکی و دالتپارین نیز می‌توان برای درمان <bdi dir="ltr">DVT</bdi> و آمبولی ریه در مبتلایان به کانسر استفاده کرد.
@@ -926,78 +823,78 @@
         </section>
 
         <!-- Section 39: سندرم‌های پارانئوپالستیک -->
-        <section id="sec39" class="card p-6">
-            <h2 class="section-title text-xl">39. سندرم‌های پارانئوپالستیک</h2>
+        <section id="sec39" class="study-section">
+            <header class="section-header"><span class="section-number">39</span><h2 class="section-title">39. سندرم‌های پارانئوپالستیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آقای <bdi dir="ltr">71</bdi> ساله به علت تهوع و استفراغ مراجعه کرده است. در آزمایشات هیپرکلسـمی و سـطح <bdi dir="ltr">PTHrP</bdi> سـاپرس و <bdi dir="ltr">PTH</bdi> سـه برابـر نرمال می‌باشـد. کدامیک از تشخیص‌های زیر برای این فرد محتمل‌تر می‌باشد؟ کانسر ریه</p>
             </div>
         </section>
 
         <!-- Section 40: تشخیص افتراقی خستگی و کاهش وزن با طحال بزرگ -->
-        <section id="sec40" class="card p-6">
-            <h2 class="section-title text-xl">40. تشخیص افتراقی خستگی و کاهش وزن با طحال بزرگ</h2>
+        <section id="sec40" class="study-section">
+            <header class="section-header"><span class="section-number">40</span><h2 class="section-title">40. تشخیص افتراقی خستگی و کاهش وزن با طحال بزرگ</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آقای <bdi dir="ltr">53</bdi> ساله با خستگی پیشرونده و کاهش وزن <bdi dir="ltr">4</bdi> کیلوگرم مراجعه می‌کند. سابقه بیماری یا مصرف داروی خاصی را نمی‌دهد. علائم حیاتی پایدار است. اندازه طحال در معاینه، <bdi dir="ltr">16</bdi> سانتی‌متر ارزیابی می‌شود. در بیوپسی مغز استخوان، هیپرسلولاریتی همراه با هیپرپالزی میلوئید و <bdi dir="ltr">8%</bdi> میلوبلاست مشاهده می‌شود.</p>
             </div>
         </section>
 
         <!-- Section 41: لنفوم لنفوپالسماسیتوئید و میلوم -->
-        <section id="sec41" class="card p-6">
-            <h2 class="section-title text-xl">41. لنفوم لنفوپالسماسیتوئید و میلوم</h2>
+        <section id="sec41" class="study-section">
+            <header class="section-header"><span class="section-number">41</span><h2 class="section-title">41. لنفوم لنفوپالسماسیتوئید و میلوم</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">مراجعه نموده است. در معاینه، بیمار رنگ‏پریده اسـت. طحال زیر لبه دنده لمس می‏شود. معاینه گوش نرمال و معاینه چشم، سگمنتاسیون عروق شبکیه را نشان می‏دهد. <bdi dir="ltr">WBC</bdi>:<bdi dir="ltr">4300,</bdi> <bdi dir="ltr">Hb</bdi>:<bdi dir="ltr">8,</bdi> <bdi dir="ltr">PLT</bdi>:<bdi dir="ltr">120000</bdi> <bdi dir="ltr">Ferritin <bdi dir="ltr">110</bdi></bdi>, <bdi dir="ltr">PBS</bdi>: <bdi dir="ltr">Rouleax formation Few Lymphoplasmacytoid cell</bdi>, <bdi dir="ltr">BMA revealed <bdi dir="ltr">14</bdi></bdi>% <bdi dir="ltr">Plasma cells</bdi> محتمل‏ترین تشخیص شما کدام است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">POEMS</bdi></p>
             </div>
         </section>
 
         <!-- Section 42: میلوم مولتیپل -->
-        <section id="sec42" class="card p-6">
-            <h2 class="section-title text-xl">42. میلوم مولتیپل</h2>
+        <section id="sec42" class="study-section">
+            <header class="section-header"><span class="section-number">42</span><h2 class="section-title">42. میلوم مولتیپل</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">بیماری مراجعه نموده است. در معاینه بالینی نکته خاصی ندارد. <bdi dir="ltr">WBC</bdi>:<bdi dir="ltr">4500,</bdi> <bdi dir="ltr">Hb</bdi>:<bdi dir="ltr">12</bdi>gr/<bdi dir="ltr">dl</bdi>, <bdi dir="ltr">PLT</bdi>:<bdi dir="ltr">160000</bdi> <bdi dir="ltr">ESR</bdi>:<bdi dir="ltr">30,</bdi> <bdi dir="ltr">Creat</bdi>:<bdi dir="ltr">0.8</bdi> <bdi dir="ltr">Total Protein</bdi>:<bdi dir="ltr">8.5</bdi> (<bdi dir="ltr">Alb</bdi>:<bdi dir="ltr">3.8,</bdi> <bdi dir="ltr">Globulin</bdi>: <bdi dir="ltr">4.7</bdi>) M در الکتروفــورز پروتئین‏هــای ســرم، جــزء پروتئینــی <bdi dir="ltr">4.5</bdi>gr/dlحدود دارد. بررسی مغز استخوان نشاندهنده پالسماسل است. %<bdi dir="ltr">۱۴</bdi> باشد. ‏ ، طبیعی میBone <bdi dir="ltr">survey</bdi> ترین تشخیص کدام است؟ ‏محتمل</p>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">Smoldering Myeloma</bdi></p>
             </div>
         </section>
 
         <!-- Section 43: لنفوم سلول B بزرگ منتشر -->
-        <section id="sec43" class="card p-6">
-            <h2 class="section-title text-xl">43. لنفوم سلول B بزرگ منتشر</h2>
+        <section id="sec43" class="study-section">
+            <header class="section-header"><span class="section-number">43</span><h2 class="section-title">43. لنفوم سلول B بزرگ منتشر</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آقای <bdi dir="ltr">40</bdi> ماهه با سابقه تب شبانه و کاهش وزن از قبل با اسـتفراغ خونی مراجعه کرده اسـت. در آندوسـکوپی ضخامت دیواره معده و زخم‏های متعدد در معده مشاهده می‏شود و بیوپسی متعدد از آن گرفته می‏شود. در <bdi dir="ltr">CT-Scan</bdi> شـکم بیمـار غـدد لنفـاوی بـزرگ متعـدد در شـکم بیمـار مشاهده می‏شود. گزارش بیوپسی به قرار زیر است: <bdi dir="ltr">Diffuse large B cell Lymphoma H</bdi>. <bdi dir="ltr">Pylori positive</bdi> جهت ایشان کدام اقدام درمانی را مناسب می‏دانید؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">رژیم شیمی‏درمانی (<bdi dir="ltr">R-CHOP</bdi>(رژیم ریتوکسـیماب به همراهCHOP رژیم استDLBCL رژیم شیمی‏درمانی استاندارد در.</p>
             </div>
         </section>
 
         <!-- Section 44: اختلالات لنفوپرولیفراتیو -->
-        <section id="sec44" class="card p-6">
-            <h2 class="section-title text-xl">44. اختلالات لنفوپرولیفراتیو</h2>
+        <section id="sec44" class="study-section">
+            <header class="section-header"><span class="section-number">44</span><h2 class="section-title">44. اختلالات لنفوپرولیفراتیو</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">بیمار مبتال به بیماری خونی شــناخته شده با چند اپیزود پنومونی مراجعه و تحت درمان قرار گرفته اســت. در بررســی های انجــام شــده متوجــه پائین بودن سـطح گاماگلبولیـن بیمــار می‏شــوید. کــدام بیمــاری محتمل‏تر است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">CLL</bdi></p>
             </div>
         </section>
 
         <!-- Section 45: لنفوم سلول کوچک گرد -->
-        <section id="sec45" class="card p-6">
-            <h2 class="section-title text-xl">45. لنفوم سلول کوچک گرد</h2>
+        <section id="sec45" class="study-section">
+            <header class="section-header"><span class="section-number">45</span><h2 class="section-title">45. لنفوم سلول کوچک گرد</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آقای <bdi dir="ltr">53</bdi> ساله با تنگی نفس مراجعه کرده و در معاینه، متوجـه ادم سـر و گردن و برجسـتگی ورید ژوگولر می‏شـوید. گرافی قفسه سینه، پهن شدن مدیاستن فوقانی و توده ریوی را نشان می‏دهد. بیوپسی از ضایعه فوق سلول‏های کوچک و گـرد بـا هسـته غیرطبیعـی نشـان می‏دهـد. کـدام درمـان مناسب است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">شیمی درمانی</p>
             </div>
         </section>
 
         <!-- Section 46: سندرم‌های پارانئوپالستیک در سرطان ریه -->
-        <section id="sec46" class="card p-6">
-            <h2 class="section-title text-xl">46. سندرم‌های پارانئوپالستیک در سرطان ریه</h2>
+        <section id="sec46" class="study-section">
+            <header class="section-header"><span class="section-number">46</span><h2 class="section-title">46. سندرم‌های پارانئوپالستیک در سرطان ریه</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">تمام گزینه‏هــا در مــورد شــایع‏ترین مکانیســم سـندرم‏های پارانئوپالسـتیک در ســرطان ریــه صحیــح است، بجز؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">هیپرگلیسمی ناشی از ترشح <bdi dir="ltr">ACTH</bdi></p>
                 <p class="mb-3 leading-relaxed text-gray-700">مهمتریــن علــت ایجاد هیپرکلســمی ناشــی از بدخیمی، تولیــد بیــش از حــد پروتئیـن مرتبـط بـا هورمــون پاراتیروئید است )<bdi dir="ltr">PTHrP</bdi>(.</p>
@@ -1005,10 +902,10 @@
         </section>
 
         <!-- Section 47: سرطان ریه -->
-        <section id="sec47" class="card p-6">
-            <h2 class="section-title text-xl">47. سرطان ریه</h2>
+        <section id="sec47" class="study-section">
+            <header class="section-header"><span class="section-number">47</span><h2 class="section-title">47. سرطان ریه</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">تمام موارد زیر ریسک فاکتور کانسر ریه هستند، به جز:</p>
                 <p class="mb-3 leading-relaxed text-gray-700">رژیم غذایی پُرکالری</p>
                 <p class="mb-3 leading-relaxed text-gray-700">مراجعه شود فصل <bdi dir="ltr">۱</bdi> به پاسخ سؤال.</p>
@@ -1016,10 +913,10 @@
         </section>
 
         <!-- Section 48: سرطان ریه (متاستاتیک) -->
-        <section id="sec48" class="card p-6">
-            <h2 class="section-title text-xl">48. سرطان ریه (متاستاتیک)</h2>
+        <section id="sec48" class="study-section">
+            <header class="section-header"><span class="section-number">48</span><h2 class="section-title">48. سرطان ریه (متاستاتیک)</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آقای <bdi dir="ltr">۶۵</bdi> ساله با آدنوکارسینوم اوّلیه ریه به دلیل متاستاز متعدد دنده و کبد مراجعه کرده است. موتاسیون‌های <bdi dir="ltr">EGFR</bdi>، <bdi dir="ltr">ROS<bdi dir="ltr">1</bdi> Fusion</bdi> و <bdi dir="ltr">ALK Rearrangment</bdi> می‌باشد. <bdi dir="ltr">PDL<bdi dir="ltr">1</bdi></bdi> = %<bdi dir="ltr">70</bdi> منفی و بهترین گزینه درمانی کدام است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700">شیمی‌درمانی</p>
                 <p class="mb-3 leading-relaxed text-gray-700">تومورهای فاقد موتاسیون قابل هدف‌گیری (<bdi dir="ltr">Wild</bdi> نوع): در تومورهایی که هیچ موتاسیون قابل هدف‌گیری ندارند، درمان با مهارکننده‌های ایمنی به تنهایی یا همراه با شیمی‌درمانی اندیکاسیون دارد.</p>
@@ -1036,10 +933,10 @@
         </section>
 
         <!-- Section 49: مولتیپل میلوما -->
-        <section id="sec49" class="card p-6">
-            <h2 class="section-title text-xl">49. مولتیپل میلوما</h2>
+        <section id="sec49" class="study-section">
+            <header class="section-header"><span class="section-number">49</span><h2 class="section-title">49. مولتیپل میلوما</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <p class="mb-3 leading-relaxed text-gray-700">آقای <bdi dir="ltr">۷۰</bdi> ساله با آنمی و ضایعات لیتیک استخوانی متعدد تحت بررسی قرار گرفته است. الکتروفورز پروتئین‌های سرم و ادرار طبیعی می‌باشد. در بیوپسی مغز استخوان %<bdi dir="ltr">30</bdi> پلاسماسل گزارش شده است. کدام تشخیص مطرح است؟</p>
                 <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">Non-secretory Myeloma</bdi></p>
                 <p class="mb-3 leading-relaxed text-gray-700">مراجعه شود فصل <bdi dir="ltr">۴</bdi> به پاسخ سؤال.</p>

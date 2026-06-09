@@ -4,148 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اُنکولوژی جامع: درمان سرطان، سرطان ریه، سندرم‌های پارانئوپالستیک - هماتولوژی</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-        }
-        .gradient-header {
-            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
-        }
-        .card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-        .exam-tip {
-            background-color: #fef2f2;
-            border-right: 4px solid #ef4444;
-            color: #991b1b;
-        }
-        .diagnosis-box {
-            background-color: #eff6ff;
-            border-right: 4px solid #3b82f6;
-            color: #1e40af;
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #111827;
-            font-weight: 800;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            right: 0;
-            width: 60%;
-            height: 4px;
-            background-color: #dc2626;
-            border-radius: 2px;
-        }
-        .staging-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .staging-table th {
-            background-color: #dc2626;
-            color: white;
-            padding: 12px;
-            text-align: right;
-            font-weight: 600;
-        }
-        .staging-table td {
-            padding: 12px;
-            border-bottom: 1px solid #e5e7eb;
-            text-align: right;
-        }
-        .staging-table tr:last-child td {
-            border-bottom: none;
-        }
-        .staging-table tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            border-right: 4px solid #f59e0b;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        .info-card {
-            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
-            border-right: 4px solid #dc2626;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .danger-box {
-            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
-            border-right: 4px solid #ef4444;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-        .treatment-card {
-            background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
-            border-right: 4px solid #16a34a;
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../assets/hemato-chapter.css">
 </head>
-<body class="pb-12">
+<body>
 
     <!-- Header -->
-    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold">اُنکولوژی جامع: درمان سرطان • سرطان ریه • سندرم‌های پارانئوپالستیک</h1>
-                <p class="text-white/80 text-sm mt-1">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
-            </div>
-            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
-                ویژه دانشجویان پزشکی
-            </div>
+    <header class="chapter-hero">
+        <div class="chapter-hero-content">
+          <p class="chapter-kicker">هماتولوژی</p>
+          <h1>اُنکولوژی جامع: درمان سرطان • سرطان ریه • سندرم‌های پارانئوپالستیک</h1>
+          <p class="chapter-subtitle">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
         </div>
-    </header>
+      </header>
 
-    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+    <main class="chapter-page">
         
         <!-- Navigation -->
-        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+        <nav class="chapter-mini-nav" aria-label="فهرست داخلی فصل">
             <a href="#part1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap font-bold">بخش ۱: اصول درمان</a>
             <a href="#chemo" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">شیمی‌درمانی</a>
             <a href="#radiation" class="bg-white px-4 py-2 rounded-full shadow hover:bg-red-50 text-red-700 whitespace-nowrap">رادیوتراپی</a>
@@ -159,24 +35,24 @@
 
         <!-- بخش اول: اصول درمان سرطان -->
         <div id="part1" class="bg-gradient-to-r from-red-50 to-orange-50 p-6 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-bold text-red-800 mb-2">بخش اول: اصول درمان سرطان</h2>
+            <h2 class="text-3xl font-bold text-red-800 mb-2">بخش اول: اصول درمان سرطان</h2></header>
             <p class="text-red-600">روش‌های اصلی درمان، شیمی‌درمانی، رادیوتراپی، و درمان‌های هدفمند</p>
         </div>
 
         <!-- Section 1: انواع شیمی‌درمانی -->
-        <section id="chemo" class="card p-6">
-            <h2 class="section-title text-xl">۱. شیمی‌درمانی (Chemotherapy)</h2>
+        <section id="chemo" class="study-section">
+            <h2 class="section-title">۱. شیمی‌درمانی (Chemotherapy)</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="info-card">
+            <div class="frame-grid">
+                <div class="study-box box-definition info-card">
                     <h4 class="font-bold text-red-900 mb-2">📌 تعریف</h4>
                     <p class="text-red-800">شیمی‌درمانی استفاده از داروهای سیتوتوکسیک برای کشتن یا متوقف کردن رشد سلول‌های سرطانی است. این داروها بر سلول‌های با تقسیم سریع (سرطانی و طبیعی) اثر می‌گذارند.</p>
                 </div>
 
                 <h3 class="font-bold text-lg text-red-700 mt-6 mb-3">انواع شیمی‌درمانی بر اساس هدف</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>نوع</th>
@@ -212,7 +88,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <h3 class="font-bold text-lg text-red-700 mt-6 mb-3">دسته‌بندی داروهای شیمی‌درمانی</h3>
                 
@@ -263,8 +139,8 @@
 
                 <h3 class="font-bold text-lg text-red-700 mt-6 mb-3">عوارض جانبی شایع شیمی‌درمانی</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>عارضه</th>
@@ -300,16 +176,16 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
             </div>
         </section>
 
         <!-- Section 2: رادیوتراپی -->
-        <section id="radiation" class="card p-6">
-            <h2 class="section-title text-xl">۲. رادیوتراپی (Radiotherapy)</h2>
+        <section id="radiation" class="study-section">
+            <h2 class="section-title">۲. رادیوتراپی (Radiotherapy)</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="info-card">
+            <div class="frame-grid">
+                <div class="study-box box-definition info-card">
                     <h4 class="font-bold text-red-900 mb-2">📌 تعریف</h4>
                     <p class="text-red-800">استفاده از اشعه یونیزان برای آسیب به <bdi dir="ltr">DNA</bdi> سلول‌های سرطانی و کشتن آن‌ها.</p>
                 </div>
@@ -340,8 +216,8 @@
 
                 <h3 class="font-bold text-lg text-red-700 mt-6 mb-3">اندیکاسیون‌های رادیوتراپی</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>هدف</th>
@@ -372,7 +248,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <div class="exam-tip p-4 rounded-lg mb-3">
                     <strong>💡 نکته مهم:</strong> سرطان‌های حساس به رادیوتراپی: لنفوم، سمینوم، <bdi dir="ltr">Small Cell</bdi> ریه. سرطان‌های مقاوم: ملانوم، سارکوم، سرطان کلیه.
@@ -406,24 +282,24 @@
 
         <!-- بخش دوم: سرطان ریه -->
         <div id="part2" class="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-xl shadow-lg mb-8 mt-12">
-            <h2 class="text-3xl font-bold text-blue-800 mb-2">بخش دوم: سرطان ریه (Lung Cancer)</h2>
+            <h2 class="text-3xl font-bold text-blue-800 mb-2">بخش دوم: سرطان ریه (Lung Cancer)</h2></header>
             <p class="text-blue-600">شایع‌ترین علت مرگ ناشی از سرطان در جهان</p>
         </div>
 
         <!-- Section 3: NSCLC -->
-        <section id="nsclc" class="card p-6">
-            <h2 class="section-title text-xl">۳. NSCLC (Non-Small Cell Lung Cancer)</h2>
+        <section id="nsclc" class="study-section">
+            <h2 class="section-title">۳. NSCLC (Non-Small Cell Lung Cancer)</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="info-card">
+            <div class="frame-grid">
+                <div class="study-box box-definition info-card">
                     <h4 class="font-bold text-red-900 mb-2">📌 اپیدمیولوژی</h4>
                     <p class="text-red-800"><bdi dir="ltr">NSCLC</bdi> حدود <bdi dir="ltr">85%</bdi> سرطان‌های ریه را تشکیل می‌دهد و شامل آدنوکارسینوم (<bdi dir="ltr">40%</bdi>)، سلول سنگفرشی (<bdi dir="ltr">25-30%</bdi>)، و سلول بزرگ (<bdi dir="ltr">10%</bdi>) می‌شود.</p>
                 </div>
 
                 <h3 class="font-bold text-lg text-red-700 mt-6 mb-3">انواع NSCLC</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>نوع</th>
@@ -453,12 +329,12 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <h3 class="font-bold text-lg text-red-700 mt-6 mb-3">Staging سرطان ریه (TNM)</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>Stage</th>
@@ -494,7 +370,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <div class="exam-tip p-4 rounded-lg mb-3">
                     <strong>💡 نکته 100% امتحانی:</strong> آدنوکارسینوم شایع‌ترین نوع در غیرسیگاری‌ها و زنان است و محیطی است. سلول سنگفرشی مرکزی و مرتبط با سیگار است.
@@ -524,8 +400,8 @@
 
                 <h3 class="font-bold text-lg text-red-700 mt-6 mb-3">درمان‌های هدفمند در NSCLC</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>موتاسیون</th>
@@ -561,24 +437,24 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
             </div>
         </section>
 
         <!-- Section 4: SCLC -->
-        <section id="sclc" class="card p-6">
-            <h2 class="section-title text-xl">۴. SCLC (Small Cell Lung Cancer)</h2>
+        <section id="sclc" class="study-section">
+            <h2 class="section-title">۴. SCLC (Small Cell Lung Cancer)</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="danger-box">
+            <div class="frame-grid">
+                <div class="study-box box-warning danger-box">
                     <h4 class="font-bold text-red-900 mb-2">⚠️ ویژگی‌های SCLC</h4>
                     <p class="text-red-800"><bdi dir="ltr">SCLC</bdi> آگرسیوترین نوع سرطان ریه است (<bdi dir="ltr">15%</bdi> موارد). تقریباً همیشه در سیگاری‌ها دیده می‌شود، رشد سریع دارد و زود متاستاز می‌دهد.</p>
                 </div>
 
                 <h3 class="font-bold text-lg text-red-700 mt-6 mb-3">Staging ساده SCLC</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>Stage</th>
@@ -602,7 +478,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <div class="treatment-card">
                     <h4 class="font-bold text-green-900 mb-3">✅ پروتکل درمانی SCLC</h4>
@@ -640,8 +516,8 @@
 
                 <h3 class="font-bold text-lg text-red-700 mt-6 mb-3">مقایسه NSCLC و SCLC</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>ویژگی</th>
@@ -687,22 +563,22 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
             </div>
         </section>
 
         <!-- بخش سوم: سندرم‌های پارانئوپالستیک -->
         <div id="part3" class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-xl shadow-lg mb-8 mt-12">
-            <h2 class="text-3xl font-bold text-purple-800 mb-2">بخش سوم: سندرم‌های پارانئوپالستیک</h2>
+            <h2 class="text-3xl font-bold text-purple-800 mb-2">بخش سوم: سندرم‌های پارانئوپالستیک</h2></header>
             <p class="text-purple-600">علائم و نشانه‌های سیستمیک ناشی از سرطان که مستقیماً از تهاجم تومور نیستند</p>
         </div>
 
         <!-- Section 5: سندرم‌های آندوکرین -->
-        <section id="endocrine" class="card p-6">
-            <h2 class="section-title text-xl">۵. سندرم‌های پارانئوپالستیک آندوکرین</h2>
+        <section id="endocrine" class="study-section">
+            <h2 class="section-title">۵. سندرم‌های پارانئوپالستیک آندوکرین</h2></header>
             
-            <div class="space-y-4 mt-4">
-                <div class="info-card">
+            <div class="frame-grid">
+                <div class="study-box box-definition info-card">
                     <h4 class="font-bold text-red-900 mb-2">📌 مکانیسم</h4>
                     <p class="text-red-800">ترشح هورمون‌ها یا پپتیدهای شبه هورمونی توسط سلول‌های توموری که باعث اختلالات متابولیک و آندوکرین می‌شوند.</p>
                 </div>
@@ -715,8 +591,8 @@
                     <p class="text-gray-700"><strong>سایر علل سرطانی:</strong> سرطان ریه غیر <bdi dir="ltr">Small Cell</bdi>، سرطان پانکراس، سرطان مثانه</p>
                 </div>
 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>یافته آزمایشگاهی</th>
@@ -752,7 +628,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <div class="treatment-card">
                     <h4 class="font-bold text-green-900 mb-2">✅ درمان SIADH</h4>
@@ -797,8 +673,8 @@
                     </div>
                 </div>
 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>تست</th>
@@ -829,7 +705,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <h3 class="font-bold text-lg text-red-700 mt-6 mb-3">هیپرکلسمی بدخیمی</h3>
                 
@@ -842,8 +718,8 @@
                     </ol>
                 </div>
 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>مکانیسم</th>
@@ -869,7 +745,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <div class="treatment-card">
                     <h4 class="font-bold text-green-900 mb-2">✅ درمان هیپرکلسمی بدخیمی</h4>
@@ -890,10 +766,10 @@
         </section>
 
         <!-- Section 6: سندرم‌های هماتولوژیک -->
-        <section id="hemato" class="card p-6">
-            <h2 class="section-title text-xl">۶. سندرم‌های پارانئوپالستیک هماتولوژیک</h2>
+        <section id="hemato" class="study-section">
+            <h2 class="section-title">۶. سندرم‌های پارانئوپالستیک هماتولوژیک</h2></header>
             
-            <div class="space-y-4 mt-4">
+            <div class="frame-grid">
                 <h3 class="font-bold text-lg text-red-700 mb-3">پلی‌سیتمی ثانویه</h3>
                 
                 <div class="bg-red-50 p-4 rounded-lg border-r-4 border-red-400 mb-4">
@@ -901,8 +777,8 @@
                     <p class="text-gray-700">ترشح <bdi dir="ltr">Erythropoietin (EPO)</bdi> یا شبه <bdi dir="ltr">EPO</bdi> توسط تومور</p>
                 </div>
 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>سرطان</th>
@@ -933,7 +809,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
                 <h3 class="font-bold text-lg text-red-700 mt-6 mb-3">ترومبوسیتوز ثانویه</h3>
                 
@@ -980,8 +856,8 @@
 
                 <h3 class="font-bold text-lg text-red-700 mt-6 mb-3">اوتوآنتی‌بادی‌ها و سیتوپنی‌های ایمنی</h3>
                 
-                <div class="overflow-x-auto mb-4">
-                    <table class="staging-table">
+                <div class="table-card"><div class="table-scroll">
+                    <table class="medical-table">
                         <thead>
                             <tr>
                                 <th>سندرم</th>
@@ -1007,9 +883,9 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div></div>
 
-                <div class="highlight-box">
+                <div class="study-box box-compare highlight-box">
                     <h3 class="font-bold text-lg mb-3">🎯 خلاصه سندرم‌های پارانئوپالستیک کلیدی</h3>
                     
                     <div class="space-y-3">
