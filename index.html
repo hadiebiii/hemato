@@ -1,585 +1,443 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>خلاصه جامع هماتولوژی</title>
-  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-  <style>
-    :root {
-      color-scheme: light;
-      font-family: "Vazirmatn", sans-serif;
-      background: #f8fafc;
-      color: #0f172a;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خلاصه جامع هماتولوژی - همه فصول</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f8fafc;
+            overflow-x: hidden;
+            margin: 0;
+        }
 
-    * {
-      box-sizing: border-box;
-    }
+        /* Sidebar Styles */
+        .sidebar {
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            width: 290px;
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+            box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
 
-    html {
-      scroll-behavior: smooth;
-    }
+        .sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background: #f1f5f9;
-      color: #0f172a;
-      direction: rtl;
-    }
+        .sidebar::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
 
-    .app-shell {
-      display: flex;
-      min-height: 100vh;
-    }
+        .sidebar::-webkit-scrollbar-thumb {
+            background: #475569;
+            border-radius: 3px;
+        }
 
-    /* =====================
-      Sidebar Styles
-      =====================
-    */
-    .sidebar {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 290px;
-      height: 100vh;
-      padding: 80px 20px 24px; /* Padding top added to clear the toggle button */
-      background: #0f172a;
-      color: #e2e8f0;
-      box-shadow: -10px 0 40px rgba(15, 23, 42, 0.18);
-      overflow-y: auto;
-      transition: transform 0.3s ease;
-      z-index: 1000;
-    }
+        .sidebar::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
 
-    .sidebar::-webkit-scrollbar {
-      width: 6px;
-    }
+        .chapter-item {
+            padding: 14px 20px;
+            margin: 6px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-right: 3px solid transparent;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
 
-    .sidebar::-webkit-scrollbar-track {
-      background: #0f172a;
-    }
+        .chapter-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            transform: translateX(-3px);
+        }
 
-    .sidebar::-webkit-scrollbar-thumb {
-      background: #334155;
-      border-radius: 3px;
-    }
+        .chapter-item.active {
+            background: linear-gradient(90deg, rgba(99, 102, 241, 0.2) 0%, rgba(99, 102, 241, 0.05) 100%);
+            border-right-color: #6366f1;
+            color: #fff;
+            font-weight: 600;
+        }
 
-    .sidebar::-webkit-scrollbar-thumb:hover {
-      background: #475569;
-    }
+        .chapter-number {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            text-align: center;
+            line-height: 32px;
+            margin-left: 10px;
+            font-weight: 700;
+            font-size: 13px;
+        }
 
-    /* Desktop collapsed state */
-    .sidebar.collapsed {
-      transform: translateX(100%);
-    }
+        .chapter-item.active .chapter-number {
+            background: #6366f1;
+            color: #fff;
+        }
 
-    .sidebar-header {
-      margin-bottom: 18px;
-    }
+        /* Main Content */
+        .main-content {
+            margin-right: 290px;
+            min-height: 100vh;
+            padding: 0;
+            transition: margin-right 0.3s ease;
+            background: #f8fafc;
+        }
 
-    .sidebar-title {
-      font-size: 1.3rem;
-      font-weight: 800;
-      margin: 0 0 6px;
-      color: #f8fafc;
-    }
+        .main-content.expanded {
+            margin-right: 0;
+        }
 
-    .sidebar-subtitle {
-      margin: 0;
-      color: #cbd5e1;
-      font-size: 0.95rem;
-      line-height: 1.7;
-    }
+        .sidebar.collapsed {
+            transform: translateX(100%);
+        }
 
-    .chapter-list {
-      display: grid;
-      gap: 10px;
-      margin: 20px 0 24px;
-    }
+        /* Menu Toggle */
+        .menu-toggle-btn {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            z-index: 1002;
+            background: #4f46e5;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .menu-toggle-btn:hover {
+            background: #4338ca;
+            transform: scale(1.05);
+        }
 
-    .chapter-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      padding: 14px 16px;
-      border-radius: 16px;
-      background: rgba(148, 163, 184, 0.08);
-      border: 1px solid rgba(148, 163, 184, 0.15);
-      color: #e2e8f0;
-      font-size: 0.96rem;
-      cursor: pointer;
-      transition: transform 0.22s ease, background-color 0.22s ease;
-      text-align: right;
-    }
+        /* Welcome Screen - Light Theme */
+        .welcome-screen {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            color: #0f172a;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+        }
 
-    .chapter-item:hover {
-      background: rgba(255, 255, 255, 0.08);
-      transform: translateX(-2px);
-    }
+        .welcome-content {
+            max-width: 800px;
+        }
 
-    .chapter-item.active {
-      background: rgba(99, 102, 241, 0.15);
-      border-color: rgba(99, 102, 241, 0.32);
-      color: #ffffff;
-    }
+        .welcome-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
 
-    .chapter-item.disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-    }
+        .welcome-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #334155;
+        }
 
-    .chapter-number {
-      min-width: 38px;
-      height: 38px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.1);
-      color: #f8fafc;
-      font-weight: 700;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-    }
+        .welcome-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            color: #475569;
+        }
 
-    /* =====================
-      Main Content Styles
-      =====================
-    */
-    .main-content {
-      flex: 1;
-      margin-right: 290px;
-      min-height: 100vh;
-      padding: 0;
-      transition: margin-right 0.3s ease;
-    }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
 
-    /* Desktop expanded state */
-    .main-content.expanded {
-      margin-right: 0;
-    }
+        /* Reader Shell & iframe */
+        .reader-shell {
+            min-height: 100vh;
+            padding: 24px;
+            background: #f8fafc;
+        }
 
-    .welcome-screen,
-    .reader-shell {
-      min-height: 100vh;
-    }
+        .chapter-frame {
+            width: 100%;
+            border: 0;
+            display: block;
+            min-height: 100vh;
+            background: transparent;
+        }
 
-    .welcome-screen {
-      background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.12), transparent 50%),
-        linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 32px;
-      text-align: center;
-    }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(100%) !important;
+            }
 
-    .welcome-card {
-      max-width: 780px;
-      width: 100%;
-      padding: 42px 32px;
-      border-radius: 28px;
-      background: rgba(255, 255, 255, 0.95);
-      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.05);
-      border: 1px solid rgba(148, 163, 184, 0.2);
-    }
+            .sidebar.mobile-open {
+                transform: translateX(0) !important;
+            }
 
-    .chapter-kicker {
-      color: #4f46e5; 
-      font-weight: 800; 
-      margin-bottom: 8px;
-      font-size: 0.9rem;
-    }
+            .main-content {
+                margin-right: 0 !important;
+            }
+            
+            .main-content.expanded {
+                margin-right: 0 !important;
+            }
 
-    .welcome-title {
-      font-size: clamp(2.4rem, 4vw, 3.6rem);
-      margin: 0;
-      line-height: 1.1;
-      letter-spacing: -0.02em;
-      font-weight: 900;
-      color: #0f172a;
-    }
+            .welcome-title {
+                font-size: 2rem;
+            }
 
-    .welcome-subtitle {
-      margin: 18px 0 16px;
-      font-size: 1.25rem;
-      line-height: 1.7;
-      color: #334155;
-    }
-
-    .welcome-description {
-      margin: 0 auto 30px;
-      max-width: 720px;
-      color: #64748b;
-      font-size: 1.05rem;
-      line-height: 1.85;
-    }
-
-    .welcome-actions {
-      display: inline-flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 14px;
-    }
-
-    .button-primary,
-    .button-secondary {
-      border: 0;
-      border-radius: 14px;
-      padding: 14px 26px;
-      font-size: 1rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-      text-decoration: none;
-    }
-
-    .button-primary {
-      background: #4f46e5;
-      color: #ffffff;
-      box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
-    }
-
-    .button-secondary {
-      background: #f1f5f9;
-      color: #0f172a;
-      border: 1px solid #e2e8f0;
-    }
-
-    .button-primary:hover {
-      transform: translateY(-2px);
-      background: #4338ca;
-      box-shadow: 0 12px 24px rgba(79, 70, 229, 0.35);
-    }
-
-    .button-secondary:hover {
-      background: #e2e8f0;
-      transform: translateY(-2px);
-    }
-
-    .reader-shell {
-      padding: 24px;
-      padding-top: 80px; /* Space for the floating button */
-      background: #f8fafc;
-    }
-
-    .chapter-frame {
-      width: 100%;
-      border: 0;
-      display: block;
-      min-height: 100vh;
-      background: transparent;
-    }
-
-    /* =====================
-      Universal Toggle Button
-      =====================
-    */
-    .menu-toggle-btn {
-      display: inline-flex;
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1002;
-      width: 48px;
-      height: 48px;
-      border: 0;
-      border-radius: 16px;
-      background: #4f46e5;
-      color: #ffffff;
-      cursor: pointer;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 8px 24px rgba(79, 70, 229, 0.3);
-      transition: all 0.2s ease;
-    }
-
-    .menu-toggle-btn:hover {
-      background: #4338ca;
-      transform: scale(1.05);
-    }
-
-    .sidebar-backdrop {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(15, 23, 42, 0.42);
-      z-index: 999;
-      backdrop-filter: blur(2px);
-    }
-
-    .hidden {
-      display: none !important;
-    }
-
-    /* =====================
-      Responsive Media Queries
-      =====================
-    */
-    @media (max-width: 992px) {
-      .main-content {
-        margin-right: 0 !important;
-      }
-      .sidebar {
-        width: 100%;
-        max-width: 320px;
-        right: 0;
-        transform: translateX(100%);
-      }
-      .sidebar.mobile-open {
-        transform: translateX(0);
-      }
-      .sidebar-backdrop {
-        display: none;
-      }
-      .sidebar.mobile-open + .sidebar-backdrop,
-      .sidebar-backdrop.active {
-        display: block;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .welcome-card {
-        padding: 28px 22px;
-      }
-      .welcome-title {
-        font-size: 2.2rem;
-      }
-      .welcome-description {
-        font-size: 0.98rem;
-      }
-      .reader-shell {
-        padding: 12px;
-        padding-top: 80px; 
-      }
-      .chapter-frame {
-        min-height: 80vh;
-      }
-    }
-  </style>
+            .welcome-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .reader-shell {
+                padding: 12px;
+                padding-top: 70px; /* Space for the hamburger menu */
+            }
+        }
+    </style>
 </head>
 <body>
-  <!-- دکمه منو ثابت در دسکتاپ و موبایل -->
-  <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="باز و بسته کردن فهرست فصول">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </button>
+    <button class="menu-toggle-btn" id="menuToggleBtn" onclick="toggleSidebar()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
 
-  <!-- سایدبار -->
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <h1 class="sidebar-title">خلاصه جامع هماتولوژی</h1>
-      <p class="sidebar-subtitle">انتقال سریع به هر فصل، مطالعه متمرکز و تجربه‌ی خوانایی بهتر</p>
-    </div>
-
-    <nav class="chapter-list" id="chaptersList" aria-label="فهرست فصول"></nav>
-  </aside>
-
-  <!-- محتوای اصلی -->
-  <main class="main-content" id="mainContent">
-    <section class="welcome-screen" id="welcomeScreen">
-      <div class="welcome-card">
-        <p class="chapter-kicker">محتوای آموزشی</p>
-        <h1 class="welcome-title">پلتفرم مطالعه‌ی هماتولوژی</h1>
-        <div class="welcome-actions">
-          <button class="button-primary" type="button" id="startButton">شروع مطالعه</button>
-          <a class="button-secondary" href="#chaptersList" onclick="openSidebarIfClosed(event)">مشاهده فهرست فصول</a>
+    <aside class="sidebar" id="sidebar">
+        <div class="p-6 pt-16 border-b border-gray-700">
+            <h1 class="text-xl font-bold text-white mb-1">هماتولوژی</h1>
+            <p class="text-sm text-gray-400">خلاصه جامع فصول</p>
         </div>
-      </div>
-    </section>
+        
+        <nav class="py-4" id="chaptersList">
+            <!-- لیست فصول داینامیک اینجا قرار می‌گیرد -->
+        </nav>
+        
+        <div class="p-4 border-t border-gray-700 mt-auto">
+            <p class="text-xs text-gray-500 text-center">
+                برای دانشجویان پزشکی
+            </p>
+        </div>
+    </aside>
 
-    <section class="reader-shell hidden" id="readerShell">
-      <iframe
-        id="chapterFrame"
-        class="chapter-frame"
-        title="محتوای فصل"
-        loading="eager"
-        scrolling="no"
-      ></iframe>
-    </section>
-  </main>
-
-  <!-- لایه‌ی تاریک برای نسخه موبایل -->
-  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
-
-  <script>
-    const chapters = [
-      { number: 1, title: "آنمی و پلی‌سیتمی", file: "chapter01.html", available: true },
-      { number: 2, title: "آنمی فقر آهن و سایر آنمی‌های هیپوپرولیفراتیو", file: "chapter02.html", available: true },
-      { number: 3, title: "آنمی‌های همولیتیک و آنمی ناشی از خونریزی‌های حاد", file: "chapter03.html", available: true },
-      { number: 4, title: "اختلالات هموگلوبین", file: "chapter04.html", available: true },
-      { number: 5, title: "آنمی آپالستیک و میلودیسپالزی", file: "chapter05.html", available: true },
-      { number: 6, title: "آنمی مگالوبالستیک", file: "chapter06.html", available: true },
-      { number: 7, title: "انتقال خون", file: "chapter07.html", available: true },
-      { number: 8, title: "لوسمی میلوئید حاد", file: "chapter08.html", available: true },
-      { number: 9, title: "لوسمی میلوئید مزمن", file: "chapter09.html", available: true },
-      { number: 10, title: "اختلالات لنفوسیت‌ها", file: "chapter10.html", available: true },
-      { number: 11, title: "اختلالات گرانولوسیت و منوسیت", file: "chapter11.html", available: true },
-      { number: 12, title: "بیماری‌های هموستاتیک و خونریزی‌دهنده", file: "chapter12.html", available: true },
-      { number: 13, title: "اختلالات ترومبوتیک", file: "chapter13.html", available: true },
-      { number: 14, title: "بیولوژی سرطان", file: "chapter14.html", available: true },
-      { number: 15, title: "اپیدمیولوژی سرطان", file: "chapter15.html", available: true },
-      { number: 16, title: "اصول درمان سرطان", file: "chapter16.html", available: true },
-      { number: 17, title: "سرطان ریه", file: "chapter17.html", available: false },
-      { number: 18, title: "سندرم‌های پارانئوپلاستیک آندوکرینولوژیک – هماتولوژیک", file: "chapter18.html", available: false }
-    ];
-
-    const sidebar = document.getElementById('sidebar');
-    const backdrop = document.getElementById('sidebarBackdrop');
-    const chapterFrame = document.getElementById('chapterFrame');
-    const readerShell = document.getElementById('readerShell');
-    const welcomeScreen = document.getElementById('welcomeScreen');
-    const mainContent = document.getElementById('mainContent');
-    const startButton = document.getElementById('startButton');
-
-    function renderChaptersList() {
-      const list = document.getElementById('chaptersList');
-      list.innerHTML = chapters.map((chapter, index) => {
-        const disabled = !chapter.available;
-        return `
-          <div class="chapter-item ${disabled ? 'disabled' : ''}" data-index="${index}" ${disabled ? '' : 'role="button" tabindex="0"'}>
-            <div>
-              <span class="chapter-number">${chapter.number}</span>
-              <span>${chapter.title}</span>
+    <main class="main-content" id="mainContent">
+        <section class="welcome-screen" id="welcomeScreen">
+            <div class="welcome-content">
+                <div class="feature-icon">🩸</div>
+                <h1 class="welcome-title">خلاصه جامع هماتولوژی</h1>
+                <h2 class="welcome-subtitle">مجموعۀ کامل فصول — مرور سریع و نکات امتحانی</h2>
+                <p class="welcome-description">مجموعه‌ای از خلاصه‌های شماتیک، جداول و نمودارها با تمرکز بر نکات کلیدی برای آمادگی امتحان.</p>
+                <div class="mt-8">
+                    <a href="#" onclick="loadChapterFromBtn(1); return false;" class="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-indigo-700 transition duration-300">شروع مطالعه (فصل ۱)</a>
+                </div>
             </div>
-            ${disabled ? '<span style="font-size: 0.8em; opacity: 0.7;">به زودی</span>' : ''}
-          </div>
-        `;
-      }).join('');
+        </section>
 
-      list.querySelectorAll('.chapter-item').forEach(item => {
-        if (!item.classList.contains('disabled')) {
-          item.addEventListener('click', () => loadChapter(Number(item.dataset.index)));
-          item.addEventListener('keydown', event => {
-            if (event.key === 'Enter' || event.key === ' ') {
-              event.preventDefault();
-              loadChapter(Number(item.dataset.index));
+        <section class="reader-shell" id="readerShell" hidden>
+            <iframe
+                id="chapterFrame"
+                class="chapter-frame"
+                title="محتوای فصل"
+                loading="eager"
+                scrolling="no"
+            ></iframe>
+        </section>
+    </main>
+
+    <script>
+        const chapters = [
+            { number: 1, title: "آنمی و پلی‌سیتمی", file: "chapter01.html", available: true },
+            { number: 2, title: "آنمی فقر آهن و سایر آنمی‌های هیپوپرولیفراتیو", file: "chapter02.html", available: true },
+            { number: 3, title: "آنمی‌های همولیتیک و آنمی ناشی از خونریزی‌های حاد", file: "chapter03.html", available: true },
+            { number: 4, title: "اختلالات هموگلوبین", file: "chapter04.html", available: true },
+            { number: 5, title: "آنمی آپالستیک و میلودیسپالزی", file: "chapter05.html", available: true },
+            { number: 6, title: "آنمی مگالوبالستیک", file: "chapter06.html", available: true },
+            { number: 7, title: "انتقال خون", file: "chapter07.html", available: true },
+            { number: 8, title: "لوسمی میلوئید حاد", file: "chapter08.html", available: true },
+            { number: 9, title: "لوسمی میلوئید مزمن", file: "chapter09.html", available: true },
+            { number: 10, title: "اختلالات لنفوسیت‌ها", file: "chapter10.html", available: true },
+            { number: 11, title: "اختلالات گرانولوسیت و منوسیت", file: "chapter11.html", available: true },
+            { number: 12, title: "بیماری‌های هموستاتیک و خونریزی‌دهنده", file: "chapter12.html", available: true },
+            { number: 13, title: "اختلالات ترومبوتیک", file: "chapter13.html", available: true },
+            { number: 14, title: "بیولوژی سرطان", file: "chapter14.html", available: true },
+            { number: 15, title: "اپیدمیولوژی سرطان", file: "chapter15.html", available: true },
+            { number: 16, title: "اصول درمان سرطان", file: "chapter16.html", available: true },
+            { number: 17, title: "سرطان ریه", file: "chapter17.html", available: true },
+            { number: 18, title: "سندرم‌های پارانئوپلاستیک آندوکرینولوژیک – هماتولوژیک", file: "chapter18.html", available: false }
+        ];
+
+        let currentChapterIndex = null;
+
+        function init() {
+            renderChaptersList();
+            
+            // Check URL hash for direct chapter loading
+            const hash = window.location.hash;
+            if (hash && hash.startsWith('#chapter-')) {
+                const chapterNum = parseInt(hash.replace('#chapter-', ''));
+                const index = chapters.findIndex(c => c.number === chapterNum);
+                if (index !== -1 && chapters[index].available) {
+                    loadChapter(index);
+                }
             }
-          });
         }
-      });
-    }
 
-    function setActiveChapter(number) {
-      document.querySelectorAll('.chapter-item').forEach(item => {
-        item.classList.toggle('active', Number(item.dataset.index) + 1 === number);
-      });
-    }
-
-    function showWelcome() {
-      welcomeScreen.classList.remove('hidden');
-      readerShell.classList.add('hidden');
-      chapterFrame.removeAttribute('src');
-    }
-
-    function loadChapter(index, updateHistory = true) {
-      const chapter = chapters[index];
-      if (!chapter || !chapter.available) return;
-
-      showReader();
-      setActiveChapter(chapter.number);
-      if (updateHistory) {
-        window.history.replaceState(null, null, `#chapter-${chapter.number}`);
-      }
-      
-      chapterFrame.style.height = '100vh'; // Reset height temporarily
-      chapterFrame.src = `chapters/${chapter.file}`;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      
-      if (window.innerWidth <= 992) {
-        closeMobileSidebar();
-      }
-    }
-
-    function showReader() {
-      welcomeScreen.classList.add('hidden');
-      readerShell.classList.remove('hidden');
-    }
-
-    // Toggle for both Desktop and Mobile
-    function toggleSidebar() {
-      if (window.innerWidth <= 992) {
-        // Mobile Logic
-        const opened = sidebar.classList.toggle('mobile-open');
-        backdrop.classList.toggle('active', opened);
-      } else {
-        // Desktop Logic
-        sidebar.classList.toggle('collapsed');
-        mainContent.classList.toggle('expanded');
-      }
-    }
-
-    function closeMobileSidebar() {
-      if (window.innerWidth <= 992) {
-        sidebar.classList.remove('mobile-open');
-        backdrop.classList.remove('active');
-      }
-    }
-
-    function openSidebarIfClosed(event) {
-        event.preventDefault();
-        if (window.innerWidth <= 992 && !sidebar.classList.contains('mobile-open')) {
-            toggleSidebar();
-        } else if (window.innerWidth > 992 && sidebar.classList.contains('collapsed')) {
-            toggleSidebar();
+        function renderChaptersList() {
+            const container = document.getElementById('chaptersList');
+            container.innerHTML = chapters.map((chapter, index) => `
+                <div 
+                    class="chapter-item ${!chapter.available ? 'opacity-50 cursor-not-allowed' : ''}" 
+                    id="nav-chapter-${chapter.number}"
+                    onclick="${chapter.available ? `loadChapter(${index})` : 'showNotAvailable()'}"
+                >
+                    <span class="chapter-number">${chapter.number}</span>
+                    <span class="chapter-title">
+                        ${chapter.title}
+                        ${!chapter.available ? '<span class="text-xs opacity-60">(به زودی)</span>' : ''}
+                    </span>
+                </div>
+            `).join('');
         }
-    }
 
-    function handleHash() {
-      const hash = window.location.hash;
-      if (!hash) {
-        showWelcome();
-        return;
-      }
-      const match = hash.match(/^#chapter-(\d+)$/);
-      if (match) {
-        const number = Number(match[1]);
-        const index = chapters.findIndex(chapter => chapter.number === number && chapter.available);
-        if (index >= 0) {
-          loadChapter(index, false);
-          return;
+        function loadChapter(index) {
+            const chapter = chapters[index];
+            
+            if (!chapter.available) {
+                showNotAvailable();
+                return;
+            }
+
+            // Set active sidebar item
+            document.querySelectorAll('.chapter-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            const activeNav = document.getElementById(`nav-chapter-${chapter.number}`);
+            if (activeNav) activeNav.classList.add('active');
+
+            // Hide welcome screen and show reader shell
+            document.getElementById('welcomeScreen').hidden = true;
+            document.getElementById('readerShell').hidden = false;
+
+            // Load chapter inside iframe
+            const frame = document.getElementById('chapterFrame');
+            // Reset height to prevent it from getting stuck on a large height from a previous chapter
+            frame.style.height = '100vh'; 
+            frame.src = `chapters/${chapter.file}`;
+
+            // Update URL Hash
+            window.history.replaceState(null, null, `#chapter-${chapter.number}`);
+
+            // Scroll parent window to top immediately
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Close mobile sidebar
+            closeMobileSidebar();
+            
+            currentChapterIndex = index;
         }
-      }
-      showWelcome();
-    }
 
-    function resizeChapterFrame() {
-      if (!chapterFrame || !chapterFrame.contentWindow || !chapterFrame.contentDocument || readerShell.classList.contains('hidden')) return;
-      try {
-        const doc = chapterFrame.contentDocument;
-        const height = Math.max(
-          doc.body.scrollHeight,
-          doc.documentElement.scrollHeight,
-          doc.body.offsetHeight,
-          doc.documentElement.offsetHeight
-        );
-        chapterFrame.style.height = (height + 40) + 'px';
-      } catch (e) {
-        console.warn("Cannot resize iframe due to CORS or loading state.", e);
-      }
-    }
+        // Helper for the welcome screen button
+        function loadChapterFromBtn(chapterNumber) {
+            const index = chapters.findIndex(c => c.number === chapterNumber);
+            if(index !== -1) loadChapter(index);
+        }
 
-    chapterFrame.addEventListener('load', () => {
-      resizeChapterFrame();
-      setTimeout(resizeChapterFrame, 300);
-      setTimeout(resizeChapterFrame, 1000);
-    });
+        function resizeChapterFrame() {
+            const frame = document.getElementById("chapterFrame");
+            if (!frame || !frame.contentWindow || !frame.contentDocument) return;
 
-    window.addEventListener('resize', resizeChapterFrame);
-    window.addEventListener('hashchange', handleHash);
+            try {
+                const doc = frame.contentDocument;
+                const height = Math.max(
+                    doc.body.scrollHeight,
+                    doc.documentElement.scrollHeight,
+                    doc.body.offsetHeight,
+                    doc.documentElement.offsetHeight
+                );
+                
+                // Add a small buffer to prevent nested scrolling
+                frame.style.height = (height + 40) + "px";
+            } catch (e) {
+                console.warn("Cannot resize iframe, possibly due to CORS restrictions or loading state.", e);
+            }
+        }
 
-    backdrop.addEventListener('click', closeMobileSidebar);
-    document.getElementById('menuToggleBtn').addEventListener('click', toggleSidebar);
-    startButton.addEventListener('click', () => {
-      const firstIndex = chapters.findIndex(chapter => chapter.available);
-      if (firstIndex >= 0) loadChapter(firstIndex);
-    });
+        // Iframe load and resize event listeners
+        const frame = document.getElementById('chapterFrame');
+        frame.addEventListener('load', function() {
+            resizeChapterFrame();
+            
+            // Call again after a delay to account for web fonts or late-loading images
+            setTimeout(resizeChapterFrame, 300);
+            setTimeout(resizeChapterFrame, 1000);
+        });
 
-    renderChaptersList();
-    handleHash();
-  </script>
+        // Recalculate iframe size on window resize
+        window.addEventListener('resize', () => {
+            if (!document.getElementById('readerShell').hidden) {
+                resizeChapterFrame();
+            }
+        });
+
+        function showNotAvailable() {
+            alert('این فصل هنوز آماده نشده است و به زودی اضافه خواهد شد.');
+        }
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('mainContent');
+            
+            if (window.innerWidth <= 768) {
+                sidebar.classList.toggle('mobile-open');
+            } else {
+                sidebar.classList.toggle('collapsed');
+                mainContent.classList.toggle('expanded');
+            }
+        }
+
+        function closeMobileSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            if (window.innerWidth <= 768) {
+                sidebar.classList.remove('mobile-open');
+            }
+        }
+
+        // Close sidebar when clicking outside (mobile)
+        document.addEventListener('click', function(event) {
+            const sidebar = document.getElementById('sidebar');
+            const menuBtn = document.getElementById('menuToggleBtn');
+            
+            if (window.innerWidth <= 768 && 
+                sidebar.classList.contains('mobile-open') && 
+                !sidebar.contains(event.target) && 
+                !menuBtn.contains(event.target)) {
+                closeMobileSidebar();
+            }
+        });
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
 </body>
 </html>
