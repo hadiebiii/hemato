@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فصل ۶: آنمی مگالوبالستیک - هماتولوژی</title>
+    <title>فصل ۷: انتقال خون - هماتولوژی</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <style>
@@ -13,7 +13,7 @@
             color: #1f2937;
         }
         .gradient-header {
-            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+            background: linear-gradient(135deg, #10b981 0%, #047857 100%);
         }
         .card {
             background: white;
@@ -49,7 +49,7 @@
             right: 0;
             width: 60%;
             height: 4px;
-            background-color: #3b82f6;
+            background-color: #10b981;
             border-radius: 2px;
         }
         .staging-table {
@@ -60,7 +60,7 @@
             border-radius: 8px;
         }
         .staging-table th {
-            background-color: #3b82f6;
+            background-color: #10b981;
             color: white;
             padding: 12px;
             text-align: right;
@@ -112,7 +112,7 @@
     <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <div>
-                <h1 class="text-2xl font-bold">فصل ۶: آنمی مگالوبالستیک</h1>
+                <h1 class="text-2xl font-bold">فصل ۷: انتقال خون</h1>
             </div>
         </div>
     </header>
@@ -120,416 +120,532 @@
     <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
         <!-- Navigation -->
         <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
-            <a href="#sec1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">ویتامین B12 (کوبالامین)</a>
-            <a href="#sec2" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">انتقال کوبالامین</a>
-            <a href="#sec3" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">پاتوژنز آنمی مگالوبالستیک</a>
-            <a href="#sec4" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">تظاهرات بالینی آنمی مگالوبالستیک</a>
-            <a href="#sec5" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">یافته‌های تشخیصی آنمی مگالوبالستیک</a>
-            <a href="#sec6" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">مغز استخوان</a>
-            <a href="#sec7" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">خونسازی (هموپویزیس) غیرموثر</a>
-            <a href="#sec8" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">آنمی پرنیشیوز</a>
-            <a href="#sec9" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">نکات بیوپسی معده در آنمی پرنیشیوز</a>
-            <a href="#sec10" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">گاسترکتومی</a>
-            <a href="#sec11" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">نکات آنمی مگالوبالستیک</a>
-            <a href="#sec12" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">اندیکاسیون‌های درمان با کوبالامین</a>
-            <a href="#sec13" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">چگونگی درمان کمبود کوبالامین</a>
-            <a href="#sec14" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">نکات مربوط به درمان نگهدارنده کوبال...</a>
-            <a href="#sec15" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">نکات مربوط به آنمی پرنیشیوز</a>
-            <a href="#sec16" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">آنمی مگالوبالستیک بدون ارتباط با کم...</a>
-            <a href="#sec17" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">Follow up در درمان آنمی مگالوبالستی...</a>
-            <a href="#sec18" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">ترانسلوکاسیون‌های کروموزومی مهم در ...</a>
-            <a href="#sec19" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">داروها و مکانیسم‌های مرتبط با سرطان</a>
-            <a href="#sec20" class="bg-white px-4 py-2 rounded-full shadow hover:bg-blue-50 text-blue-700 whitespace-nowrap">سندرم Li-Fraumeni</a>
+            <a href="#sec1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">گروه‌های خونی و تزریق فرآورده‌های خ...</a>
+            <a href="#sec2" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">عوارض و ملاحظات انتقال خون</a>
+            <a href="#sec3" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">واکنش‌های آلرژیک خفیف</a>
+            <a href="#sec4" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">واکنش‌های آنافیلاکتیک</a>
+            <a href="#sec5" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">کمبود IgA و واکنش‌های آنافیلاکتیک</a>
+            <a href="#sec6" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">اقدامات درمانی در واکنش‌های آلرژیک ...</a>
+            <a href="#sec7" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">پیوند مغز استخوان و GVHD</a>
+            <a href="#sec8" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">آسیب حاد ریه به علت انتقال خون (TRA...</a>
+            <a href="#sec9" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">پورپورای بعد از انتقال خون (Post tr...</a>
+            <a href="#sec10" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">پورپورای بعد از انتقال خون</a>
+            <a href="#sec11" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">مقاومت به تزریق پالکت</a>
+            <a href="#sec12" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">تجمع بیش از حد مایع (TACO)</a>
+            <a href="#sec13" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">واکنش‌های ناشی از ترانسفیوژن Massiv...</a>
+            <a href="#sec14" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">واکنش‌های هیپوتانسیو</a>
+            <a href="#sec15" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">عوارض عفونی</a>
+            <a href="#sec16" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">جلوگیری از واکنش‌های ترانسفیوژن</a>
+            <a href="#sec17" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">نکات مربوط به انتقال خون</a>
+            <a href="#sec18" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">تست‌های ژنتیک برای سندرم‌های ارثی س...</a>
+            <a href="#sec19" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">ریسک فاکتورهای سرطان</a>
+            <a href="#sec20" class="bg-white px-4 py-2 rounded-full shadow hover:bg-green-50 text-green-700 whitespace-nowrap">انتقال خون (نکات)</a>
         </nav>
 
-        <!-- Section 1: ویتامین B12 (کوبالامین) -->
+        <!-- Section 1: گروه‌های خونی و تزریق فرآورده‌های خونی -->
         <section id="sec1" class="card p-6">
-            <h2 class="section-title text-xl">1. ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> (کوبالامین)</h2>
+            <h2 class="section-title text-xl">1. گروه‌های خونی و تزریق فرآورده‌های خونی</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">تنها منبع کوبالامین (ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>) برای انسان، غذاهای حیوانی مثل گوشت، فرآورده‌های لبنی و ماهی هستند. میوه‌ها و سبزیجات فاقد ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> است.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">افرادی که رژیم گیاهخواری دارند، مستعد کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> هستند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در اورژانـس، <bdi dir="ltr">FFP</bdi> با گروه خونی A+ را می‌توان با <bdi dir="ltr">FFP</bdi> گروه‌های خونی O+، <bdi dir="ltr">AB</bdi>+ و B+ جایگزین کرد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">نکته‌ای بسـیار مهم: چون <bdi dir="ltr">FFP</bdi> فاقــد سـلول خونـی اسـت و در پالسما گروه خونـی A، آنتی‌بادی ضد B و در گروه خونـی B، آنتی‌بادی ضد A وجود دارد، <bdi dir="ltr">FFP</bdi> گروه خونی <bdi dir="ltr">AB</bdi> می‌تواند دهنده همگانی باشد. برعکـس، دهنده همگانی در <bdi dir="ltr">RBC (Packed cell</bdi>) خون کامل، گروه خونی O منفی است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">توجه: جهـت تزریــق پالســما (<bdi dir="ltr">FFP</bdi>) و <bdi dir="ltr">RBC</bdi>، ســازگاری <bdi dir="ltr">ABO</bdi> کفایت می‌کند و مثبت یا منفی بودن <bdi dir="ltr">Rh</bdi> مهم نیست.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">یادآوری: گروه خونـی <bdi dir="ltr">AB</bdi> مثبت، دهنده همگانی <bdi dir="ltr">FFP</bdi> است اگرچه <bdi dir="ltr">Rh</bdi> آنچنان مهم نیست.</p>
             </div>
         </section>
 
-        <!-- Section 2: انتقال کوبالامین -->
+        <!-- Section 2: عوارض و ملاحظات انتقال خون -->
         <section id="sec2" class="card p-6">
-            <h2 class="section-title text-xl">2. انتقال کوبالامین</h2>
+            <h2 class="section-title text-xl">2. عوارض و ملاحظات انتقال خون</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">کوبالامین در پلاسمای انسان توسط اتصال به دو پروتئین ناقل به نام‌های <bdi dir="ltr">TC</bdi> (کوبالامین) و <bdi dir="ltr">II</bdi> و I حمل می‌شود.</p>
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700"><bdi dir="ltr">TC-I</bdi> موجب تحویل کوبالامین به مغز استخوان، جفت و سایر بافت‌ها می‌شود، ولی ورود کوبالامین به بافت‌ها را افزایش نمی‌دهد.</li>
-                  <li class="leading-relaxed text-gray-700"><bdi dir="ltr">TC-II</bdi>، ناقل کوبالامین در پلاسما و خون است.</li>
-                </ul>
+                <div class="overflow-x-auto mb-4">
+                  <h4 class="font-bold text-md text-gray-700 mb-2">عوارض شایع انتقال خون</h4>
+                  <table class="staging-table">
+                    <thead>
+                      <tr>
+                        <th>تعداد سئواالت</th>
+                        <th>نوع عارضه</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><bdi dir="ltr">8</bdi></td>
+                        <td>واکنش‌های تب‌دار غیرهمولیتیک</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">7</bdi></td>
+                        <td>واکنش‌های همولیتیک حاد</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">7</bdi></td>
+                        <td>واکنش‌های آلرژیک</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">7</bdi></td>
+                        <td>واکنش‌های ناشی از ترانسفیوژن <bdi dir="ltr">Massive</bdi></td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">6</bdi></td>
+                        <td>واکنش‌های هیپوتانسیو</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">5</bdi></td>
+                        <td>آسیب حاد ریه به علت انتقال خون</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">4</bdi></td>
+                        <td>کرایوپرسیپیتات</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">4</bdi></td>
+                        <td>پورپورای بعد از انتقال خون</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">4</bdi></td>
+                        <td>عوارض عفونی</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">4</bdi></td>
+                        <td>واکنش‌های آنافیالکتیک</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">3</bdi></td>
+                        <td>بیماری پیوند علیه میزبان</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">3</bdi></td>
+                        <td>پالکت</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">3</bdi></td>
+                        <td>پالسما</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">3</bdi></td>
+                        <td>تجمع بیش از حد مایع</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">2</bdi></td>
+                        <td>مقاومت به تزریق پالکت</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">2</bdi></td>
+                        <td>گروه‌های خونی</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">2</bdi></td>
+                        <td>جلوگیری از واکنش‌های ترانسفیوژن</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">2</bdi></td>
+                        <td><bdi dir="ltr">RBC</bdi> کنسانتره</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">1</bdi></td>
+                        <td>خون کامل</td>
+                      </tr>
+                      <tr>
+                        <td><bdi dir="ltr">1</bdi></td>
+                        <td>فرآورده ترکیبی (<bdi dir="ltr">RBC</bdi>، پالکت و پالسما)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
             </div>
         </section>
 
-        <!-- Section 3: پاتوژنز آنمی مگالوبالستیک -->
+        <!-- Section 3: واکنش‌های آلرژیک خفیف -->
         <section id="sec3" class="card p-6">
-            <h2 class="section-title text-xl">3. پاتوژنز آنمی مگالوبالستیک</h2>
+            <h2 class="section-title text-xl">3. واکنش‌های آلرژیک خفیف</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">اختلال در سنتز <bdi dir="ltr">DNA</bdi> ثانویه به کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> (کوبالامین) یا فولات موجب آنمی مگالوبالستیک می‌گردد. مغز استخوان معمولاً هیپرسلولار بوده و آنمی به علت خونسازی غیرموثر ایجاد می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">راش پوستی، خارش، کهیر و ادم واکنش‌های آلرژیک با پروتئین‌های پلاسما تظاهر یافته و به علت قطع موقت ایجاد می‌شوند. واکنش‌های خفیف با قطع انتقال خون و مصرف آنتی‌هیستامین درمان می‌شوند.</p>
             </div>
         </section>
 
-        <!-- Section 4: تظاهرات بالینی آنمی مگالوبالستیک -->
+        <!-- Section 4: واکنش‌های آنافیلاکتیک -->
         <section id="sec4" class="card p-6">
-            <h2 class="section-title text-xl">4. تظاهرات بالینی آنمی مگالوبالستیک</h2>
+            <h2 class="section-title text-xl">4. واکنش‌های آنافیلاکتیک</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">بسیاری از بیماران مبتلا به آنمی مگالوبالستیک به طور علامت‌دار نبوده و تنها با <bdi dir="ltr">CBC</bdi> روتین تشخیص داده می‌شوند (<bdi dir="ltr">MCV</bdi> بیشتر از <bdi dir="ltr">100</bdi> <bdi dir="ltr">fL</bdi>). در موارد شدیدتر، تظاهرات بالینی اصلی همان علائم مربوط به آنمی هستند.</p>
-                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">علائم نورولوژیک</h4>
-                <p class="mb-3 leading-relaxed text-gray-700">ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> برای میلینه کردن دستگاه <bdi dir="ltr">CNS</bdi> لازم است؛ لذا کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> موجب علائم نورولوژیک زیر می‌گردد:</p>
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">پارستزی، ضعف عضلانی، اختلال در راه رفتن، گاهی اوقات دمانس، اختلالات سایکوتیک یا اختلال بینایی</li>
-                  <li class="leading-relaxed text-gray-700">فقدان حس عمقی (<bdi dir="ltr">Proprioception</bdi>) معمولاً به همراه نشانه رومبرگ و حس ارتعاش (<bdi dir="ltr">Vibration</bdi>) و لرمیت مشاهده می‌گردد.</li>
-                  <li class="leading-relaxed text-gray-700">نوروپاتی محیطی دوطرفه</li>
-                  <li class="leading-relaxed text-gray-700">راه رفتن بیمار به شکل آتاکسیک همراه با اسپاسم (هیپررفلکسی)</li>
-                  <li class="leading-relaxed text-gray-700">اختلال در عملکرد سیستم عصبی اتونومیک می‌تواند موجب هیپوتانسیون وضعیتی، ناتوانی جنسی و بی‌اختیاری ادرار شود.</li>
-                </ul>
-                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">یافته‌های هماتولوژیک</h4>
-                <p class="mb-3 leading-relaxed text-gray-700">تظاهرات اصلی هماتولوژیک این بیماری عبارتند از:</p>
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">ماکروسیت‌های بیضی شکل (<bdi dir="ltr">Oval</bdi>) غالباً همراه با آنیزوسیتوز و پویکیلوسیتوز</li>
-                  <li class="leading-relaxed text-gray-700"><bdi dir="ltr">MCV</bdi> غالباً بیشتر از <bdi dir="ltr">100</bdi> <bdi dir="ltr">fL</bdi> می‌باشد مگر آنکه علتی برای میکروسیتوز وجود داشته باشد مثالً کمبود آهن یا تالاسمی همزمان</li>
-                  <li class="leading-relaxed text-gray-700">هسته، برخی از نوتروفیل‌ها هیپرسگمانته هستند (بیش از <bdi dir="ltr">5</bdi> لوب دارند).</li>
-                  <li class="leading-relaxed text-gray-700">لکوپنی در اثر کاهش گرانولوسیت‌ها و ممکن است لنفوسیت‌ها به وجود بیاید ولی معمولاً شمارش <bdi dir="ltr">WBC</bdi> بالای <bdi dir="ltr">1.5</bdi>×<bdi dir="ltr">10</bdi>^<bdi dir="ltr">9</bdi> <bdi dir="ltr">L (<bdi dir="ltr">1500</bdi></bdi> در میکرولیتر) می‌باشد.</li>
-                  <li class="leading-relaxed text-gray-700">کاهش تعداد پلاکت‌ها ممکن است به طور متوسط به <bdi dir="ltr">40</bdi>×<bdi dir="ltr">10</bdi>^<bdi dir="ltr">9</bdi> <bdi dir="ltr">L (<bdi dir="ltr">40</bdi></bdi> هزار در میکرولیتر) یابند ولی به ندرت به کمتر از <bdi dir="ltr">40</bdi> هزار در میکرولیتر می‌رسند.</li>
-                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">واکنش آنافیلاکتیک ممکن است بعد از تزریق چند سی‌سی خون ایجاد شده و با برونکواسپاسم، دیسترس تنفسی، هیپوتانسیون، تهوع، استفراغ و شوک تظاهر می‌یابد. درمان شامل قطع انتقال خون، برقراری راه وریدی و تجویز آدرنالین است. تجویز آنتی‌هیستامین، گلوکوکورتیکوئیدها و برونکودیالتورها نیز ممکن است لازم باشد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">افرادی که واکنش‌های آنافیلاکتیک یا آلرژیک راجعه نسبت به فرآورده‌های خونی دارند، باید از نظر کمبود <bdi dir="ltr">IgA</bdi> مورد بررسی قرار گیرند.</p>
             </div>
         </section>
 
-        <!-- Section 5: یافته‌های تشخیصی آنمی مگالوبالستیک -->
+        <!-- Section 5: کمبود IgA و واکنش‌های آنافیلاکتیک -->
         <section id="sec5" class="card p-6">
-            <h2 class="section-title text-xl">5. یافته‌های تشخیصی آنمی مگالوبالستیک</h2>
+            <h2 class="section-title text-xl">5. کمبود <bdi dir="ltr">IgA</bdi> و واکنش‌های آنافیلاکتیک</h2>
             
             <div class="space-y-4 mt-4">
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">آنمی مگالوبالستیک (<bdi dir="ltr">MCV</bdi> بیشتر از <bdi dir="ltr">100</bdi> <bdi dir="ltr">fL</bdi>)</li>
-                  <li class="leading-relaxed text-gray-700">کاهش تعداد لکوسیت‌ها</li>
-                  <li class="leading-relaxed text-gray-700">کاهش تعداد پلاکت‌ها</li>
-                  <li class="leading-relaxed text-gray-700">افزایش <bdi dir="ltr">LDH</bdi> (بسیار مهم و کاراکتریستیک)</li>
-                  <li class="leading-relaxed text-gray-700">افزایش بیلی روبین غیرمستقیم (غیرکنژوگه)</li>
-                  <li class="leading-relaxed text-gray-700">کاهش تعداد رتیکولوسیت‌ها</li>
-                  <li class="leading-relaxed text-gray-700">کاهش هاپتوگلوبولین</li>
-                  <li class="leading-relaxed text-gray-700">مغز استخوان هیپرسلولار (نکته اصلی سئوال)</li>
-                  <li class="leading-relaxed text-gray-700">ماکرووالوسیت</li>
-                  <li class="leading-relaxed text-gray-700">نوتروفیل هیپرسگمانته</li>
-                  <li class="leading-relaxed text-gray-700">افزایش سطح هموسیستئین</li>
-                  <li class="leading-relaxed text-gray-700">در کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> میزان متیل مالونیک اسید افزایش می‌یابد ولی در کمبود فولات بالا نمی‌رود.</li>
-                </ul>
-                <p class="mb-3 leading-relaxed text-gray-700">توجه: افزایش <bdi dir="ltr">LDH</bdi>، افزایش بیلی روبین و کاهش رتیکولوسیت در کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> حاکی از خونسازی غیرموثر می‌باشد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">بیمارانی که دچار کمبود <bdi dir="ltr">IgA</bdi> هستند، ممکن است نسبت به این نوع ایمنوگلوبین حساس شده و در ریسک واکنش‌های آنافیلاکتیک ناشی از ترانسفیوژن پلاسما قرار بگیرند. لذا مبتلایان به کمبود شدید <bdi dir="ltr">IgA</bdi>، در صورت امکان، باید از پلاسمای فاقد <bdi dir="ltr">IgA</bdi> و فرآورده‌های سلولی شسته شده دریافت کنند.</p>
             </div>
         </section>
 
-        <!-- Section 6: مغز استخوان -->
+        <!-- Section 6: اقدامات درمانی در واکنش‌های آلرژیک و آنافیلاکتیک -->
         <section id="sec6" class="card p-6">
-            <h2 class="section-title text-xl">6. مغز استخوان</h2>
+            <h2 class="section-title text-xl">6. اقدامات درمانی در واکنش‌های آلرژیک و آنافیلاکتیک</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">تغییرات در مغز استخوان به صورت زیر می‌باشد:</p>
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">مغز استخوان هیپرسلولار است.</li>
-                  <li class="leading-relaxed text-gray-700">متامیلوسیت‌های غول‌پیکر (<bdi dir="ltr">Giant</bdi>) با شکل غیرطبیعی و مگاکاریوسیت‌های بزرگ هیپرپلی‌پلویید، کاراکتریستیک می‌باشند.</li>
-                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">در فردی به دنبال تزریق خون <bdi dir="ltr">Packed cell</bdi> در فردی به دنبال تزریق خون شسته و سپس تزریق خون را انجام داد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">جهت پیشگیری از واکنش آنافیلاکتیک باید از فرآورده‌های شسته شده استفاده کرد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در صورت امکان باید <bdi dir="ltr">IgA</bdi> کمبود شدید مبتلایان به <bdi dir="ltr">IgA</bdi> کمبود شدید، پلاسمای فاقد <bdi dir="ltr">IgA</bdi> و فرآورده‌های سلولی شسته شده دریافت کنند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در صورت نبود فرآورده خونی فاقد <bdi dir="ltr">IgA</bdi> در بیمار <bdi dir="ltr">IgA deficient</bdi>، کدام فرآورده خونی می‌تواند جایگزین گردد؟ شسته شده.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">تمام موارد زیر در کنترل این عارضه مؤثر است، بجز اندازه گیری سرمی <bdi dir="ltr">IgA</bdi>.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در صورت ادامه رکتوراژی شدید پس از برطرف شدن علائم آنافیلاکسی با کورتیکواستروئید و آنتی‌هیستامین، تجویز واحدهای بعدی خون متراکم و ویتامین K و همچنین تجویز واحدهای بعدی خون متراکم و <bdi dir="ltr">FFP (IgA deficient</bdi>) مناسب است.</p>
             </div>
         </section>
 
-        <!-- Section 7: خونسازی (هموپویزیس) غیرموثر -->
+        <!-- Section 7: پیوند مغز استخوان و GVHD -->
         <section id="sec7" class="card p-6">
-            <h2 class="section-title text-xl">7. خونسازی (هموپویزیس) غیرموثر</h2>
+            <h2 class="section-title text-xl">7. پیوند مغز استخوان و <bdi dir="ltr">GVHD</bdi></h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">مرگ <bdi dir="ltr">RBC</bdi> های هسته‌دار در مغز استخوان و خونسازی غیرموثر. بیلی روبین غیرکنژوگه در پلاسما تجمع می‌کند. افزایش اوروبیلینوژن ادرار، کاهش هاپتوگلوبین‌ها و هموسیدرین ادراری مثبت و افزایش لاکتات دهیدروژناز (<bdi dir="ltr">LDH</bdi>) سرم سایر شواهد خونسازی غیرموثر عبارتند از.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">برای کاهش احتمال وقوع <bdi dir="ltr">GVHD</bdi> باید فرآورده‌های خونی تحت رادیاسیون (اشعه دادن) قرار گیرند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">سیتوپنی، روز بعد از انتقال خون، با تب، راش پوستی، اسهال و اختلال عملکرد کبد تظاهر می‌یابد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">بهترین روش برای کاهش احتمال وقوع <bdi dir="ltr">GVHD</bdi>، اشعه دادن به فرآورده‌های خونی قبل از تزریق است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">یافته‌های زیر به نفع عارضه <bdi dir="ltr">GVHD</bdi> است: تب، راش پوستی، پان‌سیتوپنی.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">رادیاسیون به فرآورده‌های خونی با دوز <bdi dir="ltr">2500</bdi> <bdi dir="ltr">cGy</bdi> قبل از تزریق به افراد در معرض خطر، از وقوع <bdi dir="ltr">GVHD</bdi> جلوگیری می‌کند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">برای جلوگیری از این عارضه می‌توان از تزریق خون اشعه‌دیده استفاده کرد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">اهدای مستقیم خون توسط اعضای خانواده توصیه نمی‌گردد. در صورت اجبار، باید فرآورده‌های خونی افراد خانواده را تحت رادیاسیون قرار داد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">یکی از مشخصه‌های <bdi dir="ltr">GVHD</bdi>، آپالزی مغز استخوان و پان‌سیتوپنی است.</p>
             </div>
         </section>
 
-        <!-- Section 8: آنمی پرنیشیوز -->
+        <!-- Section 8: آسیب حاد ریه به علت انتقال خون (TRALI) -->
         <section id="sec8" class="card p-6">
-            <h2 class="section-title text-xl">8. آنمی پرنیشیوز</h2>
+            <h2 class="section-title text-xl">8. آسیب حاد ریه به علت انتقال خون (<bdi dir="ltr">TRALI</bdi>)</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">به علت کمبود شدید فاکتور داخلی (<bdi dir="ltr">IF</bdi>) به علت آتروفی معده، آنمی پرنیشیوز گفته می‌شود.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">زنان نسبت به مردان نسبت بروز آن <bdi dir="ltr">1</bdi>/<bdi dir="ltr">6</bdi> به <bdi dir="ltr">1</bdi> است و بیشترین بروز آن در سن <bdi dir="ltr">70</bdi>-<bdi dir="ltr">80</bdi> سالگی می‌باشد و تنها کمتر از <bdi dir="ltr">10%</bdi> بیماران کمتر از <bdi dir="ltr">40</bdi> سال سن دارند.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">در افرادی که مبتلا به سایر بیماری‌های اتوایمیون مثل بیماری‌های تیروئید، ویتلیگو، هیپوپاراتیروئیدی، دیابت نوع <bdi dir="ltr">1</bdi> و همچنین بستگان نزدیک آنها، بروز آنمی پرنیشیوز بیشتر است. در مورد سئوال، وجود لکه‌های هیپوپیگمانته به نفع ویتلیگو است.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">بین آنمی پرنیشیوز و هیپوگاماگلوبولینمی، چشم‌های آبی و گروه خونی A، سفیدی زودرس موها (بیماری موهای خاکستری)، ارتباط وجود دارد.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">امید به زندگی در زنانی که به طور مناسب درمان شده‌اند طبیعی است. مردان به علت بروز بیشتر کانسر معده در آنها، امید به زندگی کمتری دارند.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">در آنمی پرنیشیوز، میزان اسید کلریدریک، پپسین و فاکتور داخلی (<bdi dir="ltr">IF</bdi>) به شدت کاهش می‌یابد و میزان گاسترین سرم افزایش و میزان پپسینوژن سرم کاهش می‌یابد.</p>
-                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">بیوپسی معده</h4>
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">آتروفی تمام لایه‌های تنه و فوندوس معده</li>
-                  <li class="leading-relaxed text-gray-700">فقدان سلول‌های اصلی (<bdi dir="ltr">Chief</bdi>) و پاریتال (<bdi dir="ltr">Parietal</bdi>)</li>
-                  <li class="leading-relaxed text-gray-700">انفیلتراسیون شامل پلاسماسل‌ها و لنفوسیت‌ها، تعداد زیادی از سلول‌های <bdi dir="ltr">CD<bdi dir="ltr">4</bdi></bdi></li>
-                  <li class="leading-relaxed text-gray-700">مخاط آنتر غالباً به خوبی حفظ می‌گردد</li>
-                </ul>
-                <p class="mb-3 leading-relaxed text-gray-700">در مراحل اولیه گاستریت آتروفیک ناشی از H.<bdi dir="ltr">Pylori</bdi> رخ داده و در بیماران جوانتر به صورت آنمی ناشی از کمبود آهن و در افراد مسن‌تر به شکل آنمی پرنیشیوز تظاهر می‌نماید. به نظر می‌رسد H.<bdi dir="ltr">Pylori</bdi> یک فرآیند اتوایمیون علیه سلول‌های پاریتال را تحریک می‌نماید.</p>
-                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">آنتی‌بادی‌های سرم</h4>
-                <p class="mb-3 leading-relaxed text-gray-700">در بیماران مبتلا به آنمی پرنیشیوز ممکن است آنتی‌بادی نوع <bdi dir="ltr">IgG</bdi> یافت شود. آنتی‌بادی‌های ضد سلول‌های پاریتال معده در سرم حدوداً <bdi dir="ltr">90%</bdi> از بیماران بالغ مبتلا به آنمی پرنیشیوز یافت می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">کدامیک از عوارض ترانسفیوژن، ناشی از انتقال پسیو آنتی‌بادی‌های علیه <bdi dir="ltr">HLA</bdi> گیرنده است؟ آسیب حاد ریوی.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">اتیولوژی <bdi dir="ltr">TRALI</bdi>: تیتر بالای آنتی‌بادی‌های ضد <bdi dir="ltr">HLA-II</bdi> در پلاسمای فرد دهنده رخ می‌دهد. آنتی‌بادی‌های ضد <bdi dir="ltr">HLA-I</bdi> و ضد آنتی‌ژن نوتروفیل انسانی (<bdi dir="ltr">HNA</bdi>) نیز ممکن است نقش داشته باشند. همچنین ممکن است به علت انتقال سیتوکین‌ها و کمو קיین‌ها ایجاد شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">فیزیوپاتولوژی <bdi dir="ltr">TRALI</bdi>: به علت تجمع لکوسیت‌ها در عروق ریوی ایجاد می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">ریسک فاکتورهای گیرنده برای <bdi dir="ltr">TRALI</bdi>: سیگار، مصرف مزمن الکل، شوک، جراحی کبد (پیوند کبد)، جراحی کانسر، ونتیلاسیون مکانیکی و تعادل مثبت مایع.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">اهمیت <bdi dir="ltr">TRALI</bdi>: یکی از شایع‌ترین علل مرگ‌ومیر ناشی از انتقال خون است. افتراق آن از سایر علل هیپوکسی مانند تجمع بیش از حد مایع دشوار است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">تظاهرات بالینی <bdi dir="ltr">TRALI</bdi>: هیپوکسی و ادم ریوی هیپوکسیک و انفیلتراسیون‌های بینابینی غیرکاردیوژنیک دوطرفه در <bdi dir="ltr">Chest X-ray</bdi> در طی <bdi dir="ltr">6</bdi> ساعت بعد از انتقال خون تظاهر می‌یابد؛ هرچند موارد تأخیری ممکن است <bdi dir="ltr">72</bdi> ساعت بعد از انتقال خون رخ دهد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">پیشگیری <bdi dir="ltr">TRALI</bdi>: ترانسفیوژن پلاسما و پالکت از زنان نولی‌پار یا مردان و زنانی که فاقد آنتی‌بادی‌های ضد <bdi dir="ltr">HLA</bdi> هستند، ریسک ایجاد <bdi dir="ltr">TRALI</bdi> را کاهش می‌دهد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">درمان <bdi dir="ltr">TRALI</bdi>: حمایتی است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">آسیب حاد ریه ناشی از انتقال خون (<bdi dir="ltr">TRALI</bdi>) به علت وجود مقادیر زیاد آنتی‌بادی ضد <bdi dir="ltr">HLA-II</bdi> در پلاسمای فرد دهنده (نه گیرنده) ایجاد می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">آسیب حاد ریه به علت انتقال خون، در مواردی بیشتر رخ می‌دهد که دهنده، یک زن مولتی‌پار باشد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">عامل خطر بروز این عارضه (<bdi dir="ltr">TRALI</bdi>) شامل: پیوند کبد، مصرف الکل، لوبکتومی، مصرف سیگار.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">درمان عارضه فوق (<bdi dir="ltr">TRALI</bdi>) حمایتی است.</p>
             </div>
         </section>
 
-        <!-- Section 9: نکات بیوپسی معده در آنمی پرنیشیوز -->
+        <!-- Section 9: پورپورای بعد از انتقال خون (Post transfusion purpura) -->
         <section id="sec9" class="card p-6">
-            <h2 class="section-title text-xl">9. نکات بیوپسی معده در آنمی پرنیشیوز</h2>
+            <h2 class="section-title text-xl">9. پورپورای بعد از انتقال خون (<bdi dir="ltr">Post transfusion purpura</bdi>)</h2>
             
             <div class="space-y-4 mt-4">
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">آتروفی لایه‌های تنه و فوندوس معده</li>
-                  <li class="leading-relaxed text-gray-700">مخاط آنتر غالباً به خوبی حفظ می‌گردند</li>
-                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">تشخیص <bdi dir="ltr">Post transfusion purpura</bdi> به کمک پیدا کردن آنتی‌بادی <bdi dir="ltr">HPA</bdi> در سرم انجام می‌گردد.</p>
             </div>
         </section>
 
-        <!-- Section 10: گاسترکتومی -->
+        <!-- Section 10: پورپورای بعد از انتقال خون -->
         <section id="sec10" class="card p-6">
-            <h2 class="section-title text-xl">10. گاسترکتومی</h2>
+            <h2 class="section-title text-xl">10. پورپورای بعد از انتقال خون</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">در بیمارانی که توتال گاسترکتومی شده‌اند، کمبود کوبالامین غیرقابل اجتناب بوده و بعد از عمل باید فوراً درمان پروفیالکتیک با کوبالامین آغاز شود.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">در کسانی که پارشیل گاسترکتومی شده‌اند، بسته به اندازه قسمت رزکت شده ممکن است در <bdi dir="ltr">10%</bdi> تا <bdi dir="ltr">15%</bdi> بیماران کمبود کوبالامین ایجاد گردد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">اختلال خونریزی‌دهنده ناشی از ترانسفیوژن یک عارضه نادر بوده و در زنان شایع‌تر است. این عارضه ترومبوسیتوپنی بوده که از <bdi dir="ltr">12</bdi> تا <bdi dir="ltr">5</bdi> روز بعد از ترانسفیوژن <bdi dir="ltr">RBC</bdi> (و به‌ندرت پالکت) رخ می‌دهد.</p>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">اپیـدمیولوژی</h4>
+                <p class="mb-3 leading-relaxed text-gray-700">این عارضه نادر بوده و در زنان شایع‌تر است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در سرم فرد گیرنده، عمدتاً آلوآنتی‌بادی‌های ضد پالکت علیه <bdi dir="ltr">HPA-<bdi dir="ltr">1</bdi>a</bdi> وجود دارد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">درمان این عارضه عمدتاً حمایتی بوده ولی ممکن است به تجویز ایمنوگلوبولین پُل‌والان، گلوکوکورتیکوئیدها یا تعویض پلاسما لازم باشد. تزریق بیشتر پالکت موجب تشدید ترومبوسیتوپنی یا افزایش بسیار اندک تعداد پالکت‌ها می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">با استفاده از فرآورده‌های خونی شسته شده یا دهنده‌های سازگار از نظر <bdi dir="ltr">HPA</bdi> می‌توان از عود این عارضه پیشگیری کرد.</p>
             </div>
         </section>
 
-        <!-- Section 11: نکات آنمی مگالوبالستیک -->
+        <!-- Section 11: مقاومت به تزریق پالکت -->
         <section id="sec11" class="card p-6">
-            <h2 class="section-title text-xl">11. نکات آنمی مگالوبالستیک</h2>
+            <h2 class="section-title text-xl">11. مقاومت به تزریق پالکت</h2>
             
             <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">هرگاه پس از تزریق پالکت، تنها افزایش اندکی در تعداد پالکت رخ دهد به آن مقاومت به تزریق پالکت گفته می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">آلوایمونیزاسیون علیه پالکت‌ها و لکوسیت‌ها موجب مقاومت به تزریق پالکت می‌شود. همچنین می‌تواند به علت آلوایمونیزاسیون علیه <bdi dir="ltr">HPA</bdi> رخ دهد، اما شیوع آن کمتر است.</p>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">ریسک فاکتورهای گیرنده</h4>
+                <p class="mb-3 leading-relaxed text-gray-700">عواملی که در گیرنده موجب مقاومت به تزریق پالکت می‌شوند، عبارتند از: تب، <bdi dir="ltr">DIC</bdi>، اسپلنومگالی، خونریزی، مصرف آمفوتریسین B.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">استفاده از فرآورده‌های سلولی با کمترین احتمال ایمونیزاسیون را کاهش می‌دهد.</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">در بیمارانی که پارشیل گاسترکتومی شده‌اند، <bdi dir="ltr">10%</bdi> تا <bdi dir="ltr">15%</bdi> ممکن است کمبود کوبالامین (ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>) ایجاد شود.</li>
-                  <li class="leading-relaxed text-gray-700">آنمی مگالوبالستیک ناشی از کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> موجب علائم نورولوژیک حاد به شکل دمیلیناسیون (دژنراسیون) مسیرهای محیطی دوطرفه یا خلفی و پیرامیدال نخاع گردنی و توراسیک و با شیوع کمتر آتروفی اپتیک یا علائم مغزی می‌گردد. در کمبود فولات، علائم نورولوژیک وجود ندارد.</li>
-                  <li class="leading-relaxed text-gray-700">در لام خون محیطی آنمی مگالوبالستیک، نوتروفیل هیپرسگمانته و ماکرووالوسیت مشاهده می‌گردد.</li>
-                  <li class="leading-relaxed text-gray-700">در آنمی مگالوبالستیک به علت کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>، متیل مالونیک اسید افزایش می‌یابد.</li>
-                  <li class="leading-relaxed text-gray-700"><bdi dir="ltr">MCV</bdi> در آنمی مگالوبالستیک بیشتر از <bdi dir="ltr">100</bdi> می‌باشد.</li>
+                  <li class="leading-relaxed text-gray-700">پس از ایجاد آلوایمونیزاسیون، در صورت امکان باید از کنسانتره پالکت سازگار از نظر <bdi dir="ltr">HLA</bdi> (کراس‌مچ شده) استفاده کرد. در غیر این صورت، تکرار ترانسفیوژن کنسانتره پالکت در فواصل کوتاه‌تر توصیه می‌گردد.</li>
+                  <li class="leading-relaxed text-gray-700">کنسانتره پالکت نگهداری شده در دمای سرد (<bdi dir="ltr">Cold-stored and Cryopreserved</bdi>) با اینکه موجب افزایش کمتر تعداد پالکت می‌شود، اما عملکرد خونریزی حاد بهتر است هموستاتیک آنها در مبتلایان به.</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Section 12: اندیکاسیون‌های درمان با کوبالامین -->
+        <!-- Section 12: تجمع بیش از حد مایع (TACO) -->
         <section id="sec12" class="card p-6">
-            <h2 class="section-title text-xl">12. اندیکاسیون‌های درمان با کوبالامین</h2>
+            <h2 class="section-title text-xl">12. تجمع بیش از حد مایع (<bdi dir="ltr">TACO</bdi>)</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">آنمی مگالوبالستیک ثابت شده یا هر ناهنجاری هماتولوژیک دیگر و یا نوروپاتی ناشی از کمبود کوبالامین.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">تمام بیمارانـی کـه تحـت توتـال گاسـترکتومی یــا رزکســیون ایلئــوم قـرار می‏گیرند، بایـد به طـور روتین تحت درمان با کوبالامین قرار گیرند.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">تمام بیمارانی که جهت کاهش وزن تحت عمل کاهش حجم معـده (<bdi dir="ltr">Gastric reduction</bdi>) قرار می‏گیرنـد یا افرادی که به مدت طوالنی داروهای مهارکننده پمپ پروتون (<bdi dir="ltr">PPIs</bdi>) مصرف می‌کنند، باید ابتدا غربالگری شـوند و در صورت لزوم درمان جایگزین کوباالمین دریافت نمایند.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">بیمارانـی کـه سـطح سـرمی کوباالمیـن حــد مـرزی (<bdi dir="ltr">Border line</bdi>) دارند ولـی هیـچ اختـ اال هماتولوژیــک دیگری ندارنـد، بایـد پیگیــری شـوند (مثـ ااً بـا فواصـل هــر یکسـال) تـا اطمینان حاصـل شـود کـه بیماری پیشــرفت نکند. بـا این وجود در صورت اثبات ســوءجذب کوباالمین یا افزایــش ســطح MMAیـا کوباالمیـن ســرم، درمـان نگهدارنـده بایـد انجام گیرد.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">چرا "گزینه الـف" صحیح نمی‏باشـد؟ غربالگری انجام شـود و ، ابتدا باید <bdi dir="ltr">PPI</bdi> که در مصرف‏کنندگان، کوباالمین تجویز شـود؛ ولی در تمام بیمارانی که تحت توتال گاسـترکتومی یا رزکسیون ایلئوم قرار می‏گیرند، بایـد بـه صـورت روتین تحـت درمان با کوباالمیـن (ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>) قرار گیرند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">TACO</bdi> یک عارضه شایع بوده که در <bdi dir="ltr">10</bdi> هزار انتقال خون رخ می‌دهد (در حال حاضر <bdi dir="ltr">100</bdi> مورد از).</p>
+                <div class="exam-tip p-4 rounded-lg mb-3"><strong>💡 نکته امتحانی:</strong> <bdi dir="ltr">TACO</bdi> در حال حاضر شایع‌ترین علت مرگ پس از انتقال خون است (<bdi dir="ltr">100%</bdi> امتحانی).</div>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">ریسک فاکتورها</h4>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">سن بالا</li>
+                  <li class="leading-relaxed text-gray-700">نارسایی کلیه</li>
+                  <li class="leading-relaxed text-gray-700">وجود مایع از قبل (<bdi dir="ltr">Overload</bdi>)</li>
+                  <li class="leading-relaxed text-gray-700">اختلال عملکرد قلبی</li>
+                  <li class="leading-relaxed text-gray-700">تزریق فرآورده‌های خونی با حجم زیاد</li>
+                  <li class="leading-relaxed text-gray-700">تزریق فرآورده‌های خونی با سرعت زیاد نسبت به وضعیت همودینامیک بیمار</li>
+                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">با <bdi dir="ltr">TACO</bdi> تنگی نفس، هیپوکسی، افزایش مکرر فشار خون سیستولیک، انفیلتراسیون‌های دوطرفه ریه و غالباً آلوئولی در <bdi dir="ltr">Chest X-ray</bdi> و افزایش <bdi dir="ltr">BNP</bdi> تظاهر می‌یابد. تب نیز ممکن است وجود داشته باشد.</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">شناسایی بیماران در معرض خطر و مانیتورینگ دقیق</li>
+                  <li class="leading-relaxed text-gray-700">کاهش سرعت ترانسفیوژن (مثلاً تزریق یک واحد کنسانتره <bdi dir="ltr">RBC</bdi> طی <bdi dir="ltr">3</bdi> تا <bdi dir="ltr">4</bdi> ساعت)</li>
+                  <li class="leading-relaxed text-gray-700">تجویز دیورتیک در بیماران با همودینامیک <bdi dir="ltr">Stable</bdi> که سابقه <bdi dir="ltr">TACO</bdi> دارند.</li>
+                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">شامل اکسیژن و قطع انتقال خون و تجویز دیورتیک است.</p>
             </div>
         </section>
 
-        <!-- Section 13: چگونگی درمان کمبود کوبالامین -->
+        <!-- Section 13: واکنش‌های ناشی از ترانسفیوژن Massive -->
         <section id="sec13" class="card p-6">
-            <h2 class="section-title text-xl">13. چگونگی درمان کمبود کوبالامین</h2>
+            <h2 class="section-title text-xl">13. واکنش‌های ناشی از ترانسفیوژن <bdi dir="ltr">Massive</bdi></h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">درمان با <bdi dir="ltr">1000</bdi> میکروگرم هیدروکسوکوباالمین با فواصـل <bdi dir="ltr">3</bdi> تا <bdi dir="ltr">7</bdi> روز، موجب تکمیـل ذخایـر کوباالمین بـدن می‏شـود. در بیمارانـی کـه نوروپاتـی دارنــد، تزریــق بـه دفعات بیشـتری انجــام می‏گیــرد. واکنش‏هـای آلرژیــک نــادر بـوده ولـی در صورت وقوع احتیاج به حساسیت‏زدایی یا تزریق کورتیکواسـتروئید دارنــد. درمان نگهدارنده نیــز با تزریق عضالنی <bdi dir="ltr">1000</bdi> میکروگرم هیدروکسوکوباالمین هر <bdi dir="ltr">3</bdi> ماه یکبار، صورت می‏گیــرد. در صــورت اسـتفاده از سیانوکوباالمین، تزریــق بـه دفعــات بیشـتری انجام می‏شـود (مثـ ااً ماهیانه یکبار با دوز <bdi dir="ltr">1000</bdi> میکروگرم به جای هر <bdi dir="ltr">3</bdi> ماه یکبار).</p>
-                <p class="mb-3 leading-relaxed text-gray-700">در مبتالیان به آنمی پرنیشیوز می‏توان از دوزهـای بـاالی سیانوکوباالمین خوراکـی (<bdi dir="ltr">1000</bdi>-<bdi dir="ltr">2000</bdi>μg) استفاده کرد.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">در بیمارانــی که مســتعد خونریزی هســتند و نمی‌تواننـد تزریقــات مکرر انجــام دهند، می‏تــوان از درمان زیرزبانی استفاده نمود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">ترانسفیوژن <bdi dir="ltr">Massive</bdi> عبارت است از ترانسفیوژن <bdi dir="ltr">5</bdi> تا <bdi dir="ltr">10</bdi> واحد کنسانتره <bdi dir="ltr">RBC</bdi> (به همراه سایر فرآورده‌های خونی) طی <bdi dir="ltr">3</bdi> ساعت یا <bdi dir="ltr">50%</bdi> کل حجم خون بیمار طی بیشتر از.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">عوارض ناشی از ترانسفیوژن <bdi dir="ltr">Massive</bdi> عبارتند از:</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">مسمومیت با سیترات</li>
+                  <li class="leading-relaxed text-gray-700">هیپوترمی</li>
+                  <li class="leading-relaxed text-gray-700">هیپرکالمی</li>
+                  <li class="leading-relaxed text-gray-700">کوآگولوپاتی ترقیقی</li>
+                </ul>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">مسمومیت با سیترات</h4>
+                <p class="mb-3 leading-relaxed text-gray-700">برای جلوگیری از انعقاد خون به فرآورده‌های خونی سیترات اضافه می‌کنند؛ سیترات به کلسیم متصل شده و موجب هیپوکلسمی می‌شود. هیپوکلسمی ممکن است به دنبال ترانسفیوژن‌های مکرر و سریع رخ داده و موجب اختلال پارستزی اطراف دهان و عملکرد قلبی گردد. اگرچه سیترات به سرعت به بی‌کربنات متابولیزه می‌شود، اما ممکن است انفوزیون کلسیم از یک راه وریدی جدا گانه لازم باشد.</p>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">هیپوترمی</h4>
+                <p class="mb-3 leading-relaxed text-gray-700">اتیولوژی: (با تزریق سریع فرآورده‌های خونی دمای <bdi dir="ltr">4</bdi>°C می‌تواند موجب هیپوترمی و آریتمی قلبی شود).</p>
+                <p class="mb-3 leading-relaxed text-gray-700">با استفاده از یک گرم‌کن در مسیر تزریق می‌توان از این عارضه جلوگیری کرد.</p>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">هیپرکالمی</h4>
+                <p class="mb-3 leading-relaxed text-gray-700">اتیولوژی: نشت پتاسیم از <bdi dir="ltr">RBC</bdi> ها در زمان ذخیره‌سازی طولانی و رادیـاسیون میزان پتاسیم را در فرآورده خونی افزایش می‌دهد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">احتمال هیپرکالمـی و مسمومیت حاد قلبی در نوزادان و مبتالیان به نارسایی کلیه، هیپرگلیسمی و هیپوکلسمی بیشتر است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">درمان شامل تجویز انسولین به همراه گلوکز، گلوکونات کلسیم و فورسماید است.</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">استفاده از <bdi dir="ltr">RBC</bdi> شسته شده</li>
+                  <li class="leading-relaxed text-gray-700">استفاده از <bdi dir="ltr">RBC</bdi> با پلاسمای کم</li>
+                  <li class="leading-relaxed text-gray-700">استفاده از فرآورده‌هایی که مدت نگهداری آنها کمتر از <bdi dir="ltr">7</bdi> تا <bdi dir="ltr">10</bdi> روز است</li>
+                  <li class="leading-relaxed text-gray-700">اجتناب از نگهداری کنسـانتره <bdi dir="ltr">RBC</bdi> بیشتر به مدت <bdi dir="ltr">24</bdi> ساعت بعد از رادیـاسیون</li>
+                </ul>
+                <h4 class="font-bold text-lg text-gray-800 mt-4 mb-2">کوآ گولوپاتی ترقیقی</h4>
+                <p class="mb-3 leading-relaxed text-gray-700">نیز یکی از عوارض ناشی از ترانسفیوژن <bdi dir="ltr">Massive</bdi> است.</p>
             </div>
         </section>
 
-        <!-- Section 14: نکات مربوط به درمان نگهدارنده کوبالامین -->
+        <!-- Section 14: واکنش‌های هیپوتانسیو -->
         <section id="sec14" class="card p-6">
-            <h2 class="section-title text-xl">14. نکات مربوط به درمان نگهدارنده کوبالامین</h2>
+            <h2 class="section-title text-xl">14. واکنش‌های هیپوتانسیو</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">درمان نگهدارنده با <bdi dir="ltr">Hydroxocobolamin</bdi> هر ماه <bdi dir="ltr">1000</bdi> واحد و <bdi dir="ltr">Cyanocobalamin</bdi> هر <bdi dir="ltr">3</bdi> ماه یکبار <bdi dir="ltr">1000</bdi> واحد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">واکنش‌های هیپوتانسیو حاد ناشی از انتقال خون با افت ناگهانی فشار خون به میزان بیشتر از <bdi dir="ltr">30</bdi> <bdi dir="ltr">mmHg</bdi>، برطرف شدن خودبه‌خودی هیپوتانسـیون با قطع انتقال خون و فاصله کم بعد از آغاز انتقال خون مشخص می‌شود. علائم آلرژیک گوارشی یا تنفسی خفیف نیز ممکن است وجود داشته باشند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">این واکنش‌ها ممکن است به علت کینین‌هـای وازواکتیـو در فــرآورده خونــی باشند و در تولیــد مصرف <bdi dir="ltr">ACE</bdi> مهارکننده بیماران مبتال به هیپرتانسیون که می‌کنند، شایع‌تر است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">پس از رفــع هیپوتانســیون، بایــد از تزریق همــان فــرآورده خونی اجتنــاب شــود. در بیمارانــی که نیاز به ترانســفیوژن مکرر دارند، تغییر مهارکننده‌های <bdi dir="ltr">ACE</bdi> به سایر داروهای ضد فشار خون توصیه می‌شود.</p>
             </div>
         </section>
 
-        <!-- Section 15: نکات مربوط به آنمی پرنیشیوز -->
+        <!-- Section 15: عوارض عفونی -->
         <section id="sec15" class="card p-6">
-            <h2 class="section-title text-xl">15. نکات مربوط به آنمی پرنیشیوز</h2>
+            <h2 class="section-title text-xl">15. عوارض عفونی</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">کمبود کوباالمین ،قبل از تجویز دوز باالی اسـید فولیـک در فرد باید <bdi dir="ltr">Rule out</bdi> شود و در صورت وجود، اصالح گردد چـرا کـه آنمـی ناشـی از کمبـود کوباالمین ممکن اسـت به اسـید فولیـک پاسـخ دهـد در حالـی کـه نوروپاتی ناشـی از کمبود کوباالمین به فوالت پاسخ نمی‏دهد.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">اگر علـت آنمـی مگالوبالسـتیک کمبـود ویتامیـن <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> باشـد، تجویز فوالت موجب بهبـود تظاهرات هماتولوژیک می‏شـود ولی نوروپاتی ناشی از کمبود کوباالمین (ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>) به فوالت پاسخ نمی‏دهد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">شیوع عفونت‌های منتقل شونده ناشی از انتقال خون در حال کاهش است؛ اما عفونت‌های جدید مانند ویروس نیل غربی و بابزیوز ممکن است کشف شوند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">آزمایشاتی که برای شناسایی پاتوژن‌های عفونی بر روی خون دهنده انجام می‌شود، عمدتاً بر مبنای تکثیر نوکلئیک اسید (<bdi dir="ltr">NAAT</bdi>) هستند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">از آنجایی که اغلب باکتری‌ها در دمای اتاق تکثیر می‌یابند، عفونت‌های باکتریایی منتقل شونده با ترانسفیوژن به خصوص در کنسانتره پالکت که در دمای اتاق نگهداری می‌شود، شایع هستند. با این وجود، برخی از باکتری‌های گرم منفی مثل یرسینیا می‌توانند در دمای <bdi dir="ltr">4</bdi> درجه سانتی‌گراد نیز رشد کرده و موجب عفونت‌های ناشی از تزریق کنسانتره <bdi dir="ltr">RBC</bdi> شوند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در افرادی که فرآورده‌های خونی آلوده دریافت می‌کنند، ممکن است تب و لرز به سرعت ایجاد شده و با (یا حتی ترانسفیوژن یا تا چند ساعت بعد) پیشرفت عفونت، شوک سپتیک، <bdi dir="ltr">DIC</bdi> و مرگ رخ دهد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">بلافاصله بعد از نمونه‌گیری برای کشت باکتری، آنتی‌بیوتیک‌های وسیع‌الطیف باید آغاز شوند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">ریسـک انتقـال عفونـت باکتریـال متعاقــب تجویـز کدام فرآورده خونی باالتر است؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">عفونت‌هـای باکتریایــی در تزریق پالکت بیشـتر ریســک است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">اگر فرض کنیم علت تب، آلودگی فرآورده‌ها بوده، کدام فرآورده می‏تواند علت شایع‏تری برای آن باشد؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">یرســینیا می‌توانند برخـی از باکتری‌های گرم منفی مثل نیز رشد کرده و موجب عفونت‌های ناشی از <bdi dir="ltr">4</bdi> درجه سانتی‌گراد در دمای <bdi dir="ltr">RBC</bdi> کنسانتره تزریق شوند.</p>
             </div>
         </section>
 
-        <!-- Section 16: آنمی مگالوبالستیک بدون ارتباط با کمبود فوالت یا کوبالامین -->
+        <!-- Section 16: جلوگیری از واکنش‌های ترانسفیوژن -->
         <section id="sec16" class="card p-6">
-            <h2 class="section-title text-xl">16. آنمی مگالوبالستیک بدون ارتباط با کمبود فوالت یا کوبالامین</h2>
+            <h2 class="section-title text-xl">16. جلوگیری از واکنش‌های ترانسفیوژن</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">نوعــی آنمــی مگالوبالســتیک در اثــر نقص ژنتیکــی در ژن ناقـل تیامیـن ایجاد می‌شــود. ایــن بیماری ممکن اسـت با سیدروبالست‏های حلقوی در مغز اســتخوان همراهی داشته باشد. آنمی مگالوبالستیک در این بیماران با تیامین (ویتامین <bdi dir="ltr">B<bdi dir="ltr">1</bdi></bdi>) قابل درمان است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">استفاده از فیلتر شده، <bdi dir="ltr">Packed Red Blood Cell</bdi> احتمال بروز تمام عوارض زیر را کاهش می‌دهند، بجز:</p>
+                <p class="mb-3 leading-relaxed text-gray-700">کاهــش لکوســیت‌ها (<bdi dir="ltr">Leukocyte reduction</bdi>): کاهش تعداد لکوسـیت‌ها موجب کاهش بروز واکنش‌های زیر می‌شود:</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">واکنش‌های تب‌دار غیرهمولیتیک ناشی از انتقال خون (<bdi dir="ltr">FNHTRs</bdi>)</li>
+                  <li class="leading-relaxed text-gray-700">عفونت با پاتوژن‌های داخل سلولی مثل سیتومگالوویروس (<bdi dir="ltr">CMV</bdi>)</li>
+                  <li class="leading-relaxed text-gray-700">آلوایمونیزاسیون</li>
+                  <li class="leading-relaxed text-gray-700">سرکوب سیستم ایمنی</li>
+                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">رادیاسـیون (پرتوتابـی) به فرآورده‌هـای خونی در مبتالیـان بـه نقص ایمنـی، از بروز بیماری پیوند علیه میزبان (<bdi dir="ltr">GVHD</bdi>) جلوگیری می‌کند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">کاهش تعداد پاتوژن‌ها: ریسک عفونت‌های ناشی از انتقال خون را کاهش می‌دهد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">کاهش حجـم پالسـما: در بیمارانـی کـه سـابقه واکنش‌هـای آلرژیـک شـدید بـه فرآورده‌های خونی را دارند، اندیکاسیون دارد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در جریــان انتقــال خــون بــرای پیشــگیری از آلوایمونیزاسـیون و واکنش‏هـای تـب‏زا در بیمــار مبتــ اا بــه لوســمی حــاد تحــت شــیمی‏درمانی، کــدام اقــدام را پیشــنهاد می‏کنید؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">برای کاهش خطر انتقال ویروس سیتومگال (<bdi dir="ltr">CMV</bdi>) در جریان ترانسفوزیون خون در یک بیمار مبتال به لنفوم تحت کموتراپی، کدام اقدام زیر مؤثرتر است؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">پورپـورای بعـد از انتقـال خون یک اختــ اال خونریزی<bdi dir="ltr">1</bdi> دهنده ناشی از ترومبوسـیتوپنی بــوده کــه <bdi dir="ltr">5</bdi> تا <bdi dir="ltr">12</bdi> روز بعـد از تزریـق پالکــت رخ می‌دهــد. آنتی‌بــادی ضـد <bdi dir="ltr">HPA-<bdi dir="ltr">1</bdi>a</bdi> عامل این عارضه اســت. با اســتفاده از فرآورده‌هـای خونــی شسته شــده یــا دهنده‌های سازگار از نظــر <bdi dir="ltr">HPA</bdi> می‌تــوان از عــود ایــن عارضــه پیشــگیری کرد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">آلوایمونیزاسـیون علیـه لکوسیت‌ها و پالکت‌هــا <bdi dir="ltr">2</bdi> موجــب مقاومــت بــه تزریــق پالکت می‌شــود. پس از ایجــاد آلوایمونیزاســیون باید از پالکت ســازگار از نظر <bdi dir="ltr">HLA</bdi> (کراس مچ شده) استفاده کرد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">ســرکوب ایمنــی ناشــی از انتقــال خــون اغلب توســط<bdi dir="ltr">3</bdi> لکوسـیت‌های دهنـده ایجــاد می‌شــود. اســتفاده از فرآورده‌های خونی با لکوســیت کم احتمال سـرکوب ایمنی را کاهش می‌دهد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700"><bdi dir="ltr">TACO</bdi> (تجمـع بیـش از حـد مایـع) شـایع‌ترین عارضه مــرگ پـس از تزریـق خـون اسـت. ایـن عارضه علـت تنگی‌نفــس، هیپوکســی، افزایــش مکرر فشــارخون سیســتولیک، انفیلتراســیون دوطرفــه ریــه (اغلـب آلوئولــی) در <bdi dir="ltr">CXR</bdi> و افزایــش <bdi dir="ltr">BNP</bdi> تظاهـر می‌یابــد. درمان این عارضه قطع انتقال خون و تجویز اکسیژن و دیورتیک است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">عوارض ناشی از <bdi dir="ltr">Massive</bdi> ترانسفیوژن عبارتند از:</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">مسمومیت با سیترات (هیپوکلسمی)</li>
+                  <li class="leading-relaxed text-gray-700">هیپوترمی</li>
+                  <li class="leading-relaxed text-gray-700">هیپرکالمی</li>
+                  <li class="leading-relaxed text-gray-700">کوآ کولوپاتی ترقیقی</li>
+                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">واکنش‌های هیپوتانسـیو حاد ناشـی از انتقال خون<bdi dir="ltr">6</bdi> بیشــتر از <bdi dir="ltr">30</bdi> <bdi dir="ltr">mmHg</bdi> با کاهـش ناگهانـی فشـارخون بـه میـزان کم بعـد از آغـاز انتقـال خون و رفـع سـریع آن بـا قطـع انتقـال خـون مشـخص می‌شـود. این عارضه در بیمارانی که تحت درمان با مهارکننده‌های <bdi dir="ltr">ACE</bdi> هستند، شایع‌تر است.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">عفونت‌های باکتریایی ناشـی از انتقال خون به ویژه<bdi dir="ltr">7</bdi> با تزریق پالکت شـایع‌تر هسـتند، چرا کـه پالکت در دمای اتاق نگهداری می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">باکتری‌های گرم منفی مثل یرسینیا در دمای <bdi dir="ltr">4</bdi> درجه سانتی‌گراد نیز رشــد کرده و موجب عفونت‌های مرتبط با تزریق <bdi dir="ltr">RBC</bdi> کنسانتره می‌شوند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">کاهش لکوسـیت‌ها در فرآورده‌های خونی می‌توان با از ایجاد عوارض زیر جلوگیری کرد:</p>
+                <ul class="list-disc mr-6 space-y-2 mb-4">
+                  <li class="leading-relaxed text-gray-700">واکنش‌هــا ی تــب‌دار غیرهمولیتیــک ناشــی از انتقال خون (<bdi dir="ltr">FNHTR</bdi>)</li>
+                  <li class="leading-relaxed text-gray-700">عفونت با پاتوژن‌های داخل سلولی مثل <bdi dir="ltr">CMV</bdi></li>
+                  <li class="leading-relaxed text-gray-700">آلوایمونیزاسیون</li>
+                  <li class="leading-relaxed text-gray-700">سرکوب سیستم ایمنی</li>
+                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">رادیاسـیون (پرتوتابـی) به فرآورده‌هـای خونی در مبتالیـان به نقص ایمنی از بــروز <bdi dir="ltr">GVHD</bdi> جلوگیری می‌کند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">کاهــش حجــم پالســما در بیمارانــی کــه ســابقه واکنش‌هـای آلرژیـک شـدید بــه فرآورده‌هـای خونی دارند، اندیکاسیون دارد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">گــروه خونــی O معموالً موجــب افزایــش ریســک عفونــت بـا H.<bdi dir="ltr">Pylori</bdi> می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در بیمارانــی کــه گــروه خونی O دارند، شــدت مالاریا کمتــر دارد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">فرآورده‌های خونی معموالً در دمای غیرفیزیولوژیک (مانند <bdi dir="ltr">4</bdi> درجه سانتی‌گراد یا <bdi dir="ltr">22</bdi> درجه سانتی‌گراد) نگهداری می‌شوند.</p>
             </div>
         </section>
 
-        <!-- Section 17: Follow up در درمان آنمی مگالوبالستیک -->
+        <!-- Section 17: نکات مربوط به انتقال خون -->
         <section id="sec17" class="card p-6">
-            <h2 class="section-title text-xl">17. <bdi dir="ltr">Follow up</bdi> در درمان آنمی مگالوبالستیک</h2>
+            <h2 class="section-title text-xl">17. نکات مربوط به انتقال خون</h2>
             
             <div class="space-y-4 mt-4">
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">تزریق خون در درمــان آنمی مگالوبالســتیک، معموالً الزم نبوده و توصیه هم نمی‌شود.</li>
-                  <li class="leading-relaxed text-gray-700">گاهی ممکــن اســت <bdi dir="ltr">1</bdi> تــا <bdi dir="ltr">2</bdi> هفته بعــد از درمــان آنمی مگالوبالستیک، سطح پالکت‏ها افزایش یابد، در این صورت اگر ســطح پالکت‏ها بــه باالتر از حالت قبل برســد (مثلاً باالتر از <bdi dir="ltr">800000</bdi>)، درمان با آسپیرین اندیکاسیون دارد.</li>
-                  <li class="leading-relaxed text-gray-700">در هنگام درمان آنمی مگالوبالستیک، جهت پیشگیری از بروز هیپوکالمی، مکمل پتاسیم باید تجویز شود.</li>
-                  <li class="leading-relaxed text-gray-700">تمام بیمارانـی کـه تحـت توتـال گاســترکتومی یــا رزکسـیون ایلئوم قــرار می‏گیرنـد، باید به صورت روتین تحت درمان با کوباالمین (ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>) قرار گیرند.</li>
-                  <li class="leading-relaxed text-gray-700">اگر علـت آنمی مگالوبالسـتیک، کمبـود ویتامیـن <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> باشـد، تجویز فوالت موجب بهبود عالئم هماتولوژیک باشـد؛ ولـی نوروپاتـی ناشـی از کمبـود کوباالمیـن می‏شـود، ولـی به فوالت پاسخ نمی‏دهد (ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>).</li>
-                </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">در ترومبوسیتوپنی، خونریزی تا زمانی که تعداد پلاکت کمتر از <bdi dir="ltr">20000</bdi> نرسیده باشد، رخ نمی‌دهد؛ مگر اینکه اختلال عملکرد پلاکتی به علت سندرم میلودیسپالستیک، آسپیرین یا مصرف <bdi dir="ltr">NSAID</bdi> وجود داشته باشد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">در ترومبا یا هنگام جراحی، پلاکت کمتر از <bdi dir="ltr">100000</bdi> میکرولیتر ممکن است مشکل‌ساز باشد.</p>
             </div>
         </section>
 
-        <!-- Section 18: ترانسلوکاسیون‌های کروموزومی مهم در سرطان‌ها -->
+        <!-- Section 18: تست‌های ژنتیک برای سندرم‌های ارثی سرطان -->
         <section id="sec18" class="card p-6">
-            <h2 class="section-title text-xl">18. ترانسلوکاسیون‌های کروموزومی مهم در سرطان‌ها</h2>
+            <h2 class="section-title text-xl">18. تست‌های ژنتیک برای سندرم‌های ارثی سرطان</h2>
             
             <div class="space-y-4 mt-4">
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700"><bdi dir="ltr">CML</bdi>: کروموزوم فیلادلفیا یا <bdi dir="ltr">t (<bdi dir="ltr">9</bdi></bdi>;<bdi dir="ltr">22</bdi>)</li>
-                  <li class="leading-relaxed text-gray-700">لنفوم فولیکولار: <bdi dir="ltr">t (<bdi dir="ltr">14</bdi></bdi>;<bdi dir="ltr">18</bdi>)</li>
-                  <li class="leading-relaxed text-gray-700">لنفوم بورکیت: <bdi dir="ltr">t (<bdi dir="ltr">8</bdi></bdi>;<bdi dir="ltr">14</bdi>)</li>
-                  <li class="leading-relaxed text-gray-700">لنفوم سلول <bdi dir="ltr">Mantle</bdi>: <bdi dir="ltr">t (<bdi dir="ltr">11</bdi></bdi>;<bdi dir="ltr">14</bdi>)</li>
-                  <li class="leading-relaxed text-gray-700">سارکوم یوئینگ: <bdi dir="ltr">t (<bdi dir="ltr">11</bdi></bdi>;<bdi dir="ltr">22</bdi>)</li>
-                  <li class="leading-relaxed text-gray-700">کانسر پروستات: <bdi dir="ltr">TMPRSS<bdi dir="ltr">2</bdi>-ERG</bdi> در کروموزوم <bdi dir="ltr">22</bdi></li>
-                </ul>
+                <div class="overflow-x-auto mb-4">
+                  <h4 class="font-bold text-md text-gray-700 mb-2">کانسر و ژن‌های دخیل</h4>
+                  <table class="staging-table">
+                    <thead>
+                      <tr>
+                        <th>کانسر</th>
+                        <th>ژن‌های دخیل</th>
+                        <th>روش‌های پیشگیری</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>کانسر پستان</td>
+                        <td><bdi dir="ltr">BRCA-<bdi dir="ltr">1</bdi></bdi>, <bdi dir="ltr">BRCA-<bdi dir="ltr">2</bdi> PTEN</bdi>, <bdi dir="ltr">STK-<bdi dir="ltr">11</bdi></bdi>, <bdi dir="ltr">TP<bdi dir="ltr">53</bdi></bdi></td>
+                        <td>ماستکتومی پروفیالکتیک تعدیل‌کننده‌های انتخابی رسپتور استروژن تغییر در سبک زندگی غربالگری دقیق‌تر از جمله با <bdi dir="ltr">MRI</bdi> پستان</td>
+                      </tr>
+                      <tr>
+                        <td>کانسر لوبولار پستان و کانسر معده</td>
+                        <td><bdi dir="ltr">CDH-<bdi dir="ltr">1</bdi> (E-cadherin</bdi>)</td>
+                        <td>ماستکتومی پروفیالکتیک گاسترکتومی پروفیالکتیک غربالگری دقیق‌تر از جمله با <bdi dir="ltr">MRI</bdi> پستان تعدیل‌کننده‌های انتخابی رسپتور استروژن</td>
+                      </tr>
+                      <tr>
+                        <td>کانسر تخمدان</td>
+                        <td><bdi dir="ltr">BRCA-<bdi dir="ltr">1</bdi></bdi>, <bdi dir="ltr">BRCA-<bdi dir="ltr">2</bdi></bdi></td>
+                        <td>اووفورکتومی پروفیالکتیک داروهای ضدبارداری خوراکی (<bdi dir="ltr">OCP</bdi>)</td>
+                      </tr>
+                      <tr>
+                        <td>کانسر کولون</td>
+                        <td><bdi dir="ltr">FAP</bdi> (پولیپوز آدنوماتوز خانوادگی): <bdi dir="ltr">APC HNPCC</bdi> (کانسر کولون غیرپولیپوز ارثی): <bdi dir="ltr">MLH-<bdi dir="ltr">1</bdi></bdi>, <bdi dir="ltr">MSH-<bdi dir="ltr">2</bdi></bdi>, <bdi dir="ltr">MSH-<bdi dir="ltr">6</bdi></bdi>, <bdi dir="ltr">PMS-<bdi dir="ltr">2</bdi> MYH</bdi> پولیپوز مرتبط با <bdi dir="ltr">MYH</bdi></td>
+                        <td>کولکتومی پروفیالکتیک داروهای <bdi dir="ltr">NSAID</bdi> تغییر در سبک زندگی افزایش نظارت هیسترکتومی کامل شکمی (<bdi dir="ltr">TAH</bdi>) و اُووفورکتومی پروفیالکتیک</td>
+                      </tr>
+                      <tr>
+                        <td>کانسر رحم</td>
+                        <td><bdi dir="ltr">MSH-<bdi dir="ltr">2</bdi></bdi>, <bdi dir="ltr">MLH-<bdi dir="ltr">1</bdi></bdi>, <bdi dir="ltr">PTEN</bdi>, <bdi dir="ltr">PMS-<bdi dir="ltr">2</bdi></bdi>, <bdi dir="ltr">MSH-<bdi dir="ltr">6</bdi></bdi></td>
+                        <td>هیسترکتومی پروفیالکتیک افزایش نظارت</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
             </div>
         </section>
 
-        <!-- Section 19: داروها و مکانیسم‌های مرتبط با سرطان -->
+        <!-- Section 19: ریسک فاکتورهای سرطان -->
         <section id="sec19" class="card p-6">
-            <h2 class="section-title text-xl">19. داروها و مکانیسم‌های مرتبط با سرطان</h2>
+            <h2 class="section-title text-xl">19. ریسک فاکتورهای سرطان</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">داروی <bdi dir="ltr">Venetoclax</bdi> در درمان لنفوم فولیکولار به کار برده می‌شود.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">موتاسیون در ژن <bdi dir="ltr">TP<bdi dir="ltr">53</bdi></bdi> موجب مهار آپوپتوز می‌شود. با موتاسیون <bdi dir="ltr">TP<bdi dir="ltr">53</bdi></bdi>، عملکرد سرکوب‌کنندگی این پروتئین از بین رفته و سلول‌ها در مقابل آپوپتوز مقاوم می‌شوند.</p>
+                <div class="overflow-x-auto mb-4">
+                  <h4 class="font-bold text-md text-gray-700 mb-2">ریسک فاکتورهای مرتبط با سبک زندگی و تماس‌های محیطی</h4>
+                  <table class="staging-table">
+                    <thead>
+                      <tr>
+                        <th>ریسک فاکتور</th>
+                        <th>سرطان‌های مرتبط</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>مصرف سیگار</td>
+                        <td>ریه، برونش، مری، سر و گردن، معده، پانکراس، کلیه، مثانه، سرویکس</td>
+                      </tr>
+                      <tr>
+                        <td>مصرف زیاد الکل</td>
+                        <td>کبد، رکتوم، پستان، حفره دهان، حلق، حنجره، مری</td>
+                      </tr>
+                      <tr>
+                        <td>چاقی و رژیم پرکالری</td>
+                        <td>کولون، پستان، اندومتر، کلیه، پانکراس، مری، پروستات</td>
+                      </tr>
+                      <tr>
+                        <td>فیبر کم در رژیم غذایی</td>
+                        <td>کولون</td>
+                      </tr>
+                      <tr>
+                        <td>زندگی کم‌تحرک</td>
+                        <td>کولون، پستان</td>
+                      </tr>
+                      <tr>
+                        <td>تماس‌های محیطی</td>
+                        <td><bdi dir="ltr">18</bdi> و <bdi dir="ltr">16</bdi> نوع <bdi dir="ltr">HPV</bdi>: سرویکس هپاتیت C و B: کانسر هپاتوسلولار کبد آزبستوز: مزوتلیوم و سایر انواع کانسر ریه گاز رادون: ریه اشعه <bdi dir="ltr">UV</bdi>: <bdi dir="ltr">SCC</bdi> و <bdi dir="ltr">BCC</bdi>، ملانوما اشعه یونیزان: لوسمی، تیروئید، ریه، پستان</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
             </div>
         </section>
 
-        <!-- Section 20: سندرم Li-Fraumeni -->
+        <!-- Section 20: انتقال خون (نکات) -->
         <section id="sec20" class="card p-6">
-            <h2 class="section-title text-xl">20. سندرم <bdi dir="ltr">Li-Fraumeni</bdi></h2>
+            <h2 class="section-title text-xl">20. انتقال خون (نکات)</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">در خانواده‌های مبتلا به سندرم <bdi dir="ltr">Li-Fraumeni</bdi>، موتاسیون ارثی <bdi dir="ltr">TP<bdi dir="ltr">53</bdi></bdi>، کانسر پستان، مغز، سارکوم و لوسمی شایع‌تر بوده که به این الگو، سندرم <bdi dir="ltr">Li-Fraumeni</bdi> گفته می‌شود.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">خانم <bdi dir="ltr">24</bdi> سـاله با گروه خونی A مثبت و تشـخیص <bdi dir="ltr">ITP</bdi> تحت درمـان بـا پردنیزولــون قــرار می‏گیــرد. پــس از <bdi dir="ltr">3</bdi> مــاه ســطح پالکــت بــه حــد نرمال می‏رســد. پــس از <bdi dir="ltr">2</bdi> مــاه مجــدداً میزان پالکت بــه حــدود <bdi dir="ltr">60000</bdi> میکرولیتر کاهش می‏یابد ولــی عالمت خاصی نــدارد. کدام اقدام مناسب است؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">پیگیری بدون درمان</p>
             </div>
         </section>
 
-        <!-- Section 21: نکات تکمیلی در اُنکولوژی -->
+        <!-- Section 21: ارزیابی‌های قبل از تزریق خون -->
         <section id="sec21" class="card p-6">
-            <h2 class="section-title text-xl">21. نکات تکمیلی در اُنکولوژی</h2>
+            <h2 class="section-title text-xl">21. ارزیابی‌های قبل از تزریق خون</h2>
             
             <div class="space-y-4 mt-4">
+                <p class="mb-3 leading-relaxed text-gray-700">در بیماری که نیاز به تزریق خون دارد، تمام تست‌های زیر جزو بررسی اوّلیه قبل از تزریق خون است، بجز؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">تعیین گروه‏های خونی فرعی</p>
+                <p class="mb-3 leading-relaxed text-gray-700">ارزیابی‌های قبل از تزریق خون جهت جلوگیری از واکنش‌های همولیتیک باید انجام شود. این ارزیابی‌ها عبارتند از:</p>
                 <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">فعال شدن تلومراز موجب نامیرا شدن سلول‌ها شده و از اولین تغییرات در ایجاد کانسر است.</li>
-                  <li class="leading-relaxed text-gray-700">موتاسیون در کمپلکس <bdi dir="ltr">FANC</bdi> در ایجاد آنمی فانکونی نقش دارد.</li>
-                  <li class="leading-relaxed text-gray-700">تقویت ژن <bdi dir="ltr">HER-<bdi dir="ltr">2</bdi></bdi> در سرطان پستان موجب می‌شود تا بتوان از آنتی‌بادی منوکلونال <bdi dir="ltr">anti-HER<bdi dir="ltr">2</bdi></bdi> (تراستوزوماب) برای درمان سرطان پستان استفاده کرد.</li>
-                  <li class="leading-relaxed text-gray-700">به علت محیط هیپوکسیک اطراف تومور، متابولیسم سلول‌های سرطانی خود را به گلیکولیز بی‌هوازی تغییر می‌دهند که به آن اثر واربورگ گفته می‌شود.</li>
-                  <li class="leading-relaxed text-gray-700">در درمان <bdi dir="ltr">ALL</bdi> و <bdi dir="ltr">DLBCL</bdi> از <bdi dir="ltr">CAR-T cell</bdi> با هدف قرار دادن <bdi dir="ltr">CD<bdi dir="ltr">19</bdi></bdi> استفاده می‌شود.</li>
+                  <li class="leading-relaxed text-gray-700">تعیین گروه خونی <bdi dir="ltr">ABO-Rh</bdi></li>
+                  <li class="leading-relaxed text-gray-700">غربالگری و شناسایی آلوآنتی‌بادی‌های علیه آنتی‌ژن‌های <bdi dir="ltr">RBC</bdi> به غیر از <bdi dir="ltr">ABO</bdi></li>
+                  <li class="leading-relaxed text-gray-700"><bdi dir="ltr">Cross match</bdi> بین پلاسما / سرم گیرنده و نمونه‌دهنده</li>
                 </ul>
+                <p class="mb-3 leading-relaxed text-gray-700">توجه: از گروه‌های خونی فرعی مثل آنتی‌ژن‌های <bdi dir="ltr">Kell</bdi>، <bdi dir="ltr">Duffy</bdi>، <bdi dir="ltr">Kidd</bdi>، <bdi dir="ltr">Ss</bdi> و K به ندرت و بر اساس وضعیت بالینی بیمار، مورد آزمایش قرار می‌گیرند.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">این سؤال توسط وزارت بهداشت، درمان و آموزش پزشکی دو جوابه شد، در حالی که پاسخ "ج" صحیح‌تر است.</p>
             </div>
         </section>
 
-        <!-- Section 22: پیشگیری از نقایص لوله عصبی -->
+        <!-- Section 22: عوارض تزریق خون -->
         <section id="sec22" class="card p-6">
-            <h2 class="section-title text-xl">22. پیشگیری از نقایص لوله عصبی</h2>
+            <h2 class="section-title text-xl">22. عوارض تزریق خون</h2>
             
             <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">خانم <bdi dir="ltr">25</bdi> ساله با سابقه یک بچه آننسفال جهت مراقبت قبل از بارداری مراجعه کرده است. جهت ایشان کدامیک از موارد زیر توصیه می‌شود؟ شروع <bdi dir="ltr">۴۰۰</bdi> میکروگرم اسید فولیک از ابتدای حاملگی</p>
-                <div class="highlight-box p-4 rounded-lg mb-3">
-                  <strong>📋 خلاصه:</strong> در موارد زیر مورد استفاده قرار می‌گیرد: <bdi dir="ltr">1.</bdi> پیشگیری از نقایص لوله عصبی: برای پیشگیری از نقایص لوله عصبی باید اسید فولیک پیش از حاملگی و در طول بارداری تجویز شود. در افراد معمولی دوز اسید فولیک <bdi dir="ltr">400</bdi> μg در روز است ولی در مادرانی که سابقه تولد نوزاد با <bdi dir="ltr">NTD</bdi> داشته‌اند، دوز اسید فولیک روزانه <bdi dir="ltr">5</bdi> <bdi dir="ltr">mg</bdi> می‌باشد. <bdi dir="ltr">2.</bdi> بیماران دیالیزی مزمن و همچنین تغذیه وریدی همراه با اسید فولیک باید تجویز گردد. <bdi dir="ltr">3.</bdi> تمام نوزادانی که وزن کمتر از <bdi dir="ltr">1500</bdi> <bdi dir="ltr">gr</bdi> دارند باید به طور روتین روزانه <bdi dir="ltr">1</bdi> <bdi dir="ltr">mg</bdi> اسید فولیک دریافت کنند. <bdi dir="ltr">4.</bdi> نوزادان پره‌ماچور بزرگتر که به تعویض خون نیاز دارند و یا دچار مشکلات تغذیه‌ای، عفونت یا اسهال و استفراغ شده‌اند، نیز باید اسید فولیک دریافت کنند.
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 23: تشخیص افتراقی آنمی مگالوبالستیک -->
-        <section id="sec23" class="card p-6">
-            <h2 class="section-title text-xl">23. تشخیص افتراقی آنمی مگالوبالستیک</h2>
-            
-            <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">آقای <bdi dir="ltr">60</bdi> ساله با ضعف، بی‌حالی و سوزش زبان مراجعه کرده است. در معاینه، ملتحمه رنگ پریده و اسکلرا ایکتریک دارد. در آزمایش به عمل آمده: <bdi dir="ltr">WBC</bdi>:<bdi dir="ltr">3000,</bdi> <bdi dir="ltr">Hb</bdi>:<bdi dir="ltr">7.5,</bdi> <bdi dir="ltr">PLT</bdi>:<bdi dir="ltr">80000</bdi> <bdi dir="ltr">MCV</bdi>:<bdi dir="ltr">108,</bdi> <bdi dir="ltr">LDH</bdi>:<bdi dir="ltr">2850</bdi> محتمل‌ترین تشخیص کدام است؟</p>
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700"><bdi dir="ltr">MDS</bdi></li>
-                  <li class="leading-relaxed text-gray-700">آنمی مگالوبالستیک</li>
-                  <li class="leading-relaxed text-gray-700">آنمی همولیتیک</li>
-                  <li class="leading-relaxed text-gray-700"><bdi dir="ltr">PNH</bdi></li>
-                </ul>
-                <p class="mb-3 leading-relaxed text-gray-700">مراجعه شود به فصل <bdi dir="ltr">3.</bdi></p>
-            </div>
-        </section>
-
-        <!-- Section 24: بررسی آنمی پرنیشیوز -->
-        <section id="sec24" class="card p-6">
-            <h2 class="section-title text-xl">24. بررسی آنمی پرنیشیوز</h2>
-            
-            <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">خانم <bdi dir="ltr">35</bdi> ساله با سابقه ویتیلیگو و مصرف لووتیروکسین، به دنبال ضعف و بی‌حالی در آزمایشات، آنمی ماکروسیتیک و اُفت خفیف نوتروفیل و پلاکت کشف می‌شود. با شک به آنمی پرنیشیوز، کوبالامین سرم اندازه‌گیری می‌شود که طبیعی است. اندازه‌گیری کدام شاخص را توصیه می‌کنید؟</p>
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">هموسیستئین</li>
-                  <li class="leading-relaxed text-gray-700">ترانس کوبالامین یک</li>
-                  <li class="leading-relaxed text-gray-700">متیل مالونیک اسید</li>
-                  <li class="leading-relaxed text-gray-700">فاکتور داخلی</li>
-                </ul>
-                <p class="mb-3 leading-relaxed text-gray-700">مراجعه شود به فصل <bdi dir="ltr">26.</bdi></p>
-            </div>
-        </section>
-
-        <!-- Section 25: علت ترومبوز در آنمی پرنیشیوز -->
-        <section id="sec25" class="card p-6">
-            <h2 class="section-title text-xl">25. علت ترومبوز در آنمی پرنیشیوز</h2>
-            
-            <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">خانم <bdi dir="ltr">37</bdi> ساله با تشخیص آنمی پرنیشیوز مدتی است درمان را خودسرانه قطع کرده است. به علت سردرد، تهوع، استفراغ و کاهش دید به اورژانس مراجعه کرده است. در آنژیوگرافی مغزی شواهد ترومبوز سینوس وریدی دیده شده است. در آزمایش، پان سیتوپنی دارد. محتمل‌ترین علت ترومبوز کدام است؟</p>
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">افزایش هموسیستئین خون</li>
-                  <li class="leading-relaxed text-gray-700">تبدیل بیماری به <bdi dir="ltr">PNH</bdi></li>
-                  <li class="leading-relaxed text-gray-700">کمبود فاکتور V لیدن</li>
-                  <li class="leading-relaxed text-gray-700">عدم ارتباط با آنمی پرنیشیوز</li>
-                </ul>
-                <div class="highlight-box p-4 rounded-lg mb-3">
-                  <strong>📋 خلاصه:</strong> <bdi dir="ltr">1.</bdi> اوّ لیه کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> و فوالت، سطح هموسیستئین سرمی افزایش می‌یابد. <bdi dir="ltr">2.</bdi> افزایش سطح هموسیسیتئین پلاسم، ریسک آتروترومبوز را افزایش می‌دهد. کمبود ویتامین‌های <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>، <bdi dir="ltr">B<bdi dir="ltr">6</bdi></bdi> و فوالت موجب افزایش هموسیستئین پلاسم می‌شوند.
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 26: علل کمبود کوبالامین -->
-        <section id="sec26" class="card p-6">
-            <h2 class="section-title text-xl">26. علل کمبود کوبالامین</h2>
-            
-            <div class="space-y-4 mt-4">
-                <p class="mb-3 leading-relaxed text-gray-700">در تمام موارد زیر کمبود کوبالامین (ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi>) به حدی شدید است که موجب آنمی مگالوبالستیک می‌شود، به جز:</p>
-                <p class="mb-3 leading-relaxed text-gray-700">پرتو درمانی</p>
-                <p class="mb-3 leading-relaxed text-gray-700">علل کمبود کوبالامین که شدت کافی برای ایجاد آنمی مگالوباستیک را دارند:</p>
-                <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">تغذیه ای</h4>
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">گیاهخواران (گزینه د)</li>
-                  <li class="leading-relaxed text-gray-700">آنمی پرنیشیوز</li>
-                  <li class="leading-relaxed text-gray-700">فقدان مادرزادی فاکتور داخلی یا اختلال عملکرد آن (گزینه ج)</li>
-                  <li class="leading-relaxed text-gray-700">گاسترکتومی توتال یا پارشیل</li>
-                </ul>
-                <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">علل روده ای</h4>
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">سندرم لوپ روده ای راکد شامل فیستول ایلئوکولیک، دیورتیکولوز ژوژنال، لوپ کور آناتومیک و تنگی روده</li>
-                  <li class="leading-relaxed text-gray-700">رزکسیون ایلئوم و بیماری کرون</li>
-                  <li class="leading-relaxed text-gray-700">سوءجذب انتخابی همراه با پروتئین‌اوری</li>
-                  <li class="leading-relaxed text-gray-700">اسپروی تروپیکال (گزینه ب)</li>
-                  <li class="leading-relaxed text-gray-700">کمبود ترانس کوبالامین <bdi dir="ltr">II</bdi></li>
-                  <li class="leading-relaxed text-gray-700">کرم نواری ماهی (<bdi dir="ltr">Fish tapeworm</bdi>)</li>
-                </ul>
-                <p class="mb-3 leading-relaxed text-gray-700">شرایطی که موجب سوءجذب کوبالامین می شوند ولی ممکن است به قدر کافی شدید یا طولانی مدت نباشند که آنمی مگالوبالستیک ایجاد نمایند:</p>
-                <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">علل معدی</h4>
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">گاستریت آتروفیک ساده (سوءجذب کوبالامین موجود در غذا)</li>
-                  <li class="leading-relaxed text-gray-700">سندرم زولینگر_ الیسون</li>
-                  <li class="leading-relaxed text-gray-700">جراحی بای پس معده یا جراحی چاقی (جراحی باریاتریک)</li>
-                  <li class="leading-relaxed text-gray-700">مصرف مهارکننده های پمپ پروتون (<bdi dir="ltr">PPI</bdi>)</li>
-                </ul>
-                <h4 class="font-bold text-md text-gray-700 mt-3 mb-2">علل روده ای</h4>
-                <ul class="list-disc mr-6 space-y-2 mb-4">
-                  <li class="leading-relaxed text-gray-700">آنتروپاتی ناشی از گلوتن</li>
-                  <li class="leading-relaxed text-gray-700">پانکراتیت شدید</li>
-                  <li class="leading-relaxed text-gray-700">عفونت <bdi dir="ltr">HIV</bdi></li>
-                  <li class="leading-relaxed text-gray-700">رادیوتراپی (گزینه الف)</li>
-                  <li class="leading-relaxed text-gray-700">بیماری پیوند علیه میزبان (<bdi dir="ltr">GVHD</bdi>)</li>
-                </ul>
-                <p class="mb-3 leading-relaxed text-gray-700">علل دارویی: کلشی سین، پارا آمینوسالیسیلات، نئومایسین، کلرید پتاسیم آهسته رهش (<bdi dir="ltr">Slow-release</bdi>)، داروهای ضد صرع، متفورمین، فنفورمین، داروهای سیتوتوکسیک.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">متفورمین با کاهش سطح <bdi dir="ltr">TC-I</bdi> موجب کمبود ویتامین <bdi dir="ltr">B<bdi dir="ltr">12</bdi></bdi> می‌شود.</p>
-                <p class="mb-3 leading-relaxed text-gray-700">الکل</p>
-                <p class="mb-3 leading-relaxed text-gray-700">این سؤال یکی از فنی‌ترین سؤالات پرانترنی <bdi dir="ltr">۱۴۰۳</bdi> اسفند است. در فصل آنمی مگالوبالستیک دو شدت جدول وجود دارد، یکی علل کمبود کوبالامین که شدت کافی برای ایجاد آنمی مگالوبالستیک دارند و جدول دوم شرایطی که ممکن است به قدر کافی شدید و طولانی مدت برای ایجاد آنمی مگالوبالستیک نباشند. این سؤال از جدول اوّل طراحی شده است؛ در حالی که پرتودرمانی یا رادیوتراپی در جدول دوّم قرار دارد.</p>
+                <p class="mb-3 leading-relaxed text-gray-700">مهمترین اقدام برای کاهش عارضه تب‌دار غیرهمولیتیک در تزریق خون کدام است؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">تزریق خون کم لکوسیت</p>
+                <p class="mb-3 leading-relaxed text-gray-700">مرد <bdi dir="ltr">۷۳</bdi> ساله‌ای که به علت پنومونی در <bdi dir="ltr">ICU</bdi> بستری و در حال درمان است. با توجه به آزمایشات امروز بیمار، پزشک تصمیم به ترانسفیوژن یک واحد پک سل طی <bdi dir="ltr">۳</bdi> ساعت می‌گیرد. نیم ساعت بعد از تزریق، بیمار دچار تشدید تنگی نفس و هیپوکسی می‌شود. فشار خون سیستولیک <bdi dir="ltr">۲۰</bdi> <bdi dir="ltr">mmHg</bdi> افزایش می‌یابد. کدام مورد تشدید علائم بیمار را توجیه می‌کند؟</p>
+                <p class="mb-3 leading-relaxed text-gray-700">آسیب ریوی حاد به علت ترانسفیوژن (<bdi dir="ltr">TRALI</bdi>)</p>
             </div>
         </section>
 
